@@ -20,11 +20,8 @@
                 <Tab Title="Ostatnie" Icon="history.svg">
                     <ShellContent ContentTemplate="{DataTemplate local:Pages.HistoryPage}"></ShellContent>
                 </Tab>
-                <Tab Title="Home" Icon="home.svg">
-                    <ShellContent ContentTemplate="{DataTemplate local:Pages.HomePage}"></ShellContent>
-                </Tab>
                 <Tab Title="Bieg" Icon="run.svg">
-                    <ShellContent ContentTemplate="{DataTemplate local:Pages.RunPage}"></ShellContent>
+                    <ShellContent ContentTemplate="{DataTemplate local:Pages.HomePage}"></ShellContent>
                 </Tab>
                 <Tab Title="Profil" Icon="profil.svg">
                     <ShellContent ContentTemplate="{DataTemplate local:Pages.ProfilPage}"></ShellContent>

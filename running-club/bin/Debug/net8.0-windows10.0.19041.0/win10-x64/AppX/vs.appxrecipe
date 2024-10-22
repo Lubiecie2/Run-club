@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-10-19T11:27:30.607</Modified>
+      <Modified>2024-10-20T12:02:17.000</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-10-19T11:27:30.429</Modified>
+      <Modified>2024-10-20T12:02:16.819</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\running-club.runtimeconfig.json">
       <PackagePath>running-club.runtimeconfig.json</PackagePath>
-      <Modified>2024-10-19T10:32:15.390</Modified>
+      <Modified>2024-10-20T12:02:16.578</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\running-club.dll">
       <PackagePath>running-club.dll</PackagePath>
-      <Modified>2024-10-19T11:27:29.240</Modified>
+      <Modified>2024-10-20T12:02:15.508</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>running-club.exe</PackagePath>
-      <Modified>2024-10-19T11:27:29.286</Modified>
+      <Modified>2024-10-20T12:02:15.553</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -55,23 +55,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2024-10-19T09:38:36.522</Modified>
+      <Modified>2024-10-19T18:59:02.569</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2024-10-19T09:38:36.534</Modified>
+      <Modified>2024-10-19T18:59:02.581</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2024-10-19T09:38:36.552</Modified>
+      <Modified>2024-10-19T18:59:02.599</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2024-10-19T09:38:36.576</Modified>
+      <Modified>2024-10-19T18:59:02.627</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2024-10-19T09:38:36.666</Modified>
+      <Modified>2024-10-19T18:59:02.730</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
@@ -83,291 +83,315 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2024-10-19T10:07:57.779</Modified>
+      <Modified>2024-10-19T18:52:28.007</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.770</Modified>
+      <Modified>2024-10-19T18:52:27.999</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.770</Modified>
+      <Modified>2024-10-19T18:52:27.999</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.769</Modified>
+      <Modified>2024-10-19T18:52:27.999</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.768</Modified>
+      <Modified>2024-10-19T18:52:27.999</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.768</Modified>
+      <Modified>2024-10-19T18:52:27.998</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.776</Modified>
+      <Modified>2024-10-19T18:52:28.004</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.776</Modified>
+      <Modified>2024-10-19T18:52:28.004</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.775</Modified>
+      <Modified>2024-10-19T18:52:28.004</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.775</Modified>
+      <Modified>2024-10-19T18:52:28.004</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.775</Modified>
+      <Modified>2024-10-19T18:52:28.004</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.777</Modified>
+      <Modified>2024-10-19T18:52:28.005</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.777</Modified>
+      <Modified>2024-10-19T18:52:28.005</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.776</Modified>
+      <Modified>2024-10-19T18:52:28.005</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.776</Modified>
+      <Modified>2024-10-19T18:52:28.005</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.776</Modified>
+      <Modified>2024-10-19T18:52:28.005</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.778</Modified>
+      <Modified>2024-10-19T18:52:28.007</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.778</Modified>
+      <Modified>2024-10-19T18:52:28.007</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.778</Modified>
+      <Modified>2024-10-19T18:52:28.007</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.778</Modified>
+      <Modified>2024-10-19T18:52:28.007</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.778</Modified>
+      <Modified>2024-10-19T18:52:28.007</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.778</Modified>
+      <Modified>2024-10-19T18:52:28.006</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.778</Modified>
+      <Modified>2024-10-19T18:52:28.006</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.777</Modified>
+      <Modified>2024-10-19T18:52:28.006</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.777</Modified>
+      <Modified>2024-10-19T18:52:28.006</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.777</Modified>
+      <Modified>2024-10-19T18:52:28.006</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.773</Modified>
+      <Modified>2024-10-19T18:52:28.001</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.772</Modified>
+      <Modified>2024-10-19T18:52:28.001</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.772</Modified>
+      <Modified>2024-10-19T18:52:28.001</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.772</Modified>
+      <Modified>2024-10-19T18:52:28.001</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.772</Modified>
+      <Modified>2024-10-19T18:52:28.001</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.774</Modified>
+      <Modified>2024-10-19T18:52:28.002</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.773</Modified>
+      <Modified>2024-10-19T18:52:28.002</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.773</Modified>
+      <Modified>2024-10-19T18:52:28.002</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.773</Modified>
+      <Modified>2024-10-19T18:52:28.002</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.773</Modified>
+      <Modified>2024-10-19T18:52:28.002</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.775</Modified>
+      <Modified>2024-10-19T18:52:28.003</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.774</Modified>
+      <Modified>2024-10-19T18:52:28.003</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.774</Modified>
+      <Modified>2024-10-19T18:52:28.003</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.774</Modified>
+      <Modified>2024-10-19T18:52:28.003</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.774</Modified>
+      <Modified>2024-10-19T18:52:28.003</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.771</Modified>
+      <Modified>2024-10-19T18:52:28.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.771</Modified>
+      <Modified>2024-10-19T18:52:28.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.771</Modified>
+      <Modified>2024-10-19T18:52:28.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.771</Modified>
+      <Modified>2024-10-19T18:52:28.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.770</Modified>
+      <Modified>2024-10-19T18:52:28.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.780</Modified>
+      <Modified>2024-10-19T18:52:27.998</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.780</Modified>
+      <Modified>2024-10-19T18:52:27.998</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.779</Modified>
+      <Modified>2024-10-19T18:52:27.998</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.779</Modified>
+      <Modified>2024-10-19T18:52:27.996</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.779</Modified>
+      <Modified>2024-10-19T18:52:27.996</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\goals.scale-100.png">
       <PackagePath>goals.scale-100.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.782</Modified>
+      <Modified>2024-10-19T18:52:28.008</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\goals.scale-125.png">
       <PackagePath>goals.scale-125.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.782</Modified>
+      <Modified>2024-10-19T18:52:28.008</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\goals.scale-150.png">
       <PackagePath>goals.scale-150.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.782</Modified>
+      <Modified>2024-10-19T18:52:28.008</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\goals.scale-200.png">
       <PackagePath>goals.scale-200.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.781</Modified>
+      <Modified>2024-10-19T18:52:28.008</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\goals.scale-400.png">
       <PackagePath>goals.scale-400.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.781</Modified>
+      <Modified>2024-10-19T18:52:28.008</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\history.scale-100.png">
       <PackagePath>history.scale-100.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.784</Modified>
+      <Modified>2024-10-19T18:52:28.012</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\history.scale-125.png">
       <PackagePath>history.scale-125.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.784</Modified>
+      <Modified>2024-10-19T18:52:28.012</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\history.scale-150.png">
       <PackagePath>history.scale-150.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.783</Modified>
+      <Modified>2024-10-19T18:52:28.012</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\history.scale-200.png">
       <PackagePath>history.scale-200.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.783</Modified>
+      <Modified>2024-10-19T18:52:28.012</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\history.scale-400.png">
       <PackagePath>history.scale-400.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.783</Modified>
+      <Modified>2024-10-19T18:52:28.011</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\home.scale-100.png">
       <PackagePath>home.scale-100.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.783</Modified>
+      <Modified>2024-10-19T18:52:28.010</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\home.scale-125.png">
       <PackagePath>home.scale-125.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.783</Modified>
+      <Modified>2024-10-19T18:52:28.010</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\home.scale-150.png">
       <PackagePath>home.scale-150.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.782</Modified>
+      <Modified>2024-10-19T18:52:28.010</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\home.scale-200.png">
       <PackagePath>home.scale-200.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.782</Modified>
+      <Modified>2024-10-19T18:52:28.010</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\home.scale-400.png">
       <PackagePath>home.scale-400.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.782</Modified>
+      <Modified>2024-10-19T18:52:28.010</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\profil.scale-100.png">
       <PackagePath>profil.scale-100.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.781</Modified>
+      <Modified>2024-10-19T18:52:28.009</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\profil.scale-125.png">
       <PackagePath>profil.scale-125.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.781</Modified>
+      <Modified>2024-10-19T18:52:28.009</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\profil.scale-150.png">
       <PackagePath>profil.scale-150.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.780</Modified>
+      <Modified>2024-10-19T18:52:28.009</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\profil.scale-200.png">
       <PackagePath>profil.scale-200.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.780</Modified>
+      <Modified>2024-10-19T18:52:28.009</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\profil.scale-400.png">
       <PackagePath>profil.scale-400.png</PackagePath>
-      <Modified>2024-10-19T10:07:57.780</Modified>
+      <Modified>2024-10-19T18:52:28.009</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\run.scale-100.png">
+      <PackagePath>run.scale-100.png</PackagePath>
+      <Modified>2024-10-19T18:52:28.011</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\run.scale-125.png">
+      <PackagePath>run.scale-125.png</PackagePath>
+      <Modified>2024-10-19T18:52:28.011</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\run.scale-150.png">
+      <PackagePath>run.scale-150.png</PackagePath>
+      <Modified>2024-10-19T18:52:28.011</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\run.scale-200.png">
+      <PackagePath>run.scale-200.png</PackagePath>
+      <Modified>2024-10-19T18:52:28.011</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\run.scale-400.png">
+      <PackagePath>run.scale-400.png</PackagePath>
+      <Modified>2024-10-19T18:52:28.011</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\splash.scale-100.png">
+      <PackagePath>splash.scale-100.png</PackagePath>
+      <Modified>2024-10-19T18:52:27.996</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\running-club.deps.json">
       <PackagePath>running-club.deps.json</PackagePath>
-      <Modified>2024-10-19T11:27:30.197</Modified>
+      <Modified>2024-10-20T12:02:16.462</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.44\lib\net8.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
@@ -376,6 +400,42 @@
     <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.44\lib\net8.0\WinRT.Runtime.dll">
       <PackagePath>WinRT.Runtime.dll</PackagePath>
       <Modified>2024-09-09T00:48:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\brutile\6.0.0-beta.3\lib\net8.0\BruTile.XmlSerializers.dll">
+      <PackagePath>BruTile.XmlSerializers.dll</PackagePath>
+      <Modified>2024-07-06T09:17:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\brutile\6.0.0-beta.3\lib\net8.0\BruTile.dll">
+      <PackagePath>BruTile.dll</PackagePath>
+      <Modified>2024-07-06T09:17:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\excss\4.2.3\lib\net7.0\ExCSS.dll">
+      <PackagePath>ExCSS.dll</PackagePath>
+      <Modified>2023-09-29T14:38:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\harfbuzzsharp\7.3.0.2\lib\net6.0\HarfBuzzSharp.dll">
+      <PackagePath>HarfBuzzSharp.dll</PackagePath>
+      <Modified>2024-04-09T17:24:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\mapsui\5.0.0-beta.3\lib\net8.0\Mapsui.dll">
+      <PackagePath>Mapsui.dll</PackagePath>
+      <Modified>2024-10-13T08:23:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\mapsui.maui\5.0.0-beta.3\lib\net8.0\Mapsui.UI.Maui.dll">
+      <PackagePath>Mapsui.UI.Maui.dll</PackagePath>
+      <Modified>2024-10-13T08:24:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\mapsui.nts\5.0.0-beta.3\lib\net8.0\Mapsui.Nts.dll">
+      <PackagePath>Mapsui.Nts.dll</PackagePath>
+      <Modified>2024-10-13T08:23:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\mapsui.rendering.skia\5.0.0-beta.3\lib\net8.0\Mapsui.Rendering.Skia.dll">
+      <PackagePath>Mapsui.Rendering.Skia.dll</PackagePath>
+      <Modified>2024-10-13T08:24:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\mapsui.tiling\5.0.0-beta.3\lib\net8.0\Mapsui.Tiling.dll">
+      <PackagePath>Mapsui.Tiling.dll</PackagePath>
+      <Modified>2024-10-13T08:23:56.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\microsoft.extensions.configuration\8.0.0\lib\net8.0\Microsoft.Extensions.Configuration.dll">
       <PackagePath>Microsoft.Extensions.Configuration.dll</PackagePath>
@@ -508,6 +568,58 @@
     <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\microsoft.windowsappsdk\1.5.240627000\lib\net6.0-windows10.0.18362.0\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll">
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.Net.dll</PackagePath>
       <Modified>2024-06-26T19:15:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\nettopologysuite\2.5.0\lib\netstandard2.0\NetTopologySuite.dll">
+      <PackagePath>NetTopologySuite.dll</PackagePath>
+      <Modified>2022-06-22T11:47:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\nettopologysuite.features\2.1.0\lib\netstandard2.0\NetTopologySuite.Features.dll">
+      <PackagePath>NetTopologySuite.Features.dll</PackagePath>
+      <Modified>2020-03-13T13:25:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\nettopologysuite.io.geojson4stj\4.0.0\lib\netstandard2.0\NetTopologySuite.IO.GeoJSON4STJ.dll">
+      <PackagePath>NetTopologySuite.IO.GeoJSON4STJ.dll</PackagePath>
+      <Modified>2023-09-15T11:04:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\shimskiasharp\2.0.0\lib\net8.0\ShimSkiaSharp.dll">
+      <PackagePath>ShimSkiaSharp.dll</PackagePath>
+      <Modified>2024-07-22T15:20:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\skiasharp\2.88.8\lib\net6.0\SkiaSharp.dll">
+      <PackagePath>SkiaSharp.dll</PackagePath>
+      <Modified>2024-04-09T17:24:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\skiasharp.harfbuzz\2.88.8\lib\net6.0\SkiaSharp.HarfBuzz.dll">
+      <PackagePath>SkiaSharp.HarfBuzz.dll</PackagePath>
+      <Modified>2024-04-09T17:24:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\skiasharp.views.maui.controls\2.88.8\lib\net6.0-windows10.0.18362.0\SkiaSharp.Views.Maui.Controls.dll">
+      <PackagePath>SkiaSharp.Views.Maui.Controls.dll</PackagePath>
+      <Modified>2024-04-09T17:25:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\skiasharp.views.maui.core\2.88.8\lib\net6.0-windows10.0.18362.0\SkiaSharp.Views.Maui.Core.dll">
+      <PackagePath>SkiaSharp.Views.Maui.Core.dll</PackagePath>
+      <Modified>2024-04-09T17:24:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\skiasharp.views.winui\2.88.8\lib\net6.0-windows10.0.19041.0\SkiaSharp.Views.Windows.dll">
+      <PackagePath>SkiaSharp.Views.Windows.dll</PackagePath>
+      <Modified>2024-04-09T17:24:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\svg.custom\2.0.0\lib\net8.0\Svg.Custom.dll">
+      <PackagePath>Svg.Custom.dll</PackagePath>
+      <Modified>2024-07-22T15:20:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\svg.model\2.0.0\lib\net8.0\Svg.Model.dll">
+      <PackagePath>Svg.Model.dll</PackagePath>
+      <Modified>2024-07-22T15:20:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\svg.skia\2.0.0\lib\net8.0\Svg.Skia.dll">
+      <PackagePath>Svg.Skia.dll</PackagePath>
+      <Modified>2024-07-22T15:20:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\topten.richtextkit\0.4.167\lib\net5.0\Topten.RichTextKit.dll">
+      <PackagePath>Topten.RichTextKit.dll</PackagePath>
+      <Modified>2024-03-06T01:24:08.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\microsoft.maui.controls.core\8.0.82\lib\net8.0-windows10.0.19041\ar\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>ar\Microsoft.Maui.Controls.resources.dll</PackagePath>
@@ -645,6 +757,10 @@
       <PackagePath>zh-Hant\Microsoft.Maui.Controls.resources.dll</PackagePath>
       <Modified>2024-08-26T17:42:58.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\harfbuzzsharp.nativeassets.win32\7.3.0.2\runtimes\win-x64\native\libHarfBuzzSharp.dll">
+      <PackagePath>libHarfBuzzSharp.dll</PackagePath>
+      <Modified>2024-04-09T17:25:14.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\microsoft.graphics.win2d\1.2.0\runtimes\win-x64\native\Microsoft.Graphics.Canvas.dll">
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
       <Modified>2024-03-11T15:36:40.000</Modified>
@@ -652,6 +768,10 @@
     <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\microsoft.windowsappsdk\1.5.240627000\runtimes\win10-x64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll">
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
       <Modified>2024-06-25T19:48:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\skiasharp.nativeassets.win32\2.88.8\runtimes\win-x64\native\libSkiaSharp.dll">
+      <PackagePath>libSkiaSharp.dll</PackagePath>
+      <Modified>2024-04-09T17:24:38.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\microsoft.maui.controls.compatibility\8.0.82\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>

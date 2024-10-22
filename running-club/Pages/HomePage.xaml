@@ -2,25 +2,43 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:mapsui="clr-namespace:Mapsui.UI.Maui;assembly=Mapsui.UI.Maui"
-             x:Class="running_club.Pages.HomePage"
-             Title="HomePage">
-    <VerticalStackLayout Padding="30" Spacing="20">
+             x:Class="running_club.Pages.HomePage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+        </Grid.RowDefinitions>
 
         <!-- Etykieta wyświetlająca czas -->
         <Label x:Name="TimerLabel" 
-               Text="00:00:00.000" 
+               Text="00:00" 
                FontSize="48" 
                HorizontalOptions="Center" 
-               VerticalOptions="Center" />
+               VerticalOptions="Center" 
+               Grid.Row="0" 
+               Grid.ColumnSpan="3"/>
 
-        <Grid HeightRequest="300">
-            <!-- Widok mapy Mapsui -->
-            <mapsui:MapView x:Name="MyMapView" />
-        </Grid>
+        <!-- Widok mapy Mapsui -->
+        <mapsui:MapView x:Name="MyMapView" Grid.Row="1" Grid.ColumnSpan="3"/>
+
         <!-- Przyciski sterujące -->
-        <HorizontalStackLayout Spacing="15" HorizontalOptions="Center">
-            <Button Text="Start" Clicked="OnGoToMyLocationClicked"/>
-        </HorizontalStackLayout>
-    </VerticalStackLayout>
+        <Button x:Name="StartStopButton" 
+                Text="Start" 
+                Clicked="OnStartStopButtonClicked" 
+                HorizontalOptions="Center" 
+                VerticalOptions="End" 
+                Margin="0,0,0,40" 
+                Grid.Row="1"
+                Grid.Column="1"
+                BackgroundColor="black"
+                WidthRequest="100"
+                HeightRequest="50"/>
+    </Grid>
 
 </ContentPage>

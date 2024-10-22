@@ -3,15 +3,15 @@ using Mapsui.UI.Maui;
 using Mapsui.Tiling.Layers;
 using Mapsui.Utilities;
 using Mapsui.Tiling;
-using System.Diagnostics; // Do u¿ycia Stopwatch
-using Microsoft.Maui.Dispatching; // Do u¿ycia DispatcherTimer
+using System.Diagnostics;
+using Microsoft.Maui.Dispatching;
 using Mapsui.Projections;
 using Mapsui.Styles;
 using Mapsui.Providers;
 using Microsoft.Maui.Controls;
-using System.Diagnostics;
 using Mapsui;
-
+using Mapsui.Extensions;
+using Microsoft.Maui.ApplicationModel;
 
 namespace running_club.Pages;
 
@@ -24,12 +24,14 @@ public partial class HomePage : ContentPage
     private IDispatcherTimer timer;
 
     public HomePage()
-	{
-		InitializeComponent();
-        
+    {
+        InitializeComponent();
+
+        // Timer do aktualizowania czasu na ekranie
         timer = Dispatcher.CreateTimer();
         timer.Interval = TimeSpan.FromMilliseconds(100); // Odœwie¿anie co 100 ms
         timer.Tick += OnTimerTick;
+
         // Ustawienie Ÿród³a mapy na OpenStreetMap
         var tileLayer = OpenStreetMap.CreateTileLayer();
         MyMapView.Map = new Mapsui.Map
@@ -37,50 +39,48 @@ public partial class HomePage : ContentPage
             Layers = { tileLayer }
         };
 
-        // Opcjonalnie ustawienie kamery na dany punkt
-        var center = SphericalMercator.FromLonLat(19.9449799, 50.0646501); // np. Kraków
+        // Automatyczne pobranie lokalizacji po wejœciu na stronê
+        LoadLocationAsync();
+
+        MyMapView.IsMyLocationButtonVisible = false;
+        MyMapView.IsNorthingButtonVisible = false;
+        MyMapView.IsZoomButtonVisible = false;
+       
 
     }
 
     // Aktualizowanie wyœwietlanego czasu
     private void OnTimerTick(object sender, EventArgs e)
     {
-        TimerLabel.Text = stopwatch.Elapsed.ToString(@"hh\:mm\:ss\.fff");
+        TimerLabel.Text = stopwatch.Elapsed.ToString(@"mm\:ss");
     }
 
-    // Obs³uga klikniêcia przycisku Start
-    private void OnStartButtonClicked(object sender, EventArgs e)
-    {
-        if (!stopwatch.IsRunning)
-        {
-            stopwatch.Start();
-            timer.Start();
-        }
-    }
-
-    // Obs³uga klikniêcia przycisku Stop
-    private void OnStopButtonClicked(object sender, EventArgs e)
+    // Obs³uga klikniêcia przycisku Start/Zakoñcz
+    private void OnStartStopButtonClicked(object sender, EventArgs e)
     {
         if (stopwatch.IsRunning)
         {
+            // Zatrzymaj stoper
             stopwatch.Stop();
             timer.Stop();
+            StartStopButton.Text = "Start"; // Zmieñ tekst przycisku na "Start"
+        }
+        else
+        {
+            // Uruchom stoper
+            stopwatch.Start();
+            timer.Start();
+            StartStopButton.Text = "Wstrzymaj"; // Zmieñ tekst przycisku na "Zakoñcz"
         }
     }
 
-    // Obs³uga klikniêcia przycisku Reset
-    private void OnResetButtonClicked(object sender, EventArgs e)
-    {
-        stopwatch.Reset();
-        TimerLabel.Text = "00:00:00.000";
-    }
-
-    private async void OnGoToMyLocationClicked(object sender, EventArgs e)
+    // Pobranie bie¿¹cej lokalizacji i ustawienie mapy
+    private async Task LoadLocationAsync()
     {
         try
         {
             // Sprawdzenie uprawnieñ i pobranie bie¿¹cej lokalizacji
-            var location = await Geolocation.GetLastKnownLocationAsync();
+            var location = await Geolocation.GetLocationAsync();
 
             if (location == null)
             {
@@ -94,18 +94,15 @@ public partial class HomePage : ContentPage
             if (location != null)
             {
                 // Przekszta³cenie lokalizacji na wspó³rzêdne mapy
-                // var position = new Mapsui.Geometries.Point(location.Longitude, location.Latitude);
-                // var sphericalMercator = SphericalMercator.FromLonLat(location.Longitude, location.Latitude);
+                var centerOfLocation = new MPoint(location.Longitude, location.Latitude);
+                var sphericalMercatorCoordinate = SphericalMercator.FromLonLat(centerOfLocation.X, centerOfLocation.Y).ToMPoint();
+                var position = new Position(location.Latitude, location.Longitude);
 
-                // Przejœcie do bie¿¹cej lokalizacji na mapie
-                //MyMapView. NavigateTo(sphericalMercator, MyMapView.Navigator.Zoom);
+                // Ustawienie mapy na bie¿¹cej lokalizacji
+                MyMapView.Map.Navigator.CenterOnAndZoomTo(sphericalMercatorCoordinate, MyMapView.Map.Navigator.Resolutions[16]);
 
-                // Dodanie markera w bie¿¹cej lokalizacji
-                //AddMarker(position);
-                //TimerLabel.Text = location.Longitude.ToString();
-                //TimerLabel.Text = location.Latitude.ToString();
-
-                var centerOfLondonOntario = new MPoint(-81.2497, 42.9837);
+                // Dodanie markera lub aktualizacja pozycji u¿ytkownika (jeœli MyLocationLayer jest u¿ywana)
+                MyMapView.MyLocationLayer.UpdateMyLocation(position);
             }
         }
         catch (Exception ex)
@@ -113,5 +110,4 @@ public partial class HomePage : ContentPage
             await DisplayAlert("Error", $"Unable to get location: {ex.Message}", "OK");
         }
     }
-
 }

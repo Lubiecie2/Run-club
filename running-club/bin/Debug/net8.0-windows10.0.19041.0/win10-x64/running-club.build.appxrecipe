@@ -274,6 +274,24 @@
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\profil.scale-400.png">
       <PackagePath>profil.scale-400.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\run.scale-100.png">
+      <PackagePath>run.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\run.scale-125.png">
+      <PackagePath>run.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\run.scale-150.png">
+      <PackagePath>run.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\run.scale-200.png">
+      <PackagePath>run.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\run.scale-400.png">
+      <PackagePath>run.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\splash.scale-100.png">
+      <PackagePath>splash.scale-100.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\running-club.deps.json">
       <PackagePath>running-club.deps.json</PackagePath>
     </AppxPackagedFile>
@@ -282,6 +300,33 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.44\lib\net8.0\WinRT.Runtime.dll">
       <PackagePath>WinRT.Runtime.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\brutile\6.0.0-beta.3\lib\net8.0\BruTile.XmlSerializers.dll">
+      <PackagePath>BruTile.XmlSerializers.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\brutile\6.0.0-beta.3\lib\net8.0\BruTile.dll">
+      <PackagePath>BruTile.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\excss\4.2.3\lib\net7.0\ExCSS.dll">
+      <PackagePath>ExCSS.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\harfbuzzsharp\7.3.0.2\lib\net6.0\HarfBuzzSharp.dll">
+      <PackagePath>HarfBuzzSharp.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\mapsui\5.0.0-beta.3\lib\net8.0\Mapsui.dll">
+      <PackagePath>Mapsui.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\mapsui.maui\5.0.0-beta.3\lib\net8.0\Mapsui.UI.Maui.dll">
+      <PackagePath>Mapsui.UI.Maui.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\mapsui.nts\5.0.0-beta.3\lib\net8.0\Mapsui.Nts.dll">
+      <PackagePath>Mapsui.Nts.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\mapsui.rendering.skia\5.0.0-beta.3\lib\net8.0\Mapsui.Rendering.Skia.dll">
+      <PackagePath>Mapsui.Rendering.Skia.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\mapsui.tiling\5.0.0-beta.3\lib\net8.0\Mapsui.Tiling.dll">
+      <PackagePath>Mapsui.Tiling.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\microsoft.extensions.configuration\8.0.0\lib\net8.0\Microsoft.Extensions.Configuration.dll">
       <PackagePath>Microsoft.Extensions.Configuration.dll</PackagePath>
@@ -381,6 +426,45 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\microsoft.windowsappsdk\1.5.240627000\lib\net6.0-windows10.0.18362.0\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll">
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.Net.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\nettopologysuite\2.5.0\lib\netstandard2.0\NetTopologySuite.dll">
+      <PackagePath>NetTopologySuite.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\nettopologysuite.features\2.1.0\lib\netstandard2.0\NetTopologySuite.Features.dll">
+      <PackagePath>NetTopologySuite.Features.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\nettopologysuite.io.geojson4stj\4.0.0\lib\netstandard2.0\NetTopologySuite.IO.GeoJSON4STJ.dll">
+      <PackagePath>NetTopologySuite.IO.GeoJSON4STJ.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\shimskiasharp\2.0.0\lib\net8.0\ShimSkiaSharp.dll">
+      <PackagePath>ShimSkiaSharp.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\skiasharp\2.88.8\lib\net6.0\SkiaSharp.dll">
+      <PackagePath>SkiaSharp.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\skiasharp.harfbuzz\2.88.8\lib\net6.0\SkiaSharp.HarfBuzz.dll">
+      <PackagePath>SkiaSharp.HarfBuzz.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\skiasharp.views.maui.controls\2.88.8\lib\net6.0-windows10.0.18362.0\SkiaSharp.Views.Maui.Controls.dll">
+      <PackagePath>SkiaSharp.Views.Maui.Controls.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\skiasharp.views.maui.core\2.88.8\lib\net6.0-windows10.0.18362.0\SkiaSharp.Views.Maui.Core.dll">
+      <PackagePath>SkiaSharp.Views.Maui.Core.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\skiasharp.views.winui\2.88.8\lib\net6.0-windows10.0.19041.0\SkiaSharp.Views.Windows.dll">
+      <PackagePath>SkiaSharp.Views.Windows.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\svg.custom\2.0.0\lib\net8.0\Svg.Custom.dll">
+      <PackagePath>Svg.Custom.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\svg.model\2.0.0\lib\net8.0\Svg.Model.dll">
+      <PackagePath>Svg.Model.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\svg.skia\2.0.0\lib\net8.0\Svg.Skia.dll">
+      <PackagePath>Svg.Skia.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\topten.richtextkit\0.4.167\lib\net5.0\Topten.RichTextKit.dll">
+      <PackagePath>Topten.RichTextKit.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\microsoft.maui.controls.core\8.0.82\lib\net8.0-windows10.0.19041\ar\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>ar\Microsoft.Maui.Controls.resources.dll</PackagePath>
@@ -484,11 +568,17 @@
     <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\microsoft.maui.controls.core\8.0.82\lib\net8.0-windows10.0.19041\zh-Hant\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>zh-Hant\Microsoft.Maui.Controls.resources.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\harfbuzzsharp.nativeassets.win32\7.3.0.2\runtimes\win-x64\native\libHarfBuzzSharp.dll">
+      <PackagePath>libHarfBuzzSharp.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\microsoft.graphics.win2d\1.2.0\runtimes\win-x64\native\Microsoft.Graphics.Canvas.dll">
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\microsoft.windowsappsdk\1.5.240627000\runtimes\win10-x64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll">
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\skiasharp.nativeassets.win32\2.88.8\runtimes\win-x64\native\libSkiaSharp.dll">
+      <PackagePath>libSkiaSharp.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kgruc\.nuget\packages\microsoft.maui.controls.compatibility\8.0.82\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>

@@ -1,4 +1,5 @@
-﻿obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\dotnet_bot.png
+﻿obj\Debug\net8.0-android\resizetizer\r\drawable\splash.png
+obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\dotnet_bot.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\goals.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\history.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\home.png
