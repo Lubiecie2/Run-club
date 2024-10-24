@@ -1,4 +1,5 @@
-﻿namespace running_club
+﻿
+namespace running_club
 {
     public partial class App : Application
     {
@@ -6,7 +7,7 @@
         {
             InitializeComponent();
 
-            //MainPage = new AppShell();
+            MainPage = new NavigationPage(new Pages.LoginPage());
         }
     }
 }

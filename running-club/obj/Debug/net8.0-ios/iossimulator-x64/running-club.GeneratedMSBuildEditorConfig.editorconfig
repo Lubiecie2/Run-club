@@ -52,11 +52,23 @@ build_metadata.AdditionalFiles.ManifestResourceName = running_club.Pages.HomePag
 build_metadata.AdditionalFiles.TargetPath = Pages\HomePage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\HomePage.xaml
 
+[C:/Users/kgruc/OneDrive/Pulpit/Run/running-club/running-club/Pages/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = running_club.Pages.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\LoginPage.xaml
+
 [C:/Users/kgruc/OneDrive/Pulpit/Run/running-club/running-club/Pages/ProfilPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = running_club.Pages.ProfilPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\ProfilPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\ProfilPage.xaml
+
+[C:/Users/kgruc/OneDrive/Pulpit/Run/running-club/running-club/Pages/RegisterPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = running_club.Pages.RegisterPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\RegisterPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\RegisterPage.xaml
 
 [C:/Users/kgruc/OneDrive/Pulpit/Run/running-club/running-club/Pages/RunPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
