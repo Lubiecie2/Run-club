@@ -5,7 +5,7 @@ using System.Threading.Tasks;
     public class FirebaseAuthService
     {
         private readonly FirebaseAuthProvider _authProvider;
-        private readonly string _firebaseApiKey = "AIzaSyCsDhD2xRX1VODlfA-mXy0OJUGpqEJgTms"; // Replace with your Firebase API key
+        private readonly string _firebaseApiKey = "AIzaSyCsDhD2xRX1VODlfA-mXy0OJUGpqEJgTms"; 
 
         public FirebaseAuthService()
         {

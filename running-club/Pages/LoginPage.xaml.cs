@@ -17,7 +17,7 @@ public partial class LoginPage : ContentPage
 
     private async void OnRegisterLabelTapped(object sender, EventArgs e)
     {
-        // Przenieœ u¿ytkownika do RegisterPage
+        
         await Navigation.PushAsync(new RegisterPage());
     }
 
@@ -26,16 +26,37 @@ public partial class LoginPage : ContentPage
         string email = EmailEntry.Text;
         string password = PasswordEntry.Text;
 
+        ErrorLabel.Text = string.Empty;
+
+        
         string result = await _authService.SignInWithEmailAndPasswordAsync(email, password);
+
+      
+        if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))
+        {
+            ErrorLabel.Text = "Proszê wprowadziæ Email i Has³o!";
+            return;
+        }
 
         if (!string.IsNullOrEmpty(result) && result.StartsWith("Error"))
         {
-            await DisplayAlert("Login Failed", result, "OK");
+         
+            if (result.Contains("invalid-email"))
+            {
+                ErrorLabel.Text = "Z³y mail!";
+            }
+            else if (result.Contains("wrong-password"))
+            {
+                ErrorLabel.Text = "B³êdne has³o!";
+            }
+            else
+            {
+                ErrorLabel.Text = "B³êdny Email lub Has³o!"; 
+            }
         }
         else
         {
-            await DisplayAlert("Login Success", "You have logged in successfully!", "OK");
-
+          
             await Navigation.PushAsync(new HomePage());
         }
     }

@@ -1,48 +1,114 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="running_club.Pages.LoginPage"
-             Title="LoginPage">
+             x:Class="running_club.Pages.LoginPage">
 
-    <ContentPage.Content>
-        <StackLayout Padding="30" Spacing="20" VerticalOptions="CenterAndExpand">
+    <StackLayout Padding="10"
+                 VerticalOptions="CenterAndExpand"
+                 HorizontalOptions="CenterAndExpand"
+                 Spacing="15">
+        <!--Logo-->
+        <Image Source="logo.png" 
+               WidthRequest="250"
+               HeightRequest="250"           
+               HorizontalOptions="Center" 
+               Margin="0,0,0,20"/>
+        <!--napis-->
+        <Label Text="Zaloguj się"
+               FontSize="24"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               TextColor="Black"
+               Margin="0,0,0,10"/>
 
-            <!-- Login Title -->
-            <Label Text="Login"
-                   FontSize="24"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center" />
 
-            <!-- Email Entry -->
-            <Entry x:Name="EmailEntry"
-                   Placeholder="Enter Email"
-                   FontSize="16"
-                   Keyboard="Email"
-                   HorizontalOptions="FillAndExpand" />
+        <!--Pole emaila-->
+        <Frame Padding="10, 0, 10, 0"
+               CornerRadius="25"
+               WidthRequest="350"
+               BorderColor="black"
+               HeightRequest="50"
+               HasShadow="False"
+               BackgroundColor="White"
+               Margin="25, 10, 25, 0">
 
-            <!-- Password Entry -->
-            <Entry x:Name="PasswordEntry"
-                   Placeholder="Enter Password"
-                   IsPassword="True"
-                   FontSize="16"
-                   HorizontalOptions="FillAndExpand" />
+        <Grid>
+        
+        <Image Source="mail.png"
+               WidthRequest="20"
+               HeightRequest="20"
+               VerticalOptions="Center"
+               Margin="10,0,0,0"
+               HorizontalOptions="Start" />
 
-            <!-- Login Button -->
-            <Button Text="Login"
-                    FontSize="18"
-                    BackgroundColor="DodgerBlue"
-                    TextColor="White"
-                    HorizontalOptions="FillAndExpand"
-                    Clicked="OnLoginButtonClicked" />
+                
+        <Entry x:Name="EmailEntry"
+               Placeholder="Email"
+               BackgroundColor="Transparent"
+               TextColor="Black"
+               Margin="40,0,10,0"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="Center" />                      
+        </Grid>
+        </Frame>
 
-            <Label x:Name="RegisterLabel"
+        <!--Pole Hasło-->
+        <Frame Padding="10, 0, 10, 0"
+               CornerRadius="25"
+               WidthRequest="350"
+               BorderColor="black"
+               HeightRequest="50"
+               HasShadow="False"
+               BackgroundColor="White"
+               Margin="25, 10, 25, 15">
+
+        <Grid>
+        
+        <Image Source="password.png"
+               WidthRequest="20"
+               HeightRequest="20"
+               VerticalOptions="Center"
+               Margin="10,0,0,0"
+               HorizontalOptions="Start" />
+
+            
+        <Entry x:Name="PasswordEntry"
+               Placeholder="Password"
+               IsPassword="True"
+               BackgroundColor="Transparent"
+               TextColor="Black"
+               Margin="40,0,10,0"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="Center" />
+        </Grid>
+        </Frame>
+
+        <!-- Przycisk logowania -->
+        <Button Text="Login"
+                Clicked="OnLoginButtonClicked"
+                WidthRequest="120"
+                HeightRequest="45"
+                HorizontalOptions="Center"
+                VerticalOptions="EndAndExpand"
+                BackgroundColor="black"
+                TextColor="White"
+                CornerRadius="25"
+                Margin="0,20" />
+        
+        <!--Error tekst-->
+        <Label x:Name="ErrorLabel"
+               Text=""
+               TextColor="Red"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+        
+        <!--Napis pod przyciskiem-->
+        <Label x:Name="RegisterLabel"
                Text="Nie masz jeszcze konta ?"
-               TextColor="Blue"
+               TextColor="black"
                HorizontalOptions="Center"
                VerticalOptions="CenterAndExpand"
                FontSize="Medium" />
-
-        </StackLayout>
-    </ContentPage.Content>
-
+    </StackLayout>
 </ContentPage>
+

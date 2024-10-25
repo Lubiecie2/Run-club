@@ -43,7 +43,7 @@
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
 
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Images\splash.png" Color="#ffffff" />
+		<MauiSplashScreen Include="Resources\Images\logo.jpg" Color="#ffffff" />
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
@@ -60,6 +60,10 @@
 	  <None Remove="Resources\Images\goals.svg" />
 	  <None Remove="Resources\Images\history.svg" />
 	  <None Remove="Resources\Images\home.svg" />
+	  <None Remove="Resources\Images\logo.jpg" />
+	  <None Remove="Resources\Images\logo2.jpg" />
+	  <None Remove="Resources\Images\mail.png" />
+	  <None Remove="Resources\Images\password.png" />
 	  <None Remove="Resources\Images\profil.svg" />
 	  <None Remove="Resources\Images\run.svg" />
 	  <None Remove="Resources\Images\splash.png" />
