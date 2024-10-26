@@ -56,8 +56,8 @@ public partial class LoginPage : ContentPage
         }
         else
         {
-          
-            await Navigation.PushAsync(new HomePage());
+
+            await Shell.Current.GoToAsync("//Home");
         }
     }
 }

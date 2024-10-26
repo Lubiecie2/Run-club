@@ -7,7 +7,13 @@ namespace running_club
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new Pages.LoginPage());
+            MainPage = new AppShell();
+            GoToLoginPage();
+        }
+
+        private async void GoToLoginPage()
+        {
+            await Shell.Current.GoToAsync("//LoginPage");
         }
     }
 }

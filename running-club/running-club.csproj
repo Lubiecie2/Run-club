@@ -57,12 +57,16 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\biegacz.svg" />
+	  <None Remove="Resources\Images\Cele.svg" />
 	  <None Remove="Resources\Images\goals.svg" />
+	  <None Remove="Resources\Images\Historia.svg" />
 	  <None Remove="Resources\Images\history.svg" />
 	  <None Remove="Resources\Images\home.svg" />
 	  <None Remove="Resources\Images\logo.jpg" />
 	  <None Remove="Resources\Images\logo2.jpg" />
 	  <None Remove="Resources\Images\mail.png" />
+	  <None Remove="Resources\Images\Osoba.svg" />
 	  <None Remove="Resources\Images\password.png" />
 	  <None Remove="Resources\Images\profil.svg" />
 	  <None Remove="Resources\Images\run.svg" />

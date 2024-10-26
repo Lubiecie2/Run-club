@@ -5,11 +5,41 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:running_club"
     Shell.FlyoutBehavior="Disabled"
+   Shell.TabBarBackgroundColor="White"
+    Shell.TabBarForegroundColor="Black"
+    Shell.TabBarTitleColor="Blue"
+    Shell.TabBarUnselectedColor="Black"
     Title="running_club">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+
+
+    <ShellContent x:Name="LoginShell"
+                  Route="LoginPage"
+                  ContentTemplate="{DataTemplate local:Pages.LoginPage}" />
+
+    <ShellContent Route="RegisterPage"
+                  ContentTemplate="{DataTemplate local:Pages.RegisterPage}" />
+
+   
+    <TabBar Route="Home">
+   
+        <ShellContent Title="Bieg"
+                      Icon="Resources/Images/biegacz.svg"
+                            
+                      ContentTemplate="{DataTemplate local:Pages.HomePage}" />
+
+        <ShellContent Title="Ostatnie"
+                      Icon="Resources/Images/historia.svg"
+                      ContentTemplate="{DataTemplate local:Pages.HistoryPage}" />
+
+
+        <ShellContent Title="Cele"
+                      Icon="Resources/Images/cele.svg"
+                      ContentTemplate="{DataTemplate local:Pages.GoalsPage}" />
+        
+        <ShellContent Title="Profil"
+                      Icon="Resources/Images/osoba.svg"
+                      ContentTemplate="{DataTemplate local:Pages.ProfilPage}" />
+    </TabBar>
 
 </Shell>
