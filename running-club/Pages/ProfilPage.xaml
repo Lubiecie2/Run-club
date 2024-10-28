@@ -3,10 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="running_club.Pages.ProfilPage"
              Title="ProfilPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <StackLayout Padding="20" VerticalOptions="Center">
+        <Label Text="Witaj," FontSize="Large" HorizontalOptions="Center" />
+        <Label x:Name="EmailLabel" FontSize="Medium" HorizontalOptions="Center" />
+
+        <Button Text="Wyloguj"
+                BackgroundColor="Black"
+                TextColor="White"
+                Clicked="OnLogoutButtonClicked"
+                WidthRequest="100"
+                HeightRequest="50"
+                Margin="0, 0, 20, 0"/>
+    </StackLayout>
 </ContentPage>
