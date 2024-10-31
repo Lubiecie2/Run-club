@@ -59,18 +59,24 @@
 	<ItemGroup>
 	  <None Remove="Resources\Images\biegacz.svg" />
 	  <None Remove="Resources\Images\Cele.svg" />
+	  <None Remove="Resources\Images\cloudiness.png" />
 	  <None Remove="Resources\Images\goals.svg" />
 	  <None Remove="Resources\Images\Historia.svg" />
 	  <None Remove="Resources\Images\history.svg" />
 	  <None Remove="Resources\Images\home.svg" />
+	  <None Remove="Resources\Images\humidity.png" />
 	  <None Remove="Resources\Images\logo.jpg" />
 	  <None Remove="Resources\Images\logo2.jpg" />
 	  <None Remove="Resources\Images\mail.png" />
 	  <None Remove="Resources\Images\Osoba.svg" />
+	  <None Remove="Resources\Images\overlay.png" />
 	  <None Remove="Resources\Images\password.png" />
+	  <None Remove="Resources\Images\pressure.png" />
 	  <None Remove="Resources\Images\profil.svg" />
 	  <None Remove="Resources\Images\run.svg" />
 	  <None Remove="Resources\Images\splash.png" />
+	  <None Remove="Resources\Images\weather.png" />
+	  <None Remove="Resources\Images\wind.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -80,6 +86,7 @@
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+		<PackageReference Include="Xamarin.Essentials" Version="1.8.1" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -104,6 +111,13 @@
 	  <MauiXaml Update="Pages\RunPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Pages\WeatherPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Weather\" />
 	</ItemGroup>
 
 	
