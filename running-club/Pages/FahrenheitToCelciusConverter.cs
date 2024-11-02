@@ -10,7 +10,7 @@ namespace WeatherApp
             double celcius = 0.00;
             if (!ReferenceEquals(fahrenheit, null))
             {
-                celcius = (fahrenheit - 32) * 5 / 9;
+                celcius = fahrenheit;
             }
             return Math.Round(celcius).ToString();
         }

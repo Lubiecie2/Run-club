@@ -100,7 +100,9 @@
             CornerRadius="10"
             HasShadow="True"
             HeightRequest="120"
-            VerticalOptions="Start">
+            VerticalOptions="Start"
+            BorderColor="grey">
+
 
             <Grid
                 Margin="0,35,0,0"
@@ -123,13 +125,13 @@
                             FontAttributes="Bold"
                             FontSize="14"
                             HorizontalOptions="Center"
-                            Text="{Binding Main.Humidity}"
+                            Text="{Binding Main.Humidity, StringFormat='{0} %'}"
                             TextColor="Black" />
                         <Label
                             FontSize="11"
                             HorizontalOptions="Center"
                             Text="Humidity"
-                            TextColor="#7D7D7D" />
+                            TextColor="black" />
                     </StackLayout>
                 </StackLayout>
 
@@ -144,13 +146,13 @@
                             FontAttributes="Bold"
                             FontSize="14"
                             HorizontalOptions="Center"
-                            Text="{Binding Wind.Speed}"
+                            Text="{Binding Wind.Speed, StringFormat='{0} km/h'}"
                             TextColor="Black" />
                         <Label
                             FontSize="11"
                             HorizontalOptions="Center"
                             Text="Wind"
-                            TextColor="#7D7D7D" />
+                            TextColor="black" />
                     </StackLayout>
                 </StackLayout>
 
@@ -165,13 +167,13 @@
                             FontAttributes="Bold"
                             FontSize="14"
                             HorizontalOptions="Center"
-                            Text="{Binding Main.Pressure}"
+                            Text="{Binding Main.Pressure, StringFormat='{0} hPa' }"
                             TextColor="Black" />
                         <Label
                             FontSize="11"
                             HorizontalOptions="Center"
                             Text="Pressure"
-                            TextColor="#7D7D7D" />
+                            TextColor="black" />
                     </StackLayout>
                 </StackLayout>
 
@@ -186,13 +188,13 @@
                             FontAttributes="Bold"
                             FontSize="14"
                             HorizontalOptions="Center"
-                            Text="{Binding Clouds.All}"
+                            Text="{Binding Clouds.All, StringFormat='{0} %'}"
                             TextColor="Black" />
                         <Label
                             FontSize="11"
                             HorizontalOptions="Center"
                             Text="Cloudiness"
-                            TextColor="#7D7D7D" />
+                            TextColor="black" />
                     </StackLayout>
                 </StackLayout>
 
@@ -231,30 +233,6 @@
                     TextColor="Black"
                     VerticalOptions="Center" />
             </StackLayout>
-        </StackLayout>
-
-
-        <StackLayout
-            Grid.Row="3"
-            Margin="0,40,0,0"
-            Orientation="Horizontal">
-            <Entry
-                x:Name="_cityEntry"
-                Margin="5,0"
-                BackgroundColor="#7c58c9"
-                CharacterSpacing="7"
-                HorizontalTextAlignment="Center"
-                Text="Karachi"
-                TextColor="White"
-                VerticalOptions="Center"
-                WidthRequest="250" />
-            <Button
-                BackgroundColor="#7c58c9"
-                BorderColor="White"
-                BorderWidth="1"
-                Clicked="OnGetWeatherButtonClicked"
-                Text="Get Weather"
-                TextColor="White" />
         </StackLayout>
 
     </Grid>

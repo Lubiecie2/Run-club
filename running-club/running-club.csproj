@@ -75,6 +75,7 @@
 	  <None Remove="Resources\Images\profil.svg" />
 	  <None Remove="Resources\Images\run.svg" />
 	  <None Remove="Resources\Images\splash.png" />
+	  <None Remove="Resources\Images\userimg.png" />
 	  <None Remove="Resources\Images\weather.png" />
 	  <None Remove="Resources\Images\wind.png" />
 	</ItemGroup>

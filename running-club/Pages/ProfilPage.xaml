@@ -1,18 +1,169 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="running_club.Pages.ProfilPage"
-             Title="ProfilPage">
-    <StackLayout Padding="20" VerticalOptions="Center">
-        <Label Text="Witaj," FontSize="Large" HorizontalOptions="Center" />
-        <Label x:Name="EmailLabel" FontSize="Medium" HorizontalOptions="Center" />
+             x:Class="running_club.Pages.ProfilPage">
 
+    <Grid Padding="20" RowDefinitions="Auto, Auto, Auto, Auto, *,Auto, Auto, Auto" ColumnDefinitions="*, *">
+
+        <!-- Zdjęcie użytkownika -->
+        <Image x:Name="UserImage"
+               Source="userimg.png"
+               WidthRequest="100"
+               HeightRequest="100"
+               HorizontalOptions="Start"
+               VerticalOptions="Center"
+               Grid.Row="0"
+               Grid.Column="0"/>
+
+        <!-- Email użytkownika -->
+        <Label x:Name="EmailLabel"
+               FontSize="Medium"
+               HorizontalOptions="Start"
+               VerticalOptions="Center"
+               Grid.Row="0"
+               Grid.Column="1"
+               TextColor="Black"/>
+
+        <!-- Czarna kreska pod emailem i zdjęciem -->
+        <BoxView Color="Black"
+                 HeightRequest="1"
+                 HorizontalOptions="FillAndExpand"
+                 VerticalOptions="End"
+                 Grid.Row="1"
+                 Grid.ColumnSpan="2"
+                 Margin="0,10,0,10"/>
+
+        <!-- Tytuł sekcji -->
+        <Label Text="Oblicz swoje zapotrzebowanie kaloryczne!"
+               FontSize="Medium"
+               HorizontalOptions="Center"
+               VerticalOptions="Start"
+               Grid.Row="2"
+               Grid.ColumnSpan="2"
+               Margin="0,10,0,10"/>
+
+        <!-- Sekcja obliczania zapotrzebowania kalorycznego z ramkami wokół pól -->
+        <Grid Grid.Row="3" Grid.ColumnSpan="2" RowDefinitions="Auto, Auto, Auto" ColumnDefinitions="*, *" Padding="10">
+
+            <!-- Ramka wokół pola na wagę -->
+            <Frame BorderColor="Black" CornerRadius="10" Margin="5" Padding="5" Grid.Row="0" Grid.Column="0">
+                <Entry x:Name="WeightEntry"
+                       Placeholder="Waga (kg)"
+                       Keyboard="Numeric"
+                       HorizontalOptions="FillAndExpand"/>
+            </Frame>
+
+            <!-- Ramka wokół pola na wzrost -->
+            <Frame BorderColor="Black" CornerRadius="10" Margin="5" Padding="5" Grid.Row="0" Grid.Column="1">
+                <Entry x:Name="HeightEntry"
+                       Placeholder="Wzrost (cm)"
+                       Keyboard="Numeric"
+                       HorizontalOptions="FillAndExpand"/>
+            </Frame>
+
+            <!-- Ramka wokół pola na wiek -->
+            <Frame BorderColor="Black" CornerRadius="10" Margin="5" Padding="5" Grid.Row="1" Grid.Column="0">
+                <Entry x:Name="AgeEntry"
+                       Placeholder="Wiek"
+                       Keyboard="Numeric"
+                       HorizontalOptions="FillAndExpand"/>
+            </Frame>
+
+            <!-- Ramka wokół wyboru płci -->
+            <Frame BorderColor="Black" CornerRadius="10" Margin="5" Padding="5" Grid.Row="1" Grid.Column="1">
+                <Picker x:Name="GenderPicker"
+                        Title="Płeć"
+                        HorizontalOptions="FillAndExpand">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Kobieta</x:String>
+                            <x:String>Mężczyzna</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+            </Frame>
+
+            <!-- Ramka wokół wyboru poziomu aktywności -->
+            <Frame BorderColor="Black" CornerRadius="10" Margin="5" Padding="5" Grid.Row="2" Grid.ColumnSpan="2">
+                <Picker x:Name="ActivityLevelPicker"
+                        Title="Poziom aktywności"
+                        HorizontalOptions="FillAndExpand">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Brak aktywności</x:String>
+                            <x:String>Mała aktywność</x:String>
+                            <x:String>Umiarkowana aktywność</x:String>
+                            <x:String>Wysoka aktywność</x:String>
+                            <x:String>Bardzo wysoka aktywność</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+            </Frame>
+        </Grid>
+
+        <!-- Przycisk do obliczenia zapotrzebowania kalorycznego pod ramkami -->
+        <Button Text="Oblicz kalorie"
+                BackgroundColor="black"
+                TextColor="White"
+                WidthRequest="150"
+                HeightRequest="50"
+                HorizontalOptions="Center"
+                Clicked="OnCalculateCaloriesClicked"
+                Margin="0,5,0,0"
+                Grid.Row="4"
+                Grid.ColumnSpan="2"/>
+
+        <!-- Wynik obliczenia -->
+        <StackLayout Grid.Row="5" Grid.ColumnSpan="2" Padding="0,10,0,10">
+            <Label x:Name="CaloriesMaintainLabel"
+                   Text=""
+                   FontSize="Medium"
+                   HorizontalOptions="Center"
+                   TextColor="black"
+                   Margin="0,5,0,0"/>
+            <Label x:Name="CaloriesDeficitLabel"
+                   Text=""
+                   FontSize="Medium"
+                   HorizontalOptions="Center"
+                   TextColor="black"
+                   Margin="0,5,0,0"/>
+            <Label x:Name="CaloriesSurplusLabel"
+                   Text=""
+                   FontSize="Medium"
+                   HorizontalOptions="Center"
+                   TextColor="black"
+                   Margin="0,5,0,30"/>
+        </StackLayout>
+
+        <!-- Czarna kreska nad przyciskiem wylogowania -->
+        <BoxView Color="Black"
+                 HeightRequest="1"
+                 HorizontalOptions="FillAndExpand"
+                 VerticalOptions="End"
+                 Grid.Row="6"
+                 Grid.ColumnSpan="2"
+                 Margin="0,10,0,0"/>
+
+        <!-- Przycisk wylogowania na środku u dołu -->
         <Button Text="Wyloguj"
                 BackgroundColor="Black"
                 TextColor="White"
                 Clicked="OnLogoutButtonClicked"
                 WidthRequest="100"
                 HeightRequest="50"
-                Margin="0, 0, 20, 0"/>
-    </StackLayout>
+                HorizontalOptions="Center"
+                VerticalOptions="End"
+                Grid.Row="7"
+                Grid.ColumnSpan="2"
+                Margin="0, 20, 0, 20"/>
+
+        <!-- Czarna kreska pod przyciskiem wylogowania -->
+        <BoxView Color="Black"
+                 HeightRequest="1"
+                 HorizontalOptions="FillAndExpand"
+                 VerticalOptions="End"
+                 Grid.Row="8"
+                 Grid.ColumnSpan="2"
+                 Margin="0,10,0,0"/>
+    </Grid>
 </ContentPage>
