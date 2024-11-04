@@ -7,7 +7,7 @@
 
         <!-- Zdjęcie użytkownika -->
         <Image x:Name="UserImage"
-               Source="userimg.png"
+               Source="ziutek.png"
                WidthRequest="100"
                HeightRequest="100"
                HorizontalOptions="Start"

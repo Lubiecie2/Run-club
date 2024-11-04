@@ -1,15 +1,15 @@
-using System.Text.RegularExpressions;
+ï»¿using System.Text.RegularExpressions;
 
 namespace running_club.Pages;
 
 public partial class RegisterPage : ContentPage
 {
-   private FirebaseAuthService _authService;
+    private FirebaseAuthService _authService;
 
     public RegisterPage()
-	{
+    {
         InitializeComponent();
-      _authService = new FirebaseAuthService();
+        _authService = new FirebaseAuthService();
     }
 
     private async void OnLoginLinkTapped(object sender, EventArgs e)
@@ -23,42 +23,42 @@ public partial class RegisterPage : ContentPage
         string password = PasswordEntry.Text;
         string confirmPassword = ConfirmPasswordEntry.Text;
 
-       
+
         if (password != confirmPassword)
         {
-            StatusLabel.Text = "Has³a s¹ ró¿ne!";
+            StatusLabel.Text = "HasÂ³a sÂ¹ rÃ³Â¿ne!";
             StatusLabel.TextColor = Colors.Red;
             return;
         }
 
         if (!IsValidEmail(email))
         {
-            StatusLabel.Text = "Nieprawid³owy format adresu e-mail!";
+            StatusLabel.Text = "NieprawidÂ³owy format adresu e-mail!";
             StatusLabel.TextColor = Colors.Red;
             return;
         }
 
-        if (password.Length < 6)  
+        if (password.Length < 6)
         {
-            StatusLabel.Text = "Has³o musi siê sk³adaæ z minimum 6 znaków!";
+            StatusLabel.Text = "HasÂ³o musi siÃª skÂ³adaÃ¦ z minimum 6 znakÃ³w!";
             StatusLabel.TextColor = Colors.Red;
             return;
         }
 
 
 
-       
+
         string result = await _authService.RegisterWithEmailAndPasswordAsync(email, password);
 
-       
+
         if (!string.IsNullOrEmpty(result) && result.StartsWith("Error"))
         {
             StatusLabel.Text = result; // Show the error message
         }
         else
         {
-            StatusLabel.Text = "Pomyœlnie utworzono konto!";
-            //StatusLabel.Text = "Mo¿esz teraz siê zalogowaæ!";
+            StatusLabel.Text = "PomyÅ“lnie utworzono konto!";
+            //StatusLabel.Text = "MoÂ¿esz teraz siÃª zalogowaÃ¦!";
             StatusLabel.TextColor = Colors.Green;
 
             //await DisplayAlert("Registration Success", "Account created successfully!", "OK");

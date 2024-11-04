@@ -24,35 +24,35 @@ namespace running_club.Pages
         }
         private void OnCalculateCaloriesClicked(object sender, EventArgs e)
         {
-           
+
             if (double.TryParse(WeightEntry.Text, out double weight) &&
                 double.TryParse(HeightEntry.Text, out double height) &&
                 double.TryParse(AgeEntry.Text, out double age) &&
                 GenderPicker.SelectedItem != null &&
                 ActivityLevelPicker.SelectedItem != null)
             {
-               
+
                 bool isFemale = GenderPicker.SelectedItem.ToString() == "Kobieta";
 
-                
+
                 double activityMultiplier = GetActivityMultiplier(ActivityLevelPicker.SelectedItem.ToString());
 
-             
+
                 double bmr = CalculateBMR(weight, height, age, isFemale);
 
-               
-                double caloriesToMaintain = bmr * activityMultiplier;
-                double caloriesToLose = caloriesToMaintain - 500; 
-                double caloriesToGain = caloriesToMaintain + 500; 
 
-              
+                double caloriesToMaintain = bmr * activityMultiplier;
+                double caloriesToLose = caloriesToMaintain - 500;
+                double caloriesToGain = caloriesToMaintain + 500;
+
+
                 CaloriesMaintainLabel.Text = $"Utrzymanie wagi: {Math.Round(caloriesToMaintain)} kcal";
                 CaloriesDeficitLabel.Text = $"Aby schudn¹æ: {Math.Round(caloriesToLose)} kcal";
                 CaloriesSurplusLabel.Text = $"Aby przytyæ: {Math.Round(caloriesToGain)} kcal";
             }
             else
             {
-                
+
                 DisplayAlert("B³¹d", "Proszê wprowadziæ wszystkie dane.", "OK");
             }
         }
@@ -80,7 +80,7 @@ namespace running_club.Pages
                 case "Bardzo wysoka aktywnoœæ":
                     return 1.9;
                 default:
-                    return 1.0; 
+                    return 1.0;
             }
         }
     }

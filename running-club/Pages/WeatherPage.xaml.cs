@@ -1,6 +1,7 @@
 namespace running_club.Pages;
 using Microsoft.Maui.Devices.Sensors;
 using Newtonsoft.Json;
+using WeatherApp;
 
 public partial class WeatherPage : ContentPage
 {
@@ -10,6 +11,8 @@ public partial class WeatherPage : ContentPage
     {
         InitializeComponent();
         _restService = new RestService();
+        BindingContext = new WeatherViewModel();
+
 
         // Wywo³anie metody przy starcie aplikacji
         GetWeatherForCurrentLocation();

@@ -1,4 +1,4 @@
-using Firebase.Auth;
+ï»¿using Firebase.Auth;
 using System;
 using System.Threading.Tasks;
 using Microsoft.Maui.Storage;
@@ -7,22 +7,22 @@ public class FirebaseAuthService
 {
     private readonly FirebaseAuthProvider _authProvider;
     private readonly string _firebaseApiKey = "AIzaSyCsDhD2xRX1VODlfA-mXy0OJUGpqEJgTms";
-    private FirebaseAuthLink _authLink;  // Przechowuje dane zalogowanego u¿ytkownika
+    private FirebaseAuthLink _authLink;  // Przechowuje dane zalogowanego uÂ¿ytkownika
 
-    // Konstruktor inicjalizuj¹cy us³ugê Firebase
+    // Konstruktor inicjalizujÂ¹cy usÂ³ugÃª Firebase
     public FirebaseAuthService()
     {
         _authProvider = new FirebaseAuthProvider(new FirebaseConfig(_firebaseApiKey));
     }
 
     // ------------------------------
-    // Rejestracja nowego u¿ytkownika
+    // Rejestracja nowego uÂ¿ytkownika
     // ------------------------------
     public async Task<string> RegisterWithEmailAndPasswordAsync(string email, string password)
     {
         try
         {
-            // Tworzy nowego u¿ytkownika
+            // Tworzy nowego uÂ¿ytkownika
             _authLink = await _authProvider.CreateUserWithEmailAndPasswordAsync(email, password);
 
             // Zapisuje email do SecureStorage
@@ -30,28 +30,28 @@ public class FirebaseAuthService
 
             // Pobiera token Firebase
             string token = _authLink.FirebaseToken;
-            return token; // Zwraca token, jeœli rejestracja siê powiedzie
+            return token; // Zwraca token, jeÅ“li rejestracja siÃª powiedzie
         }
         catch (FirebaseAuthException ex)
         {
-            // Obs³uguje specyficzne b³êdy Firebase
+            // ObsÂ³uguje specyficzne bÂ³Ãªdy Firebase
             return $"Error: {ex.Reason}";
         }
         catch (Exception ex)
         {
-            // Obs³uguje ogólne b³êdy
+            // ObsÂ³uguje ogÃ³lne bÂ³Ãªdy
             return $"Error: {ex.Message}";
         }
     }
 
     // --------------------------
-    // Logowanie istniej¹cego u¿ytkownika
+    // Logowanie istniejÂ¹cego uÂ¿ytkownika
     // --------------------------
     public async Task<string> SignInWithEmailAndPasswordAsync(string email, string password)
     {
         try
         {
-            // Loguje u¿ytkownika
+            // Loguje uÂ¿ytkownika
             _authLink = await _authProvider.SignInWithEmailAndPasswordAsync(email, password);
 
             // Zapisuje email do SecureStorage
@@ -63,31 +63,31 @@ public class FirebaseAuthService
         }
         catch (Exception ex)
         {
-            // Zwraca b³¹d, jeœli logowanie nie powiedzie siê
+            // Zwraca bÂ³Â¹d, jeÅ“li logowanie nie powiedzie siÃª
             return $"Error: {ex.Message}";
         }
     }
 
     // --------------------------
-    // Pobiera adres e-mail aktualnie zalogowanego u¿ytkownika
+    // Pobiera adres e-mail aktualnie zalogowanego uÂ¿ytkownika
     // --------------------------
     public string GetCurrentUserEmail()
     {
-        return _authLink?.User.Email;  // Zwraca e-mail lub null, jeœli u¿ytkownik nie jest zalogowany
+        return _authLink?.User.Email;  // Zwraca e-mail lub null, jeÅ“li uÂ¿ytkownik nie jest zalogowany
     }
 
     public async Task<string> GetCurrentUserEmailAsync()
     {
         var email = await SecureStorage.GetAsync("user_email");
-        return email ?? "Nie jesteœ zalogowany";  // Zwraca komunikat, jeœli email jest pusty;  // Pobiera e-mail z SecureStorage
+        return email ?? "Nie jesteÅ“ zalogowany";  // Zwraca komunikat, jeÅ“li email jest pusty;  // Pobiera e-mail z SecureStorage
     }
 
     // --------------------------
-    // Wylogowanie u¿ytkownika
+    // Wylogowanie uÂ¿ytkownika
     // --------------------------
     public async Task LogoutAsync()
     {
-        // Usuwa e-mail u¿ytkownika z SecureStorage podczas wylogowania
+        // Usuwa e-mail uÂ¿ytkownika z SecureStorage podczas wylogowania
         SecureStorage.Remove("user_email");
     }
 }
