@@ -15,10 +15,10 @@ namespace running_club.Pages
             tapGestureRecognizer.Tapped += OnRegisterLabelTapped;
             RegisterLabel.GestureRecognizers.Add(tapGestureRecognizer);
 
-            // Subskrybuj wiadomoœæ wylogowania
+           
             MessagingCenter.Subscribe<string>(this, "Logout", (sender) =>
             {
-                ClearForm(); // Wywo³anie metody czyszcz¹cej formularz
+                ClearForm(); 
             });
         }
 
@@ -34,7 +34,7 @@ namespace running_club.Pages
 
             ErrorLabel.Text = string.Empty;
 
-            // Próba logowania u¿ytkownika
+           
             string result = await _authService.SignInWithEmailAndPasswordAsync(email, password);
 
             if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))
@@ -45,7 +45,7 @@ namespace running_club.Pages
 
             if (!string.IsNullOrEmpty(result) && result.StartsWith("Error"))
             {
-                // Sprawdzenie b³êdów logowania
+              
                 if (result.Contains("invalid-email"))
                 {
                     ErrorLabel.Text = "Z³y mail!";
@@ -61,16 +61,16 @@ namespace running_club.Pages
             }
             else
             {
-                // PrzejdŸ do strony g³ównej po pomyœlnym logowaniu
+               
                 await Shell.Current.GoToAsync("//Home");
             }
         }
 
         private void ClearForm()
         {
-            // Czyœci pola formularza
-            EmailEntry.Text = string.Empty; // Czyœci pole e-mail
-            PasswordEntry.Text = string.Empty; // Czyœci pole has³a
+           
+            EmailEntry.Text = string.Empty;
+            PasswordEntry.Text = string.Empty; 
         }
     }
 }
