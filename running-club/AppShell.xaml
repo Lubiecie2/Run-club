@@ -40,6 +40,9 @@
         <ShellContent Title="Profil"
                       Icon="Resources/Images/osoba.svg"
                       ContentTemplate="{DataTemplate local:Pages.ProfilPage}" />
+        <ShellContent Title="Pogoda"
+                      Icon="Resources/Images/osoba.svg"
+                      ContentTemplate="{DataTemplate local:Pages.WeatherPage}" />
     </TabBar>
 
 </Shell>

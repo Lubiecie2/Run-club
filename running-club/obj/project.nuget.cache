@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "X0UQ2eOXRcs=",
+  "dgSpecHash": "swfdmcKNhvM=",
   "success": true,
   "projectFilePath": "C:\\Users\\kgruc\\OneDrive\\Pulpit\\Run\\running-club\\running-club\\running-club.csproj",
   "expectedPackageFiles": [
@@ -143,6 +143,7 @@
     "C:\\Users\\kgruc\\.nuget\\packages\\system.net.nameresolution\\4.3.0\\system.net.nameresolution.4.3.0.nupkg.sha512",
     "C:\\Users\\kgruc\\.nuget\\packages\\system.net.primitives\\4.3.0\\system.net.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\kgruc\\.nuget\\packages\\system.net.sockets\\4.3.0\\system.net.sockets.4.3.0.nupkg.sha512",
+    "C:\\Users\\kgruc\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\kgruc\\.nuget\\packages\\system.objectmodel\\4.3.0\\system.objectmodel.4.3.0.nupkg.sha512",
     "C:\\Users\\kgruc\\.nuget\\packages\\system.private.uri\\4.3.0\\system.private.uri.4.3.0.nupkg.sha512",
     "C:\\Users\\kgruc\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",
@@ -255,6 +256,7 @@
     "C:\\Users\\kgruc\\.nuget\\packages\\xamarin.androidx.viewpager2\\1.0.0.21\\xamarin.androidx.viewpager2.1.0.0.21.nupkg.sha512",
     "C:\\Users\\kgruc\\.nuget\\packages\\xamarin.androidx.window\\1.1.0.1\\xamarin.androidx.window.1.1.0.1.nupkg.sha512",
     "C:\\Users\\kgruc\\.nuget\\packages\\xamarin.androidx.window.extensions.core.core\\1.0.0.1\\xamarin.androidx.window.extensions.core.core.1.0.0.1.nupkg.sha512",
+    "C:\\Users\\kgruc\\.nuget\\packages\\xamarin.essentials\\1.8.1\\xamarin.essentials.1.8.1.nupkg.sha512",
     "C:\\Users\\kgruc\\.nuget\\packages\\xamarin.google.android.material\\1.9.0.2\\xamarin.google.android.material.1.9.0.2.nupkg.sha512",
     "C:\\Users\\kgruc\\.nuget\\packages\\xamarin.google.code.findbugs.jsr305\\3.0.2.9\\xamarin.google.code.findbugs.jsr305.3.0.2.9.nupkg.sha512",
     "C:\\Users\\kgruc\\.nuget\\packages\\xamarin.google.crypto.tink.android\\1.10.0\\xamarin.google.crypto.tink.android.1.10.0.nupkg.sha512",

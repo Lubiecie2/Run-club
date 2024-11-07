@@ -28,5 +28,16 @@
 	</array>
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/appicon.appiconset</string>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeName</key>
+			<string>Typ dokumentu nr 1</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeName</key>
+			<string>Typ dokumentu nr 2</string>
+		</dict>
+	</array>
 </dict>
 </plist>

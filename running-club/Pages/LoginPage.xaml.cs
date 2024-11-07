@@ -1,63 +1,76 @@
-namespace running_club.Pages;
+using Microsoft.Maui.Controls;
 
-public partial class LoginPage : ContentPage
+namespace running_club.Pages
 {
-
-    private FirebaseAuthService _authService;
-
-    public LoginPage()
-	{
-        InitializeComponent();
-        _authService = new FirebaseAuthService();
-
-        var tapGestureRecognizer = new TapGestureRecognizer();
-        tapGestureRecognizer.Tapped += OnRegisterLabelTapped;
-        RegisterLabel.GestureRecognizers.Add(tapGestureRecognizer);
-    }
-
-    private async void OnRegisterLabelTapped(object sender, EventArgs e)
+    public partial class LoginPage : ContentPage
     {
-        
-        await Navigation.PushAsync(new RegisterPage());
-    }
+        private FirebaseAuthService _authService;
 
-    private async void OnLoginButtonClicked(object sender, EventArgs e)
-    {
-        string email = EmailEntry.Text;
-        string password = PasswordEntry.Text;
-
-        ErrorLabel.Text = string.Empty;
-
-        
-        string result = await _authService.SignInWithEmailAndPasswordAsync(email, password);
-
-      
-        if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))
+        public LoginPage()
         {
-            ErrorLabel.Text = "Proszê wprowadziæ Email i Has³o!";
-            return;
+            InitializeComponent();
+            _authService = new FirebaseAuthService();
+
+            var tapGestureRecognizer = new TapGestureRecognizer();
+            tapGestureRecognizer.Tapped += OnRegisterLabelTapped;
+            RegisterLabel.GestureRecognizers.Add(tapGestureRecognizer);
+
+           
+            MessagingCenter.Subscribe<string>(this, "Logout", (sender) =>
+            {
+                ClearForm(); 
+            });
         }
 
-        if (!string.IsNullOrEmpty(result) && result.StartsWith("Error"))
+        private async void OnRegisterLabelTapped(object sender, EventArgs e)
         {
-         
-            if (result.Contains("invalid-email"))
+            await Navigation.PushAsync(new RegisterPage());
+        }
+
+        private async void OnLoginButtonClicked(object sender, EventArgs e)
+        {
+            string email = EmailEntry.Text;
+            string password = PasswordEntry.Text;
+
+            ErrorLabel.Text = string.Empty;
+
+           
+            string result = await _authService.SignInWithEmailAndPasswordAsync(email, password);
+
+            if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))
             {
-                ErrorLabel.Text = "Z³y mail!";
+                ErrorLabel.Text = "Proszê wprowadziæ Email i Has³o!";
+                return;
             }
-            else if (result.Contains("wrong-password"))
+
+            if (!string.IsNullOrEmpty(result) && result.StartsWith("Error"))
             {
-                ErrorLabel.Text = "B³êdne has³o!";
+              
+                if (result.Contains("invalid-email"))
+                {
+                    ErrorLabel.Text = "Z³y mail!";
+                }
+                else if (result.Contains("wrong-password"))
+                {
+                    ErrorLabel.Text = "B³êdne has³o!";
+                }
+                else
+                {
+                    ErrorLabel.Text = "B³êdny Email lub Has³o!";
+                }
             }
             else
             {
-                ErrorLabel.Text = "B³êdny Email lub Has³o!"; 
+               
+                await Shell.Current.GoToAsync("//Home");
             }
         }
-        else
-        {
 
-            await Shell.Current.GoToAsync("//Home");
+        private void ClearForm()
+        {
+           
+            EmailEntry.Text = string.Empty;
+            PasswordEntry.Text = string.Empty; 
         }
     }
 }
