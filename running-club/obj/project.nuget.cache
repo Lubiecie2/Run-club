@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "swfdmcKNhvM=",
+  "dgSpecHash": "MVqzbrDUaOw=",
   "success": true,
   "projectFilePath": "C:\\Users\\kgruc\\OneDrive\\Pulpit\\Run\\running-club\\running-club\\running-club.csproj",
   "expectedPackageFiles": [
@@ -37,8 +37,8 @@
     "C:\\Users\\kgruc\\.nuget\\packages\\microsoft.maui.controls.core\\8.0.82\\microsoft.maui.controls.core.8.0.82.nupkg.sha512",
     "C:\\Users\\kgruc\\.nuget\\packages\\microsoft.maui.controls.xaml\\8.0.82\\microsoft.maui.controls.xaml.8.0.82.nupkg.sha512",
     "C:\\Users\\kgruc\\.nuget\\packages\\microsoft.maui.core\\8.0.82\\microsoft.maui.core.8.0.82.nupkg.sha512",
-    "C:\\Users\\kgruc\\.nuget\\packages\\microsoft.maui.essentials\\8.0.82\\microsoft.maui.essentials.8.0.82.nupkg.sha512",
-    "C:\\Users\\kgruc\\.nuget\\packages\\microsoft.maui.graphics\\8.0.82\\microsoft.maui.graphics.8.0.82.nupkg.sha512",
+    "C:\\Users\\kgruc\\.nuget\\packages\\microsoft.maui.essentials\\8.0.93\\microsoft.maui.essentials.8.0.93.nupkg.sha512",
+    "C:\\Users\\kgruc\\.nuget\\packages\\microsoft.maui.graphics\\8.0.93\\microsoft.maui.graphics.8.0.93.nupkg.sha512",
     "C:\\Users\\kgruc\\.nuget\\packages\\microsoft.maui.graphics.win2d.winui.desktop\\8.0.82\\microsoft.maui.graphics.win2d.winui.desktop.8.0.82.nupkg.sha512",
     "C:\\Users\\kgruc\\.nuget\\packages\\microsoft.maui.resizetizer\\8.0.82\\microsoft.maui.resizetizer.8.0.82.nupkg.sha512",
     "C:\\Users\\kgruc\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.10\\microsoft.net.illink.tasks.8.0.10.nupkg.sha512",
@@ -46,7 +46,7 @@
     "C:\\Users\\kgruc\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\kgruc\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\kgruc\\.nuget\\packages\\microsoft.windows.sdk.buildtools\\10.0.22621.756\\microsoft.windows.sdk.buildtools.10.0.22621.756.nupkg.sha512",
-    "C:\\Users\\kgruc\\.nuget\\packages\\microsoft.windowsappsdk\\1.5.240627000\\microsoft.windowsappsdk.1.5.240627000.nupkg.sha512",
+    "C:\\Users\\kgruc\\.nuget\\packages\\microsoft.windowsappsdk\\1.5.240802000\\microsoft.windowsappsdk.1.5.240802000.nupkg.sha512",
     "C:\\Users\\kgruc\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\kgruc\\.nuget\\packages\\nettopologysuite\\2.5.0\\nettopologysuite.2.5.0.nupkg.sha512",
     "C:\\Users\\kgruc\\.nuget\\packages\\nettopologysuite.features\\2.1.0\\nettopologysuite.features.2.1.0.nupkg.sha512",

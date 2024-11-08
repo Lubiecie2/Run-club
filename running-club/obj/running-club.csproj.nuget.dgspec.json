@@ -86,6 +86,10 @@
               "target": "Package",
               "version": "[8.0.82, )"
             },
+            "Microsoft.Maui.Essentials": {
+              "target": "Package",
+              "version": "[8.0.93, )"
+            },
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
@@ -145,6 +149,10 @@
               "target": "Package",
               "version": "[8.0.82, )"
             },
+            "Microsoft.Maui.Essentials": {
+              "target": "Package",
+              "version": "[8.0.93, )"
+            },
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
@@ -203,6 +211,10 @@
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
               "version": "[8.0.82, )"
+            },
+            "Microsoft.Maui.Essentials": {
+              "target": "Package",
+              "version": "[8.0.93, )"
             },
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
@@ -264,6 +276,10 @@
               "target": "Package",
               "version": "[8.0.82, )"
             },
+            "Microsoft.Maui.Essentials": {
+              "target": "Package",
+              "version": "[8.0.93, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
@@ -314,7 +330,7 @@
         "android-x86": {
           "#import": []
         },
-        "iossimulator-x64": {
+        "ios-arm64": {
           "#import": []
         },
         "maccatalyst-x64": {

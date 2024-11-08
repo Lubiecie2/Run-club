@@ -6,13 +6,14 @@
 
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="2*"/>
         </Grid.RowDefinitions>
 
         <!-- Etykieta wyświetlająca czas -->
@@ -24,8 +25,17 @@
                Grid.Row="0" 
                Grid.ColumnSpan="3"/>
 
+        <!-- Etykieta wyświetlająca liczbę kroków -->
+        <Label x:Name="StepCountLabel"
+               Text="{Binding StepCount}" 
+               FontSize="24" 
+               HorizontalOptions="Center" 
+               VerticalOptions="Center" 
+               Grid.Row="1" 
+               Grid.ColumnSpan="3"/>
+
         <!-- Widok mapy Mapsui -->
-        <mapsui:MapView x:Name="MyMapView" Grid.Row="1" Grid.ColumnSpan="3"/>
+        <mapsui:MapView x:Name="MyMapView" Grid.Row="2" Grid.ColumnSpan="3"/>
 
         <!-- Przyciski sterujące -->
         <Button x:Name="StartStopButton" 
@@ -34,11 +44,10 @@
                 HorizontalOptions="Center" 
                 VerticalOptions="End" 
                 Margin="0,0,0,40" 
-                Grid.Row="1"
+                Grid.Row="2"
                 Grid.Column="1"
                 BackgroundColor="black"
                 WidthRequest="100"
                 HeightRequest="50"/>
     </Grid>
-
 </ContentPage>
