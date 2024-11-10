@@ -22,16 +22,17 @@ public partial class HomePage : ContentPage
     private IDispatcherTimer timer;
     private int stepsCount = 0;
     private double distance = 0.0;
-    private double caloriesBurned = 0.0; // Licznik spalonych kalorii
+    private double caloriesBurned = 0.0;
+    private double speed = 0.0; // Prêdkoœæ u¿ytkownika
     private bool isTracking = false;
 
-    // Parametry dla detekcji kroków
     private const double StepThreshold = 1.2;
     private const int StepCooldown = 300;
-    private const double StepLength = 0.78;      // Œrednia d³ugoœæ kroku w metrach
-    private const double CaloriesPerMeter = 0.062; // Sta³a: 0.05 kcal na metr
+    private const double StepLength = 0.78;
+    private const double CaloriesPerMeter = 0.05;
 
     private DateTime _lastStepTime = DateTime.MinValue;
+    private DateTime _startTime = DateTime.MinValue; // Czas rozpoczêcia treningu
 
     public HomePage()
     {
@@ -61,7 +62,9 @@ public partial class HomePage : ContentPage
     private void OnTimerTick(object sender, EventArgs e)
     {
         TimerLabel.Text = stopwatch.Elapsed.ToString(@"mm\:ss");
-        UpdateCalories(); // Aktualizacja spalonych kalorii
+        UpdateDistance();
+        UpdateCalories();
+        UpdateAveragePace(); // Zaktualizowanie tempa
     }
 
     private void OnStartStopButtonClicked(object sender, EventArgs e)
@@ -82,6 +85,7 @@ public partial class HomePage : ContentPage
             StartStopButton.Text = "Wstrzymaj";
             isTracking = true;
 
+            _startTime = DateTime.Now; // Zapisz czas rozpoczêcia treningu
             ((PedometerViewModel)BindingContext).StartCommand.Execute(null);
         }
     }
@@ -158,7 +162,7 @@ public partial class HomePage : ContentPage
                     StepCountLabel.Text = stepsCount.ToString();
                     _lastStepTime = DateTime.Now;
 
-                    UpdateDistance(); // Aktualizacja przebytego dystansu
+                    UpdateDistance();
                 }
             }
         }
@@ -170,11 +174,25 @@ public partial class HomePage : ContentPage
         DistanceLabel.Text = $"{distance / 1000:F2} km";
     }
 
-    // Metoda do aktualizowania liczby spalonych kalorii
     private void UpdateCalories()
     {
-        caloriesBurned = distance * CaloriesPerMeter; // Obliczenie spalonych kalorii na podstawie dystansu
-        CaloriesLabel.Text = $"{caloriesBurned:F2} kcal"; // Wyœwietlenie liczby spalonych kalorii z dok³adnoœci¹ do dwóch miejsc po przecinku
+        caloriesBurned = distance * CaloriesPerMeter;
+        CaloriesLabel.Text = $"{caloriesBurned:F2} kcal";
+    }
+
+    private void UpdateAveragePace()
+    {
+        if (distance > 0 && _startTime != DateTime.MinValue)
+        {
+            // Obliczanie œredniego tempa na podstawie ca³kowitego czasu i przebytego dystansu
+            TimeSpan elapsedTime = DateTime.Now - _startTime; // Czas treningu
+            double paceInMinutesPerKm = (elapsedTime.TotalMinutes / (distance / 1000)); // min/km
+
+            // Formatowanie tempa w minutach i sekundach
+            int minutes = (int)paceInMinutesPerKm;
+            int seconds = (int)((paceInMinutesPerKm - minutes) * 60);
+
+            PaceLabel.Text = $"{minutes:D2}:{seconds:D2} min/km";
+        }
     }
 }
-
