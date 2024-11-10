@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:mapsui="clr-namespace:Mapsui.UI.Maui;assembly=Mapsui.UI.Maui"
-             x:Class="running_club.Pages.HomePage">
+    x:Class="running_club.Pages.HomePage">
+
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -13,7 +14,9 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <!-- Druga połowa dostępnej przestrzeni -->
         </Grid.RowDefinitions>
 
         <!-- Etykieta wyświetlająca czas -->
@@ -34,8 +37,31 @@
                Grid.Row="1" 
                Grid.ColumnSpan="3"/>
 
-        <!-- Widok mapy Mapsui -->
-        <mapsui:MapView x:Name="MyMapView" Grid.Row="2" Grid.ColumnSpan="3"/>
+        <!-- Etykieta wyświetlająca tekst "Przebyty dystans:" -->
+        <Label x:Name="DistanceLabel"
+           Text="Dystans: 0.00 km"
+           FontSize="24"
+           HorizontalOptions="Center" />
+
+        <!-- Etykieta wyświetlająca przebyty dystans -->
+        <Label Text="{Binding TotalDistance, StringFormat='{0:F2} km'}"
+               FontSize="32"
+               HorizontalOptions="Center" 
+               Grid.Row="3" 
+               Grid.ColumnSpan="3"/>
+
+        <Label x:Name="CaloriesLabel"
+               Text="0.00 kcal"
+               FontSize="24"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"
+               TextColor="Black"/>
+        <!-- Widok mapy Mapsui - zajmujący połowę dostępnej przestrzeni -->
+        <mapsui:MapView x:Name="MyMapView" 
+                        Grid.Row="4" 
+                        Grid.ColumnSpan="3"
+                        HeightRequest="300" 
+                        />
 
         <!-- Przyciski sterujące -->
         <Button x:Name="StartStopButton" 
@@ -44,7 +70,7 @@
                 HorizontalOptions="Center" 
                 VerticalOptions="End" 
                 Margin="0,0,0,40" 
-                Grid.Row="2"
+                Grid.Row="5"
                 Grid.Column="1"
                 BackgroundColor="black"
                 WidthRequest="100"

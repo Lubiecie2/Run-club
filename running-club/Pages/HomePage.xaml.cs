@@ -18,19 +18,19 @@ namespace running_club.Pages;
 
 public partial class HomePage : ContentPage
 {
-    // Inicjalizacja Stopwatch
     private Stopwatch stopwatch = new Stopwatch();
-
-    // Inicjalizacja DispatcherTimer do aktualizowania czasu na UI
     private IDispatcherTimer timer;
-
-    // Zmienna do liczenia kroków
     private int stepsCount = 0;
-    private bool isTracking = false; // Okreœla, czy pedometr jest uruchomiony
+    private double distance = 0.0;
+    private double caloriesBurned = 0.0; // Licznik spalonych kalorii
+    private bool isTracking = false;
 
     // Parametry dla detekcji kroków
-    private const double StepThreshold = 1.2; // Próg wykrycia kroku
-    private const int StepCooldown = 300;     // Czas miêdzy krokami w milisekundach
+    private const double StepThreshold = 1.2;
+    private const int StepCooldown = 300;
+    private const double StepLength = 0.78;      // Œrednia d³ugoœæ kroku w metrach
+    private const double CaloriesPerMeter = 0.062; // Sta³a: 0.05 kcal na metr
+
     private DateTime _lastStepTime = DateTime.MinValue;
 
     public HomePage()
@@ -39,68 +39,57 @@ public partial class HomePage : ContentPage
 
         BindingContext = new PedometerViewModel();
 
-        // Timer do aktualizowania czasu na ekranie
         timer = Dispatcher.CreateTimer();
-        timer.Interval = TimeSpan.FromMilliseconds(100); // Odœwie¿anie co 100 ms
+        timer.Interval = TimeSpan.FromMilliseconds(100);
         timer.Tick += OnTimerTick;
 
-        // Ustawienie Ÿród³a mapy na OpenStreetMap
         var tileLayer = OpenStreetMap.CreateTileLayer();
         MyMapView.Map = new Mapsui.Map
         {
             Layers = { tileLayer }
         };
 
-        // Automatyczne pobranie lokalizacji po wejœciu na stronê
         LoadLocationAsync();
 
         MyMapView.IsMyLocationButtonVisible = false;
         MyMapView.IsNorthingButtonVisible = false;
         MyMapView.IsZoomButtonVisible = false;
 
-        // Sprawdzanie i ¿¹danie uprawnieñ do sensorów
         RequestPermissions();
     }
 
-    // Aktualizowanie wyœwietlanego czasu
     private void OnTimerTick(object sender, EventArgs e)
     {
         TimerLabel.Text = stopwatch.Elapsed.ToString(@"mm\:ss");
+        UpdateCalories(); // Aktualizacja spalonych kalorii
     }
 
-    // Obs³uga klikniêcia przycisku Start/Zakoñcz
     private void OnStartStopButtonClicked(object sender, EventArgs e)
     {
         if (stopwatch.IsRunning)
         {
-            // Zatrzymaj stoper
             stopwatch.Stop();
             timer.Stop();
-            StartStopButton.Text = "Start"; // Zmieñ tekst przycisku na "Start"
+            StartStopButton.Text = "Start";
             isTracking = false;
 
-            // Zatrzymanie liczenia kroków w modelu widoku
             ((PedometerViewModel)BindingContext).StopCommand.Execute(null);
         }
         else
         {
-            // Uruchom stoper
             stopwatch.Start();
             timer.Start();
-            StartStopButton.Text = "Wstrzymaj"; // Zmieñ tekst przycisku na "Wstrzymaj"
+            StartStopButton.Text = "Wstrzymaj";
             isTracking = true;
 
-            // Rozpoczêcie liczenia kroków w modelu widoku
             ((PedometerViewModel)BindingContext).StartCommand.Execute(null);
         }
     }
 
-    // Pobranie bie¿¹cej lokalizacji i ustawienie mapy
     private async Task LoadLocationAsync()
     {
         try
         {
-            // Sprawdzenie uprawnieñ i pobranie bie¿¹cej lokalizacji
             var location = await Geolocation.GetLocationAsync();
 
             if (location == null)
@@ -114,15 +103,12 @@ public partial class HomePage : ContentPage
 
             if (location != null)
             {
-                // Przekszta³cenie lokalizacji na wspó³rzêdne mapy
                 var centerOfLocation = new MPoint(location.Longitude, location.Latitude);
                 var sphericalMercatorCoordinate = SphericalMercator.FromLonLat(centerOfLocation.X, centerOfLocation.Y).ToMPoint();
                 var position = new Position(location.Latitude, location.Longitude);
 
-                // Ustawienie mapy na bie¿¹cej lokalizacji
                 MyMapView.Map.Navigator.CenterOnAndZoomTo(sphericalMercatorCoordinate, MyMapView.Map.Navigator.Resolutions[16]);
 
-                // Dodanie markera lub aktualizacja pozycji u¿ytkownika (jeœli MyLocationLayer jest u¿ywana)
                 MyMapView.MyLocationLayer.UpdateMyLocation(position);
             }
         }
@@ -132,19 +118,15 @@ public partial class HomePage : ContentPage
         }
     }
 
-    // Funkcja do obs³ugi pedometru
     private void RequestPermissions()
     {
-        // Sprawdzamy uprawnienia do sensorów
         if (DeviceInfo.Platform == DevicePlatform.Android || DeviceInfo.Platform == DevicePlatform.iOS)
         {
-            // Sprawdzanie uprawnieñ do odczytu sensorów kroków
             Permissions.RequestAsync<Permissions.Sensors>();
             StartStepCounter();
         }
     }
 
-    // Rozpoczêcie liczenia kroków
     private void StartStepCounter()
     {
         if (Accelerometer.IsSupported)
@@ -158,7 +140,6 @@ public partial class HomePage : ContentPage
         }
     }
 
-    // Obs³uga odczytu kroków
     private void Accelerometer_ReadingChanged(object sender, AccelerometerChangedEventArgs e)
     {
         if (isTracking)
@@ -169,17 +150,31 @@ public partial class HomePage : ContentPage
                 Math.Pow(reading.Acceleration.Y, 2) +
                 Math.Pow(reading.Acceleration.Z, 2));
 
-            // Sprawdzenie, czy przyspieszenie przekroczy³o próg wykrycia kroku
             if (totalAcceleration > StepThreshold)
             {
-                // Ograniczenie liczby kroków przez czas, aby nie liczono ich wielokrotnie w tym samym czasie
                 if ((DateTime.Now - _lastStepTime).TotalMilliseconds > StepCooldown)
                 {
                     stepsCount++;
-                    StepCountLabel.Text = stepsCount.ToString(); // Zaktualizuj liczbê kroków na ekranie
-                    _lastStepTime = DateTime.Now; // Zaktualizuj czas ostatniego wykrycia kroku
+                    StepCountLabel.Text = stepsCount.ToString();
+                    _lastStepTime = DateTime.Now;
+
+                    UpdateDistance(); // Aktualizacja przebytego dystansu
                 }
             }
         }
     }
+
+    private void UpdateDistance()
+    {
+        distance = stepsCount * StepLength;
+        DistanceLabel.Text = $"{distance / 1000:F2} km";
+    }
+
+    // Metoda do aktualizowania liczby spalonych kalorii
+    private void UpdateCalories()
+    {
+        caloriesBurned = distance * CaloriesPerMeter; // Obliczenie spalonych kalorii na podstawie dystansu
+        CaloriesLabel.Text = $"{caloriesBurned:F2} kcal"; // Wyœwietlenie liczby spalonych kalorii z dok³adnoœci¹ do dwóch miejsc po przecinku
+    }
 }
+
