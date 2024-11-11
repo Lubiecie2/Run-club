@@ -25,6 +25,7 @@ public partial class HomePage : ContentPage
     private double caloriesBurned = 0.0;
     private double speed = 0.0; // Prêdkoœæ u¿ytkownika
     private bool isTracking = false;
+    private IDispatcherTimer locationUpdateTimer; // Timer do aktualizacji lokalizacji
 
     private const double StepThreshold = 1.2;
     private const int StepCooldown = 300;
@@ -33,7 +34,6 @@ public partial class HomePage : ContentPage
 
     private DateTime _lastStepTime = DateTime.MinValue;
     private DateTime _startTime = DateTime.MinValue; // Czas rozpoczêcia treningu
-
     private DateTime _lastUpdateTime = DateTime.MinValue; // Zmienna do przechowywania czasu ostatniej aktualizacji
 
     public HomePage()
@@ -93,7 +93,9 @@ public partial class HomePage : ContentPage
             TimerLabel.Text = "00:00";
             PaceLabel.Text = "00:00 min/km";
 
-            // Wykonanie komendy zatrzymania w ViewModelu (jeœli jest potrzebna)
+            // Zatrzymanie aktualizacji lokalizacji
+            StopLocationUpdates();
+
             ((PedometerViewModel)BindingContext).StopCommand.Execute(null);
         }
         else
@@ -106,9 +108,49 @@ public partial class HomePage : ContentPage
 
             _startTime = DateTime.Now; // Zapisz czas rozpoczêcia treningu
             ((PedometerViewModel)BindingContext).StartCommand.Execute(null);
+
+            // Rozpoczêcie aktualizacji lokalizacji
+            StartLocationUpdates();
         }
     }
 
+    private void StartLocationUpdates()
+    {
+        locationUpdateTimer = Dispatcher.CreateTimer();
+        locationUpdateTimer.Interval = TimeSpan.FromSeconds(1); // Aktualizacja co sekundê
+        locationUpdateTimer.Tick += async (s, e) =>
+        {
+            var location = await Geolocation.GetLocationAsync(new GeolocationRequest
+            {
+                DesiredAccuracy = GeolocationAccuracy.Best,
+                Timeout = TimeSpan.FromSeconds(5)
+            });
+
+            if (location != null)
+            {
+                UpdateMapLocation(location);
+            }
+        };
+        locationUpdateTimer.Start();
+    }
+
+    private void StopLocationUpdates()
+    {
+        locationUpdateTimer?.Stop();
+        locationUpdateTimer = null;
+    }
+
+    private void UpdateMapLocation(Location location)
+    {
+        if (location == null) return;
+
+        var position = new Position(location.Latitude, location.Longitude);
+        var sphericalMercatorCoordinate = SphericalMercator.FromLonLat(location.Longitude, location.Latitude).ToMPoint();
+
+        // Ustawiamy now¹ pozycjê na mapie
+        MyMapView.Map.Navigator.CenterOn(sphericalMercatorCoordinate);
+        MyMapView.MyLocationLayer.UpdateMyLocation(position);
+    }
 
     private async Task LoadLocationAsync()
     {
@@ -127,12 +169,10 @@ public partial class HomePage : ContentPage
 
             if (location != null)
             {
-                var centerOfLocation = new MPoint(location.Longitude, location.Latitude);
-                var sphericalMercatorCoordinate = SphericalMercator.FromLonLat(centerOfLocation.X, centerOfLocation.Y).ToMPoint();
                 var position = new Position(location.Latitude, location.Longitude);
+                var sphericalMercatorCoordinate = SphericalMercator.FromLonLat(location.Longitude, location.Latitude).ToMPoint();
 
                 MyMapView.Map.Navigator.CenterOnAndZoomTo(sphericalMercatorCoordinate, MyMapView.Map.Navigator.Resolutions[16]);
-
                 MyMapView.MyLocationLayer.UpdateMyLocation(position);
             }
         }
