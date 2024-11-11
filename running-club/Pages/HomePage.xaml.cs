@@ -34,6 +34,8 @@ public partial class HomePage : ContentPage
     private DateTime _lastStepTime = DateTime.MinValue;
     private DateTime _startTime = DateTime.MinValue; // Czas rozpoczêcia treningu
 
+    private DateTime _lastUpdateTime = DateTime.MinValue; // Zmienna do przechowywania czasu ostatniej aktualizacji
+
     public HomePage()
     {
         InitializeComponent();
@@ -71,16 +73,33 @@ public partial class HomePage : ContentPage
     {
         if (stopwatch.IsRunning)
         {
+            // Zatrzymanie stopera i timera
             stopwatch.Stop();
             timer.Stop();
             StartStopButton.Text = "Start";
             isTracking = false;
 
+            // Resetowanie wartoœci po naciœniêciu "Wstrzymaj"
+            stepsCount = 0;
+            distance = 0.0;
+            caloriesBurned = 0.0;
+            _startTime = DateTime.MinValue;
+            _lastUpdateTime = DateTime.MinValue;
+
+            // Aktualizacja wyœwietlanych wartoœci
+            StepCountLabel.Text = "0";
+            DistanceLabel.Text = "0.00 km";
+            CaloriesLabel.Text = "0.00 kcal";
+            TimerLabel.Text = "00:00";
+            PaceLabel.Text = "00:00 min/km";
+
+            // Wykonanie komendy zatrzymania w ViewModelu (jeœli jest potrzebna)
             ((PedometerViewModel)BindingContext).StopCommand.Execute(null);
         }
         else
         {
-            stopwatch.Start();
+            // Uruchomienie stopera i timera
+            stopwatch.Restart();
             timer.Start();
             StartStopButton.Text = "Wstrzymaj";
             isTracking = true;
@@ -89,6 +108,7 @@ public partial class HomePage : ContentPage
             ((PedometerViewModel)BindingContext).StartCommand.Execute(null);
         }
     }
+
 
     private async Task LoadLocationAsync()
     {
@@ -184,15 +204,22 @@ public partial class HomePage : ContentPage
     {
         if (distance > 0 && _startTime != DateTime.MinValue)
         {
-            // Obliczanie œredniego tempa na podstawie ca³kowitego czasu i przebytego dystansu
-            TimeSpan elapsedTime = DateTime.Now - _startTime; // Czas treningu
-            double paceInMinutesPerKm = (elapsedTime.TotalMinutes / (distance / 1000)); // min/km
+            // SprawdŸ, czy minê³y 3 sekundy od ostatniej aktualizacji
+            if ((DateTime.Now - _lastUpdateTime).TotalSeconds >= 3)
+            {
+                // Zaktualizuj czas ostatniej aktualizacji
+                _lastUpdateTime = DateTime.Now;
 
-            // Formatowanie tempa w minutach i sekundach
-            int minutes = (int)paceInMinutesPerKm;
-            int seconds = (int)((paceInMinutesPerKm - minutes) * 60);
+                // Obliczanie œredniego tempa na podstawie ca³kowitego czasu i przebytego dystansu
+                TimeSpan elapsedTime = DateTime.Now - _startTime; // Czas treningu
+                double paceInMinutesPerKm = (elapsedTime.TotalMinutes / (distance / 1000)); // min/km
 
-            PaceLabel.Text = $"{minutes:D2}:{seconds:D2} min/km";
+                // Formatowanie tempa w minutach i sekundach
+                int minutes = (int)paceInMinutesPerKm;
+                int seconds = (int)((paceInMinutesPerKm - minutes) * 60);
+
+                PaceLabel.Text = $"{minutes:D2}:{seconds:D2} min/km";
+            }
         }
     }
 }
