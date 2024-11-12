@@ -3,7 +3,7 @@
              xmlns:mapsui="clr-namespace:Mapsui.UI.Maui;assembly=Mapsui.UI.Maui"
              x:Class="running_club.Pages.HomePage">
 
-    <Grid RowDefinitions="*,*"> <!-- Dwie równe sekcje w pionie -->
+    <Grid RowDefinitions="*,*" Padding="20">
 
         <!-- Górna połowa ekranu -->
         <StackLayout Grid.Row="0" Padding="20" Spacing="15" HorizontalOptions="CenterAndExpand">
@@ -33,11 +33,14 @@
             </StackLayout>
 
             <!-- Przyciski sterujące -->
-            <Button x:Name="StartStopButton" Text="Start" Clicked="OnStartStopButtonClicked" HorizontalOptions="Center"/>
+            <StackLayout Orientation="Horizontal" Spacing="15" HorizontalOptions="Center">
+                <Button x:Name="StartStopButton" Text="Start" Clicked="OnStartStopButtonClicked"/>
+                <Button x:Name="FinishButton" Text="Zakończ" Clicked="OnFinishButtonClicked" IsVisible="False"/>
+            </StackLayout>
         </StackLayout>
 
         <!-- Dolna połowa ekranu - Mapa -->
         <mapsui:MapView x:Name="MyMapView" Grid.Row="1"/>
-        
+
     </Grid>
 </ContentPage>

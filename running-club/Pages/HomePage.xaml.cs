@@ -23,9 +23,10 @@ public partial class HomePage : ContentPage
     private int stepsCount = 0;
     private double distance = 0.0;
     private double caloriesBurned = 0.0;
-    private double speed = 0.0; // Prêdkoœæ u¿ytkownika
+    private double speed = 0.0;
     private bool isTracking = false;
-    private IDispatcherTimer locationUpdateTimer; // Timer do aktualizacji lokalizacji
+    private bool isPaused = false; // Dodana flaga do œledzenia pauzy
+    private IDispatcherTimer locationUpdateTimer;
 
     private const double StepThreshold = 1.2;
     private const int StepCooldown = 300;
@@ -33,8 +34,8 @@ public partial class HomePage : ContentPage
     private const double CaloriesPerMeter = 0.05;
 
     private DateTime _lastStepTime = DateTime.MinValue;
-    private DateTime _startTime = DateTime.MinValue; // Czas rozpoczêcia treningu
-    private DateTime _lastUpdateTime = DateTime.MinValue; // Zmienna do przechowywania czasu ostatniej aktualizacji
+    private DateTime _startTime = DateTime.MinValue;
+    private DateTime _lastUpdateTime = DateTime.MinValue;
 
     public HomePage()
     {
@@ -59,65 +60,92 @@ public partial class HomePage : ContentPage
         MyMapView.IsZoomButtonVisible = false;
 
         RequestPermissions();
+
+        // Dodanie obs³ugi widocznoœci przycisków
+        UpdateButtons();
     }
 
     private void OnTimerTick(object sender, EventArgs e)
     {
-        TimerLabel.Text = stopwatch.Elapsed.ToString(@"mm\:ss");
-        UpdateDistance();
-        UpdateCalories();
-        UpdateAveragePace(); // Zaktualizowanie tempa
+        if (!isPaused)
+        {
+            TimerLabel.Text = stopwatch.Elapsed.ToString(@"mm\:ss");
+            UpdateDistance();
+            UpdateCalories();
+            UpdateAveragePace();
+        }
     }
 
     private void OnStartStopButtonClicked(object sender, EventArgs e)
     {
-        if (stopwatch.IsRunning)
+        if (stopwatch.IsRunning && !isPaused)
         {
-            // Zatrzymanie stopera i timera
+            // Zatrzymanie stopera i zmiana statusu na pauzowany
             stopwatch.Stop();
             timer.Stop();
-            StartStopButton.Text = "Start";
-            isTracking = false;
-
-            // Resetowanie wartoœci po naciœniêciu "Wstrzymaj"
-            stepsCount = 0;
-            distance = 0.0;
-            caloriesBurned = 0.0;
-            _startTime = DateTime.MinValue;
-            _lastUpdateTime = DateTime.MinValue;
-
-            // Aktualizacja wyœwietlanych wartoœci
-            StepCountLabel.Text = "0";
-            DistanceLabel.Text = "0.00 km";
-            CaloriesLabel.Text = "0.00 kcal";
-            TimerLabel.Text = "00:00";
-            PaceLabel.Text = "00:00 min/km";
-
-            // Zatrzymanie aktualizacji lokalizacji
-            StopLocationUpdates();
-
-            ((PedometerViewModel)BindingContext).StopCommand.Execute(null);
+            isPaused = true;
+            UpdateButtons();
+        }
+        else if (isPaused)
+        {
+            // Wznawianie liczenia po pauzie
+            stopwatch.Start();
+            timer.Start();
+            isPaused = false;
+            UpdateButtons();
         }
         else
         {
-            // Uruchomienie stopera i timera
+            // Rozpoczêcie nowego treningu
             stopwatch.Restart();
             timer.Start();
             StartStopButton.Text = "Wstrzymaj";
             isTracking = true;
 
-            _startTime = DateTime.Now; // Zapisz czas rozpoczêcia treningu
+            _startTime = DateTime.Now;
             ((PedometerViewModel)BindingContext).StartCommand.Execute(null);
 
-            // Rozpoczêcie aktualizacji lokalizacji
             StartLocationUpdates();
+            UpdateButtons();
         }
+    }
+
+    private void OnFinishButtonClicked(object sender, EventArgs e)
+    {
+        // Resetowanie wszystkich wartoœci
+        stopwatch.Reset();
+        timer.Stop();
+        isTracking = false;
+        isPaused = false;
+        stepsCount = 0;
+        distance = 0.0;
+        caloriesBurned = 0.0;
+        _startTime = DateTime.MinValue;
+        _lastUpdateTime = DateTime.MinValue;
+
+        StepCountLabel.Text = "0";
+        DistanceLabel.Text = "0.00 km";
+        CaloriesLabel.Text = "0.00 kcal";
+        TimerLabel.Text = "00:00";
+        PaceLabel.Text = "00:00 min/km";
+
+        StopLocationUpdates();
+
+        ((PedometerViewModel)BindingContext).StopCommand.Execute(null);
+
+        UpdateButtons();
+    }
+
+    private void UpdateButtons()
+    {
+        StartStopButton.Text = stopwatch.IsRunning ? (isPaused ? "Wznów" : "Wstrzymaj") : "Start";
+        FinishButton.IsVisible = stopwatch.IsRunning || isPaused;
     }
 
     private void StartLocationUpdates()
     {
         locationUpdateTimer = Dispatcher.CreateTimer();
-        locationUpdateTimer.Interval = TimeSpan.FromSeconds(1); // Aktualizacja co sekundê
+        locationUpdateTimer.Interval = TimeSpan.FromSeconds(1);
         locationUpdateTimer.Tick += async (s, e) =>
         {
             var location = await Geolocation.GetLocationAsync(new GeolocationRequest
@@ -147,7 +175,6 @@ public partial class HomePage : ContentPage
         var position = new Position(location.Latitude, location.Longitude);
         var sphericalMercatorCoordinate = SphericalMercator.FromLonLat(location.Longitude, location.Latitude).ToMPoint();
 
-        // Ustawiamy now¹ pozycjê na mapie
         MyMapView.Map.Navigator.CenterOn(sphericalMercatorCoordinate);
         MyMapView.MyLocationLayer.UpdateMyLocation(position);
     }
@@ -206,7 +233,7 @@ public partial class HomePage : ContentPage
 
     private void Accelerometer_ReadingChanged(object sender, AccelerometerChangedEventArgs e)
     {
-        if (isTracking)
+        if (isTracking && !isPaused)
         {
             var reading = e.Reading;
             var totalAcceleration = Math.Sqrt(
@@ -244,17 +271,12 @@ public partial class HomePage : ContentPage
     {
         if (distance > 0 && _startTime != DateTime.MinValue)
         {
-            // SprawdŸ, czy minê³y 3 sekundy od ostatniej aktualizacji
             if ((DateTime.Now - _lastUpdateTime).TotalSeconds >= 3)
             {
-                // Zaktualizuj czas ostatniej aktualizacji
                 _lastUpdateTime = DateTime.Now;
+                TimeSpan elapsedTime = DateTime.Now - _startTime;
+                double paceInMinutesPerKm = (elapsedTime.TotalMinutes / (distance / 1000));
 
-                // Obliczanie œredniego tempa na podstawie ca³kowitego czasu i przebytego dystansu
-                TimeSpan elapsedTime = DateTime.Now - _startTime; // Czas treningu
-                double paceInMinutesPerKm = (elapsedTime.TotalMinutes / (distance / 1000)); // min/km
-
-                // Formatowanie tempa w minutach i sekundach
                 int minutes = (int)paceInMinutesPerKm;
                 int seconds = (int)((paceInMinutesPerKm - minutes) * 60);
 
