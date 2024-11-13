@@ -110,9 +110,16 @@ public partial class HomePage : ContentPage
         }
     }
 
-    private void OnFinishButtonClicked(object sender, EventArgs e)
+    private async void OnFinishButtonClicked(object sender, EventArgs e)
     {
-        // Resetowanie wszystkich wartoœci
+        // Zapisanie wartoœci do przekazania
+        string time = stopwatch.Elapsed.ToString(@"mm\:ss");
+        int steps = stepsCount;
+        double calories = caloriesBurned;
+        string pace = PaceLabel.Text;
+        double totalDistance = distance;
+
+        // Zresetowanie wartoœci na HomePage
         stopwatch.Reset();
         timer.Stop();
         isTracking = false;
@@ -123,6 +130,7 @@ public partial class HomePage : ContentPage
         _startTime = DateTime.MinValue;
         _lastUpdateTime = DateTime.MinValue;
 
+        // Zresetowanie etykiet w HomePage
         StepCountLabel.Text = "0";
         DistanceLabel.Text = "0.00 km";
         CaloriesLabel.Text = "0.00 kcal";
@@ -130,11 +138,15 @@ public partial class HomePage : ContentPage
         PaceLabel.Text = "00:00 min/km";
 
         StopLocationUpdates();
-
         ((PedometerViewModel)BindingContext).StopCommand.Execute(null);
-
         UpdateButtons();
+
+        // Nawigacja do strony podsumowania z przekazaniem danych
+        await Navigation.PushAsync(new SummaryPage(time, steps, calories, pace, totalDistance));
     }
+
+
+
 
     private void UpdateButtons()
     {

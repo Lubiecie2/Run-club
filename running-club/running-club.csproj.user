@@ -36,6 +36,9 @@
     <MauiXaml Update="Pages\RunPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Pages\SummaryPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Pages\WeatherPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

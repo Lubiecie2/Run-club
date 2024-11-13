@@ -76,6 +76,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = running_club.Pages.RunPage
 build_metadata.AdditionalFiles.TargetPath = Pages\RunPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\RunPage.xaml
 
+[C:/Users/kgruc/OneDrive/Pulpit/Run/running-club/running-club/Pages/SummaryPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = running_club.Pages.SummaryPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\SummaryPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\SummaryPage.xaml
+
 [C:/Users/kgruc/OneDrive/Pulpit/Run/running-club/running-club/Pages/WeatherPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = running_club.Pages.WeatherPage.xaml

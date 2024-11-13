@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="running_club.Pages.SummaryPage"
+             Title="Podsumowanie treningu">
+
+    <StackLayout Padding="20">
+        <!-- Napis "Dobra robota!" -->
+        <Label x:Name="DobraRobotaLabel" Text="Dobra robota!" FontSize="32" FontAttributes="Bold" TextColor="Green" HorizontalOptions="Center" IsVisible="False"/>
+        
+        <Label Text="Podsumowanie treningu" FontSize="24" HorizontalOptions="Center" />
+        <Label Text="Czas:" FontSize="18" />
+        <Label x:Name="TimeLabel" FontSize="18" TextColor="Black" />
+
+        <Label Text="Liczba kroków:" FontSize="18" />
+        <Label x:Name="StepsLabel" FontSize="18" TextColor="Black" />
+
+        <Label Text="Spalone kalorie:" FontSize="18" />
+        <Label x:Name="CaloriesLabel" FontSize="18" TextColor="Black" />
+
+        <Label Text="Średnie tempo:" FontSize="18" />
+        <Label x:Name="PaceLabel" FontSize="18" TextColor="Black" />
+
+        <Label Text="Przebyty dystans:" FontSize="18" />
+        <Label x:Name="DistanceLabel" FontSize="18" TextColor="Black" />
+
+        <Button Text="Powrót do strony głównej" Clicked="OnBackButtonClicked" />
+    </StackLayout>
+</ContentPage>
