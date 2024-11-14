@@ -16,9 +16,20 @@ namespace running_club.Pages
             DistanceLabel.Text = distance.ToString("F2");
         }
 
+        public void ResetValues()
+        {
+            TimeLabel.Text = "00:00";
+            StepsLabel.Text = "0";
+            CaloriesLabel.Text = "0.00";
+            PaceLabel.Text = "00:00";
+            DistanceLabel.Text = "0.00 km";
+        }
+
         private async void OnBackButtonClicked(object sender, EventArgs e)
         {
             await Navigation.PopToRootAsync(); // Powrót do strony g³ównej
+
+            ResetValues();
         }
 
     }

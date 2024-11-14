@@ -59,9 +59,12 @@
 	<ItemGroup>
 	  <None Remove="Resources\Images\biegacz.svg" />
 	  <None Remove="Resources\Images\Cele.svg" />
+	  <None Remove="Resources\Images\chronometer.png" />
 	  <None Remove="Resources\Images\cloud11.png" />
 	  <None Remove="Resources\Images\cloudiness.png" />
 	  <None Remove="Resources\Images\cloudy.png" />
+	  <None Remove="Resources\Images\distance.png" />
+	  <None Remove="Resources\Images\fire.png" />
 	  <None Remove="Resources\Images\gauge.png" />
 	  <None Remove="Resources\Images\goals.svg" />
 	  <None Remove="Resources\Images\Historia.svg" />
@@ -79,6 +82,7 @@
 	  <None Remove="Resources\Images\profil.svg" />
 	  <None Remove="Resources\Images\raindrop.png" />
 	  <None Remove="Resources\Images\run.svg" />
+	  <None Remove="Resources\Images\shoes.png" />
 	  <None Remove="Resources\Images\splash.png" />
 	  <None Remove="Resources\Images\userimg.png" />
 	  <None Remove="Resources\Images\weather.png" />
@@ -89,6 +93,7 @@
 
 	<ItemGroup>
 		<PackageReference Include="FirebaseAuthentication.net" Version="3.7.2" />
+		<PackageReference Include="Google.Cloud.Firestore" Version="3.9.0" />
 		<PackageReference Include="Mapsui.Maui" Version="5.0.0-beta.3" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />

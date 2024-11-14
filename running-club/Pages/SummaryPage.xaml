@@ -1,29 +1,128 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="running_club.Pages.SummaryPage"
-             Title="Podsumowanie treningu">
+             x:Class="running_club.Pages.SummaryPage">
 
-    <StackLayout Padding="20">
-        <!-- Napis "Dobra robota!" -->
-        <Label x:Name="DobraRobotaLabel" Text="Dobra robota!" FontSize="32" FontAttributes="Bold" TextColor="Green" HorizontalOptions="Center" IsVisible="False"/>
-        
-        <Label Text="Podsumowanie treningu" FontSize="24" HorizontalOptions="Center" />
-        <Label Text="Czas:" FontSize="18" />
-        <Label x:Name="TimeLabel" FontSize="18" TextColor="Black" />
 
-        <Label Text="Liczba kroków:" FontSize="18" />
-        <Label x:Name="StepsLabel" FontSize="18" TextColor="Black" />
+    <ScrollView>
+        <!-- Dodanie ScrollView, aby umożliwić przewijanie zawartości -->
+        <StackLayout Padding="0" Spacing="0">
 
-        <Label Text="Spalone kalorie:" FontSize="18" />
-        <Label x:Name="CaloriesLabel" FontSize="18" TextColor="Black" />
+            <!-- Napis "Podsumowanie" -->
+            <Label Text="Podsumowanie: " 
+                   Margin="0,0,0,0"
+                   FontSize="24" 
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="Black"/>
 
-        <Label Text="Średnie tempo:" FontSize="18" />
-        <Label x:Name="PaceLabel" FontSize="18" TextColor="Black" />
+            <!-- Czas treningu -->
 
-        <Label Text="Przebyty dystans:" FontSize="18" />
-        <Label x:Name="DistanceLabel" FontSize="18" TextColor="Black" />
+            <Label x:Name="TimeLabel" 
+                   FontSize="30" 
+                   Margin="0,20,0,0"
+                   TextColor="Black"
+                   FontFamily="Arial"
+                   HorizontalOptions="Center" />
+            <Label Text="Czas treningu" 
+                   Margin="0,0,0,30"
+                   FontSize="18" 
+                   HorizontalOptions="Center"/>
 
-        <Button Text="Powrót do strony głównej" Clicked="OnBackButtonClicked" />
-    </StackLayout>
+            <!-- Układ 2 kolumny i 2 rzędy wartości treningowych -->
+            <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto" HorizontalOptions="Center" VerticalOptions="Center">
+                <!-- Spalone kalorie - lewa górna komórka -->
+                <StackLayout Grid.Row="0" Grid.Column="0" HorizontalOptions="Center">
+                    <Image Source="fire.png" 
+                           Margin="0,0,40,0"
+                           WidthRequest="25" 
+                           HeightRequest="25" 
+                           HorizontalOptions="Center" />
+                    <Label x:Name="CaloriesLabel" 
+                           Text="0.00" 
+                           Margin="0,0,40,0"
+                           FontSize="24" 
+                           FontAttributes="Bold" 
+                           TextColor="Black" 
+                           HorizontalOptions="Center" />
+                    <Label Text="Spalone Kcal" 
+                           FontSize="14" 
+                           Margin="0,0,40,30"
+                           TextColor="Black" 
+                           HorizontalOptions="Center" />
+                </StackLayout>
+
+                <!-- Liczba kroków - prawa górna komórka -->
+                <StackLayout Grid.Row="0" Grid.Column="1" HorizontalOptions="Center">
+                    <Image Source="shoes.png" 
+                           Margin="40,0,0,0"
+                           WidthRequest="25" 
+                           HeightRequest="25" 
+                           HorizontalOptions="Center" />
+                    <Label x:Name="StepsLabel" 
+                           Text="0" 
+                           Margin="40,0,0,0"
+                           FontSize="24" 
+                           FontAttributes="Bold" 
+                           TextColor="Black" 
+                           HorizontalOptions="Center" />
+                    <Label Text="Liczba kroków" 
+                           FontSize="14" 
+                           TextColor="Black" 
+                           Margin="40,0,0,0"
+                           HorizontalOptions="Center" />
+                </StackLayout>
+
+                <!-- Przebyty dystans - lewa dolna komórka -->
+                <StackLayout Grid.Row="1" Grid.Column="0" HorizontalOptions="Center">
+                    <Image Source="distance.png" 
+                           Margin="0,0,40,0"
+                           WidthRequest="25" 
+                           HeightRequest="25" 
+                           HorizontalOptions="Center" />
+                    <Label x:Name="DistanceLabel" 
+                           Text="0.00 km" 
+                           Margin="0,0,40,0"
+                           FontSize="24" 
+                           FontAttributes="Bold" 
+                           TextColor="Black" 
+                           HorizontalOptions="Center" />
+                    <Label Text="Dystans" 
+                           FontSize="14" 
+                           Margin="0,0,40,0"
+                           TextColor="Black" 
+                           HorizontalOptions="Center" />
+                </StackLayout>
+
+                <!-- Średnia prędkość - prawa dolna komórka -->
+                <StackLayout Grid.Row="1" Grid.Column="1" HorizontalOptions="Center">
+                    <Image Source="chronometer.png" 
+                           Margin="40,0,0,0"
+                           WidthRequest="25" 
+                           HeightRequest="25" 
+                            HorizontalOptions="Center" />
+                    <Label x:Name="PaceLabel" 
+                           Text="00:00" 
+                           Margin="40,0,0,0"
+                           FontSize="24" 
+                           FontAttributes="Bold" 
+                           TextColor="Black" 
+                           HorizontalOptions="Center" />
+                    <Label Text="Prędkość min/km" 
+                           FontSize="14" 
+                           Margin="40,0,0,0"
+                           TextColor="Black" 
+                           HorizontalOptions="Center" />
+                </StackLayout>
+            </Grid>
+
+            <!-- Przycisk powrotu do strony głównej -->
+            <Button Text="Powrót" 
+                    WidthRequest="150"
+                    Margin="0,50,0,0"
+                    Clicked="OnBackButtonClicked" 
+                    HorizontalOptions="Center" />
+        </StackLayout>
+    </ScrollView>
 </ContentPage>
+

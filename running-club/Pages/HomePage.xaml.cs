@@ -135,7 +135,7 @@ public partial class HomePage : ContentPage
         DistanceLabel.Text = "0.00 km";
         CaloriesLabel.Text = "0.00 kcal";
         TimerLabel.Text = "00:00";
-        PaceLabel.Text = "00:00 min/km";
+        PaceLabel.Text = "00:00";
 
         StopLocationUpdates();
         ((PedometerViewModel)BindingContext).StopCommand.Execute(null);
@@ -292,7 +292,7 @@ public partial class HomePage : ContentPage
                 int minutes = (int)paceInMinutesPerKm;
                 int seconds = (int)((paceInMinutesPerKm - minutes) * 60);
 
-                PaceLabel.Text = $"{minutes:D2}:{seconds:D2} min/km";
+                PaceLabel.Text = $"{minutes:D2}:{seconds:D2}";
             }
         }
     }

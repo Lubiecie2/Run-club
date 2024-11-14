@@ -74,13 +74,13 @@
                 <!-- Średnia prędkość - prawa dolna komórka -->
                 <StackLayout Grid.Row="1" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center">
                     <Label x:Name="PaceLabel" 
-                           Text="00:00 m/km"
+                           Text="00:00"
                            Margin="0,20,0,0"
                            FontAttributes="Bold"
                            FontSize="24" 
                            TextColor="Black"
                            HorizontalOptions="Center" />
-                    <Label Text="Prędkość" 
+                    <Label Text="Prędkość min/km" 
                            FontSize="14" 
                            TextColor="Black" 
                            HorizontalOptions="Center" />
@@ -110,15 +110,6 @@
                         FontSize="18"
                         IsVisible="False"/>
             </StackLayout>
-            <!-- Label z napisem "Dobra robota!" -->
-            <Label x:Name="CongratsLabel" 
-                   Text="Dobra robota!" 
-                   FontSize="30" 
-                   FontAttributes="Bold" 
-                   TextColor="Green" 
-                   HorizontalOptions="Center" 
-                   VerticalOptions="CenterAndExpand"
-                   IsVisible="False" />
         </Grid>
 
     </Grid>
