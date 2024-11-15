@@ -83,9 +83,13 @@
 	  <None Remove="Resources\Images\raindrop.png" />
 	  <None Remove="Resources\Images\run.svg" />
 	  <None Remove="Resources\Images\shoes.png" />
+	  <None Remove="Resources\Images\signal.png" />
 	  <None Remove="Resources\Images\splash.png" />
+	  <None Remove="Resources\Images\sygnal.png" />
+	  <None Remove="Resources\Images\sygnal2.png" />
 	  <None Remove="Resources\Images\userimg.png" />
 	  <None Remove="Resources\Images\weather.png" />
+	  <None Remove="Resources\Images\wifi.png" />
 	  <None Remove="Resources\Images\wind.png" />
 	  <None Remove="Resources\Images\wind11.png" />
 	  <None Remove="Resources\Images\ziutek.png" />
@@ -94,11 +98,13 @@
 	<ItemGroup>
 		<PackageReference Include="FirebaseAuthentication.net" Version="3.7.2" />
 		<PackageReference Include="Google.Cloud.Firestore" Version="3.9.0" />
-		<PackageReference Include="Mapsui.Maui" Version="5.0.0-beta.3" />
+		<PackageReference Include="Mapsui" Version="4.1.8" />
+		<PackageReference Include="Mapsui.Maui" Version="4.1.8" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
 		<PackageReference Include="Microsoft.Maui.Essentials" Version="8.0.93" />
+		<PackageReference Include="NetTopologySuite" Version="2.5.0" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
 		<PackageReference Include="Xamarin.Essentials" Version="1.8.1" />
 	</ItemGroup>

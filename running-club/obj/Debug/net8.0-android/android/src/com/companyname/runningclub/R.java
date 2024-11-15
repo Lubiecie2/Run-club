@@ -11621,15 +11621,19 @@ public final class R {
     public static final int raindrop=0x7f0700f9;
     public static final int run=0x7f0700fa;
     public static final int shoes=0x7f0700fb;
-    public static final int splash=0x7f0700fc;
-    public static final int test_level_drawable=0x7f0700fd;
-    public static final int tooltip_frame_dark=0x7f0700fe;
-    public static final int tooltip_frame_light=0x7f0700ff;
-    public static final int userimg=0x7f070100;
-    public static final int weather=0x7f070101;
-    public static final int wind=0x7f070102;
-    public static final int wind11=0x7f070103;
-    public static final int ziutek=0x7f070104;
+    public static final int signal=0x7f0700fc;
+    public static final int splash=0x7f0700fd;
+    public static final int sygnal=0x7f0700fe;
+    public static final int sygnal2=0x7f0700ff;
+    public static final int test_level_drawable=0x7f070100;
+    public static final int tooltip_frame_dark=0x7f070101;
+    public static final int tooltip_frame_light=0x7f070102;
+    public static final int userimg=0x7f070103;
+    public static final int weather=0x7f070104;
+    public static final int wifi=0x7f070105;
+    public static final int wind=0x7f070106;
+    public static final int wind11=0x7f070107;
+    public static final int ziutek=0x7f070108;
   }
   public static final class id {
     public static final int ALT=0x7f080000;

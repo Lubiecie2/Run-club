@@ -3,7 +3,6 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "running-club.dll" comes first in this list. */
 		"running-club.dll",
-		"BruTile.XmlSerializers.dll",
 		"BruTile.dll",
 		"ExCSS.dll",
 		"Firebase.Auth.dll",
@@ -54,6 +53,7 @@ public class MonoPackageManager_Resources {
 		"SkiaSharp.HarfBuzz.dll",
 		"SkiaSharp.Views.Android.dll",
 		"SkiaSharp.Views.Maui.Controls.dll",
+		"SkiaSharp.Views.Maui.Controls.Compatibility.dll",
 		"SkiaSharp.Views.Maui.Core.dll",
 		"Svg.Custom.dll",
 		"Svg.Model.dll",

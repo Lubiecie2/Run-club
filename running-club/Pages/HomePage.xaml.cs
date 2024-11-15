@@ -37,23 +37,23 @@ public partial class HomePage : ContentPage
     private DateTime _startTime = DateTime.MinValue;
     private DateTime _lastUpdateTime = DateTime.MinValue;
 
+    private Label _qualityLabel;
     public HomePage()
     {
         InitializeComponent();
+        BindingContext = new PedometerViewModel(); // Mo¿esz usun¹æ, jeœli nie jest u¿ywane
 
-        BindingContext = new PedometerViewModel();
-
+        // Inicjalizacja timera
         timer = Dispatcher.CreateTimer();
         timer.Interval = TimeSpan.FromMilliseconds(100);
         timer.Tick += OnTimerTick;
 
+        // Inicjalizacja mapy
         var tileLayer = OpenStreetMap.CreateTileLayer();
         MyMapView.Map = new Mapsui.Map
         {
             Layers = { tileLayer }
         };
-
-        LoadLocationAsync();
 
         MyMapView.IsMyLocationButtonVisible = false;
         MyMapView.IsNorthingButtonVisible = false;
@@ -61,8 +61,25 @@ public partial class HomePage : ContentPage
 
         RequestPermissions();
 
-        // Dodanie obs³ugi widocznoœci przycisków
-        UpdateButtons();
+        // Inicjalizacja etykiety jakoœci GPS
+        _qualityLabel = new Label
+        {
+            Text = "Unknown",
+            FontSize = 15,
+            HorizontalOptions = LayoutOptions.End, // Ustawienie etykiety w prawym rogu
+            VerticalOptions = LayoutOptions.Start, // Ustawienie w górnym rogu
+            TextColor = Colors.Gray,
+            Margin = new Thickness(0, 40, 30, 0)  // Przesuniêcie etykiety w górê
+        };
+
+        // Dodanie etykiety do uk³adu Grid
+        MainGrid.Children.Add(_qualityLabel); // Upewnij siê, ¿e MainGrid to element w XAML
+
+        // Inicjalizacja monitorowania GPS
+        StartGpsMonitoring();
+
+        // Startuj lokalizacjê po za³adowaniu strony
+        LoadLocationAsync();
     }
 
     private void OnTimerTick(object sender, EventArgs e)
@@ -296,4 +313,92 @@ public partial class HomePage : ContentPage
             }
         }
     }
+
+    private async void StartGpsMonitoring()
+    {
+        while (true)
+        {
+            var quality = await GetGpsSignalQuality();
+            UpdateQualityLabel(quality);  // Aktualizacja etykiety z nowym stanem
+
+            // Odœwie¿aj co kilka sekund, aby uzyskaæ aktualny stan GPS
+            await Task.Delay(5000);
+        }
+    }
+
+    private async Task<string> GetGpsSignalQuality()
+    {
+        try
+        {
+            var location = await Geolocation.GetLastKnownLocationAsync();
+
+            if (location == null)
+            {
+                location = await Geolocation.GetLocationAsync(new GeolocationRequest
+                {
+                    DesiredAccuracy = GeolocationAccuracy.High,
+                    Timeout = TimeSpan.FromSeconds(10)
+                });
+            }
+
+            if (location != null)
+            {
+                // Upewniamy siê, ¿e Accuracy nie jest null
+                double accuracy = location.Accuracy ?? double.MaxValue; // Ustawiamy wartoœæ domyœln¹, np. maksymaln¹
+                return GetQualityFromAccuracy(accuracy);
+            }
+            else
+            {
+                return "No GPS Signal";
+            }
+        }
+        catch
+        {
+            return "Error Retrieving GPS Signal";
+        }
+    }
+
+    private string GetQualityFromAccuracy(double accuracy)
+    {
+        if (accuracy <= 5) // w metrach
+            return "Œwietny";
+        else if (accuracy <= 10)
+            return "Dobry";
+        else if (accuracy <= 20)
+            return "Œredni";
+        else if (accuracy <= 50)
+            return "S³aby";
+        else
+            return "Brak";
+    }
+
+    private void UpdateQualityLabel(string quality)
+    {
+        _qualityLabel.Text = $"{quality}";
+
+        // Kolorowanie w zale¿noœci od jakoœci sygna³u
+        switch (quality)
+        {
+            case "Œwietny":
+                _qualityLabel.TextColor = Colors.Green; // Zielony
+                break;
+            case "Dobry":
+                _qualityLabel.TextColor = Colors.Green; // Zielony
+                break;
+            case "Œredni":
+                _qualityLabel.TextColor = Colors.Yellow; // ¯ó³ty
+                break;
+            case "Œ³aby":
+                _qualityLabel.TextColor = Colors.Orange; // Pomarañczowy
+                break;
+            case "Brak":
+                _qualityLabel.TextColor = Colors.Red; // Czerwony
+                break;
+            default:
+                _qualityLabel.TextColor = Colors.Gray; // Szary dla nieznanego
+                break;
+        }
+    }
+
+
 }
