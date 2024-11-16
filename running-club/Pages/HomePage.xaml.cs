@@ -13,6 +13,14 @@ using Mapsui;
 using Mapsui.Extensions;
 using Microsoft.Maui.ApplicationModel;
 using Microsoft.Maui.Devices.Sensors;
+using Mapsui.Nts;
+using Mapsui.Nts.Extensions;
+using NetTopologySuite.Geometries;
+using NetTopologySuite.IO;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Globalization;
+
 
 namespace running_club.Pages;
 
@@ -38,10 +46,19 @@ public partial class HomePage : ContentPage
     private DateTime _lastUpdateTime = DateTime.MinValue;
 
     private Label _qualityLabel;
+
+    private static List<(double X, double Y)> coordinates = new List<(double X, double Y)>
+{
+    (49.5634, 20.9443),
+    (49.569248721980316, 20.952320779343083)
+};
+
+    private MemoryLayer? _lineStringLayer;
+
     public HomePage()
     {
         InitializeComponent();
-        BindingContext = new PedometerViewModel(); // Mo¿esz usun¹æ, jeœli nie jest u¿ywane
+        BindingContext = new PedometerViewModel();
 
         // Inicjalizacja timera
         timer = Dispatcher.CreateTimer();
@@ -57,7 +74,11 @@ public partial class HomePage : ContentPage
 
         MyMapView.IsMyLocationButtonVisible = false;
         MyMapView.IsNorthingButtonVisible = false;
-        MyMapView.IsZoomButtonVisible = false;
+        MyMapView.IsZoomButtonVisible = true;
+
+        MyMapView.Map.Layers.Add(OpenStreetMap.CreateTileLayer());
+        _lineStringLayer = (MemoryLayer?)CreateLineStringLayer(CreateLineStringStyle());
+        MyMapView.Map.Layers.Add(_lineStringLayer);
 
         RequestPermissions();
 
@@ -171,10 +192,10 @@ public partial class HomePage : ContentPage
         FinishButton.IsVisible = stopwatch.IsRunning || isPaused;
     }
 
-    private void StartLocationUpdates()
+    private async void StartLocationUpdates()
     {
         locationUpdateTimer = Dispatcher.CreateTimer();
-        locationUpdateTimer.Interval = TimeSpan.FromSeconds(1);
+        locationUpdateTimer.Interval = TimeSpan.FromSeconds(3);
         locationUpdateTimer.Tick += async (s, e) =>
         {
             var location = await Geolocation.GetLocationAsync(new GeolocationRequest
@@ -197,15 +218,27 @@ public partial class HomePage : ContentPage
         locationUpdateTimer = null;
     }
 
-    private void UpdateMapLocation(Location location)
+    private void UpdateMapLocation(Microsoft.Maui.Devices.Sensors.Location location)
     {
         if (location == null) return;
 
-        var position = new Position(location.Latitude, location.Longitude);
+        var position = new Mapsui.UI.Maui.Position(location.Latitude, location.Longitude);
         var sphericalMercatorCoordinate = SphericalMercator.FromLonLat(location.Longitude, location.Latitude).ToMPoint();
 
         MyMapView.Map.Navigator.CenterOn(sphericalMercatorCoordinate);
         MyMapView.MyLocationLayer.UpdateMyLocation(position);
+
+        coordinates.Add((position.Latitude, position.Longitude));
+
+        string line = string.Join(", ", coordinates.Select(coord => $"{coord.X.ToString(CultureInfo.InvariantCulture)} {coord.Y.ToString(CultureInfo.InvariantCulture)}"));
+        
+        var lineString = new WKTReader().Read($"LINESTRING({line})") as LineString;
+        
+        lineString = new LineString(lineString.Coordinates.Select(v => SphericalMercator.FromLonLat(v.Y, v.X).ToCoordinate()).ToArray());
+
+        _lineStringLayer.Features = new[] { new GeometryFeature { Geometry = lineString } };
+
+
     }
 
     private async Task LoadLocationAsync()
@@ -225,7 +258,7 @@ public partial class HomePage : ContentPage
 
             if (location != null)
             {
-                var position = new Position(location.Latitude, location.Longitude);
+                var position = new Mapsui.UI.Maui.Position(location.Latitude, location.Longitude);
                 var sphericalMercatorCoordinate = SphericalMercator.FromLonLat(location.Longitude, location.Latitude).ToMPoint();
 
                 MyMapView.Map.Navigator.CenterOnAndZoomTo(sphericalMercatorCoordinate, MyMapView.Map.Navigator.Resolutions[16]);
@@ -399,6 +432,51 @@ public partial class HomePage : ContentPage
                 break;
         }
     }
+
+public static ILayer CreateLineStringLayer(IStyle? style = null)
+    {
+        //coordinates.Add((49.5520, 20.9837));
+        //coordinates.Add((49.57147641168676, 20.973714519146807));
+
+        string line = string.Join(", ", coordinates.Select(coord => $"{coord.X.ToString(CultureInfo.InvariantCulture)} {coord.Y.ToString(CultureInfo.InvariantCulture)}"));
+        Console.WriteLine($"Number: {line}");
+
+        string lineStringg = "49.5520 20.9837, 49.57147641168676 20.973714519146807";
+
+        var lineString = new WKTReader().Read($"LINESTRING({line})") as LineString;
+        lineString = new LineString(lineString.Coordinates.Select(v => SphericalMercator.FromLonLat(v.Y, v.X).ToCoordinate()).ToArray());
+
+        return new MemoryLayer
+       {
+            Features = new[] { new GeometryFeature { Geometry = lineString } },
+           Name = "LineStringLayer",
+            Style = style
+
+       };
+   }
+
+    public static IStyle CreateLineStringStyle()
+   {
+        return new VectorStyle
+        {
+            Fill = null,
+            Outline = null,
+#pragma warning disable CS8670 // Object or collection initializer implicitly dereferences possibly null member.
+            Line = { Color = Mapsui.Styles.Color.FromString("YellowGreen"), Width = 4 }
+        };
+    }
+
+  public string GetWKT()
+    {
+        string lineString = string.Join(", ", coordinates.Select(coord => $"{coord.X} {coord.Y}"));
+        return $"LINESTRING({lineString})";
+    }
+//    public void AddCoordinates(params (double X, double Y)[] coords)
+//    {
+//        coordinates.AddRange(coords);
+//    }
+
+
 
 
 }
