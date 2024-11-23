@@ -70,6 +70,10 @@
               "target": "Package",
               "version": "[3.7.2, )"
             },
+            "FirebaseDatabase.net": {
+              "target": "Package",
+              "version": "[4.2.0, )"
+            },
             "Google.Cloud.Firestore": {
               "target": "Package",
               "version": "[3.9.0, )"
@@ -144,6 +148,10 @@
             "FirebaseAuthentication.net": {
               "target": "Package",
               "version": "[3.7.2, )"
+            },
+            "FirebaseDatabase.net": {
+              "target": "Package",
+              "version": "[4.2.0, )"
             },
             "Google.Cloud.Firestore": {
               "target": "Package",
@@ -220,6 +228,10 @@
               "target": "Package",
               "version": "[3.7.2, )"
             },
+            "FirebaseDatabase.net": {
+              "target": "Package",
+              "version": "[4.2.0, )"
+            },
             "Google.Cloud.Firestore": {
               "target": "Package",
               "version": "[3.9.0, )"
@@ -295,6 +307,10 @@
             "FirebaseAuthentication.net": {
               "target": "Package",
               "version": "[3.7.2, )"
+            },
+            "FirebaseDatabase.net": {
+              "target": "Package",
+              "version": "[4.2.0, )"
             },
             "Google.Cloud.Firestore": {
               "target": "Package",

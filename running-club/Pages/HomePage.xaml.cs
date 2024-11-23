@@ -47,11 +47,8 @@ public partial class HomePage : ContentPage
 
     private Label _qualityLabel;
 
-    private static List<(double X, double Y)> coordinates = new List<(double X, double Y)>
-{
-    (49.5634, 20.9443),
-    (49.569248721980316, 20.952320779343083)
-};
+    private static List<(double X, double Y)> coordinates = new List<(double X, double Y)>();
+
 
     private MemoryLayer? _lineStringLayer;
 
@@ -157,6 +154,8 @@ public partial class HomePage : ContentPage
         string pace = PaceLabel.Text;
         double totalDistance = distance;
 
+        var routeCoordinates = new List<(double Latitude, double Longitude)>(coordinates);
+
         // Zresetowanie wartoœci na HomePage
         stopwatch.Reset();
         timer.Stop();
@@ -179,8 +178,14 @@ public partial class HomePage : ContentPage
         ((PedometerViewModel)BindingContext).StopCommand.Execute(null);
         UpdateButtons();
 
+        coordinates.Clear();
+
         // Nawigacja do strony podsumowania z przekazaniem danych
-        await Navigation.PushAsync(new SummaryPage(time, steps, calories, pace, totalDistance));
+        await Navigation.PushAsync(new SummaryPage(time, steps, calories, pace, totalDistance, routeCoordinates));
+
+        MyMapView.Map.Layers.Remove(_lineStringLayer);  // Usuniêcie warstwy z mapy
+        _lineStringLayer = (MemoryLayer?)CreateLineStringLayer(CreateLineStringStyle());
+        MyMapView.Map.Layers.Add(_lineStringLayer);  // Dodanie nowej (pustej) warstwy
     }
 
 
@@ -225,20 +230,43 @@ public partial class HomePage : ContentPage
         var position = new Mapsui.UI.Maui.Position(location.Latitude, location.Longitude);
         var sphericalMercatorCoordinate = SphericalMercator.FromLonLat(location.Longitude, location.Latitude).ToMPoint();
 
+   
         MyMapView.Map.Navigator.CenterOn(sphericalMercatorCoordinate);
         MyMapView.MyLocationLayer.UpdateMyLocation(position);
 
+     
         coordinates.Add((position.Latitude, position.Longitude));
 
-        string line = string.Join(", ", coordinates.Select(coord => $"{coord.X.ToString(CultureInfo.InvariantCulture)} {coord.Y.ToString(CultureInfo.InvariantCulture)}"));
+       
+        if (coordinates.Count >= 2)
+        {
         
-        var lineString = new WKTReader().Read($"LINESTRING({line})") as LineString;
-        
-        lineString = new LineString(lineString.Coordinates.Select(v => SphericalMercator.FromLonLat(v.Y, v.X).ToCoordinate()).ToArray());
+            string line = string.Join(", ", coordinates.Select(coord =>
+                $"{coord.X.ToString(CultureInfo.InvariantCulture)} {coord.Y.ToString(CultureInfo.InvariantCulture)}"));
 
-        _lineStringLayer.Features = new[] { new GeometryFeature { Geometry = lineString } };
+            try
+            {
+              
+                var lineString = new WKTReader().Read($"LINESTRING({line})") as LineString;
+                if (lineString != null)
+                {
+                   
+                    lineString = new LineString(lineString.Coordinates
+                        .Select(v => SphericalMercator.FromLonLat(v.Y, v.X).ToCoordinate()).ToArray());
 
-
+                  
+                    _lineStringLayer.Features = new[] { new GeometryFeature { Geometry = lineString } };
+                }
+                else
+                {
+                    Console.WriteLine("Failed to create LineString from WKT.");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error creating LineString: {ex.Message}");
+            }
+        }
     }
 
     private async Task LoadLocationAsync()
@@ -419,7 +447,7 @@ public partial class HomePage : ContentPage
                 _qualityLabel.TextColor = Colors.Green; // Zielony
                 break;
             case "Œredni":
-                _qualityLabel.TextColor = Colors.Yellow; // ¯ó³ty
+                _qualityLabel.TextColor = Colors.Orange; // ¯ó³ty
                 break;
             case "Œ³aby":
                 _qualityLabel.TextColor = Colors.Orange; // Pomarañczowy
@@ -434,35 +462,40 @@ public partial class HomePage : ContentPage
     }
 
 public static ILayer CreateLineStringLayer(IStyle? style = null)
-    {
-        //coordinates.Add((49.5520, 20.9837));
-        //coordinates.Add((49.57147641168676, 20.973714519146807));
+        {
+        // Je¿eli lista wspó³rzêdnych jest pusta, nie twórz linii
+        if (coordinates.Count < 2)
+        {
+            return new MemoryLayer
+            {
+                Features = new GeometryFeature[0], // Pusta warstwa, bo brak wystarczaj¹cej liczby wspó³rzêdnych
+                Name = "LineStringLayer",
+                Style = style
+            };
+        }
 
         string line = string.Join(", ", coordinates.Select(coord => $"{coord.X.ToString(CultureInfo.InvariantCulture)} {coord.Y.ToString(CultureInfo.InvariantCulture)}"));
-        Console.WriteLine($"Number: {line}");
+            Console.WriteLine($"Number: {line}");
 
-        string lineStringg = "49.5520 20.9837, 49.57147641168676 20.973714519146807";
+            var lineString = new WKTReader().Read($"LINESTRING({line})") as LineString;
+            lineString = new LineString(lineString.Coordinates.Select(v => SphericalMercator.FromLonLat(v.Y, v.X).ToCoordinate()).ToArray());
 
-        var lineString = new WKTReader().Read($"LINESTRING({line})") as LineString;
-        lineString = new LineString(lineString.Coordinates.Select(v => SphericalMercator.FromLonLat(v.Y, v.X).ToCoordinate()).ToArray());
+            return new MemoryLayer
+            {
+                Features = new[] { new GeometryFeature { Geometry = lineString } },
+                Name = "LineStringLayer",
+                Style = style
+            };
+        }
 
-        return new MemoryLayer
-       {
-            Features = new[] { new GeometryFeature { Geometry = lineString } },
-           Name = "LineStringLayer",
-            Style = style
-
-       };
-   }
-
-    public static IStyle CreateLineStringStyle()
+    public static IStyle CreateLineStringStyle() 
    {
         return new VectorStyle
         {
             Fill = null,
             Outline = null,
 #pragma warning disable CS8670 // Object or collection initializer implicitly dereferences possibly null member.
-            Line = { Color = Mapsui.Styles.Color.FromString("YellowGreen"), Width = 4 }
+            Line = { Color = Mapsui.Styles.Color.FromString("Blue"), Width = 4 }
         };
     }
 

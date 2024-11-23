@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using Firebase.Database;
+using Microsoft.Extensions.Logging;
+using running_club.Pages;
 using SkiaSharp.Views.Maui.Controls.Hosting;
 
 namespace running_club
@@ -20,6 +22,8 @@ namespace running_club
         builder.Logging.AddDebug();
 #endif
 
+            //builder.Services.AddSingleton(new FirebaseClient("https://running-club-5b96d-default-rtdb.europe-west1.firebasedatabase.app/"));
+           // builder.Services.AddSingleton<AddGoalsPage>();
             return builder.Build();
         }
     }

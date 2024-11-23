@@ -111,8 +111,8 @@
             </StackLayout>
         </Grid>
 
-        <Image Source="sygnal.png" 
-       Margin="308,0,0,260"
+        <Image Source="sygnal2.png" 
+       Margin="300,0,0,290"
        WidthRequest="25" 
        HeightRequest="25" />
 

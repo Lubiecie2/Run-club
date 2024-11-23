@@ -35,8 +35,9 @@ namespace running_club.Pages
             ErrorLabel.Text = string.Empty;
 
            
-            string result = await _authService.SignInWithEmailAndPasswordAsync(email, password);
-
+            var result = await _authService.SignInWithEmailAndPasswordAsync(email, password);
+            
+            
             if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))
             {
                 ErrorLabel.Text = "Proszê wprowadziæ Email i Has³o!";

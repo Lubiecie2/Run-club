@@ -57,9 +57,10 @@ public class FirebaseAuthService
             // Zapisuje email do SecureStorage
             await SecureStorage.SetAsync("user_email", email);
 
+            await SecureStorage.SetAsync("user_uid", _authLink.User.LocalId);
             // Pobiera token Firebase
             string token = _authLink.FirebaseToken;
-            return token;
+            return token ;
         }
         catch (Exception ex)
         {
