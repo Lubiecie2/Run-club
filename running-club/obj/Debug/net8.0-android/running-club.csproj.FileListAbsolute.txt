@@ -1204,6 +1204,7 @@ C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-an
 C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-android\android\assets\Firebase.dll
 C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-android\android\assets\LiteDB.dll
 C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-android\android\assets\System.Reactive.dll
+C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-android\resizetizer\r\drawable\calendar.png
 C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-android\android\typemaps.x86_64.ll
 C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-android\android\environment.x86_64.ll
 C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-android\android\compressed_assemblies.x86_64.ll
@@ -1213,4 +1214,3 @@ C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-an
 C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-android\android\marshal_methods.x86_64.o
 C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-android\android\jni_remap.x86_64.o
 C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-android\app_shared_libraries\x86_64\libxamarin-app.so
-C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\obj\Debug\net8.0-android\resizetizer\r\drawable\calendar.png

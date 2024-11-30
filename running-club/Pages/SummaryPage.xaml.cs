@@ -21,6 +21,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Globalization;
 using NetTopologySuite.Algorithm;
+using Firebase.Database;
+using Firebase.Database.Query;
 
 namespace running_club.Pages
 {
@@ -30,6 +32,7 @@ namespace running_club.Pages
     {
 
         private MemoryLayer? _lineStringLayer;
+        private readonly FirebaseClient _firebaseClient;
 
         public SummaryPage(string time, int steps, double calories, string pace, double distance, List<(double Latitude, double Longitude)> routeCoordinates)
         {
@@ -41,7 +44,11 @@ namespace running_club.Pages
             CaloriesLabel.Text = calories.ToString("F2");
             PaceLabel.Text = pace;
             DistanceLabel.Text = distance.ToString("F2");
-            
+
+            BindingContext = this;
+            _firebaseClient = new FirebaseClient("https://running-club-5b96d-default-rtdb.europe-west1.firebasedatabase.app/");
+
+            OnSave(time, steps, calories, pace, distance, routeCoordinates);
 
             // Inicjalizacja mapy z warstw¹ OpenStreetMap
             var tileLayer = OpenStreetMap.CreateTileLayer();
@@ -56,6 +63,25 @@ namespace running_club.Pages
             SummaryMapView.Map.Layers.Add(OpenStreetMap.CreateTileLayer());
             _lineStringLayer = (MemoryLayer?)CreateLineStringLayer(CreateLineStringStyle(), routeCoordinates);
             SummaryMapView.Map.Layers.Add(_lineStringLayer);
+        }
+
+        private async Task OnSave(string time, int steps, double calories, string pace, double distance, List<(double Latitude, double Longitude)> routeCoordinates)
+        {
+            string uid = await SecureStorage.GetAsync("user_uid");
+
+            string currentdate = DateTime.Now.ToString("yyyy-MM-dd");
+
+
+
+            _firebaseClient.Child(uid).Child("History").PostAsync(new History
+            {
+                data = currentdate,
+                Steps = steps.ToString(),
+                Distance = distance.ToString(),
+                Kcal = calories.ToString(),
+                Time = time,
+                coordinates = routeCoordinates
+            });
         }
 
         private void UpdateMapLocation(Microsoft.Maui.Devices.Sensors.Location location)
@@ -113,7 +139,9 @@ namespace running_club.Pages
         {
             await Navigation.PopToRootAsync(); // Powrót do strony g³ównej
 
+
             ResetValues(); 
+
         }
 
         public static ILayer CreateLineStringLayer(IStyle style, List<(double Latitude, double Longitude)> coordinates)

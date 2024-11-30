@@ -46,6 +46,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = running_club.Pages.GoalsPa
 build_metadata.AdditionalFiles.TargetPath = Pages\GoalsPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\GoalsPage.xaml
 
+[C:/Users/kgruc/OneDrive/Pulpit/Run/running-club/running-club/Pages/HistoryDetailPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = running_club.Pages.HistoryDetailPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\HistoryDetailPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\HistoryDetailPage.xaml
+
 [C:/Users/kgruc/OneDrive/Pulpit/Run/running-club/running-club/Pages/HistoryPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = running_club.Pages.HistoryPage.xaml

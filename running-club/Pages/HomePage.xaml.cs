@@ -1,4 +1,4 @@
-using Mapsui.Layers;
+ï»¿using Mapsui.Layers;
 using Mapsui.UI.Maui;
 using Mapsui.Tiling.Layers;
 using Mapsui.Utilities;
@@ -20,7 +20,8 @@ using NetTopologySuite.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Globalization;
-
+using Firebase.Database;
+using Firebase.Database.Query;
 
 namespace running_club.Pages;
 
@@ -33,7 +34,7 @@ public partial class HomePage : ContentPage
     private double caloriesBurned = 0.0;
     private double speed = 0.0;
     private bool isTracking = false;
-    private bool isPaused = false; // Dodana flaga do œledzenia pauzy
+    private bool isPaused = false; // Dodana flaga do ï¿½ledzenia pauzy
     private IDispatcherTimer locationUpdateTimer;
 
     private const double StepThreshold = 1.2;
@@ -44,6 +45,7 @@ public partial class HomePage : ContentPage
     private DateTime _lastStepTime = DateTime.MinValue;
     private DateTime _startTime = DateTime.MinValue;
     private DateTime _lastUpdateTime = DateTime.MinValue;
+
 
     private Label _qualityLabel;
 
@@ -73,32 +75,40 @@ public partial class HomePage : ContentPage
         MyMapView.IsNorthingButtonVisible = false;
         MyMapView.IsZoomButtonVisible = true;
 
+
         MyMapView.Map.Layers.Add(OpenStreetMap.CreateTileLayer());
         _lineStringLayer = (MemoryLayer?)CreateLineStringLayer(CreateLineStringStyle());
         MyMapView.Map.Layers.Add(_lineStringLayer);
 
         RequestPermissions();
 
-        // Inicjalizacja etykiety jakoœci GPS
+        // Inicjalizacja etykiety jakoï¿½ci GPS
         _qualityLabel = new Label
         {
             Text = "Unknown",
             FontSize = 15,
             HorizontalOptions = LayoutOptions.End, // Ustawienie etykiety w prawym rogu
-            VerticalOptions = LayoutOptions.Start, // Ustawienie w górnym rogu
+            VerticalOptions = LayoutOptions.Start, // Ustawienie w gï¿½rnym rogu
             TextColor = Colors.Gray,
-            Margin = new Thickness(0, 40, 30, 0)  // Przesuniêcie etykiety w górê
+            Margin = new Thickness(0, 40, 30, 0)  // Przesuniï¿½cie etykiety w gï¿½rï¿½
         };
 
-        // Dodanie etykiety do uk³adu Grid
-        MainGrid.Children.Add(_qualityLabel); // Upewnij siê, ¿e MainGrid to element w XAML
+        // Dodanie etykiety do ukï¿½adu Grid
+        MainGrid.Children.Add(_qualityLabel); // Upewnij siï¿½, ï¿½e MainGrid to element w XAML
 
         // Inicjalizacja monitorowania GPS
         StartGpsMonitoring();
 
-        // Startuj lokalizacjê po za³adowaniu strony
+        // Startuj lokalizacjï¿½ po zaï¿½adowaniu strony
         LoadLocationAsync();
+
     }
+
+    // ------------------- BAZA DANYCH -------------------
+
+    // -------------------KONIEC BAZA DANYCH -------------------
+
+
 
     private void OnTimerTick(object sender, EventArgs e)
     {
@@ -131,7 +141,7 @@ public partial class HomePage : ContentPage
         }
         else
         {
-            // Rozpoczêcie nowego treningu
+            // Rozpoczï¿½cie nowego treningu
             stopwatch.Restart();
             timer.Start();
             StartStopButton.Text = "Wstrzymaj";
@@ -147,7 +157,7 @@ public partial class HomePage : ContentPage
 
     private async void OnFinishButtonClicked(object sender, EventArgs e)
     {
-        // Zapisanie wartoœci do przekazania
+        // Zapisanie wartoï¿½ci do przekazania
         string time = stopwatch.Elapsed.ToString(@"mm\:ss");
         int steps = stepsCount;
         double calories = caloriesBurned;
@@ -156,7 +166,7 @@ public partial class HomePage : ContentPage
 
         var routeCoordinates = new List<(double Latitude, double Longitude)>(coordinates);
 
-        // Zresetowanie wartoœci na HomePage
+        // Zresetowanie wartoï¿½ci na HomePage
         stopwatch.Reset();
         timer.Stop();
         isTracking = false;
@@ -178,12 +188,13 @@ public partial class HomePage : ContentPage
         ((PedometerViewModel)BindingContext).StopCommand.Execute(null);
         UpdateButtons();
 
+
         coordinates.Clear();
 
         // Nawigacja do strony podsumowania z przekazaniem danych
         await Navigation.PushAsync(new SummaryPage(time, steps, calories, pace, totalDistance, routeCoordinates));
 
-        MyMapView.Map.Layers.Remove(_lineStringLayer);  // Usuniêcie warstwy z mapy
+        MyMapView.Map.Layers.Remove(_lineStringLayer);  // Usuniï¿½cie warstwy z mapy
         _lineStringLayer = (MemoryLayer?)CreateLineStringLayer(CreateLineStringStyle());
         MyMapView.Map.Layers.Add(_lineStringLayer);  // Dodanie nowej (pustej) warstwy
     }
@@ -193,7 +204,7 @@ public partial class HomePage : ContentPage
 
     private void UpdateButtons()
     {
-        StartStopButton.Text = stopwatch.IsRunning ? (isPaused ? "Wznów" : "Wstrzymaj") : "Start";
+        StartStopButton.Text = stopwatch.IsRunning ? (isPaused ? "Wznï¿½w" : "Wstrzymaj") : "Start";
         FinishButton.IsVisible = stopwatch.IsRunning || isPaused;
     }
 
@@ -230,31 +241,31 @@ public partial class HomePage : ContentPage
         var position = new Mapsui.UI.Maui.Position(location.Latitude, location.Longitude);
         var sphericalMercatorCoordinate = SphericalMercator.FromLonLat(location.Longitude, location.Latitude).ToMPoint();
 
-   
+
         MyMapView.Map.Navigator.CenterOn(sphericalMercatorCoordinate);
         MyMapView.MyLocationLayer.UpdateMyLocation(position);
 
-     
+
         coordinates.Add((position.Latitude, position.Longitude));
 
-       
+
         if (coordinates.Count >= 2)
         {
-        
+
             string line = string.Join(", ", coordinates.Select(coord =>
                 $"{coord.X.ToString(CultureInfo.InvariantCulture)} {coord.Y.ToString(CultureInfo.InvariantCulture)}"));
 
             try
             {
-              
+
                 var lineString = new WKTReader().Read($"LINESTRING({line})") as LineString;
                 if (lineString != null)
                 {
-                   
+
                     lineString = new LineString(lineString.Coordinates
                         .Select(v => SphericalMercator.FromLonLat(v.Y, v.X).ToCoordinate()).ToArray());
 
-                  
+
                     _lineStringLayer.Features = new[] { new GeometryFeature { Geometry = lineString } };
                 }
                 else
@@ -317,7 +328,7 @@ public partial class HomePage : ContentPage
         }
         else
         {
-            DisplayAlert("Brak wsparcia", "Twój telefon nie wspiera akcelerometru", "OK");
+            DisplayAlert("Brak wsparcia", "Twï¿½j telefon nie wspiera akcelerometru", "OK");
         }
     }
 
@@ -382,7 +393,7 @@ public partial class HomePage : ContentPage
             var quality = await GetGpsSignalQuality();
             UpdateQualityLabel(quality);  // Aktualizacja etykiety z nowym stanem
 
-            // Odœwie¿aj co kilka sekund, aby uzyskaæ aktualny stan GPS
+            // Odï¿½wieï¿½aj co kilka sekund, aby uzyskaï¿½ aktualny stan GPS
             await Task.Delay(5000);
         }
     }
@@ -404,8 +415,8 @@ public partial class HomePage : ContentPage
 
             if (location != null)
             {
-                // Upewniamy siê, ¿e Accuracy nie jest null
-                double accuracy = location.Accuracy ?? double.MaxValue; // Ustawiamy wartoœæ domyœln¹, np. maksymaln¹
+                // Upewniamy siï¿½, ï¿½e Accuracy nie jest null
+                double accuracy = location.Accuracy ?? double.MaxValue; // Ustawiamy wartoï¿½ï¿½ domyï¿½lnï¿½, np. maksymalnï¿½
                 return GetQualityFromAccuracy(accuracy);
             }
             else
@@ -422,13 +433,13 @@ public partial class HomePage : ContentPage
     private string GetQualityFromAccuracy(double accuracy)
     {
         if (accuracy <= 5) // w metrach
-            return "Œwietny";
+            return "ï¿½wietny";
         else if (accuracy <= 10)
             return "Dobry";
         else if (accuracy <= 20)
-            return "Œredni";
+            return "ï¿½redni";
         else if (accuracy <= 50)
-            return "S³aby";
+            return "Sï¿½aby";
         else
             return "Brak";
     }
@@ -437,20 +448,20 @@ public partial class HomePage : ContentPage
     {
         _qualityLabel.Text = $"{quality}";
 
-        // Kolorowanie w zale¿noœci od jakoœci sygna³u
+        // Kolorowanie w zaleï¿½noï¿½ci od jakoï¿½ci sygnaï¿½u
         switch (quality)
         {
-            case "Œwietny":
+            case "ï¿½wietny":
                 _qualityLabel.TextColor = Colors.Green; // Zielony
                 break;
             case "Dobry":
                 _qualityLabel.TextColor = Colors.Green; // Zielony
                 break;
-            case "Œredni":
-                _qualityLabel.TextColor = Colors.Orange; // ¯ó³ty
+            case "ï¿½redni":
+                _qualityLabel.TextColor = Colors.Orange; // ï¿½ï¿½ty
                 break;
-            case "Œ³aby":
-                _qualityLabel.TextColor = Colors.Orange; // Pomarañczowy
+            case "ï¿½ï¿½aby":
+                _qualityLabel.TextColor = Colors.Orange; // Pomaraï¿½czowy
                 break;
             case "Brak":
                 _qualityLabel.TextColor = Colors.Red; // Czerwony
@@ -461,35 +472,35 @@ public partial class HomePage : ContentPage
         }
     }
 
-public static ILayer CreateLineStringLayer(IStyle? style = null)
-        {
-        // Je¿eli lista wspó³rzêdnych jest pusta, nie twórz linii
+    public static ILayer CreateLineStringLayer(IStyle? style = null)
+    {
+        // Jeï¿½eli lista wspï¿½rzï¿½dnych jest pusta, nie twï¿½rz linii
         if (coordinates.Count < 2)
         {
             return new MemoryLayer
             {
-                Features = new GeometryFeature[0], // Pusta warstwa, bo brak wystarczaj¹cej liczby wspó³rzêdnych
+                Features = new GeometryFeature[0], // Pusta warstwa, bo brak wystarczajï¿½cej liczby wspï¿½rzï¿½dnych
                 Name = "LineStringLayer",
                 Style = style
             };
         }
 
         string line = string.Join(", ", coordinates.Select(coord => $"{coord.X.ToString(CultureInfo.InvariantCulture)} {coord.Y.ToString(CultureInfo.InvariantCulture)}"));
-            Console.WriteLine($"Number: {line}");
+        Console.WriteLine($"Number: {line}");
 
-            var lineString = new WKTReader().Read($"LINESTRING({line})") as LineString;
-            lineString = new LineString(lineString.Coordinates.Select(v => SphericalMercator.FromLonLat(v.Y, v.X).ToCoordinate()).ToArray());
+        var lineString = new WKTReader().Read($"LINESTRING({line})") as LineString;
+        lineString = new LineString(lineString.Coordinates.Select(v => SphericalMercator.FromLonLat(v.Y, v.X).ToCoordinate()).ToArray());
 
-            return new MemoryLayer
-            {
-                Features = new[] { new GeometryFeature { Geometry = lineString } },
-                Name = "LineStringLayer",
-                Style = style
-            };
-        }
+        return new MemoryLayer
+        {
+            Features = new[] { new GeometryFeature { Geometry = lineString } },
+            Name = "LineStringLayer",
+            Style = style
+        };
+    }
 
-    public static IStyle CreateLineStringStyle() 
-   {
+    public static IStyle CreateLineStringStyle()
+    {
         return new VectorStyle
         {
             Fill = null,
@@ -499,15 +510,15 @@ public static ILayer CreateLineStringLayer(IStyle? style = null)
         };
     }
 
-  public string GetWKT()
+    public string GetWKT()
     {
         string lineString = string.Join(", ", coordinates.Select(coord => $"{coord.X} {coord.Y}"));
         return $"LINESTRING({lineString})";
     }
-//    public void AddCoordinates(params (double X, double Y)[] coords)
-//    {
-//        coordinates.AddRange(coords);
-//    }
+    //    public void AddCoordinates(params (double X, double Y)[] coords)
+    //    {
+    //        coordinates.AddRange(coords);
+    //    }
 
 
 
