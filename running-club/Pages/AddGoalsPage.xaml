@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="running_club.Pages.AddGoalsPage"
+             Title="Dodaj Cel">
+
+    <VerticalStackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Spacing="20">
+
+        <!-- Nagłówek -->
+        <Label 
+            Text="Dodaj swój cel treningowy"
+            FontSize="24"
+            FontAttributes="Bold"
+            HorizontalOptions="Center"
+            Margin="0,0,0,40" />
+
+        <!-- Małe zdjęcie wyświetlone u góry -->
+        <Image 
+            Source="logo2.png" 
+            HeightRequest="120" 
+            WidthRequest="120"
+            Margin="0,0,0,60"
+            Aspect="AspectFill"
+            HorizontalOptions="Center" />
+
+        <!-- Główna siatka wyśrodkowana na środku ekranu -->
+        <Grid VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Zdjęcie przy EntryKcal -->
+            <Image 
+                Source="fire.png" 
+                Grid.Row="0" 
+                Grid.Column="0"
+                HeightRequest="30" 
+                WidthRequest="30"
+                VerticalOptions="Center" 
+                Margin="10,0" />
+
+            <!-- Entry dla minimalnych kalorii -->
+            <Entry 
+                x:Name="EntryKcal" 
+                Placeholder="Minimalna Kcal"
+                Grid.Row="0" 
+                Grid.Column="1"
+                WidthRequest="250" />
+
+            <!-- Zdjęcie przy EntryDistance -->
+            <Image 
+                Source="distance.png" 
+                Grid.Row="1" 
+                Grid.Column="0"
+                HeightRequest="30" 
+                WidthRequest="30"
+                VerticalOptions="Center" 
+                Margin="10,0" />
+
+            <!-- Entry dla minimalnego dystansu -->
+            <Entry 
+                x:Name="EntryDistance" 
+                Placeholder="Minimalny dystans"
+                Grid.Row="1" 
+                Grid.Column="1"
+                WidthRequest="250" />
+
+            <!-- Zdjęcie przy EntrySteps -->
+            <Image 
+                Source="shoes.png" 
+                Grid.Row="2" 
+                Grid.Column="0"
+                HeightRequest="30" 
+                WidthRequest="30"
+                VerticalOptions="Center" 
+                Margin="10,0" />
+
+            <!-- Entry dla minimalnych kroków -->
+            <Entry 
+                x:Name="EntrySteps" 
+                Placeholder="Minimalne kroki"
+                Grid.Row="2" 
+                Grid.Column="1"
+                WidthRequest="250" />
+
+            <!-- Zdjęcie przy DatePicker -->
+            <Image 
+                Source="calendar.png" 
+                Grid.Row="3" 
+                Grid.Column="0"
+                HeightRequest="30" 
+                WidthRequest="30"
+                VerticalOptions="Center" 
+                Margin="10,0" />
+
+            <!-- DatePicker -->
+            <DatePicker
+                x:Name="DatePickerControl"
+                Format="yyyy-MM-dd"
+                Grid.Row="3" 
+                Grid.Column="1"
+                WidthRequest="250" />
+
+            <!-- Przycisk na końcu formularza -->
+            <Button
+                Text="Dodaj" 
+                Grid.Row="4" 
+                Grid.Column="0" 
+                Grid.ColumnSpan="2"
+                WidthRequest="150"
+                HorizontalOptions="Center"
+                Clicked="OnSave"
+                Margin="0,70,0,0" />
+        </Grid>
+    </VerticalStackLayout>
+
+</ContentPage>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mapsui="clr-namespace:Mapsui.UI.Maui;assembly=Mapsui.UI.Maui"
+             x:Class="running_club.Pages.HistoryDetailPage"
+             Title="Szczegóły Treningu">
+
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="20">
+
+            <!-- Linia oddzielająca sekcje -->
+            <BoxView HeightRequest="1" BackgroundColor="Gray" Margin="0,10,0,10" />
+
+            <!-- Sekcja Data i Czas -->
+            <StackLayout Orientation="Horizontal" Spacing="10" HorizontalOptions="FillAndExpand">
+                <!-- Ikona kalendarza -->
+                <Image Source="calendar.png" WidthRequest="25" HeightRequest="25" VerticalOptions="Center" />
+                <Label Text="Data" FontSize="18" VerticalOptions="Center" HorizontalOptions="StartAndExpand"/>
+                <!-- Data -->
+                <Label x:Name="DateLabel" Text="{Binding data}"  Margin="0,0,70,0" FontSize="18" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="End" />
+            </StackLayout>
+
+            <!-- Czas treningu -->
+            <StackLayout Orientation="Horizontal" Spacing="10" HorizontalOptions="FillAndExpand">
+                <!-- Ikona zegara -->
+                <Image Source="chronometer.png" WidthRequest="25" HeightRequest="25" VerticalOptions="Center" />
+                <Label Text="Czas treningu" FontSize="18" VerticalOptions="Center" HorizontalOptions="StartAndExpand"/>
+                <!-- Czas -->
+                <Label x:Name="TimeLabel" Text="{Binding Time}" Margin="0,0,70,0" FontSize="18" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="End" />
+            </StackLayout>
+
+            <!-- Linia oddzielająca sekcje -->
+            <BoxView HeightRequest="1" BackgroundColor="Gray" Margin="0,10,0,10" />
+
+            <!-- Sekcja Dystans, Kroki, Kcal -->
+            <StackLayout Spacing="20">
+
+                <!-- Dystans -->
+                <StackLayout Orientation="Horizontal" Spacing="10">
+                    <Image Source="distance.png" WidthRequest="25" HeightRequest="25" VerticalOptions="Center" />
+                    <Label Text="Dystans" FontSize="18" VerticalOptions="Center" HorizontalOptions="StartAndExpand"/>
+                    <Label x:Name="DistanceLabel" Text="{Binding Distance}" Margin="0,0,70,0" FontSize="18" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="End"/>
+                </StackLayout>
+
+                <!-- Kroków -->
+                <StackLayout Orientation="Horizontal" Spacing="10">
+                    <Image Source="shoes.png" WidthRequest="25" HeightRequest="25" VerticalOptions="Center" />
+                    <Label Text="Liczba kroków" FontSize="18" VerticalOptions="Center" HorizontalOptions="StartAndExpand"/>
+                    <Label x:Name="StepsLabel" Text="{Binding Steps}" Margin="0,0,70,0" FontSize="18" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="End"/>
+                </StackLayout>
+
+                <!-- Spalone Kcal -->
+                <StackLayout Orientation="Horizontal" Spacing="10">
+                    <Image Source="fire.png" WidthRequest="25" HeightRequest="25" VerticalOptions="Center" />
+                    <Label Text="Spalone Kcal" FontSize="18" VerticalOptions="Center" HorizontalOptions="StartAndExpand"/>
+                    <Label x:Name="CaloriesLabel" Text="{Binding Kcal}" Margin="0,0,70,0" FontSize="18" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="End"/>
+                </StackLayout>
+
+            </StackLayout>
+
+            <!-- Linia oddzielająca sekcje -->
+            <BoxView HeightRequest="1" BackgroundColor="Gray" Margin="0,10,0,10" />
+
+            <!-- Mapa wyświetlająca ślad treningu - zajmuje połowę ekranu -->
+            <mapsui:MapView x:Name="HistoryMapView" VerticalOptions="FillAndExpand" HeightRequest="300" />
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

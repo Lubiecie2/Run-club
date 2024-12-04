@@ -71,14 +71,15 @@ namespace running_club.Pages
 
             string currentdate = DateTime.Now.ToString("yyyy-MM-dd");
 
-
+            int roundedDistance = (int)Math.Round(distance);
+            int roundedCalories = (int)Math.Round(calories);
 
             _firebaseClient.Child(uid).Child("History").PostAsync(new History
             {
                 data = currentdate,
                 Steps = steps.ToString(),
-                Distance = distance.ToString(),
-                Kcal = calories.ToString(),
+                Distance = roundedDistance.ToString(),
+                Kcal = roundedCalories.ToString(),
                 Time = time,
                 coordinates = routeCoordinates
             });

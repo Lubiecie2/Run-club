@@ -35,6 +35,8 @@
                                 <!-- Wartość -->
                                 <Label Text="{Binding data}"
                                        FontSize="16"
+                                       Margin="0,0,0,0"
+                                       TextColor="Black"
                                        VerticalTextAlignment="Center" />
                             </HorizontalStackLayout>
 
