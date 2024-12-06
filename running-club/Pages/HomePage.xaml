@@ -15,7 +15,7 @@
                    FontFamily="Arial"
                    HorizontalOptions="Center" 
                    FontAttributes="Bold"
-                   TextColor="Black"/>
+                   TextColor="black"/>
 
             <Label Text="Czas treningu" 
                    FontSize="20" 
@@ -91,7 +91,8 @@
         <Grid Grid.Row="1">
             <!-- Mapa zajmująca większość dolnej części ekranu -->
             <mapsui:MapView x:Name="MyMapView" 
-                            HeightRequest="420"/>
+                            HeightRequest="420"
+                            Margin="10,10,10,10"/>
 
             <!-- Przyciski sterujące na dole mapy -->
             <StackLayout Orientation="Horizontal" Spacing="15" HorizontalOptions="Center" VerticalOptions="End" Margin="0,20,0,0">

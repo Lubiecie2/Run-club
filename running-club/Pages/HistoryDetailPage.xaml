@@ -9,7 +9,7 @@
         <StackLayout Padding="20" Spacing="20">
 
             <!-- Linia oddzielająca sekcje -->
-            <BoxView HeightRequest="1" BackgroundColor="Gray" Margin="0,10,0,10" />
+            <BoxView HeightRequest="1" Margin="0,10,0,10" />
 
             <!-- Sekcja Data i Czas -->
             <StackLayout Orientation="Horizontal" Spacing="10" HorizontalOptions="FillAndExpand">
@@ -30,7 +30,7 @@
             </StackLayout>
 
             <!-- Linia oddzielająca sekcje -->
-            <BoxView HeightRequest="1" BackgroundColor="Gray" Margin="0,10,0,10" />
+            <BoxView HeightRequest="1" Margin="0,10,0,10" />
 
             <!-- Sekcja Dystans, Kroki, Kcal -->
             <StackLayout Spacing="20">
@@ -59,7 +59,7 @@
             </StackLayout>
 
             <!-- Linia oddzielająca sekcje -->
-            <BoxView HeightRequest="1" BackgroundColor="Gray" Margin="0,10,0,10" />
+            <BoxView HeightRequest="1" Margin="0,10,0,10" />
 
             <!-- Mapa wyświetlająca ślad treningu - zajmuje połowę ekranu -->
             <mapsui:MapView x:Name="HistoryMapView" VerticalOptions="FillAndExpand" HeightRequest="300" />

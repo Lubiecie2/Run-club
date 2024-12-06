@@ -2,6 +2,11 @@
 using Microsoft.Extensions.Logging;
 using running_club.Pages;
 using SkiaSharp.Views.Maui.Controls.Hosting;
+using Microsoft.Maui.Hosting;
+
+#if ANDROID
+using running_club.Platforms.Android; // Tylko dla platformy Android
+#endif
 
 namespace running_club
 {
@@ -10,6 +15,7 @@ namespace running_club
         public static MauiApp CreateMauiApp()
         {
             var builder = MauiApp.CreateBuilder();
+
             builder
                 .UseMauiApp<App>()
                 .UseSkiaSharp()
@@ -18,12 +24,16 @@ namespace running_club
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
+
 #if DEBUG
-        builder.Logging.AddDebug();
+            builder.Logging.AddDebug(); // Logowanie w trybie debug
 #endif
 
-            //builder.Services.AddSingleton(new FirebaseClient("https://running-club-5b96d-default-rtdb.europe-west1.firebasedatabase.app/"));
-           // builder.Services.AddSingleton<AddGoalsPage>();
+#if ANDROID
+builder.Services.AddSingleton<LightSensorService>(); // Rejestracja LightSensorService
+#endif
+            builder.Services.AddTransient<HomePage>(); // Rejestracja HomePage
+
             return builder.Build();
         }
     }

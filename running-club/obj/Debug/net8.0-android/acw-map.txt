@@ -4,6 +4,9 @@ running_club.MainActivity;crc6464c98e4a27703898.MainActivity
 running_club.MainApplication, running-club;crc6464c98e4a27703898.MainApplication
 running_club.MainApplication;crc6464c98e4a27703898.MainApplication
 running_club.MainApplication;crc6464c98e4a27703898.MainApplication
+running_club.Platforms.Android.LightSensorService, running-club;crc64fbd1a433514e17ec.LightSensorService
+running_club.Platforms.Android.LightSensorService;crc64fbd1a433514e17ec.LightSensorService
+running_club.platforms.android.LightSensorService;crc64fbd1a433514e17ec.LightSensorService
 GoogleGson.IExclusionStrategy, GoogleGson;com.google.gson.ExclusionStrategy
 GoogleGson.IExclusionStrategy;com.google.gson.ExclusionStrategy
 com.google.gson.ExclusionStrategy;com.google.gson.ExclusionStrategy

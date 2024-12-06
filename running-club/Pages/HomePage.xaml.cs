@@ -22,6 +22,9 @@ using System.Threading.Tasks;
 using System.Globalization;
 using Firebase.Database;
 using Firebase.Database.Query;
+#if ANDROID
+using running_club.Platforms.Android; 
+#endif
 
 namespace running_club.Pages;
 
@@ -41,11 +44,15 @@ public partial class HomePage : ContentPage
     private const int StepCooldown = 300;
     private const double StepLength = 0.78;
     private const double CaloriesPerMeter = 0.05;
+    private bool _isWaiting = false;
 
     private DateTime _lastStepTime = DateTime.MinValue;
     private DateTime _startTime = DateTime.MinValue;
     private DateTime _lastUpdateTime = DateTime.MinValue;
 
+#if ANDROID
+        private LightSensorService _lightSensorService;
+#endif
 
     private Label _qualityLabel;
 
@@ -74,6 +81,15 @@ public partial class HomePage : ContentPage
         MyMapView.IsMyLocationButtonVisible = false;
         MyMapView.IsNorthingButtonVisible = false;
         MyMapView.IsZoomButtonVisible = true;
+
+#if ANDROID
+    // Pobranie instancji LightSensorService
+   
+            _lightSensorService = MauiApplication.Current.Services.GetService<LightSensorService>();
+    {
+        _lightSensorService.LightLevelChanged += OnLightLevelChanged; // Subskrybuj zdarzenie
+    }
+#endif
 
 
         MyMapView.Map.Layers.Add(OpenStreetMap.CreateTileLayer());
@@ -433,13 +449,13 @@ public partial class HomePage : ContentPage
     private string GetQualityFromAccuracy(double accuracy)
     {
         if (accuracy <= 5) // w metrach
-            return "�wietny";
+            return "świetny";
         else if (accuracy <= 10)
             return "Dobry";
         else if (accuracy <= 20)
-            return "�redni";
+            return "średni";
         else if (accuracy <= 50)
-            return "S�aby";
+            return "Słaby";
         else
             return "Brak";
     }
@@ -451,16 +467,16 @@ public partial class HomePage : ContentPage
         // Kolorowanie w zale�no�ci od jako�ci sygna�u
         switch (quality)
         {
-            case "�wietny":
+            case "świetny":
                 _qualityLabel.TextColor = Colors.Green; // Zielony
                 break;
             case "Dobry":
                 _qualityLabel.TextColor = Colors.Green; // Zielony
                 break;
-            case "�redni":
+            case "średni":
                 _qualityLabel.TextColor = Colors.Orange; // ��ty
                 break;
-            case "��aby":
+            case "słaby":
                 _qualityLabel.TextColor = Colors.Orange; // Pomara�czowy
                 break;
             case "Brak":
@@ -520,7 +536,53 @@ public partial class HomePage : ContentPage
     //        coordinates.AddRange(coords);
     //    }
 
+#if ANDROID
+private async void OnLightLevelChanged(float lightLevel)
+{
+    // Sprawdzenie, czy opóźnienie jest już w trakcie
+    if (_isWaiting)
+        return;
 
+    _isWaiting = true;
+
+    await Task.Delay(3000);  // Czekamy przez 3 sekundy
+
+    // Zmieniamy tło strony na podstawie poziomu światła
+    if (lightLevel < 10) // Niski poziom światła - ustaw kolor tła ciemnoszary i kolor tekstu na biały
+    {
+        this.BackgroundColor = new Microsoft.Maui.Graphics.Color(170 / 255f, 170 / 255f, 170 / 255f); // Kolor #3A3B3C
+    }
+    else // Wysoki poziom światła - ustaw jasne tło i ciemnoszary tekst
+    {
+        this.BackgroundColor = Colors.White; // Jasne tło
+       
+    }
+
+    // Po zakończeniu opóźnienia, zresetuj flagę
+    _isWaiting = false;
+}
+#endif
+
+
+    protected override void OnDisappearing()
+    {
+        base.OnDisappearing();
+
+#if ANDROID
+            _lightSensorService.Stop();
+#endif
+
+
+    }
+    protected override void OnAppearing()
+    {
+        base.OnAppearing();
+
+#if ANDROID
+    // Uruchamianie czujnika po powrocie na stronę
+    _lightSensorService?.Start();
+#endif
+    }
 
 
 }

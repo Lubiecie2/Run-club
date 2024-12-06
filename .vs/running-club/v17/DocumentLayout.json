@@ -1,0 +1,96 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\kgruc\\OneDrive\\Pulpit\\Run\\running-club\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B6218BF4-9A67-4B64-A5FF-D4BDA593ACA9}|running-club\\running-club.csproj|c:\\users\\kgruc\\onedrive\\pulpit\\run\\running-club\\running-club\\pages\\historypagedark.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6218BF4-9A67-4B64-A5FF-D4BDA593ACA9}|running-club\\running-club.csproj|solutionrelative:running-club\\pages\\historypagedark.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6218BF4-9A67-4B64-A5FF-D4BDA593ACA9}|running-club\\running-club.csproj|c:\\users\\kgruc\\onedrive\\pulpit\\run\\running-club\\running-club\\pages\\historypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6218BF4-9A67-4B64-A5FF-D4BDA593ACA9}|running-club\\running-club.csproj|solutionrelative:running-club\\pages\\historypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6218BF4-9A67-4B64-A5FF-D4BDA593ACA9}|running-club\\running-club.csproj|c:\\users\\kgruc\\onedrive\\pulpit\\run\\running-club\\running-club\\pages\\historypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B6218BF4-9A67-4B64-A5FF-D4BDA593ACA9}|running-club\\running-club.csproj|solutionrelative:running-club\\pages\\historypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6218BF4-9A67-4B64-A5FF-D4BDA593ACA9}|running-club\\running-club.csproj|c:\\users\\kgruc\\onedrive\\pulpit\\run\\running-club\\running-club\\pages\\historypagedark.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B6218BF4-9A67-4B64-A5FF-D4BDA593ACA9}|running-club\\running-club.csproj|solutionrelative:running-club\\pages\\historypagedark.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HistoryPage.xaml",
+              "DocumentMoniker": "C:\\Users\\kgruc\\OneDrive\\Pulpit\\Run\\running-club\\running-club\\Pages\\HistoryPage.xaml",
+              "RelativeDocumentMoniker": "running-club\\Pages\\HistoryPage.xaml",
+              "ToolTip": "C:\\Users\\kgruc\\OneDrive\\Pulpit\\Run\\running-club\\running-club\\Pages\\HistoryPage.xaml",
+              "RelativeToolTip": "running-club\\Pages\\HistoryPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-06T16:08:08.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HistoryPageDark.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\kgruc\\OneDrive\\Pulpit\\Run\\running-club\\running-club\\Pages\\HistoryPageDark.xaml.cs",
+              "RelativeDocumentMoniker": "running-club\\Pages\\HistoryPageDark.xaml.cs",
+              "ToolTip": "C:\\Users\\kgruc\\OneDrive\\Pulpit\\Run\\running-club\\running-club\\Pages\\HistoryPageDark.xaml.cs",
+              "RelativeToolTip": "running-club\\Pages\\HistoryPageDark.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T15:58:48.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HistoryPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\kgruc\\OneDrive\\Pulpit\\Run\\running-club\\running-club\\Pages\\HistoryPage.xaml.cs",
+              "RelativeDocumentMoniker": "running-club\\Pages\\HistoryPage.xaml.cs",
+              "ToolTip": "C:\\Users\\kgruc\\OneDrive\\Pulpit\\Run\\running-club\\running-club\\Pages\\HistoryPage.xaml.cs",
+              "RelativeToolTip": "running-club\\Pages\\HistoryPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T14:27:06.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HistoryPageDark.xaml",
+              "DocumentMoniker": "C:\\Users\\kgruc\\OneDrive\\Pulpit\\Run\\running-club\\running-club\\Pages\\HistoryPageDark.xaml",
+              "RelativeDocumentMoniker": "running-club\\Pages\\HistoryPageDark.xaml",
+              "ToolTip": "C:\\Users\\kgruc\\OneDrive\\Pulpit\\Run\\running-club\\running-club\\Pages\\HistoryPageDark.xaml",
+              "RelativeToolTip": "running-club\\Pages\\HistoryPageDark.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-06T15:57:28.546Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
