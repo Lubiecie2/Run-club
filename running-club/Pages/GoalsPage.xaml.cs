@@ -56,9 +56,8 @@ public partial class GoalsPage : ContentPage
         foreach (var goal in goals)
         {
             bool isCompleted = history.Any(h => h.data == goal.data);
-
-            // Ustawienie koloru w zale¿noœci od statusu
-            goal.Color = isCompleted ? Colors.Green : Colors.Red;
+            goal.IsCompleted = isCompleted;
+            goal.GoalImage = isCompleted ? "checked.png" : "multiply.png"; // Ustaw obrazek w zale¿noœci od statusu celu
 
             MyGoalsList.Add(goal);
         }

@@ -1,4 +1,5 @@
 ﻿obj\Debug\net8.0-android\resizetizer\r\drawable\calendar.png
+obj\Debug\net8.0-android\resizetizer\r\drawable\checked.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\chronometer.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\cloud11.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\cloudiness.png
@@ -11,6 +12,7 @@ obj\Debug\net8.0-android\resizetizer\r\drawable\images.jpg
 obj\Debug\net8.0-android\resizetizer\r\drawable\logo.jpg
 obj\Debug\net8.0-android\resizetizer\r\drawable\logo2.jpg
 obj\Debug\net8.0-android\resizetizer\r\drawable\mail.png
+obj\Debug\net8.0-android\resizetizer\r\drawable\multiply.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\overlay.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\password.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\pressure.png

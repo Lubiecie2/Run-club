@@ -60,6 +60,7 @@
 	  <None Remove="Resources\Images\biegacz.svg" />
 	  <None Remove="Resources\Images\calendar.png" />
 	  <None Remove="Resources\Images\Cele.svg" />
+	  <None Remove="Resources\Images\checked.png" />
 	  <None Remove="Resources\Images\chronometer.png" />
 	  <None Remove="Resources\Images\cloud11.png" />
 	  <None Remove="Resources\Images\cloudiness.png" />
@@ -76,6 +77,7 @@
 	  <None Remove="Resources\Images\logo.jpg" />
 	  <None Remove="Resources\Images\logo2.jpg" />
 	  <None Remove="Resources\Images\mail.png" />
+	  <None Remove="Resources\Images\multiply.png" />
 	  <None Remove="Resources\Images\Osoba.svg" />
 	  <None Remove="Resources\Images\overlay.png" />
 	  <None Remove="Resources\Images\password.png" />
