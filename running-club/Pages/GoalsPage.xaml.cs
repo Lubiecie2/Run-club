@@ -3,50 +3,72 @@ using Firebase.Database.Query;
 using Firebase.Auth;
 using System.Collections.ObjectModel;
 using running_club.Pages;
-using ExCSS;
 
 namespace running_club.Pages;
 
 public partial class GoalsPage : ContentPage
 {
-
     private readonly FirebaseClient _firebaseClient;
-    public ObservableCollection<Goals> MyGoalsList { get; set; } = new ObservableCollection<Goals>();
 
+    // Kolekcja do przechowywania celów u¿ytkownika
+    public ObservableCollection<Goals> MyGoalsList { get; set; } = new ObservableCollection<Goals>();
 
     public GoalsPage()
     {
         InitializeComponent();
         BindingContext = this;
+
+        // Inicjalizacja Firebase
         _firebaseClient = new FirebaseClient("https://running-club-5b96d-default-rtdb.europe-west1.firebasedatabase.app/");
 
+        // Wczytaj dane
         LoadDataAsync();
     }
+
     private async void NavigateToPage(object sender, EventArgs e)
     {
         await Navigation.PushAsync(new AddGoalsPage());
     }
 
     public async Task LoadDataAsync()
-
     {
-        string  uid = await SecureStorage.GetAsync("user_uid");
+        // Pobranie UID u¿ytkownika
+        string uid = await SecureStorage.GetAsync("user_uid");
 
-
+        // Pobierz cele u¿ytkownika z bazy danych
         MyGoalsList.Clear();
-        var result = _firebaseClient.Child(uid).Child("Goals").AsObservable<Goals>().Subscribe((item) =>
-        {
+        var goals = (await _firebaseClient
+            .Child(uid)
+            .Child("Goals")
+            .OnceAsync<Goals>())
+            .Select(item => item.Object)
+            .ToList();
 
-            if (item.Object != null)
-            {
-                MyGoalsList.Add(item.Object);
-            }
-        });
+        // Pobierz historiê treningów z bazy danych
+        var history = (await _firebaseClient
+            .Child(uid)
+            .Child("History")
+            .OnceAsync<History>())
+            .Select(item => item.Object)
+            .ToList();
+
+        // Porównaj cele z histori¹ treningów i ustaw odpowiedni status
+        foreach (var goal in goals)
+        {
+            bool isCompleted = history.Any(h => h.data == goal.data);
+
+            // Ustawienie koloru w zale¿noœci od statusu
+            goal.Color = isCompleted ? Colors.Green : Colors.Red;
+
+            MyGoalsList.Add(goal);
+        }
     }
 
     protected override async void OnNavigatedTo(NavigatedToEventArgs args)
     {
         base.OnNavigatedTo(args);
+
         await LoadDataAsync();
     }
 }
+

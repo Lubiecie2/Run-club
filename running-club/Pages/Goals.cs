@@ -13,6 +13,7 @@ namespace running_club.Pages
         public string Distance { get; set; }
         public string Steps { get; set; }
         public string data { get; set; }
+        public Color Color { get; set; }
     }
     
 }
