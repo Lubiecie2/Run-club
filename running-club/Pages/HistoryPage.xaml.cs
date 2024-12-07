@@ -1,4 +1,4 @@
-using Firebase.Database;
+ï»¿using Firebase.Database;
 using Firebase.Database.Query;
 using Firebase.Auth;
 using System.Collections.ObjectModel;
@@ -8,107 +8,141 @@ using running_club.Pages;
 using running_club.Platforms.Android; 
 #endif
 
-namespace running_club.Pages
+
+namespace running_club.Pages;
+
+public partial class HistoryPage : ContentPage
 {
-    public partial class HistoryPage : ContentPage
-    {
-        private readonly FirebaseClient _firebaseClient;
-        public ObservableCollection<History> MyHistoryList { get; set; } = new ObservableCollection<History>();
+
+    private readonly FirebaseClient _firebaseClient;
+    public ObservableCollection<History> MyHistoryList { get; set; } = new ObservableCollection<History>();
 
 #if ANDROID
         private LightSensorService _lightSensorService;
 #endif
-        private bool _isDarkMode = false;
+    private bool _isWaiting = false;
 
-        public HistoryPage()
-        {
-            // Domyœlnie ustawiamy tryb jasny
-            InitializeLightOrDarkModeUI(0); // Zaczynamy od jasnego motywu
+    public HistoryPage()
+    {
+        InitializeComponent();
+
+        BindingContext = this;
+        _firebaseClient = new FirebaseClient("https://running-club-5b96d-default-rtdb.europe-west1.firebasedatabase.app/");
 
 #if ANDROID
-            // Pobranie instancji LightSensorService
+    // Pobranie instancji LightSensorService
+   
             _lightSensorService = MauiApplication.Current.Services.GetService<LightSensorService>();
-            if (_lightSensorService != null)
-            {
-                _lightSensorService.LightLevelChanged += OnLightLevelChanged; // Subskrybuj zdarzenie
-            }
+    {
+        _lightSensorService.LightLevelChanged += OnLightLevelChanged; // Subskrybuj zdarzenie
+    }
 #endif
 
-            BindingContext = this;
-            _firebaseClient = new FirebaseClient("https://running-club-5b96d-default-rtdb.europe-west1.firebasedatabase.app/");
+        LoadDataAsync();
 
-            LoadDataAsync();
-        }
+    }
+    public async Task LoadDataAsync()
 
-        // Ta metoda bêdzie nas³uchiwaæ zmian poziomu œwiat³a i zmieniaæ tryb
-        private async void OnLightLevelChanged(float lightLevel)
+    {
+        string uid = await SecureStorage.GetAsync("user_uid");
+
+
+        MyHistoryList.Clear();
+        var result = _firebaseClient.Child(uid).Child("History").AsObservable<History>().Subscribe((item) =>
         {
-            bool shouldBeDark = lightLevel < 10; // Jeœli œwiat³o poni¿ej 10 luksów, prze³¹czamy na ciemny motyw
 
-            // Jeœli aktualny tryb ró¿ni siê od wykrytego, zmieniamy motyw
-            if (shouldBeDark != _isDarkMode)
+            if (item.Object != null)
             {
-                _isDarkMode = shouldBeDark;
-                InitializeLightOrDarkModeUI(lightLevel); // Zmieniamy widok
+                MyHistoryList.Add(item.Object);
             }
+        });
+    }
+    private async void OnHistoryItemSelected(object sender, SelectionChangedEventArgs e)
+    {
+        // Pobranie wybranego elementu
+        if (e.CurrentSelection.FirstOrDefault() is History selectedHistory)
+        {
+            // Nawigacja do strony szczegÃ³Å‚owej
+            await Navigation.PushAsync(new HistoryDetailPage(selectedHistory));
         }
 
-        // £adowanie odpowiedniego widoku na podstawie trybu
-        private void InitializeLightOrDarkModeUI(float lightLevel)
-        {
-            if (_isDarkMode)
-            {
-                // Za³aduj ciemny motyw
-                this.LoadFromXaml(typeof(HistoryPageDark));
-            }
-            else
-            {
-                // Za³aduj jasny motyw
-                this.LoadFromXaml(typeof(HistoryPage));
-            }
-        }
+        // Odznaczanie wybranego elementu
+        ((CollectionView)sender).SelectedItem = null;
+    }
 
-        public async Task LoadDataAsync()
-        {
-            string uid = await SecureStorage.GetAsync("user_uid");
-
-            MyHistoryList.Clear();
-            var result = _firebaseClient.Child(uid).Child("History").AsObservable<History>().Subscribe((item) =>
-            {
-                if (item.Object != null)
-                {
-                    MyHistoryList.Add(item.Object);
-                }
-            });
-        }
-
-        private async void OnHistoryItemSelected(object sender, SelectionChangedEventArgs e)
-        {
-            // Pobranie wybranego elementu
-            if (e.CurrentSelection.FirstOrDefault() is History selectedHistory)
-            {
-                // Nawigacja do strony szczegó³owej
-                await Navigation.PushAsync(new HistoryDetailPage(selectedHistory));
-            }
-
-            // Odznaczanie wybranego elementu
-            ((CollectionView)sender).SelectedItem = null;
-        }
-
-        protected override void OnAppearing()
-        {
-            base.OnAppearing();
 #if ANDROID
-            _lightSensorService?.Start(); // Rozpoczynamy nas³uchiwanie zmian poziomu œwiat³a
-#endif
-        }
+private async void OnLightLevelChanged(float lightLevel)
+{
+    if (_isWaiting)
+        return;
 
-        protected override void OnDisappearing()
+    _isWaiting = true;
+    await Task.Delay(3000); // Czekaj przez 3 sekundy, aby nie za czÄ™sto zmieniaÄ‡ kolor
+
+    // Zmieniamy tÅ‚o strony na podstawie poziomu Å›wiatÅ‚a
+    if (lightLevel < 10) // Niski poziom Å›wiatÅ‚a
+    {
+        this.BackgroundColor = new Microsoft.Maui.Graphics.Color(170 / 255f, 170 / 255f, 170 / 255f);
+        UpdateTextColor(Colors.White); // Kolor tekstu na biaÅ‚y
+    }
+    else // Wysoki poziom Å›wiatÅ‚a
+    {
+        this.BackgroundColor = Colors.White; // Jasne tÅ‚o
+        UpdateTextColor(Colors.Red); // Kolor tekstu na czerwony
+    }
+
+    _isWaiting = false;
+}
+
+
+private void UpdateTextColor(Microsoft.Maui.Graphics.Color textColor)
+{
+    UpdateTextColorRecursively(this.Content, textColor); // Zmieniamy kolor dla wszystkich kontrolek na stronie
+}
+
+private void UpdateTextColorRecursively(IView view, Microsoft.Maui.Graphics.Color textColor)
+{
+    // JeÅ›li kontrolka jest typu Label, zmieniamy jej kolor tekstu
+    if (view is Microsoft.Maui.Controls.Label label)
+    {
+        label.TextColor = textColor;
+    }
+    else if (view is Microsoft.Maui.Controls.Button button)
+    {
+        button.TextColor = textColor; // Zmieniamy tekst Button
+    }
+    else if (view is Microsoft.Maui.Controls.Entry entry)
+    {
+        entry.TextColor = textColor; // Zmieniamy tekst Entry
+    }
+
+    // JeÅ›li kontrolka jest Layout-em, sprawdzamy wszystkie dzieci
+    if (view is Microsoft.Maui.Controls.Layout layout)
+    {
+        foreach (var child in layout.Children)
         {
-            base.OnDisappearing();
-#if ANDROID
-            _lightSensorService?.Stop(); // Zatrzymujemy nas³uchiwanie zmian poziomu œwiat³a
-#endif
+            UpdateTextColorRecursively(child, textColor); // Rekurencyjnie sprawdzamy dzieci
         }
+    }
+}
+#endif
+
+    protected override void OnDisappearing()
+    {
+        base.OnDisappearing();
+
+#if ANDROID
+            _lightSensorService.Stop(); // Zatrzymanie detekcji Å›wiatÅ‚a
+#endif
+    }
+
+    protected override void OnAppearing()
+    {
+        base.OnAppearing();
+
+#if ANDROID
+            // Uruchamianie czujnika po powrocie na stronÄ™
+            _lightSensorService?.Start();
+#endif
     }
 }
