@@ -1,14 +1,31 @@
+#if ANDROID
+using running_club.Platforms.Android; 
+#endif
+
 namespace running_club.Pages
 {
     public partial class ProfilPage : ContentPage
     {
         private FirebaseAuthService _authService;
 
+#if ANDROID
+        private LightSensorService _lightSensorService;
+#endif
+        private bool _isWaiting = false;
+
         public ProfilPage()
         {
             InitializeComponent();
             _authService = new FirebaseAuthService();
             DisplayUserEmail();  // Wywo³uje funkcjê asynchroniczn¹ do wyœwietlenia adresu email
+
+#if ANDROID
+            _lightSensorService = MauiApplication.Current.Services.GetService<LightSensorService>();
+    {
+        _lightSensorService.LightLevelChanged += OnLightLevelChanged; 
+    }
+#endif
+
         }
 
         private async void DisplayUserEmail()
@@ -82,6 +99,50 @@ namespace running_club.Pages
                 default:
                     return 1.0;
             }
+        }
+#if ANDROID
+private async void OnLightLevelChanged(float lightLevel)
+{
+    if (_isWaiting)
+        return;
+
+    _isWaiting = true;
+    await Task.Delay(3000); // Czekaj przez 3 sekundy, aby nie za czêsto zmieniaæ kolor
+
+    // Zmieniamy t³o strony na podstawie poziomu œwiat³a
+    if (lightLevel < 10) // Niski poziom œwiat³a
+    {
+        this.BackgroundColor = new Microsoft.Maui.Graphics.Color(170 / 255f, 170 / 255f, 170 / 255f);
+       
+    }
+    else // Wysoki poziom œwiat³a
+    {
+        this.BackgroundColor = Colors.White; // Jasne t³o
+    }
+
+    _isWaiting = false;
+}
+
+
+#endif
+
+        protected override void OnDisappearing()
+        {
+            base.OnDisappearing();
+
+#if ANDROID
+            _lightSensorService.Stop(); // Zatrzymanie detekcji œwiat³a
+#endif
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+#if ANDROID
+            // Uruchamianie czujnika po powrocie na stronê
+            _lightSensorService?.Start();
+#endif
         }
     }
 }

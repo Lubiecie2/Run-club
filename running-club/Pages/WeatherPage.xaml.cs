@@ -3,9 +3,18 @@ using Microsoft.Maui.Devices.Sensors;
 using Newtonsoft.Json;
 using WeatherApp;
 
+#if ANDROID
+using running_club.Platforms.Android; 
+#endif
+
+
 public partial class WeatherPage : ContentPage
 {
     RestService _restService;
+#if ANDROID
+        private LightSensorService _lightSensorService;
+#endif
+    private bool _isWaiting = false;
 
     public WeatherPage()
     {
@@ -13,6 +22,12 @@ public partial class WeatherPage : ContentPage
         _restService = new RestService();
         BindingContext = new WeatherViewModel();
 
+#if ANDROID
+            _lightSensorService = MauiApplication.Current.Services.GetService<LightSensorService>();
+    {
+        _lightSensorService.LightLevelChanged += OnLightLevelChanged; 
+    }
+#endif
 
         // Wywo³anie metody przy starcie aplikacji
         GetWeatherForCurrentLocation();
@@ -56,4 +71,49 @@ public partial class WeatherPage : ContentPage
         requestUri += $"&APPID={Constants.OpenWeatherMapAPIKey}";
         return requestUri;
     }
+#if ANDROID
+private async void OnLightLevelChanged(float lightLevel)
+{
+    if (_isWaiting)
+        return;
+
+    _isWaiting = true;
+    await Task.Delay(3000); // Czekaj przez 3 sekundy, aby nie za czêsto zmieniaæ kolor
+
+    // Zmieniamy t³o strony na podstawie poziomu œwiat³a
+    if (lightLevel < 10) // Niski poziom œwiat³a
+    {
+        this.BackgroundColor = new Microsoft.Maui.Graphics.Color(170 / 255f, 170 / 255f, 170 / 255f);
+       
+    }
+    else // Wysoki poziom œwiat³a
+    {
+        this.BackgroundColor = Colors.White; // Jasne t³o
+    }
+
+    _isWaiting = false;
+}
+
+
+#endif
+
+    protected override void OnDisappearing()
+    {
+        base.OnDisappearing();
+
+#if ANDROID
+            _lightSensorService.Stop(); // Zatrzymanie detekcji œwiat³a
+#endif
+    }
+
+    protected override void OnAppearing()
+    {
+        base.OnAppearing();
+
+#if ANDROID
+            // Uruchamianie czujnika po powrocie na stronê
+            _lightSensorService?.Start();
+#endif
+    }
+
 }
