@@ -4,11 +4,20 @@ using Firebase.Auth;
 using System.Collections.ObjectModel;
 using running_club.Pages;
 
+#if ANDROID
+using running_club.Platforms.Android; 
+#endif
+
 namespace running_club.Pages;
 
 public partial class GoalsPage : ContentPage
 {
     private readonly FirebaseClient _firebaseClient;
+
+#if ANDROID
+        private LightSensorService _lightSensorService;
+#endif
+    private bool _isWaiting = false;
 
     // Kolekcja do przechowywania celów u¿ytkownika
     public ObservableCollection<Goals> MyGoalsList { get; set; } = new ObservableCollection<Goals>();
@@ -23,6 +32,13 @@ public partial class GoalsPage : ContentPage
 
         // Wczytaj dane
         LoadDataAsync();
+
+#if ANDROID
+            _lightSensorService = MauiApplication.Current.Services.GetService<LightSensorService>();
+    {
+        _lightSensorService.LightLevelChanged += OnLightLevelChanged; 
+    }
+#endif
     }
 
     private async void NavigateToPage(object sender, EventArgs e)
@@ -68,6 +84,50 @@ public partial class GoalsPage : ContentPage
         base.OnNavigatedTo(args);
 
         await LoadDataAsync();
+    }
+#if ANDROID
+private async void OnLightLevelChanged(float lightLevel)
+{
+    if (_isWaiting)
+        return;
+
+    _isWaiting = true;
+    await Task.Delay(3000); // Czekaj przez 3 sekundy, aby nie za czêsto zmieniaæ kolor
+
+    // Zmieniamy t³o strony na podstawie poziomu œwiat³a
+    if (lightLevel < 10) // Niski poziom œwiat³a
+    {
+        this.BackgroundColor = new Microsoft.Maui.Graphics.Color(170 / 255f, 170 / 255f, 170 / 255f);
+       
+    }
+    else // Wysoki poziom œwiat³a
+    {
+        this.BackgroundColor = Colors.White; // Jasne t³o
+    }
+
+    _isWaiting = false;
+}
+
+
+#endif
+
+    protected override void OnDisappearing()
+    {
+        base.OnDisappearing();
+
+#if ANDROID
+            _lightSensorService.Stop(); // Zatrzymanie detekcji œwiat³a
+#endif
+    }
+
+    protected override void OnAppearing()
+    {
+        base.OnAppearing();
+
+#if ANDROID
+            // Uruchamianie czujnika po powrocie na stronê
+            _lightSensorService?.Start();
+#endif
     }
 }
 

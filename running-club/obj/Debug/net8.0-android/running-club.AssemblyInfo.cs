@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("running-club")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+cb3394723e0ca16fc7e987d7b7ca33b5b3c7bdbd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+a20e02efbc6eaf8d6539a6c6259773e99173b3c8")]
 [assembly: System.Reflection.AssemblyProductAttribute("running-club")]
 [assembly: System.Reflection.AssemblyTitleAttribute("running-club")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

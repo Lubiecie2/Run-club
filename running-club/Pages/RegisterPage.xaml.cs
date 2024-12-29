@@ -49,14 +49,14 @@ public partial class RegisterPage : ContentPage
 
         if (!IsValidEmail(email))
         {
-            StatusLabel.Text = "Nieprawid³owy format adresu e-mail!";
+            StatusLabel.Text = "Nieprawidłowy format adresu e-mail!";
             StatusLabel.TextColor = Colors.Red;
             return;
         }
 
         if (password.Length < 6)
         {
-            StatusLabel.Text = "Has³o musi siê sk³adaæ z minimum 6 znaków!";
+            StatusLabel.Text = "Hasło musi się składać z minimum 6 znaków!";
             StatusLabel.TextColor = Colors.Red;
             return;
         }
@@ -73,8 +73,8 @@ public partial class RegisterPage : ContentPage
         }
         else
         {
-            StatusLabel.Text = "Pomyœlnie utworzono konto!";
-            //StatusLabel.Text = "Mo¿esz teraz siê zalogowaæ!";
+            StatusLabel.Text = "Pomyślnie utworzono konto!";
+
             StatusLabel.TextColor = Colors.Green;
 
             //await DisplayAlert("Registration Success", "Account created successfully!", "OK");
