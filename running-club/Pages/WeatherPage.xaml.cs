@@ -2,6 +2,8 @@ namespace running_club.Pages;
 using Microsoft.Maui.Devices.Sensors;
 using Newtonsoft.Json;
 using WeatherApp;
+using running_club.Pages;
+using System.Globalization;
 
 #if ANDROID
 using running_club.Platforms.Android; 
@@ -20,7 +22,8 @@ public partial class WeatherPage : ContentPage
     {
         InitializeComponent();
         _restService = new RestService();
-        BindingContext = new WeatherViewModel();
+        currentDateLabel.Text = DateTime.Now.ToString("dddd, dd MMMM", new CultureInfo("pl-PL"));
+
 
 #if ANDROID
             _lightSensorService = MauiApplication.Current.Services.GetService<LightSensorService>();

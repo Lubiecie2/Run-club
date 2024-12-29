@@ -86,11 +86,7 @@
                 HorizontalOptions="Center"
                 Text="{Binding Weather[0].Description}"
                 TextColor="White" />
-            <Label
-                 FontSize="12"
-                 HorizontalOptions="Center"
-                 Text="Wtorek, 05 Listopad"
-                 TextColor="White" />
+            <Label x:Name="currentDateLabel" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" />
         </StackLayout>
 
         <Frame
