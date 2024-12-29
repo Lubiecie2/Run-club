@@ -26,11 +26,8 @@ using Firebase.Database.Query;
 
 namespace running_club.Pages
 {
-    
-
     public partial class SummaryPage : ContentPage
     {
-
         private MemoryLayer? _lineStringLayer;
         private readonly FirebaseClient _firebaseClient;
 
@@ -57,10 +54,10 @@ namespace running_club.Pages
                 Layers = { tileLayer }
             };
 
-            // Ustaw mapê na bie¿¹c¹ lokalizacjê u¿ytkownika
-            _ = LoadLocationAsync();
+            // Ustaw mapê na podstawie pierwszego wspó³rzêdnego z tablicy
+            CenterMapOnFirstCoordinate(routeCoordinates);
 
-            SummaryMapView.Map.Layers.Add(OpenStreetMap.CreateTileLayer());
+            // Dodanie warstwy z lini¹
             _lineStringLayer = (MemoryLayer?)CreateLineStringLayer(CreateLineStringStyle(), routeCoordinates);
             SummaryMapView.Map.Layers.Add(_lineStringLayer);
         }
@@ -85,69 +82,32 @@ namespace running_club.Pages
             });
         }
 
-        private void UpdateMapLocation(Microsoft.Maui.Devices.Sensors.Location location)
+        // Funkcja centrowania mapy na pierwszym wspó³rzêdnym z tablicy
+        private void CenterMapOnFirstCoordinate(List<(double Latitude, double Longitude)> coordinates)
         {
-            if (location == null) return;
-
-            var position = new Mapsui.UI.Maui.Position(location.Latitude, location.Longitude);
-            var sphericalMercatorCoordinate = SphericalMercator.FromLonLat(location.Longitude, location.Latitude).ToMPoint();
-
-
-            SummaryMapView.Map.Navigator.CenterOn(sphericalMercatorCoordinate);
-            SummaryMapView.MyLocationLayer.UpdateMyLocation(position);
-        }
-
-        private async Task LoadLocationAsync()
-        {
-            try
+            if (coordinates.Count > 0)
             {
-                var location = await Geolocation.GetLocationAsync();
+                // Pobranie pierwszego wspó³rzêdnego
+                var firstCoordinate = coordinates.First();
 
-                if (location == null)
-                {
-                    location = await Geolocation.GetLocationAsync(new GeolocationRequest
-                    {
-                        DesiredAccuracy = GeolocationAccuracy.Medium,
-                        Timeout = TimeSpan.FromSeconds(30)
-                    });
-                }
+                // Konwersja wspó³rzêdnych na SphericalMercator
+                var sphericalMercatorCoordinate = SphericalMercator.FromLonLat(firstCoordinate.Longitude, firstCoordinate.Latitude).ToMPoint();
 
-                if (location != null)
-                {
-                    var position = new Mapsui.UI.Maui.Position(location.Latitude, location.Longitude);
-                    var sphericalMercatorCoordinate = SphericalMercator.FromLonLat(location.Longitude, location.Latitude).ToMPoint();
+                Console.WriteLine($"Centrowanie mapy na wspó³rzêdnych: {firstCoordinate.Latitude}, {firstCoordinate.Longitude}");
 
-                    SummaryMapView.Map.Navigator.CenterOnAndZoomTo(sphericalMercatorCoordinate, SummaryMapView.Map.Navigator.Resolutions[16]);
-                    SummaryMapView.MyLocationLayer.UpdateMyLocation(position);
-                }
+                // Ustawienie widoku mapy
+                SummaryMapView.Map.Home = n => n.CenterOn(sphericalMercatorCoordinate);
+                SummaryMapView.Map.Navigator.ZoomTo(2); // Ustawienie poziomu przybli¿enia (w zale¿noœci od tego, jak blisko chcesz byæ)
             }
-            catch (Exception ex)
+            else
             {
-                await DisplayAlert("Error", $"Unable to get location: {ex.Message}", "OK");
+                Console.WriteLine("Brak wspó³rzêdnych do ustawienia widoku mapy.");
             }
         }
 
-        public void ResetValues()
-        {
-            TimeLabel.Text = "00:00";
-            StepsLabel.Text = "0";
-            CaloriesLabel.Text = "0.00";
-            PaceLabel.Text = "00:00";
-            DistanceLabel.Text = "0.00 km";
-        }
-
-        private async void OnBackButtonClicked(object sender, EventArgs e)
-        {
-            await Navigation.PopToRootAsync(); // Powrót do strony g³ównej
-
-
-            ResetValues(); 
-
-        }
-
+        // Funkcja tworzenia warstwy linii
         public static ILayer CreateLineStringLayer(IStyle style, List<(double Latitude, double Longitude)> coordinates)
         {
-            // Je¿eli lista wspó³rzêdnych jest pusta, nie twórz linii
             if (coordinates.Count < 2)
             {
                 return new MemoryLayer
@@ -172,6 +132,7 @@ namespace running_club.Pages
             };
         }
 
+        // Styl linii
         public static IStyle CreateLineStringStyle()
         {
             return new VectorStyle
@@ -183,9 +144,9 @@ namespace running_club.Pages
             };
         }
 
-
+        private async void OnBackButtonClicked(object sender, EventArgs e)
+        {
+            await Navigation.PopToRootAsync(); // Powrót do strony g³ównej
+        }
     }
 }
-
-
-

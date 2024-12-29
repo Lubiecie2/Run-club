@@ -9,75 +9,86 @@ using Mapsui.UI.Maui;
 using NetTopologySuite.Geometries;
 using NetTopologySuite.IO;
 using System.Globalization;
+
 namespace running_club.Pages;
 public partial class HistoryDetailPage : ContentPage
 {
     private MemoryLayer? _lineStringLayer;
+
     public HistoryDetailPage(History history)
     {
         InitializeComponent();
         BindingContext = history;
+
         // Dodanie warstwy OpenStreetMap
         HistoryMapView.Map.Layers.Add(OpenStreetMap.CreateTileLayer());
+
         // Zdefiniowanie routeCoordinates
         var routeCoordinates = history.coordinates.Select(coord => (Latitude: coord.X, Longitude: coord.Y)).ToList();
-        // Utworzenie warstwy tylko, je?li jest wystarczaj?ca liczba wspó?rz?dnych
+
+        // Centrum mapy na podstawie pierwszego koordynatu
+        CenterMapOnFirstCoordinate(routeCoordinates);
+
+        // Utworzenie warstwy tylko, jeœli jest wystarczaj¹ca liczba wspó³rzêdnych
         _lineStringLayer = CreateLineStringLayer(CreateLineStringStyle(), routeCoordinates);
-        // Dodanie warstwy do mapy, je?li nie jest null
+
+        // Dodanie warstwy do mapy, jeœli nie jest null
         if (_lineStringLayer != null)
         {
             HistoryMapView.Map.Layers.Add(_lineStringLayer);
         }
+
         // Ukrycie przycisków
         HistoryMapView.IsMyLocationButtonVisible = false;
         HistoryMapView.IsNorthingButtonVisible = false;
-        // Wywo?anie asynchroniczne metody ?adowania lokalizacji
-        _ = LoadLocationAsync();
+
+        var tileLayer = OpenStreetMap.CreateTileLayer();
+        tileLayer.MaxVisible = 0.0001; // Obs³uga du¿ego przybli¿enia
+        tileLayer.MinVisible = 0.0000001; // Opcjonalne dodatkowe ustawienia
+        HistoryMapView.Map.Layers.Add(tileLayer);
+
     }
-    private async Task LoadLocationAsync()
+
+    private void CenterMapOnFirstCoordinate(List<(double Latitude, double Longitude)> coordinates)
     {
-        try
+        if (coordinates.Count > 0)
         {
-            var location = await Geolocation.GetLocationAsync();
-            if (location == null)
-            {
-                location = await Geolocation.GetLocationAsync(new GeolocationRequest
-                {
-                    DesiredAccuracy = GeolocationAccuracy.Medium,
-                    Timeout = TimeSpan.FromSeconds(30)
-                });
-            }
-            if (location != null)
-            {
-                var position = new Mapsui.UI.Maui.Position(location.Latitude, location.Longitude);
-                var sphericalMercatorCoordinate = SphericalMercator.FromLonLat(location.Longitude, location.Latitude).ToMPoint();
-                // Centrum mapy
-                HistoryMapView.Map.Navigator.CenterOnAndZoomTo(sphericalMercatorCoordinate, HistoryMapView.Map.Navigator.Resolutions[18]);
-                HistoryMapView.MyLocationLayer.UpdateMyLocation(position);
-            }
+            // Pobranie pierwszego koordynatu
+            var firstCoordinate = coordinates.First();
+
+            // Konwersja wspó³rzêdnych na SphericalMercator
+            var sphericalMercatorCoordinate = SphericalMercator.FromLonLat(firstCoordinate.Longitude, firstCoordinate.Latitude).ToMPoint();
+
+            Console.WriteLine($"Centrowanie mapy na wspó³rzêdnych: {firstCoordinate.Latitude}, {firstCoordinate.Longitude}");
+
+            // Ustawienie widoku mapy
+            HistoryMapView.Map.Home = n => n.CenterOn(sphericalMercatorCoordinate);
+            HistoryMapView.Map.Navigator.ZoomTo(2); // Ustawienie poziomu przybli¿enia
         }
-        catch (Exception ex)
+        else
         {
-            await DisplayAlert("Error", $"Unable to get location: {ex.Message}", "OK");
+            Console.WriteLine("Brak wspó³rzêdnych do ustawienia widoku mapy.");
         }
     }
-    // Utworzenie warstwy linii (tylko dla odpowiedniej liczby wspó?rz?dnych)
+
+
     public static MemoryLayer? CreateLineStringLayer(IStyle style, List<(double Latitude, double Longitude)> coordinates)
     {
-        // Je?li mniej ni? 2 wspó?rz?dne, zwracamy null
         if (coordinates.Count < 2)
         {
-            Console.WriteLine("Za ma?o wspó?rz?dnych, aby narysowa? lini?");
+            Console.WriteLine("Za ma³o wspó³rzêdnych, aby narysowaæ liniê");
             return null;
         }
-        // Tworzenie linii w formacie WKT
+
         string line = string.Join(", ", coordinates.Select(coord => $"{coord.Latitude.ToString(CultureInfo.InvariantCulture)} {coord.Longitude.ToString(CultureInfo.InvariantCulture)}"));
-        Console.WriteLine($"Wspó?rz?dne linii: {line}");
+        Console.WriteLine($"Wspó³rzêdne linii: {line}");
+
         var lineString = new WKTReader().Read($"LINESTRING({line})") as LineString;
         if (lineString != null)
         {
             lineString = new LineString(lineString.Coordinates.Select(v => SphericalMercator.FromLonLat(v.Y, v.X).ToCoordinate()).ToArray());
         }
+
         return new MemoryLayer
         {
             Features = new[] { new GeometryFeature { Geometry = lineString } },
@@ -85,17 +96,18 @@ public partial class HistoryDetailPage : ContentPage
             Style = style
         };
     }
-    // Styl linii
+
     public static IStyle CreateLineStringStyle()
     {
         return new VectorStyle
         {
             Fill = null,
             Outline = null,
-#pragma warning disable CS8670 // Object or collection initializer implicitly dereferences possibly null member.
+#pragma warning disable CS8670
             Line = { Color = Mapsui.Styles.Color.FromString("Blue"), Width = 4 }
         };
     }
+
     private void RemoveMyLocationMarker()
     {
         var myLocationLayer = HistoryMapView.Map.Layers.FirstOrDefault(layer => layer.Name == "MyLocationLayer");
