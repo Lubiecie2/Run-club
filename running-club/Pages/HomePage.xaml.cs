@@ -81,6 +81,7 @@ public partial class HomePage : ContentPage
         MyMapView.IsMyLocationButtonVisible = false;
         MyMapView.IsNorthingButtonVisible = false;
         MyMapView.IsZoomButtonVisible = true;
+      
 
 #if ANDROID
     // Pobranie instancji LightSensorService
@@ -95,6 +96,7 @@ public partial class HomePage : ContentPage
         MyMapView.Map.Layers.Add(OpenStreetMap.CreateTileLayer());
         _lineStringLayer = (MemoryLayer?)CreateLineStringLayer(CreateLineStringStyle());
         MyMapView.Map.Layers.Add(_lineStringLayer);
+        MyMapView.Map.Layers.Add(MyMapView.MyLocationLayer);
 
         RequestPermissions();
 
