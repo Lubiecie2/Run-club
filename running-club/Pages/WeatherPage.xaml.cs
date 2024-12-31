@@ -17,7 +17,7 @@ public partial class WeatherPage : ContentPage
         private LightSensorService _lightSensorService;
 #endif
     private bool _isWaiting = false;
-
+    //Szczesliwego nowego roku 2025
     public WeatherPage()
     {
         InitializeComponent();
