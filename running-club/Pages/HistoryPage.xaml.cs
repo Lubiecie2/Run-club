@@ -11,17 +11,24 @@ using running_club.Platforms.Android;
 
 namespace running_club.Pages;
 
+/// @brief Klasa reprezentująca stronę historii aktywności.
+/// @details Obsługuje pobieranie i wyświetlanie danych z Firebase, zarządza nawigacją do szczegółów aktywności oraz obsługuje czujnik światła na platformie Android.
 public partial class HistoryPage : ContentPage
 {
-
+    /// @brief Klient Firebase do połączenia z bazą danych.
     private readonly FirebaseClient _firebaseClient;
+
+    /// @brief Kolekcja przechowująca dane o historii aktywności.
     public ObservableCollection<History> MyHistoryList { get; set; } = new ObservableCollection<History>();
 
 #if ANDROID
-        private LightSensorService _lightSensorService;
+    /// @brief Serwis do obsługi czujnika światła na platformie Android.
+    private LightSensorService _lightSensorService;
 #endif
+    /// @brief Flaga wskazująca, czy aplikacja oczekuje na wykonanie operacji związanej z czujnikiem światła.
     private bool _isWaiting = false;
 
+    /// @brief Konstruktor klasy HistoryPage.
     public HistoryPage()
     {
         InitializeComponent();
@@ -30,17 +37,17 @@ public partial class HistoryPage : ContentPage
         _firebaseClient = new FirebaseClient("https://running-club-5b96d-default-rtdb.europe-west1.firebasedatabase.app/");
 
 #if ANDROID
-    // Pobranie instancji LightSensorService
-   
             _lightSensorService = MauiApplication.Current.Services.GetService<LightSensorService>();
     {
-        _lightSensorService.LightLevelChanged += OnLightLevelChanged; // Subskrybuj zdarzenie
+        _lightSensorService.LightLevelChanged += OnLightLevelChanged; 
     }
 #endif
 
         LoadDataAsync();
 
     }
+
+    /// @brief Asynchronicznie ładuje dane o historii aktywności użytkownika z Firebase.
     public async Task LoadDataAsync()
 
     {
@@ -57,71 +64,72 @@ public partial class HistoryPage : ContentPage
             }
         });
     }
+
+    /// @brief Obsługuje wybór elementu z listy historii.
+    /// @param sender Obiekt, który wywołał zdarzenie.
+    /// @param e Argumenty zdarzenia SelectionChangedEventArgs.
     private async void OnHistoryItemSelected(object sender, SelectionChangedEventArgs e)
     {
-        // Pobranie wybranego elementu
         if (e.CurrentSelection.FirstOrDefault() is History selectedHistory)
         {
-            // Nawigacja do strony szczegółowej
             await Navigation.PushAsync(new HistoryDetailPage(selectedHistory));
         }
-
-        // Odznaczanie wybranego elementu
         ((CollectionView)sender).SelectedItem = null;
     }
 
 #if ANDROID
-private async void OnLightLevelChanged(float lightLevel)
-{
+
+    /// @brief Obsługuje zmiany poziomu światła wykryte przez czujnik.
+    /// @param lightLevel Aktualny poziom światła wykryty przez czujnik.
+    private async void OnLightLevelChanged(float lightLevel)
+    {
     if (_isWaiting)
         return;
 
     _isWaiting = true;
-    await Task.Delay(3000); // Czekaj przez 3 sekundy, aby nie za często zmieniać kolor
+    await Task.Delay(3000); 
 
-    // Zmieniamy tło strony na podstawie poziomu światła
-    if (lightLevel < 10) // Niski poziom światła
+
+    if (lightLevel < 10)
     {
         this.BackgroundColor = new Microsoft.Maui.Graphics.Color(170 / 255f, 170 / 255f, 170 / 255f);
-        UpdateTextColor(Colors.White); // Kolor tekstu na biały
+        UpdateTextColor(Colors.White);
     }
-    else // Wysoki poziom światła
+    else 
     {
-        this.BackgroundColor = Colors.White; // Jasne tło
-        UpdateTextColor(Colors.Red); // Kolor tekstu na czerwony
+        this.BackgroundColor = Colors.White;
+        UpdateTextColor(Colors.Red); 
     }
-
     _isWaiting = false;
 }
 
-
-private void UpdateTextColor(Microsoft.Maui.Graphics.Color textColor)
-{
-    UpdateTextColorRecursively(this.Content, textColor); // Zmieniamy kolor dla wszystkich kontrolek na stronie
-}
+    /// @brief Zmienia kolor tekstu na stronie.
+    /// @param textColor Kolor, na który zmieniony zostanie tekst.
+    private void UpdateTextColor(Microsoft.Maui.Graphics.Color textColor)
+    {
+    UpdateTextColorRecursively(this.Content, textColor); 
+    }
 
 private void UpdateTextColorRecursively(IView view, Microsoft.Maui.Graphics.Color textColor)
 {
-    // Jeśli kontrolka jest typu Label, zmieniamy jej kolor tekstu
     if (view is Microsoft.Maui.Controls.Label label)
     {
         label.TextColor = textColor;
     }
     else if (view is Microsoft.Maui.Controls.Button button)
     {
-        button.TextColor = textColor; // Zmieniamy tekst Button
+        button.TextColor = textColor;
     }
     else if (view is Microsoft.Maui.Controls.Entry entry)
     {
-        entry.TextColor = textColor; // Zmieniamy tekst Entry
+        entry.TextColor = textColor; 
     }
 
-    // Jeśli kontrolka jest Layout-em, sprawdzamy wszystkie dzieci
     if (view is Microsoft.Maui.Controls.Layout layout)
     {
         foreach (var child in layout.Children)
         {
-            UpdateTextColorRecursively(child, textColor); // Rekurencyjnie sprawdzamy dzieci
+            UpdateTextColorRecursively(child, textColor);
         }
     }
 }
@@ -132,7 +140,7 @@ private void UpdateTextColorRecursively(IView view, Microsoft.Maui.Graphics.Colo
         base.OnDisappearing();
 
 #if ANDROID
-            _lightSensorService.Stop(); // Zatrzymanie detekcji światła
+            _lightSensorService.Stop();
 #endif
     }
 
@@ -141,7 +149,6 @@ private void UpdateTextColorRecursively(IView view, Microsoft.Maui.Graphics.Colo
         base.OnAppearing();
 
 #if ANDROID
-            // Uruchamianie czujnika po powrocie na stronę
             _lightSensorService?.Start();
 #endif
     }
