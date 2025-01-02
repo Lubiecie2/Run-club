@@ -6,15 +6,21 @@ using running_club.Platforms.Android;
 
 namespace running_club.Pages;
 
+/// @brief Klasa reprezentująca stronę rejestracji w aplikacji.
+/// @details Obsługuje rejestrację nowego użytkownika, walidację danych oraz obsługę czujnika światła na platformie Android.
 public partial class RegisterPage : ContentPage
 {
+    /// @brief Serwis Firebase do obsługi uwierzytelniania.
     private FirebaseAuthService _authService;
 
-    #if ANDROID
-        private LightSensorService _lightSensorService;
-    #endif
+#if ANDROID
+    /// @brief Serwis obsługujący czujnik światła na platformie Android.
+    private LightSensorService _lightSensorService;
+#endif
+    /// @brief Flaga wskazująca, czy aplikacja oczekuje na wykonanie operacji.
     private bool _isWaiting = false;
 
+    /// @brief Konstruktor klasy RegisterPage.
     public RegisterPage()
     {
         InitializeComponent();
@@ -28,11 +34,17 @@ public partial class RegisterPage : ContentPage
 #endif
     }
 
+    /// @brief Obsługuje kliknięcie linku do strony logowania.
+    /// @param sender Obiekt, który wywołał zdarzenie.
+    /// @param e Argumenty zdarzenia.
     private async void OnLoginLinkTapped(object sender, EventArgs e)
     {
         await Navigation.PushAsync(new LoginPage());
     }
 
+    /// @brief Obsługuje kliknięcie przycisku rejestracji.
+    /// @param sender Obiekt, który wywołał zdarzenie.
+    /// @param e Argumenty zdarzenia.
     private async void OnRegisterButtonClicked(object sender, EventArgs e)
     {
         string email = EmailEntry.Text;
@@ -61,77 +73,72 @@ public partial class RegisterPage : ContentPage
             return;
         }
 
-
-
-
         string result = await _authService.RegisterWithEmailAndPasswordAsync(email, password);
-
 
         if (!string.IsNullOrEmpty(result) && result.StartsWith("Error"))
         {
-            StatusLabel.Text = result; // Show the error message
+            StatusLabel.Text = result; 
         }
         else
         {
             StatusLabel.Text = "Pomyślnie utworzono konto!";
-
             StatusLabel.TextColor = Colors.Green;
-
-            //await DisplayAlert("Registration Success", "Account created successfully!", "OK");
-            // Optionally, navigate to a new page or log the user in automatically
-            // await Navigation.PushAsync(new LoginPage());
-
             EmailEntry.Text = string.Empty;
             PasswordEntry.Text = string.Empty;
             ConfirmPasswordEntry.Text = string.Empty;
         }
     }
+
+    /// @brief Sprawdza poprawność formatu adresu e-mail.
+    /// @param email Adres e-mail do sprawdzenia.
+    /// @return True, jeśli adres e-mail jest poprawny; w przeciwnym razie False.
     private bool IsValidEmail(string email)
     {
         string emailPattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
         return Regex.IsMatch(email, emailPattern);
     }
 #if ANDROID
-private async void OnLightLevelChanged(float lightLevel)
+
+    /// @brief Obsługuje zmiany poziomu światła wykryte przez czujnik.
+    /// @param lightLevel Poziom światła wykryty przez czujnik.
+    private async void OnLightLevelChanged(float lightLevel)
 {
     if (_isWaiting)
         return;
 
     _isWaiting = true;
-    await Task.Delay(3000); // Czekaj przez 3 sekundy, aby nie za często zmieniać kolor
+    await Task.Delay(3000);
 
-    // Zmieniamy tło strony na podstawie poziomu światła
-    if (lightLevel < 10) // Niski poziom światła
+    if (lightLevel < 10) 
     {
         this.BackgroundColor = new Microsoft.Maui.Graphics.Color(170 / 255f, 170 / 255f, 170 / 255f);
        
     }
-    else // Wysoki poziom światła
+    else 
     {
-        this.BackgroundColor = Colors.White; // Jasne tło
+        this.BackgroundColor = Colors.White; 
     }
 
     _isWaiting = false;
 }
-
-
 #endif
 
+    /// @brief Wykonywane, gdy strona znika.
     protected override void OnDisappearing()
     {
         base.OnDisappearing();
 
 #if ANDROID
-            _lightSensorService.Stop(); // Zatrzymanie detekcji światła
+            _lightSensorService.Stop();
 #endif
     }
 
+    /// @brief Wykonywane, gdy strona pojawia się ponownie.
     protected override void OnAppearing()
     {
         base.OnAppearing();
 
 #if ANDROID
-            // Uruchamianie czujnika po powrocie na stronę
             _lightSensorService?.Start();
 #endif
     }

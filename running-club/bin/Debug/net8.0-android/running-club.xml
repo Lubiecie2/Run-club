@@ -4,5 +4,57 @@
         <name>running-club</name>
     </assembly>
     <members>
+        <member name="T:running_club.Pages.ProfilPage">
+            @class ProfilPage
+            @brief Klasa reprezentujaca strone profilu w aplikacji.
+        </member>
+        <member name="F:running_club.Pages.ProfilPage._authService">
+            @brief Serwis Firebase do zarzadzania uwierzytelnieniem.
+        </member>
+        <member name="F:running_club.Pages.ProfilPage._lightSensorService">
+            @brief Serwis czujnika swiatla na platformie Android.
+        </member>
+        <member name="F:running_club.Pages.ProfilPage._isWaiting">
+            @brief Flaga wskazujaca, czy aplikacja oczekuje na wykonanie operacji.
+        </member>
+        <member name="M:running_club.Pages.ProfilPage.#ctor">
+            @brief Konstruktor klasy ProfilPage.
+        </member>
+        <member name="M:running_club.Pages.ProfilPage.DisplayUserEmail">
+            @brief Wyswietla email zalogowanego uzytkownika.
+        </member>
+        <member name="M:running_club.Pages.ProfilPage.OnLogoutButtonClicked(System.Object,System.EventArgs)">
+            @brief Obsluguje wylogowanie uzytkownika.
+            @param sender Obiekt, ktory wywolal zdarzenie.
+            @param e Argumenty zdarzenia.
+        </member>
+        <member name="M:running_club.Pages.ProfilPage.OnCalculateCaloriesClicked(System.Object,System.EventArgs)">
+            @brief Oblicza zapotrzebowanie kaloryczne na podstawie danych uzytkownika.
+            @param sender Obiekt, ktory wywolal zdarzenie.
+            @param e Argumenty zdarzenia.
+        </member>
+        <member name="M:running_club.Pages.ProfilPage.CalculateBMR(System.Double,System.Double,System.Double,System.Boolean)">
+            @brief Oblicza podstawowa przemiane materii (BMR) uzytkownika.
+            @param weight Waga uzytkownika w kilogramach.
+            @param height Wzrost uzytkownika w centymetrach.
+            @param age Wiek uzytkownika w latach.
+            @param isFemale Czy uzytkownik jest kobieta.
+            @return Wartosc BMR.
+        </member>
+        <member name="M:running_club.Pages.ProfilPage.GetActivityMultiplier(System.String)">
+            @brief Zwraca mnoznik aktywnosci na podstawie wybranego poziomu aktywnosci.
+            @param activityLevel Poziom aktywnosci wybrany przez uzytkownika.
+            @return Mnoznik aktywnosci.
+        </member>
+        <member name="M:running_club.Pages.ProfilPage.OnLightLevelChanged(System.Single)">
+            @brief Obsluguje zmiany poziomu swiatla wykryte przez czujnik.
+            @param lightLevel Poziom swiatla wykryty przez czujnik.
+        </member>
+        <member name="M:running_club.Pages.ProfilPage.OnDisappearing">
+            @brief Wykonywane, gdy strona znika.
+        </member>
+        <member name="M:running_club.Pages.ProfilPage.OnAppearing">
+            @brief Wykonywane, gdy strona pojawia sie ponownie.
+        </member>
     </members>
 </doc>
