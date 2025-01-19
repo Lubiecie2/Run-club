@@ -7,6 +7,7 @@ using System.Collections.ObjectModel;
 using running_club.Platforms.Android; 
 #endif
 
+/// @brief Strona dodawania celow
 public partial class AddGoalsPage : ContentPage
 {
     private readonly FirebaseClient _firebaseClient;
@@ -20,7 +21,7 @@ public partial class AddGoalsPage : ContentPage
     int count = 0;
 
 
-
+    /// @brief Konstruktor klasy AddGoalsPage
     public AddGoalsPage()
 	{
 		InitializeComponent();
@@ -35,11 +36,14 @@ public partial class AddGoalsPage : ContentPage
 #endif
 
     }
+
+    /// @brief Funkcja nawigujaca do strony celow
     private async void NavigateToPage(object sender, EventArgs e)
     {
         await Navigation.PushAsync(new GoalsPage());
     }
 
+    /// @brief Funkcja zapisujaca cele
     private async void OnSave(object sender, EventArgs e)
     {
         string uid = await SecureStorage.GetAsync("user_uid");

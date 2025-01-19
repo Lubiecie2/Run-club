@@ -1,0 +1,1797 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.1.2)  18 JAN 2025 17:06
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**refman
+(./refman.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2023/05/17 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk10.clo
+File: bk10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count187
+\c@chapter=\count188
+\c@section=\count189
+\c@subsection=\count190
+\c@subsubsection=\count191
+\c@paragraph=\count192
+\c@subparagraph=\count193
+\c@figure=\count194
+\c@table=\count195
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Rollback for package 'array' requested -> date 2016-10-06.
+         Best approximation is the release introduced on 2016-10-06.
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array-2016-10-06.sty
+Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
+\col@sep=\dimen141
+\extrarowheight=\dimen142
+\NC@list=\toks17
+\extratabsurround=\skip50
+\backup@length=\skip51
+))
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+package info suppressed
+)
+(./doxygen.sty
+Package: doxygen 
+ (/usr/share/texlive/texmf-dist/tex/latex/base/alltt.sty
+Package: alltt 2021/01/29 v2.0g defines alltt environment
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count196
+\calc@Bcount=\count197
+\calc@Adimen=\dimen143
+\calc@Bdimen=\dimen144
+\calc@Askip=\skip52
+\calc@Bskip=\skip53
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count198
+\calc@Cskip=\skip54
+)
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count199
+\float@exts=\toks18
+\float@box=\box51
+\@float@everytoks=\toks19
+\@floatcapt=\box52
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2023-11-06 v1.5v LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks20
+\verbatim@line=\toks21
+\verbatim@in@stream=\read2
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
+Package xcolor Info: Model `RGB' extended on input line 1366.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2022/06/20 v1.0f Color table columns (DPC)
+\everycr=\toks22
+\minrowclearance=\skip55
+\rownum=\count266
+)
+(./longtable_doxygen.sty
+Package: longtable_doxygen 2014/10/28 v4.11 Multi-page Table package (DPC) - fr
+ozen version for doxygen
+\LTleft=\skip56
+\LTright=\skip57
+\LTpre=\skip58
+\LTpost=\skip59
+\LTchunksize=\count267
+\LTcapwidth=\dimen145
+\LT@head=\box53
+\LT@firsthead=\box54
+\LT@foot=\box55
+\LT@lastfoot=\box56
+\LT@cols=\count268
+\LT@rows=\count269
+\c@LT@tables=\count270
+\c@LT@chunks=\count271
+\LT@p@ftn=\toks23
+) (./tabu_doxygen.sty
+Package: tabu_doxygen 2011/02/26 v2.8 - flexible LaTeX tabulars (FC), frozen ve
+rsion for doxygen
+
+(/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box57
+\sift@deathcycles=\count272
+\@vwid@loff=\dimen146
+\@vwid@roff=\dimen147
+)
+\c@taburow=\count273
+\tabu@nbcols=\count274
+\tabu@cnt=\count275
+\tabu@Xcol=\count276
+\tabu@alloc=\count277
+\tabu@nested=\count278
+\tabu@target=\dimen148
+\tabu@spreadtarget=\dimen149
+\tabu@naturalX=\dimen150
+\tabucolX=\dimen151
+\tabu@Xsum=\dimen152
+\extrarowdepth=\dimen153
+\abovetabulinesep=\dimen154
+\belowtabulinesep=\dimen155
+\tabustrutrule=\dimen156
+\tabu@thebody=\toks24
+\tabu@footnotes=\toks25
+\tabu@box=\box58
+\tabu@arstrutbox=\box59
+\tabu@hleads=\box60
+\tabu@vleads=\box61
+\tabu@cellskip=\skip60
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2024/01/20 4.5c verbatim text (tvz,hv)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks26
+)
+\FV@CodeLineNo=\count279
+\FV@InFile=\read3
+\FV@TabBox=\box62
+\c@FancyVerbLine=\count280
+\FV@StepNumber=\count281
+\FV@OutFile=\write3
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2023/07/08 v2.11c `tabularx' package (DPC)
+\TX@col@width=\dimen157
+\TX@old@table=\dimen158
+\TX@old@col=\dimen159
+\TX@target=\dimen160
+\TX@delta=\dimen161
+\TX@cols=\count282
+\TX@ftn=\toks27
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
+\c@tracingmulticols=\count283
+\mult@box=\box63
+\multicol@leftmargin=\dimen162
+\c@unbalance=\count284
+\c@collectmore=\count285
+\doublecol@number=\count286
+\multicoltolerance=\count287
+\multicolpretolerance=\count288
+\full@width=\dimen163
+\page@free=\dimen164
+\premulticols=\dimen165
+\postmulticols=\dimen166
+\multicolsep=\skip61
+\multicolbaselineskip=\skip62
+\partial@page=\box64
+\last@line=\box65
+\mc@boxedresult=\box66
+\maxbalancingoverflow=\dimen167
+\mult@rightbox=\box67
+\mult@grightbox=\box68
+\mult@firstbox=\box69
+\mult@gfirstbox=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\@tempa=\box101
+\@tempa=\box102
+\@tempa=\box103
+\@tempa=\box104
+\@tempa=\box105
+\@tempa=\box106
+\c@minrows=\count289
+\c@columnbadness=\count290
+\c@finalcolumnbadness=\count291
+\last@try=\dimen168
+\multicolovershoot=\dimen169
+\multicolundershoot=\dimen170
+\mult@nat@firstbox=\box107
+\colbreak@box=\box108
+\mc@col@check@num=\count292
+)
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip63
+\multirow@cntb=\count293
+\multirow@dima=\skip64
+\bigstrutjot=\dimen171
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hanging/hanging.sty
+Package: hanging 2009/09/02 v1.2b hanging paragraphs and punctuation
+\h@ngcommawd=\skip65
+\h@ngfstopwd=\skip66
+\h@ngquotewd=\skip67
+\h@ngdquotewd=\skip68
+\h@ngquerywd=\skip69
+\h@ngexclwd=\skip70
+\h@ngcolonwd=\skip71
+\h@ngscolonwd=\skip72
+)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2022/10/17 v1.3a Adjusting TeX boxes (trim, clip, ...)
+
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks28
+\XKV@tempa@toks=\toks29
+)
+\XKV@depth=\count294
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+)
+\Gin@req@height=\dimen172
+\Gin@req@width=\dimen173
+)
+(/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
+\collectedbox=\box109
+)
+\tc@llx=\dimen174
+\tc@lly=\dimen175
+\tc@urx=\dimen176
+\tc@ury=\dimen177
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen178
+\adjbox@Height=\dimen179
+\adjbox@Depth=\dimen180
+\adjbox@Totalheight=\dimen181
+\adjbox@pwidth=\dimen182
+\adjbox@pheight=\dimen183
+\adjbox@pdepth=\dimen184
+\adjbox@ptotalheight=\dimen185
+
+(/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
+\c@checkoddpage=\count295
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks30
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/stackengine/stackengine.sty
+Package: stackengine 2021/07/22 v4.11\ Stacking text and objects in convenient 
+ways
+
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count296
+)
+(/usr/share/texlive/texmf-dist/tex/generic/listofitems/listofitems.sty
+(/usr/share/texlive/texmf-dist/tex/generic/listofitems/listofitems.tex
+\loi_cnt_foreach_nest=\count297
+\loi_nestcnt=\count298
+)
+Package: listofitems 2019/08/21 v1.63 Grab items in lists using user-specified 
+sep char (CT)
+)
+\c@@stackindex=\count299
+\@boxshift=\skip73
+\stack@tmplength=\skip74
+\temp@stkl=\skip75
+\@stackedboxwidth=\skip76
+\@addedbox=\box110
+\@anchorbox=\box111
+\@insetbox=\box112
+\se@backgroundbox=\box113
+\stackedbox=\box114
+\@centerbox=\box115
+\c@ROWcellindex@=\count300
+)
+(/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip77
+\enit@outerparindent=\dimen186
+\enit@toks=\toks31
+\enit@inbox=\box116
+\enit@count@id=\count301
+\enitdp@description=\count302
+)
+(/usr/share/texlive/texmf-dist/tex/generic/alphalph/alphalph.sty
+Package: alphalph 2019/12/09 v2.6 Convert numbers to letters (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box117
+\UL@hyphenbox=\box118
+\UL@skip=\skip78
+\UL@hook=\toks32
+\UL@height=\dimen187
+\UL@pe=\count303
+\UL@pixel=\dimen188
+\ULC@box=\box119
+Package: ulem 2019/11/18
+\ULdepth=\dimen189
+)
+\xrefbox=\box120
+\xreflength=\skip79
+\CodeWidthChar=\skip80
+\CodeHeightChar=\skip81
+\DoxyCodeWidth=\skip82
+\c@DoxyEnumeratei=\count304
+\c@DoxyEnumerateii=\count305
+\c@DoxyEnumerateiii=\count306
+\c@DoxyEnumerateiv=\count307
+\c@DoxyEnumeratev=\count308
+\c@DoxyEnumeratevi=\count309
+\c@DoxyEnumeratevii=\count310
+\c@DoxyEnumerateviii=\count311
+\c@DoxyEnumerateix=\count312
+\c@DoxyEnumeratex=\count313
+\c@DoxyEnumeratexi=\count314
+\c@DoxyEnumeratexii=\count315
+\enitdp@DoxyEnumerate=\count316
+\enitdp@DoxyItemize=\count317
+\c@subsubsubsection=\count318
+\c@subsubsubsubsection=\count319
+\c@subsubsubsubsubsection=\count320
+\c@subsubsubsubsubsubsection=\count321
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks33
+\inpenc@posthook=\toks34
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
+Package: makeidx 2021/10/04 v1.0m Standard LaTeX package
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
+(/usr/share/texlive/texmf-dist/tex/latex/wasysym/wasysym.sty
+Package: wasysym 2020/01/19 v2.4 Wasy-2 symbol support package
+\symwasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
+(Font)                  U/wasy/m/n --> U/wasy/b/n on input line 93.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2024/01/07 v24.1 The Babel package
+\babel@savecnt=\count322
+\U@D=\dimen190
+\l@unhyphenated=\language89
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read4
+\bbl@dirlevel=\count323
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel-polish/polish.ldf
+Language: polish 2022/03/12 1.3 Babel support for Polish
+Package babel Info: Making " an active character on input line 101.
+))
+(/usr/share/texlive/texmf-dist/tex/generic/babel/locale/pl/babel-polish.tex
+Package babel Info: Importing font and identification data for polish
+(babel)             from babel-pl.ini. Reported on input line 11.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/helvet.sty
+Package: helvet 2020/03/25 PSNFSS-v9.3 (WaS) 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/courier.sty
+Package: courier 2020/03/25 PSNFSS-v9.3 (WaS) 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count324
+\Gm@cntv=\count325
+\c@Gm@tempcnt=\count326
+\Gm@bindingoffset=\dimen191
+\Gm@wd@mp=\dimen192
+\Gm@odd@mp=\dimen193
+\Gm@even@mp=\dimen194
+\Gm@layoutwidth=\dimen195
+\Gm@layoutheight=\dimen196
+\Gm@layouthoffset=\dimen197
+\Gm@layoutvoffset=\dimen198
+\Gm@dimlist=\toks35
+)
+(/usr/share/texlive/texmf-dist/tex/latex/changepage/changepage.sty
+Package: changepage 2009/10/20 v1.0c check page and change page layout
+\c@cp@cntr=\count327
+\cp@tempcnt=\count328
+LaTeX Info: Redefining \checkoddpage on input line 59.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip83
+\f@nch@O@elh=\skip84
+\f@nch@O@erh=\skip85
+\f@nch@O@olh=\skip86
+\f@nch@O@orh=\skip87
+\f@nch@O@elf=\skip88
+\f@nch@O@erf=\skip89
+\f@nch@O@olf=\skip90
+\f@nch@O@orf=\skip91
+)
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip92
+\bibsep=\skip93
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count329
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has chapter divisions on input line 51.
+\cftparskip=\skip94
+\cftbeforetoctitleskip=\skip95
+\cftaftertoctitleskip=\skip96
+\cftbeforepartskip=\skip97
+\cftpartnumwidth=\skip98
+\cftpartindent=\skip99
+\cftbeforechapskip=\skip100
+\cftchapindent=\skip101
+\cftchapnumwidth=\skip102
+\cftbeforesecskip=\skip103
+\cftsecindent=\skip104
+\cftsecnumwidth=\skip105
+\cftbeforesubsecskip=\skip106
+\cftsubsecindent=\skip107
+\cftsubsecnumwidth=\skip108
+\cftbeforesubsubsecskip=\skip109
+\cftsubsubsecindent=\skip110
+\cftsubsubsecnumwidth=\skip111
+\cftbeforeparaskip=\skip112
+\cftparaindent=\skip113
+\cftparanumwidth=\skip114
+\cftbeforesubparaskip=\skip115
+\cftsubparaindent=\skip116
+\cftsubparanumwidth=\skip117
+\cftbeforeloftitleskip=\skip118
+\cftafterloftitleskip=\skip119
+\cftbeforefigskip=\skip120
+\cftfigindent=\skip121
+\cftfignumwidth=\skip122
+\c@lofdepth=\count330
+\c@lotdepth=\count331
+\cftbeforelottitleskip=\skip123
+\cftafterlottitleskip=\skip124
+\cftbeforetabskip=\skip125
+\cfttabindent=\skip126
+\cfttabnumwidth=\skip127
+)
+\@indexfile=\write4
+\openout4 = `refman.idx'.
+
+
+Writing index file refman.idx
+(/usr/share/texlive/texmf-dist/tex/latex/newunicodechar/newunicodechar.sty
+Package: newunicodechar 2018/04/08 v1.2 Defining Unicode characters
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2024-01-20 v7.01h Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count332
+)
+\@linkdim=\dimen199
+\Hy@linkcounter=\count333
+\Hy@pagecounter=\count334
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2024-01-20 v7.01h Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+\Hy@SavedSpaceFactor=\count335
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2024-01-20 v7.01h Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4179.
+Package hyperref Info: Link nesting OFF on input line 4184.
+Package hyperref Info: Hyper index ON on input line 4187.
+Package hyperref Info: Plain pages OFF on input line 4194.
+Package hyperref Info: Backreferencing ON on input line 4197.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4446.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/backref.sty
+Package: backref 2023-11-26 v1.44 Bibliographical back referencing
+
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+85.
+))
+\c@Hy@tempcnt=\count336
+
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4784.
+\XeTeXLinkMargin=\dimen256
+
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+)
+\Fld@menulength=\count337
+\Field@Width=\dimen257
+\Fld@charsize=\dimen258
+Package hyperref Info: Hyper figures OFF on input line 6063.
+Package hyperref Info: Link nesting OFF on input line 6068.
+Package hyperref Info: Hyper index ON on input line 6071.
+Package hyperref Info: backreferencing ON on input line 6076.
+Package hyperref Info: Link coloring OFF on input line 6083.
+Package hyperref Info: Link coloring with OCG OFF on input line 6088.
+Package hyperref Info: PDF/A mode OFF on input line 6093.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count338
+\c@Item=\count339
+\c@Hfootnote=\count340
+)
+Package hyperref Info: Driver: hpdftex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2024-01-20 v7.01h Hyperref driver for pdfTeX
+\Fld@listcount=\count341
+\c@bookmark@seq@number=\count342
+\Hy@SectionHShift=\skip128
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 189.
+Package hyperref Info: Option `unicode' set `true' on input line 189.
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen259
+\captionmargin=\dimen260
+\caption@leftmargin=\dimen261
+\caption@rightmargin=\dimen262
+\caption@width=\dimen263
+\caption@indent=\dimen264
+\caption@parindent=\dimen265
+\caption@hangindent=\dimen266
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count343
+\c@continuedfloat=\count344
+Package caption Info: changepage package is loaded.
+\caption@adjustwidth@hsize=\dimen267
+\caption@adjustwidth@linewidth=\dimen268
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/etoc/etoc.sty
+Package: etoc 2023/10/29 v1.2d Completely customisable TOCs (JFB)
+\Etoc@toctoks=\toks36
+\c@etoc@tocid=\count345
+\etoc@framed@titlebox=\box121
+\etoc@framed@contentsbox=\box122
+)
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 21
+1.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
+File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
+)
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 211.
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count346
+\l__pdf_internal_box=\box123
+)
+(./refman.aux
+
+LaTeX Warning: Label `classrunning__club_1_1WinUI_1_1App_a5a0d9ee9314098abe276f
+20f652ad795' multiply defined.
+
+
+LaTeX Warning: Label `classrunning__club_1_1AppDelegate_a592f36171269874fdbda29
+163df177c7' multiply defined.
+
+)
+\openout1 = `refman.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+ (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count347
+\scratchdimen=\dimen269
+\scratchbox=\box124
+\nofMPsegments=\count348
+\nofMParguments=\count349
+\everyMPshowfont=\toks37
+\MPscratchCnt=\count350
+\MPscratchDim=\dimen270
+\MPnumerator=\count351
+\makeMPintoPDFobject=\count352
+\everyMPtoPDFconversion=\toks38
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=702.78308pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-31.2056pt
+* \headheight=12.0pt
+* \headsep=18.06749pt
+* \topskip=10.0pt
+* \footskip=25.29494pt
+* \marginparwidth=125.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package backref Info: ** backref set up for natbib ** on input line 211.
+Package hyperref Info: Link coloring ON on input line 211.
+(./refman.out) (./refman.out)
+\@outlinefile=\write5
+\openout5 = `refman.out'.
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+\Etoc@tf=\read5
+Package hyperref Info: Option `pageanchor' set `false' on input line 219.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 219.
+
+Package hyperref Info: Option `unicode' set `true' on input line 219.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 12.9599pt on input line 224.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 10.79993pt on input line 226.
+ [1
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-di
+st/fonts/enc/dvips/base/8r.enc}] [2
+
+]
+\tf@toc=\write6
+\openout6 = `refman.toc'.
+
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 8.99994pt on input line 232.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 232
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 232
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 23
+2.
+
+(/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
+File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
+)
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 6.29996pt on input line 232.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 7.19995pt on input line 232.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 23
+2.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 6.29996pt on input line 232.
+ [1] [2] [3] [4]
+[5] [6]
+Underfull \hbox (badness 2096) in paragraph at lines 232--232
+ [][] [][]\T1/phv/m/n/10 7.12 Do-ku-men-ta-cja pliku obj/[]Debug/net8.0-windows
+10.0.19041.0/win10-x64/running-club.Assembly[] 
+ []
+
+
+Underfull \hbox (badness 1062) in paragraph at lines 232--232
+ [][] [][]\T1/phv/m/n/10 7.16 Do-ku-men-ta-cja pliku obj/[]Release/net8.0-macca
+talyst/maccatalyst-arm64/running-club.Assembly[] 
+ []
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
+ [][] [][]\T1/phv/m/n/10 7.29 Do-ku-men-ta-cja pliku obj/[]Debug/net8.0-windows
+10.0.19041.0/win10-x64/running-club.Global[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
+ [][] [][]\T1/phv/m/n/10 7.38 Do-ku-men-ta-cja pliku obj/[]Release/net8.0-macca
+talyst/maccatalyst-arm64/running-club.Global[] 
+ []
+
+
+Underfull \hbox (badness 7030) in paragraph at lines 232--232
+ [][] [][]\T1/phv/m/n/10 7.41 Do-ku-men-ta-cja pliku obj/[]Release/net8.0-windo
+ws10.0.19041.0/win10-x64/running-club.Global[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
+ [][] [][]\T1/phv/m/n/10 7.43 Do-ku-men-ta-cja pliku obj/[]Debug/net8.0-ios/ios
+-arm64/.NETCore[]App,Version=v8.0.Assembly[] 
+ []
+
+
+Overfull \hbox (31.41576pt too wide) in paragraph at lines 232--232
+ [][] [][]\T1/phv/m/n/10 7.45 Do-ku-men-ta-cja pliku obj/[]Debug/net8.0-maccata
+lyst/maccatalyst-x64/.NETCore[]App,Version=v8.0.Assembly[] 
+ []
+
+
+Overfull \hbox (46.81429pt too wide) in paragraph at lines 232--232
+ [][] [][]\T1/phv/m/n/10 7.46 Do-ku-men-ta-cja pliku obj/[]Debug/net8.0-windows
+10.0.19041.0/win10-x64/.NETCore[]App,Version=v8.0.Assembly[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
+ [][] [][]\T1/phv/m/n/10 7.48 Do-ku-men-ta-cja pliku obj/[]Release/net8.0-ios/i
+os-arm64/.NETCore[]App,Version=v8.0.Assembly[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
+ [][] [][]\T1/phv/m/n/10 7.50 Do-ku-men-ta-cja pliku obj/[]Release/net8.0-macca
+talyst/.NETCore[]App,Version=v8.0.Assembly[] 
+ []
+
+
+Overfull \hbox (49.3164pt too wide) in paragraph at lines 232--232
+ [][] [][]\T1/phv/m/n/10 7.51 Do-ku-men-ta-cja pliku obj/[]Release/net8.0-macca
+talyst/maccatalyst-arm64/.NETCore[]App,Version=v8.0.Assembly[] 
+ []
+
+
+Overfull \hbox (38.09364pt too wide) in paragraph at lines 232--232
+ [][] [][]\T1/phv/m/n/10 7.52 Do-ku-men-ta-cja pliku obj/[]Release/net8.0-macca
+talyst/maccatalyst-x64/.NETCore[]App,Version=v8.0.Assembly[] 
+ []
+
+[8]
+Overfull \hbox (53.49217pt too wide) in paragraph at lines 232--232
+ [][] [][]\T1/phv/m/n/10 7.53 Do-ku-men-ta-cja pliku obj/[]Release/net8.0-windo
+ws10.0.19041.0/win10-x64/.NETCore[]App,Version=v8.0.Assembly[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
+ [][] [][]\T1/phv/m/n/10 7.64 Do-ku-men-ta-cja pliku obj/[]Debug/net8.0-windows
+10.0.19041.0/win10-x64/[]Platforms/[]Windows/[] 
+ []
+
+
+Underfull \hbox (badness 5431) in paragraph at lines 232--232
+ [][] [][]\T1/phv/m/n/10 7.65 Do-ku-men-ta-cja pliku obj/[]Release/net8.0-windo
+ws10.0.19041.0/win10-x64/[]Platforms/[]Windows/[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
+ [][] [][]\T1/phv/m/n/10 7.66 Do-ku-men-ta-cja pliku obj/[]Debug/net8.0-windows
+10.0.19041.0/win10-x64/[]Platforms/[]Windows/[] 
+ []
+
+
+Underfull \hbox (badness 5431) in paragraph at lines 232--232
+ [][] [][]\T1/phv/m/n/10 7.67 Do-ku-men-ta-cja pliku obj/[]Release/net8.0-windo
+ws10.0.19041.0/win10-x64/[]Platforms/[]Windows/[] 
+ []
+
+[9] [10]
+Package hyperref Info: Option `pageanchor' set `true' on input line 235.
+
+Rozdzia\l  1.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 18.66588pt on input line 237.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 18.66588pt on input line 237.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 22.39185pt on input line 237.
+(./namespaces.tex
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 12.9599pt on input line 1.
+) [1
+
+
+] [2
+
+]
+Rozdzia\l  2.
+(./hierarchy.tex [3]) [4]
+Rozdzia\l  3.
+(./annotated.tex [5
+
+]) [6]
+Rozdzia\l  4.
+(./files.tex [7
+
+] [8]) [9] [10
+
+]
+Rozdzia\l  5.
+(./namespacerunning__club.tex
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 6
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1phv.fd
+File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
+)
+LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 6.
+)
+(./namespacerunning__club_1_1Pages.tex
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 8.09995pt on input line 7.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 7.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 8.09995pt on input line 7.
+ [11])
+(./namespacerunning__club_1_1Platforms.tex)
+(./namespacerunning__club_1_1Platforms_1_1Android.tex)
+(./namespacerunning__club_1_1WinUI.tex) (./namespaceWeatherApp.tex) [12]
+Rozdzia\l  6.
+(./classrunning__club_1_1Pages_1_1AddGoalsPage.tex <./classrunning__club_1_1Pag
+es_1_1AddGoalsPage.pdf>
+<classrunning__club_1_1Pages_1_1AddGoalsPage.pdf, id=2530, 501.875pt x 181.6787
+6pt>
+File: classrunning__club_1_1Pages_1_1AddGoalsPage.pdf Graphic file (type pdf)
+<use classrunning__club_1_1Pages_1_1AddGoalsPage.pdf>
+Package pdftex.def Info: classrunning__club_1_1Pages_1_1AddGoalsPage.pdf  used 
+on input line 11.
+(pdftex.def)             Requested size: 157.19547pt x 56.9055pt.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 18.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 6.29996pt on input line 18.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 10.79993pt on input line 33.
+ [13
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
+\T1/pcr/m/n/8 Observable[]Collection$\OML/cmm/m/it/8 <$[]$>$ \T1/pcr/m/n/8 runn
+ing[]_[]club.[]Pages.[]Add[]Goals[]Page.[]My[]Goals[]List = new Observable[]
+ []
+
+) (./classrunning__club_1_1App.tex <./classrunning__club_1_1App.pdf>
+<classrunning__club_1_1App.pdf, id=2561, 501.875pt x 331.81966pt>
+File: classrunning__club_1_1App.pdf Graphic file (type pdf)
+<use classrunning__club_1_1App.pdf>
+Package pdftex.def Info: classrunning__club_1_1App.pdf  used on input line 6.
+(pdftex.def)             Requested size: 86.0681pt x 56.9055pt.
+)
+(./classrunning__club_1_1WinUI_1_1App.tex [14] <./classrunning__club_1_1WinUI_1
+_1App.pdf>
+<classrunning__club_1_1WinUI_1_1App.pdf, id=2577, 501.875pt x 50.318pt>
+File: classrunning__club_1_1WinUI_1_1App.pdf Graphic file (type pdf)
+<use classrunning__club_1_1WinUI_1_1App.pdf>
+Package pdftex.def Info: classrunning__club_1_1WinUI_1_1App.pdf  used on input 
+line 11.
+(pdftex.def)             Requested size: 398.30716pt x 39.93353pt.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 7.19995pt on input line 55.
+ [15]) (./classrunning__club_1_1AppDelegate.tex <./classrunning__club_1_1AppDel
+egate.pdf>
+<classrunning__club_1_1AppDelegate.pdf, id=2604, 501.875pt x 116.71605pt>
+File: classrunning__club_1_1AppDelegate.pdf Graphic file (type pdf)
+<use classrunning__club_1_1AppDelegate.pdf>
+Package pdftex.def Info: classrunning__club_1_1AppDelegate.pdf  used on input l
+ine 6.
+(pdftex.def)             Requested size: 244.68796pt x 56.9055pt.
+) (./classrunning__club_1_1AppShell.tex <./classrunning__club_1_1AppShell.pdf>
+<classrunning__club_1_1AppShell.pdf, id=2614, 501.875pt x 269.46672pt>
+File: classrunning__club_1_1AppShell.pdf Graphic file (type pdf)
+<use classrunning__club_1_1AppShell.pdf>
+Package pdftex.def Info: classrunning__club_1_1AppShell.pdf  used on input line
+ 6.
+(pdftex.def)             Requested size: 105.97887pt x 56.9055pt.
+ [16
+pdfTeX warning (ext4): destination with the same identifier (name{classrunning_
+_club_1_1WinUI_1_1App_a5a0d9ee9314098abe276f20f652ad795}) has been already used
+, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.8 \end{figure}
+                
+pdfTeX warning (ext4): destination with the same identifier (name{classrunning_
+_club_1_1AppDelegate_a592f36171269874fdbda29163df177c7}) has been already used,
+ duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.8 \end{figure}
+                ])
+(./classrunning__club_1_1Pages_1_1BooleanToColorConverter.tex <./classrunning__
+club_1_1Pages_1_1BooleanToColorConverter.pdf>
+<classrunning__club_1_1Pages_1_1BooleanToColorConverter.pdf, id=2631, 501.875pt
+ x 140.87631pt>
+File: classrunning__club_1_1Pages_1_1BooleanToColorConverter.pdf Graphic file (
+type pdf)
+<use classrunning__club_1_1Pages_1_1BooleanToColorConverter.pdf>
+Package pdftex.def Info: classrunning__club_1_1Pages_1_1BooleanToColorConverter
+.pdf  used on input line 6.
+(pdftex.def)             Requested size: 202.7222pt x 56.9055pt.
+LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 23.
+LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 23.
+ [17])
+(./classrunning__club_1_1Pages_1_1Clouds.tex)
+(./classrunning__club_1_1Pages_1_1Coord.tex [18])
+(./classWeatherApp_1_1FahrenheitToCelciusConverter.tex <./classWeatherApp_1_1Fa
+hrenheitToCelciusConverter.pdf>
+<classWeatherApp_1_1FahrenheitToCelciusConverter.pdf, id=2663, 501.875pt x 149.
+8097pt>
+File: classWeatherApp_1_1FahrenheitToCelciusConverter.pdf Graphic file (type pd
+f)
+<use classWeatherApp_1_1FahrenheitToCelciusConverter.pdf>
+Package pdftex.def Info: classWeatherApp_1_1FahrenheitToCelciusConverter.pdf  u
+sed on input line 6.
+(pdftex.def)             Requested size: 190.6379pt x 56.9055pt.
+ [19]) (./classFirebaseAuthService.tex [20])
+(./classrunning__club_1_1Pages_1_1Goals.tex <./classrunning__club_1_1Pages_1_1G
+oals.pdf>
+<classrunning__club_1_1Pages_1_1Goals.pdf, id=2703, 501.875pt x 237.57759pt>
+File: classrunning__club_1_1Pages_1_1Goals.pdf Graphic file (type pdf)
+<use classrunning__club_1_1Pages_1_1Goals.pdf>
+Package pdftex.def Info: classrunning__club_1_1Pages_1_1Goals.pdf  used on inpu
+t line 6.
+(pdftex.def)             Requested size: 120.2074pt x 56.9055pt.
+ [21] [22]) (./classrunning__club_1_1Pages_1_1GoalsPage.tex <./classrunning__cl
+ub_1_1Pages_1_1GoalsPage.pdf>
+<classrunning__club_1_1Pages_1_1GoalsPage.pdf, id=2745, 501.875pt x 202.77757pt
+>
+File: classrunning__club_1_1Pages_1_1GoalsPage.pdf Graphic file (type pdf)
+<use classrunning__club_1_1Pages_1_1GoalsPage.pdf>
+Package pdftex.def Info: classrunning__club_1_1Pages_1_1GoalsPage.pdf  used on 
+input line 11.
+(pdftex.def)             Requested size: 140.83801pt x 56.9055pt.
+ [23]
+Overfull \hbox (51.20102pt too wide) in paragraph at lines 108--109
+\T1/pcr/m/n/8 Observable[]Collection$\OML/cmm/m/it/8 <$[]$>$ \T1/pcr/m/n/8 runn
+ing[]_[]club.[]Pages.[]Goals[]Page.[]My[]Goals[]List = new Observable[]Collecti
+on$\OML/cmm/m/it/8 <$[]$>$\T1/pcr/m/n/8 ()
+ []
+
+) (./classrunning__club_1_1Pages_1_1History.tex [24] [25])
+(./classrunning__club_1_1Pages_1_1HistoryDetailPage.tex <./classrunning__club_1
+_1Pages_1_1HistoryDetailPage.pdf>
+<classrunning__club_1_1Pages_1_1HistoryDetailPage.pdf, id=2806, 501.875pt x 168
+.70027pt>
+File: classrunning__club_1_1Pages_1_1HistoryDetailPage.pdf Graphic file (type p
+df)
+<use classrunning__club_1_1Pages_1_1HistoryDetailPage.pdf>
+Package pdftex.def Info: classrunning__club_1_1Pages_1_1HistoryDetailPage.pdf  
+used on input line 11.
+(pdftex.def)             Requested size: 169.28743pt x 56.9055pt.
+ [26])
+(./classrunning__club_1_1Pages_1_1HistoryPage.tex <./classrunning__club_1_1Page
+s_1_1HistoryPage.pdf>
+<classrunning__club_1_1Pages_1_1HistoryPage.pdf, id=2835, 501.875pt x 194.89813
+pt>
+File: classrunning__club_1_1Pages_1_1HistoryPage.pdf Graphic file (type pdf)
+<use classrunning__club_1_1Pages_1_1HistoryPage.pdf>
+Package pdftex.def Info: classrunning__club_1_1Pages_1_1HistoryPage.pdf  used o
+n input line 11.
+(pdftex.def)             Requested size: 146.53555pt x 56.9055pt.
+ [27] [28]
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
+\T1/pcr/m/n/8 Observable[]Collection$\OML/cmm/m/it/8 <$[]$>$ \T1/pcr/m/n/8 runn
+ing[]_[]club.[]Pages.[]History[]Page.[]My[]History[]List = new Observable[]
+ []
+
+) (./classrunning__club_1_1Pages_1_1HomePage.tex <./classrunning__club_1_1Pages
+_1_1HomePage.pdf>
+<classrunning__club_1_1Pages_1_1HomePage.pdf, id=2872, 501.875pt x 202.77757pt>
+
+File: classrunning__club_1_1Pages_1_1HomePage.pdf Graphic file (type pdf)
+<use classrunning__club_1_1Pages_1_1HomePage.pdf>
+Package pdftex.def Info: classrunning__club_1_1Pages_1_1HomePage.pdf  used on i
+nput line 11.
+(pdftex.def)             Requested size: 140.83801pt x 56.9055pt.
+ [29])
+(./classrunning__club_1_1Platforms_1_1Android_1_1LightSensorService.tex <./clas
+srunning__club_1_1Platforms_1_1Android_1_1LightSensorService.pdf>
+<classrunning__club_1_1Platforms_1_1Android_1_1LightSensorService.pdf, id=2895,
+ 501.875pt x 63.92883pt>
+File: classrunning__club_1_1Platforms_1_1Android_1_1LightSensorService.pdf Grap
+hic file (type pdf)
+<use classrunning__club_1_1Platforms_1_1Android_1_1LightSensorService.pdf>
+Package pdftex.def Info: classrunning__club_1_1Platforms_1_1Android_1_1LightSen
+sorService.pdf  used on input line 6.
+(pdftex.def)             Requested size: 398.38373pt x 50.74399pt.
+ [30] [31])
+(./classrunning__club_1_1Pages_1_1LoginPage.tex <./classrunning__club_1_1Pages_
+1_1LoginPage.pdf>
+<classrunning__club_1_1Pages_1_1LoginPage.pdf, id=2932, 501.875pt x 203.81145pt
+>
+File: classrunning__club_1_1Pages_1_1LoginPage.pdf Graphic file (type pdf)
+<use classrunning__club_1_1Pages_1_1LoginPage.pdf>
+Package pdftex.def Info: classrunning__club_1_1Pages_1_1LoginPage.pdf  used on 
+input line 11.
+(pdftex.def)             Requested size: 140.12582pt x 56.9055pt.
+ [32]) (./classWeatherApp_1_1LongToDateTimeConverter.tex <./classWeatherApp_1_1
+LongToDateTimeConverter.pdf>
+<classWeatherApp_1_1LongToDateTimeConverter.pdf, id=2955, 501.875pt x 163.88226
+pt>
+File: classWeatherApp_1_1LongToDateTimeConverter.pdf Graphic file (type pdf)
+<use classWeatherApp_1_1LongToDateTimeConverter.pdf>
+Package pdftex.def Info: classWeatherApp_1_1LongToDateTimeConverter.pdf  used o
+n input line 6.
+(pdftex.def)             Requested size: 174.26512pt x 56.9055pt.
+ [33])
+(./classrunning__club_1_1Pages_1_1Main.tex [34])
+(./classrunning__club_1_1MainActivity.tex <./classrunning__club_1_1MainActivity
+.pdf>
+<classrunning__club_1_1MainActivity.pdf, id=2988, 501.875pt x 238.99287pt>
+File: classrunning__club_1_1MainActivity.pdf Graphic file (type pdf)
+<use classrunning__club_1_1MainActivity.pdf>
+Package pdftex.def Info: classrunning__club_1_1MainActivity.pdf  used on input 
+line 6.
+(pdftex.def)             Requested size: 119.49521pt x 56.9055pt.
+) (./classrunning__club_1_1MainApplication.tex <./classrunning__club_1_1MainApp
+lication.pdf>
+<classrunning__club_1_1MainApplication.pdf, id=2996, 501.875pt x 212.43365pt>
+File: classrunning__club_1_1MainApplication.pdf Graphic file (type pdf)
+<use classrunning__club_1_1MainApplication.pdf>
+Package pdftex.def Info: classrunning__club_1_1MainApplication.pdf  used on inp
+ut line 6.
+(pdftex.def)             Requested size: 134.43593pt x 56.9055pt.
+ [35]) (./classrunning__club_1_1MainPage.tex <./classrunning__club_1_1MainPage.
+pdf>
+<classrunning__club_1_1MainPage.pdf, id=3013, 501.875pt x 259.02773pt>
+File: classrunning__club_1_1MainPage.pdf Graphic file (type pdf)
+<use classrunning__club_1_1MainPage.pdf>
+Package pdftex.def Info: classrunning__club_1_1MainPage.pdf  used on input line
+ 6.
+(pdftex.def)             Requested size: 110.25201pt x 56.9055pt.
+) (./classPedometerViewModel.tex <./classPedometerViewModel.pdf>
+<classPedometerViewModel.pdf, id=3021, 501.875pt x 257.37154pt>
+File: classPedometerViewModel.pdf Graphic file (type pdf)
+<use classPedometerViewModel.pdf>
+Package pdftex.def Info: classPedometerViewModel.pdf  used on input line 11.
+(pdftex.def)             Requested size: 110.9642pt x 56.9055pt.
+ [36] [37]) (./classrunning__club_1_1Pages_1_1ProfilPage.tex <./classrunning__c
+lub_1_1Pages_1_1ProfilPage.pdf>
+<classrunning__club_1_1Pages_1_1ProfilPage.pdf, id=3061, 501.875pt x 204.8453pt
+>
+File: classrunning__club_1_1Pages_1_1ProfilPage.pdf Graphic file (type pdf)
+<use classrunning__club_1_1Pages_1_1ProfilPage.pdf>
+Package pdftex.def Info: classrunning__club_1_1Pages_1_1ProfilPage.pdf  used on
+ input line 11.
+(pdftex.def)             Requested size: 139.41362pt x 56.9055pt.
+ [38])
+(./classrunning__club_1_1Pages_1_1RegisterPage.tex <./classrunning__club_1_1Pag
+es_1_1RegisterPage.pdf>
+<classrunning__club_1_1Pages_1_1RegisterPage.pdf, id=3083, 501.875pt x 189.3875
+4pt>
+File: classrunning__club_1_1Pages_1_1RegisterPage.pdf Graphic file (type pdf)
+<use classrunning__club_1_1Pages_1_1RegisterPage.pdf>
+Package pdftex.def Info: classrunning__club_1_1Pages_1_1RegisterPage.pdf  used 
+on input line 11.
+(pdftex.def)             Requested size: 150.7934pt x 56.9055pt.
+ [39]) (./classrunning__club_1_1Resource.tex <./classrunning__club_1_1Resource.
+pdf>
+<classrunning__club_1_1Resource.pdf, id=3102, 501.875pt x 57.52492pt>
+File: classrunning__club_1_1Resource.pdf Graphic file (type pdf)
+<use classrunning__club_1_1Resource.pdf>
+Package pdftex.def Info: classrunning__club_1_1Resource.pdf  used on input line
+ 6.
+(pdftex.def)             Requested size: 398.32246pt x 45.65482pt.
+) (./classrunning__club_1_1Pages_1_1RestService.tex
+[40]) (./classrunning__club_1_1Pages_1_1RunPage.tex <./classrunning__club_1_1Pa
+ges_1_1RunPage.pdf>
+<classrunning__club_1_1Pages_1_1RunPage.pdf, id=3123, 501.875pt x 213.56789pt>
+File: classrunning__club_1_1Pages_1_1RunPage.pdf Graphic file (type pdf)
+<use classrunning__club_1_1Pages_1_1RunPage.pdf>
+Package pdftex.def Info: classrunning__club_1_1Pages_1_1RunPage.pdf  used on in
+put line 6.
+(pdftex.def)             Requested size: 133.72374pt x 56.9055pt.
+ [41]) (./classrunning__club_1_1Pages_1_1SummaryPage.tex <./classrunning__club_
+1_1Pages_1_1SummaryPage.pdf>
+<classrunning__club_1_1Pages_1_1SummaryPage.pdf, id=3140, 501.875pt x 184.1781p
+t>
+File: classrunning__club_1_1Pages_1_1SummaryPage.pdf Graphic file (type pdf)
+<use classrunning__club_1_1Pages_1_1SummaryPage.pdf>
+Package pdftex.def Info: classrunning__club_1_1Pages_1_1SummaryPage.pdf  used o
+n input line 11.
+(pdftex.def)             Requested size: 155.05888pt x 56.9055pt.
+ [42])
+(./classrunning__club_1_1Pages_1_1Sys.tex [43])
+(./classrunning__club_1_1Pages_1_1Weather.tex [44])
+(./classrunning__club_1_1Pages_1_1WeatherData.tex [45])
+(./classrunning__club_1_1Pages_1_1WeatherPage.tex [46] <./classrunning__club_1_
+1Pages_1_1WeatherPage.pdf>
+<classrunning__club_1_1Pages_1_1WeatherPage.pdf, id=3249, 501.875pt x 188.4942p
+t>
+File: classrunning__club_1_1Pages_1_1WeatherPage.pdf Graphic file (type pdf)
+<use classrunning__club_1_1Pages_1_1WeatherPage.pdf>
+Package pdftex.def Info: classrunning__club_1_1Pages_1_1WeatherPage.pdf  used o
+n input line 11.
+(pdftex.def)             Requested size: 151.51324pt x 56.9055pt.
+ [47]) (./classWeatherApp_1_1WeatherViewModel.tex <./classWeatherApp_1_1Weather
+ViewModel.pdf>
+<classWeatherApp_1_1WeatherViewModel.pdf, id=3272, 501.875pt x 196.8153pt>
+File: classWeatherApp_1_1WeatherViewModel.pdf Graphic file (type pdf)
+<use classWeatherApp_1_1WeatherViewModel.pdf>
+Package pdftex.def Info: classWeatherApp_1_1WeatherViewModel.pdf  used on input
+ line 6.
+(pdftex.def)             Requested size: 145.10352pt x 56.9055pt.
+ [48]) (./classWeatherViewModel.tex <./classWeatherViewModel.pdf>
+<classWeatherViewModel.pdf, id=3296, 501.875pt x 257.37154pt>
+File: classWeatherViewModel.pdf Graphic file (type pdf)
+<use classWeatherViewModel.pdf>
+Package pdftex.def Info: classWeatherViewModel.pdf  used on input line 6.
+(pdftex.def)             Requested size: 110.9642pt x 56.9055pt.
+ [49]) (./classrunning__club_1_1Pages_1_1Wind.tex)
+[50]
+Rozdzia\l  7.
+(./App_8xaml_8cs.tex) (./Platforms_2Windows_2App_8xaml_8cs.tex)
+(./AppShell_8xaml_8cs.tex) (./MainPage_8xaml_8cs.tex [51
+
+])
+(./MauiProgram_8cs.tex)
+(./_8NETCoreApp_00Version_0av7_80_8AssemblyAttributes_8cs.tex)
+(./Debug_2net7_80_2running-club_8AssemblyInfo_8cs.tex)
+(./Debug_2net8_80-android_2running-club_8AssemblyInfo_8cs.tex)
+(./Debug_2net8_80-ios_2ios-arm64_2running-club_8AssemblyInfo_8cs.tex)
+(./Debug_2net8_80-ios_2iossimulator-x64_2running-club_8AssemblyInfo_8cs.tex)
+(./Debug_2net8_80-maccatalyst_2maccatalyst-x64_2running-club_8AssemblyInfo_8cs.
+tex)
+(./Debug_2net8_80-windows10_80_819041_80_2win10-x64_2running-club_8AssemblyInfo
+_8cs.tex) (./Release_2net8_80-android_2running-club_8AssemblyInfo_8cs.tex)
+(./Release_2net8_80-ios_2ios-arm64_2running-club_8AssemblyInfo_8cs.tex)
+(./Release_2net8_80-ios_2iossimulator-x64_2running-club_8AssemblyInfo_8cs.tex)
+(./Release_2net8_80-maccatalyst_2maccatalyst-arm64_2running-club_8AssemblyInfo_
+8cs.tex)
+(./Release_2net8_80-maccatalyst_2maccatalyst-x64_2running-club_8AssemblyInfo_8c
+s.tex) (./Release_2net8_80-maccatalyst_2running-club_8AssemblyInfo_8cs.tex)
+(./Release_2net8_80-windows10_80_819041_80_2win10-x64_2running-club_8AssemblyIn
+fo_8cs.tex) (./Debug_2net7_80_2running-club_8GlobalUsings_8g_8cs.tex)
+(./Debug_2net8_80-android_2android-arm_2running-club_8GlobalUsings_8g_8cs.tex)
+(./Debug_2net8_80-android_2android-arm64_2running-club_8GlobalUsings_8g_8cs.tex
+) (./Debug_2net8_80-android_2android-x64_2running-club_8GlobalUsings_8g_8cs.tex
+) (./Debug_2net8_80-android_2android-x86_2running-club_8GlobalUsings_8g_8cs.tex
+) (./Debug_2net8_80-android_2running-club_8GlobalUsings_8g_8cs.tex)
+(./Debug_2net8_80-ios_2ios-arm64_2running-club_8GlobalUsings_8g_8cs.tex)
+(./Debug_2net8_80-ios_2iossimulator-x64_2running-club_8GlobalUsings_8g_8cs.tex)
+
+(./Debug_2net8_80-maccatalyst_2maccatalyst-x64_2running-club_8GlobalUsings_8g_8
+cs.tex)
+(./Debug_2net8_80-windows10_80_819041_80_2win10-x64_2running-club_8GlobalUsings
+_8g_8cs.tex) (./Release_2net6_80-android_2running-club_8GlobalUsings_8g_8cs.tex
+)
+(./Release_2net8_80-android_2android-arm_2running-club_8GlobalUsings_8g_8cs.tex
+)
+(./Release_2net8_80-android_2android-arm64_2running-club_8GlobalUsings_8g_8cs.t
+ex)
+(./Release_2net8_80-android_2android-x64_2running-club_8GlobalUsings_8g_8cs.tex
+)
+(./Release_2net8_80-android_2android-x86_2running-club_8GlobalUsings_8g_8cs.tex
+) (./Release_2net8_80-android_2running-club_8GlobalUsings_8g_8cs.tex)
+(./Release_2net8_80-ios_2ios-arm64_2running-club_8GlobalUsings_8g_8cs.tex)
+(./Release_2net8_80-ios_2iossimulator-x64_2running-club_8GlobalUsings_8g_8cs.te
+x)
+(./Release_2net8_80-maccatalyst_2maccatalyst-arm64_2running-club_8GlobalUsings_
+8g_8cs.tex)
+(./Release_2net8_80-maccatalyst_2maccatalyst-x64_2running-club_8GlobalUsings_8g
+_8cs.tex)
+(./Release_2net8_80-maccatalyst_2running-club_8GlobalUsings_8g_8cs.tex)
+(./Release_2net8_80-windows10_80_819041_80_2win10-x64_2running-club_8GlobalUsin
+gs_8g_8cs.tex)
+(./Debug_2net8_80-android_2_8NETCoreApp_00Version_0av8_80_8AssemblyAttributes_8
+cs.tex)
+(./Debug_2net8_80-ios_2ios-arm64_2_8NETCoreApp_00Version_0av8_80_8AssemblyAttri
+butes_8cs.tex)
+(./Debug_2net8_80-ios_2iossimulator-x64_2_8NETCoreApp_00Version_0av8_80_8Assemb
+lyAttributes_8cs.tex)
+(./Debug_2net8_80-maccatalyst_2maccatalyst-x64_2_8NETCoreApp_00Version_0av8_80_
+8AssemblyAttributes_8cs.tex)
+(./Debug_2net8_80-windows10_80_819041_80_2win10-x64_2_8NETCoreApp_00Version_0av
+8_80_8AssemblyAttributes_8cs.tex)
+(./Release_2net8_80-android_2_8NETCoreApp_00Version_0av8_80_8AssemblyAttributes
+_8cs.tex)
+(./Release_2net8_80-ios_2ios-arm64_2_8NETCoreApp_00Version_0av8_80_8AssemblyAtt
+ributes_8cs.tex)
+(./Release_2net8_80-ios_2iossimulator-x64_2_8NETCoreApp_00Version_0av8_80_8Asse
+mblyAttributes_8cs.tex)
+(./Release_2net8_80-maccatalyst_2_8NETCoreApp_00Version_0av8_80_8AssemblyAttrib
+utes_8cs.tex)
+(./Release_2net8_80-maccatalyst_2maccatalyst-arm64_2_8NETCoreApp_00Version_0av8
+_80_8AssemblyAttributes_8cs.tex)
+(./Release_2net8_80-maccatalyst_2maccatalyst-x64_2_8NETCoreApp_00Version_0av8_8
+0_8AssemblyAttributes_8cs.tex)
+(./Release_2net8_80-windows10_80_819041_80_2win10-x64_2_8NETCoreApp_00Version_0
+av8_80_8AssemblyAttributes_8cs.tex)
+(./Debug_2net8_80-android_2____Microsoft_8Android_8Resource_8Designer_8cs.tex
+[52] [53]
+Overfull \vbox (1804.91484pt too high) has occurred while \output is active []
+
+
+[54])
+(./Release_2net8_80-android_2____Microsoft_8Android_8Resource_8Designer_8cs.tex
+) (./Debug_2net8_80-ios_2ios-arm64_2running-club_8nfloat_8g_8cs.tex)
+(./Debug_2net8_80-ios_2iossimulator-x64_2running-club_8nfloat_8g_8cs.tex)
+(./Debug_2net8_80-maccatalyst_2maccatalyst-x64_2running-club_8nfloat_8g_8cs.tex
+) (./Release_2net8_80-ios_2ios-arm64_2running-club_8nfloat_8g_8cs.tex)
+(./Release_2net8_80-ios_2iossimulator-x64_2running-club_8nfloat_8g_8cs.tex)
+(./Release_2net8_80-maccatalyst_2maccatalyst-arm64_2running-club_8nfloat_8g_8cs
+.tex)
+(./Release_2net8_80-maccatalyst_2maccatalyst-x64_2running-club_8nfloat_8g_8cs.t
+ex) (./Release_2net8_80-maccatalyst_2running-club_8nfloat_8g_8cs.tex)
+(./Debug_2net8_80-windows10_80_819041_80_2win10-x64_2Platforms_2Windows_2App_8g
+_8cs.tex)
+(./Release_2net8_80-windows10_80_819041_80_2win10-x64_2Platforms_2Windows_2App_
+8g_8cs.tex)
+(./Debug_2net8_80-windows10_80_819041_80_2win10-x64_2Platforms_2Windows_2App_8g
+_8i_8cs.tex [55])
+(./Release_2net8_80-windows10_80_819041_80_2win10-x64_2Platforms_2Windows_2App_
+8g_8i_8cs.tex [56])
+(./Debug_2net8_80-windows10_80_819041_80_2win10-x64_2XamlTypeInfo_8g_8cs.tex)
+(./Release_2net8_80-windows10_80_819041_80_2win10-x64_2XamlTypeInfo_8g_8cs.tex)
+(./AddGoalsPage_8xaml_8cs.tex) (./BooleanToColorConverter_8cs.tex)
+(./Constants_8cs.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.16548pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.16548pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-10.16548pt}.
+
+[57]) (./FahrenheitToCelciusConverter_8cs.tex) (./Goals_8cs.tex)
+(./GoalsPage_8xaml_8cs.tex) (./History_8cs.tex [58])
+(./HistoryDetailPage_8xaml_8cs.tex) (./HistoryPage_8xaml_8cs.tex)
+(./HomePage_8xaml_8cs.tex) (./LoginPage_8xaml_8cs.tex [59])
+(./LongToDateTimeConverter_8cs.tex) (./PedometerViewModel_8cs.tex)
+(./ProfilPage_8xaml_8cs.tex) (./RegisterPage_8xaml_8cs.tex [60])
+(./RestService_8cs.tex) (./RunPage_8xaml_8cs.tex) (./SummaryPage_8xaml_8cs.tex)
+(./UserSession_8cs.tex) (./VievModel_8cs.tex [61]) (./WeatherData_8cs.tex)
+(./WeatherPage_8xaml_8cs.tex) (./WeatherViewModel_8cs.tex)
+(./LightSensorService_8cs.tex [62]) (./MainActivity_8cs.tex)
+(./MainApplication_8cs.tex) (./iOS_2AppDelegate_8cs.tex)
+(./MacCatalyst_2AppDelegate_8cs.tex [63]) (./iOS_2Program_8cs.tex)
+(./MacCatalyst_2Program_8cs.tex) (./Main_8cs.tex) (./AuthService_8cs.tex)
+[64] (./refman.ind
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 22.39185pt on input line 1.
+ [65
+
+
+
+]
+Overfull \hbox (51.6657pt too wide) in paragraph at lines 178--180
+[]\T1/phv/m/n/10 obj/Debug/net7.0/.NETCoreApp,Version=v7.0.AssemblyAttributes.c
+s,
+ []
+
+
+Overfull \hbox (84.67705pt too wide) in paragraph at lines 184--186
+[]\T1/phv/m/n/10 obj/Debug/net8.0-android/.NETCoreApp,Version=v8.0.AssemblyAttr
+ibutes.cs,
+ []
+
+
+Overfull \hbox (54.22157pt too wide) in paragraph at lines 186--188
+[]\T1/phv/m/n/10 obj/Debug/net8.0-android/__Microsoft.Android.Resource.Designer
+.cs,
+ []
+
+
+Overfull \hbox (59.1714pt too wide) in paragraph at lines 188--190
+[]\T1/phv/m/n/10 obj/Debug/net8.0-android/android-arm/running-club.GlobalUsings
+.g.cs,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 190--192
+[]\T1/phv/m/n/10 obj/Debug/net8.0-android/android-arm64/running-
+ []
+
+
+Overfull \hbox (57.95645pt too wide) in paragraph at lines 192--194
+[]\T1/phv/m/n/10 obj/Debug/net8.0-android/android-x64/running-club.GlobalUsings
+.g.cs,
+ []
+
+
+Overfull \hbox (57.95645pt too wide) in paragraph at lines 194--196
+[]\T1/phv/m/n/10 obj/Debug/net8.0-android/android-x86/running-club.GlobalUsings
+.g.cs,
+ []
+
+
+Overfull \hbox (108.89566pt too wide) in paragraph at lines 200--202
+[]\T1/phv/m/n/10 obj/Debug/net8.0-ios/ios-arm64/.NETCoreApp,Version=v8.0.Assemb
+lyAttributes.cs,
+ []
+
+
+Overfull \hbox (24.47726pt too wide) in paragraph at lines 202--204
+[]\T1/phv/m/n/10 obj/Debug/net8.0-ios/ios-arm64/running-club.AssemblyInfo.cs,
+ []
+
+
+Overfull \hbox (32.15404pt too wide) in paragraph at lines 204--206
+[]\T1/phv/m/n/10 obj/Debug/net8.0-ios/ios-arm64/running-club.GlobalUsings.g.cs,
+
+ []
+
+
+Overfull \hbox (134.08623pt too wide) in paragraph at lines 208--210
+[]\T1/phv/m/n/10 obj/Debug/net8.0-ios/iossimulator-x64/.NETCoreApp,Version=v8.0
+.AssemblyAttributes.cs,
+ []
+
+
+Overfull \hbox (49.66783pt too wide) in paragraph at lines 210--212
+[]\T1/phv/m/n/10 obj/Debug/net8.0-ios/iossimulator-x64/running-club.AssemblyInf
+o.cs,
+ []
+
+
+Overfull \hbox (57.3446pt too wide) in paragraph at lines 212--214
+[]\T1/phv/m/n/10 obj/Debug/net8.0-ios/iossimulator-x64/running-club.GlobalUsing
+s.g.cs,
+ []
+
+
+Overfull \hbox (25.97998pt too wide) in paragraph at lines 214--216
+[]\T1/phv/m/n/10 obj/Debug/net8.0-ios/iossimulator-x64/running-club.nfloat.g.cs
+,
+ []
+
+
+Overfull \hbox (169.68971pt too wide) in paragraph at lines 216--218
+[]\T1/phv/m/n/10 obj/Debug/net8.0-maccatalyst/maccatalyst-x64/.NETCoreApp,Versi
+on=v8.0.AssemblyAttributes.cs,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--220
+[]\T1/phv/m/n/10 obj/Debug/net8.0-maccatalyst/maccatalyst-x64/running-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 220--222
+[]\T1/phv/m/n/10 obj/Debug/net8.0-maccatalyst/maccatalyst-x64/running-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 222--224
+[]\T1/phv/m/n/10 obj/Debug/net8.0-maccatalyst/maccatalyst-x64/running-
+ []
+
+
+Overfull \hbox (185.08824pt too wide) in paragraph at lines 224--226
+[]\T1/phv/m/n/10 obj/Debug/net8.0-windows10.0.19041.0/win10-x64/.NETCoreApp,Ver
+sion=v8.0.AssemblyAttributes.cs,
+ []
+
+
+Overfull \hbox (98.20377pt too wide) in paragraph at lines 226--228
+[]\T1/phv/m/n/10 obj/Debug/net8.0-windows10.0.19041.0/win10-x64/Platforms/Windo
+ws/App.g.cs,
+ []
+
+
+Overfull \hbox (102.70361pt too wide) in paragraph at lines 228--230
+[]\T1/phv/m/n/10 obj/Debug/net8.0-windows10.0.19041.0/win10-x64/Platforms/Windo
+ws/App.g.i.cs,
+ []
+
+
+Overfull \hbox (56.9846pt too wide) in paragraph at lines 234--236
+[]\T1/phv/m/n/10 obj/Debug/net8.0-windows10.0.19041.0/win10-x64/XamlTypeInfo.g.
+cs,
+ []
+
+
+Overfull \hbox (91.35493pt too wide) in paragraph at lines 238--240
+[]\T1/phv/m/n/10 obj/Release/net8.0-android/.NETCoreApp,Version=v8.0.AssemblyAt
+tributes.cs,
+ []
+
+
+Overfull \hbox (60.89946pt too wide) in paragraph at lines 240--242
+[]\T1/phv/m/n/10 obj/Release/net8.0-android/__Microsoft.Android.Resource.Design
+er.cs,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 242--244
+[]\T1/phv/m/n/10 obj/Release/net8.0-android/android-arm/running-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--246
+[]\T1/phv/m/n/10 obj/Release/net8.0-android/android-arm64/running-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 246--248
+[]\T1/phv/m/n/10 obj/Release/net8.0-android/android-x64/running-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 248--250
+[]\T1/phv/m/n/10 obj/Release/net8.0-android/android-x86/running-
+ []
+
+[66]
+Overfull \hbox (115.57355pt too wide) in paragraph at lines 254--256
+[]\T1/phv/m/n/10 obj/Release/net8.0-ios/ios-arm64/.NETCoreApp,Version=v8.0.Asse
+mblyAttributes.cs,
+ []
+
+
+Overfull \hbox (31.15515pt too wide) in paragraph at lines 256--258
+[]\T1/phv/m/n/10 obj/Release/net8.0-ios/ios-arm64/running-club.AssemblyInfo.cs,
+
+ []
+
+
+Overfull \hbox (38.83192pt too wide) in paragraph at lines 258--260
+[]\T1/phv/m/n/10 obj/Release/net8.0-ios/ios-arm64/running-club.GlobalUsings.g.c
+s,
+ []
+
+
+Overfull \hbox (140.76411pt too wide) in paragraph at lines 262--264
+[]\T1/phv/m/n/10 obj/Release/net8.0-ios/iossimulator-x64/.NETCoreApp,Version=v8
+.0.AssemblyAttributes.cs,
+ []
+
+
+Overfull \hbox (56.34572pt too wide) in paragraph at lines 264--266
+[]\T1/phv/m/n/10 obj/Release/net8.0-ios/iossimulator-x64/running-club.AssemblyI
+nfo.cs,
+ []
+
+
+Overfull \hbox (64.02249pt too wide) in paragraph at lines 266--268
+[]\T1/phv/m/n/10 obj/Release/net8.0-ios/iossimulator-x64/running-club.GlobalUsi
+ngs.g.cs,
+ []
+
+
+Overfull \hbox (32.65787pt too wide) in paragraph at lines 268--270
+[]\T1/phv/m/n/10 obj/Release/net8.0-ios/iossimulator-x64/running-club.nfloat.g.
+cs,
+ []
+
+
+Overfull \hbox (108.85075pt too wide) in paragraph at lines 270--272
+[]\T1/phv/m/n/10 obj/Release/net8.0-maccatalyst/.NETCoreApp,Version=v8.0.Assemb
+lyAttributes.cs,
+ []
+
+
+Overfull \hbox (187.59036pt too wide) in paragraph at lines 272--274
+[]\T1/phv/m/n/10 obj/Release/net8.0-maccatalyst/maccatalyst-arm64/.NETCoreApp,V
+ersion=v8.0.AssemblyAttributes.cs,
+ []
+
+
+Overfull \hbox (17.31331pt too wide) in paragraph at lines 274--276
+[]\T1/phv/m/n/10 obj/Release/net8.0-maccatalyst/maccatalyst-arm64/running-
+ []
+
+
+Overfull \hbox (17.31331pt too wide) in paragraph at lines 276--278
+[]\T1/phv/m/n/10 obj/Release/net8.0-maccatalyst/maccatalyst-arm64/running-
+ []
+
+
+Overfull \hbox (17.31331pt too wide) in paragraph at lines 278--280
+[]\T1/phv/m/n/10 obj/Release/net8.0-maccatalyst/maccatalyst-arm64/running-
+ []
+
+
+Overfull \hbox (176.3676pt too wide) in paragraph at lines 280--282
+[]\T1/phv/m/n/10 obj/Release/net8.0-maccatalyst/maccatalyst-x64/.NETCoreApp,Ver
+sion=v8.0.AssemblyAttributes.cs,
+ []
+
+
+Overfull \hbox (24.43236pt too wide) in paragraph at lines 288--290
+[]\T1/phv/m/n/10 obj/Release/net8.0-maccatalyst/running-club.AssemblyInfo.cs,
+ []
+
+
+Overfull \hbox (32.10913pt too wide) in paragraph at lines 290--292
+[]\T1/phv/m/n/10 obj/Release/net8.0-maccatalyst/running-club.GlobalUsings.g.cs,
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 294--296
+[]\T1/phv/m/n/10 obj/Release/net8.0-windows10.0.19041.0/win10-
+ []
+
+
+Overfull \hbox (37.81093pt too wide) in paragraph at lines 294--296
+\T1/phv/m/n/10 x64/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--298
+[]\T1/phv/m/n/10 obj/Release/net8.0-windows10.0.19041.0/win10-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 298--300
+[]\T1/phv/m/n/10 obj/Release/net8.0-windows10.0.19041.0/win10-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 300--302
+[]\T1/phv/m/n/10 obj/Release/net8.0-windows10.0.19041.0/win10-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 302--304
+[]\T1/phv/m/n/10 obj/Release/net8.0-windows10.0.19041.0/win10-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--306
+[]\T1/phv/m/n/10 obj/Release/net8.0-windows10.0.19041.0/win10-
+ []
+
+[67] [68] [69] [70
+
+]) (./refman.aux)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+ ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `refman.out' has not changed.
+(rerunfilecheck)             Checksum: 26A356A3ADC5440B65DFEC9F77F1FB6D;107484.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 21622 strings out of 474222
+ 421088 string characters out of 5748734
+ 1981975 words of memory out of 5000000
+ 42332 multiletter control sequences out of 15000+600000
+ 614368 words of font info for 105 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 101i,16n,117p,773b,697s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/cour
+ier/ucrro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on refman.pdf (82 pages, 383839 bytes).
+PDF statistics:
+ 4268 PDF objects out of 4296 (max. 8388607)
+ 4067 compressed objects within 41 object streams
+ 911 named destinations out of 1000 (max. 500000)
+ 3136 words of extra memory for PDF output out of 10000 (max. 10000000)
+

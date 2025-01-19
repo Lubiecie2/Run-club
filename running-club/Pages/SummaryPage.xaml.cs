@@ -30,6 +30,7 @@ using running_club.Platforms.Android;
 
 namespace running_club.Pages
 {
+    /// @brief Klasa reprezentujaca strone podsumowania aktywnosci.
     public partial class SummaryPage : ContentPage
     {
         private MemoryLayer? _lineStringLayer;
@@ -40,11 +41,12 @@ namespace running_club.Pages
 #endif
         private bool _isWaiting = false;
 
+        /// @brief Konstruktor klasy SummaryPage.
         public SummaryPage(string time, int steps, double calories, string pace, double distance, List<(double Latitude, double Longitude)> routeCoordinates)
         {
             InitializeComponent();
 
-            // Przypisanie wartoœci do etykiet w SummaryPage
+            
             TimeLabel.Text = time;
             StepsLabel.Text = steps.ToString();
             CaloriesLabel.Text = calories.ToString("F2");
@@ -56,17 +58,17 @@ namespace running_club.Pages
 
             OnSave(time, steps, calories, pace, distance, routeCoordinates);
 
-            // Inicjalizacja mapy z warstw¹ OpenStreetMap
+            
             var tileLayer = OpenStreetMap.CreateTileLayer();
             SummaryMapView.Map = new Mapsui.Map
             {
                 Layers = { tileLayer }
             };
 
-            // Ustaw mapê na podstawie pierwszego wspó³rzêdnego z tablicy
+            
             CenterMapOnFirstCoordinate(routeCoordinates);
 
-            // Dodanie warstwy z lini¹
+            
             _lineStringLayer = (MemoryLayer?)CreateLineStringLayer(CreateLineStringStyle(), routeCoordinates);
             SummaryMapView.Map.Layers.Add(_lineStringLayer);
 
@@ -78,6 +80,7 @@ namespace running_club.Pages
 #endif
         }
 
+        /// @brief Funkcja zapisujaca dane o aktywnosci do bazy Firebase.
         private async Task OnSave(string time, int steps, double calories, string pace, double distance, List<(double Latitude, double Longitude)> routeCoordinates)
         {
             string uid = await SecureStorage.GetAsync("user_uid");
@@ -98,22 +101,23 @@ namespace running_club.Pages
             });
         }
 
-        // Funkcja centrowania mapy na pierwszym wspó³rzêdnym z tablicy
+
+        /// @brief Funkcja centrujaca mape na pierwszej wspolrzednej.
         private void CenterMapOnFirstCoordinate(List<(double Latitude, double Longitude)> coordinates)
         {
             if (coordinates.Count > 0)
             {
-                // Pobranie pierwszego wspó³rzêdnego
+                
                 var firstCoordinate = coordinates.First();
 
-                // Konwersja wspó³rzêdnych na SphericalMercator
+                
                 var sphericalMercatorCoordinate = SphericalMercator.FromLonLat(firstCoordinate.Longitude, firstCoordinate.Latitude).ToMPoint();
 
                 Console.WriteLine($"Centrowanie mapy na wspó³rzêdnych: {firstCoordinate.Latitude}, {firstCoordinate.Longitude}");
 
-                // Ustawienie widoku mapy
+                
                 SummaryMapView.Map.Home = n => n.CenterOn(sphericalMercatorCoordinate);
-                SummaryMapView.Map.Navigator.ZoomTo(2); // Ustawienie poziomu przybli¿enia (w zale¿noœci od tego, jak blisko chcesz byæ)
+                SummaryMapView.Map.Navigator.ZoomTo(2); 
             }
             else
             {
@@ -121,14 +125,14 @@ namespace running_club.Pages
             }
         }
 
-        // Funkcja tworzenia warstwy linii
+        /// @brief Funkcja tworzaca warstwe liniowa na podstawie wspolrzednych.
         public static ILayer CreateLineStringLayer(IStyle style, List<(double Latitude, double Longitude)> coordinates)
         {
             if (coordinates.Count < 2)
             {
                 return new MemoryLayer
                 {
-                    Features = new GeometryFeature[0], // Pusta warstwa, bo brak wystarczaj¹cej liczby wspó³rzêdnych
+                    Features = new GeometryFeature[0], 
                     Name = "LineStringLayer",
                     Style = style
                 };
@@ -148,21 +152,22 @@ namespace running_club.Pages
             };
         }
 
-        // Styl linii
+        /// @brief Funkcja tworzaca styl dla warstwy liniowej.
         public static IStyle CreateLineStringStyle()
         {
             return new VectorStyle
             {
                 Fill = null,
                 Outline = null,
-#pragma warning disable CS8670 // Object or collection initializer implicitly dereferences possibly null member.
+#pragma warning disable CS8670 
                 Line = { Color = Mapsui.Styles.Color.FromString("Blue"), Width = 4 }
             };
         }
 
+        /// @brief Funkcja wywolywana
         private async void OnBackButtonClicked(object sender, EventArgs e)
         {
-            await Navigation.PopToRootAsync(); // Powrót do strony g³ównej
+            await Navigation.PopToRootAsync(); 
         }
 #if ANDROID
 private async void OnLightLevelChanged(float lightLevel)

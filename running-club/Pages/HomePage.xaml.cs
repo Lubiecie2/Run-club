@@ -28,50 +28,85 @@ using running_club.Platforms.Android;
 
 namespace running_club.Pages;
 
+/// @brief Strona glowna aplikacji sledzacej aktywnosc uzytkownika.
 public partial class HomePage : ContentPage
 {
+    /// @brief Stoper do mierzenia czasu aktywnosci.
     private Stopwatch stopwatch = new Stopwatch();
+
+    /// @brief Timer do aktualizowania interfejsu uzytkownika.
     private IDispatcherTimer timer;
+
+    /// @brief Licznik krokow uzytkownika.
     private int stepsCount = 0;
+
+    /// @brief Przebyty dystans w metrach.
     private double distance = 0.0;
+
+    /// @brief Liczba spalonych kalorii.
     private double caloriesBurned = 0.0;
+
+    /// @brief Aktualna predkosc uzytkownika.
     private double speed = 0.0;
+
+    /// @brief Flaga wskazujaca, czy trwa sledzenie aktywnosci.
     private bool isTracking = false;
-    private bool isPaused = false; // Dodana flaga do �ledzenia pauzy
+
+    /// @brief Flaga wskazujaca, czy sledzenie zostalo wstrzymane.
+    private bool isPaused = false;
+
+    /// @brief Timer do aktualizacji lokalizacji.
     private IDispatcherTimer locationUpdateTimer;
 
+    /// @brief Minimalny prog przyspieszenia dla wykrycia kroku.
     private const double StepThreshold = 1.2;
+
+    /// @brief Minimalny czas miedzy krokami w milisekundach.
     private const int StepCooldown = 300;
+
+    /// @brief Dlugosc kroku w metrach.
     private const double StepLength = 0.78;
+
+    /// @brief Liczba spalanych kalorii na metr.
     private const double CaloriesPerMeter = 0.05;
+
+    /// @brief Flaga wskazujaca, czy trwa opoznienie czujnika światla.
     private bool _isWaiting = false;
 
+    /// @brief Czas ostatniego kroku.
     private DateTime _lastStepTime = DateTime.MinValue;
+
+    /// @brief Czas rozpoczecia aktywnosci.
     private DateTime _startTime = DateTime.MinValue;
+
+    /// @brief Czas ostatniej aktualizacji danych.
     private DateTime _lastUpdateTime = DateTime.MinValue;
 
 #if ANDROID
         private LightSensorService _lightSensorService;
 #endif
 
+    /// @brief Etykieta pokazujaca jakosc sygnalu GPS.
     private Label _qualityLabel;
 
+    /// @brief Lista wspolrzednych trasy uzytkownika.
     private static List<(double X, double Y)> coordinates = new List<(double X, double Y)>();
 
-
+    /// @brief Warstwa do rysowania trasy na mapie.
     private MemoryLayer? _lineStringLayer;
 
+    /// @brief Konstruktor inicjalizujacy strone HomePage.
     public HomePage()
     {
         InitializeComponent();
         BindingContext = new PedometerViewModel();
 
-        // Inicjalizacja timera
+
         timer = Dispatcher.CreateTimer();
         timer.Interval = TimeSpan.FromMilliseconds(100);
         timer.Tick += OnTimerTick;
 
-        // Inicjalizacja mapy
+
         var tileLayer = OpenStreetMap.CreateTileLayer();
         MyMapView.Map = new Mapsui.Map
         {
@@ -100,34 +135,28 @@ public partial class HomePage : ContentPage
 
         RequestPermissions();
 
-        // Inicjalizacja etykiety jako�ci GPS
         _qualityLabel = new Label
         {
             Text = "Unknown",
             FontSize = 15,
-            HorizontalOptions = LayoutOptions.End, // Ustawienie etykiety w prawym rogu
-            VerticalOptions = LayoutOptions.Start, // Ustawienie w g�rnym rogu
+            HorizontalOptions = LayoutOptions.End, 
+            VerticalOptions = LayoutOptions.Start, 
             TextColor = Colors.Gray,
-            Margin = new Thickness(0, 40, 30, 0)  // Przesuni�cie etykiety w g�r�
+            Margin = new Thickness(0, 40, 30, 0)  
         };
 
-        // Dodanie etykiety do uk�adu Grid
-        MainGrid.Children.Add(_qualityLabel); // Upewnij si�, �e MainGrid to element w XAML
 
-        // Inicjalizacja monitorowania GPS
+        MainGrid.Children.Add(_qualityLabel); 
+
+
         StartGpsMonitoring();
 
-        // Startuj lokalizacj� po za�adowaniu strony
+
         LoadLocationAsync();
 
     }
 
-    // ------------------- BAZA DANYCH -------------------
-
-    // -------------------KONIEC BAZA DANYCH -------------------
-
-
-
+    /// @brief Obsluguje zdarzenie tykniecia timera.
     private void OnTimerTick(object sender, EventArgs e)
     {
         if (!isPaused)
@@ -139,11 +168,12 @@ public partial class HomePage : ContentPage
         }
     }
 
+    /// @brief Obsluguje klikniecie przycisku Start/Stop.
     private void OnStartStopButtonClicked(object sender, EventArgs e)
     {
         if (stopwatch.IsRunning && !isPaused)
         {
-            // Zatrzymanie stopera i zmiana statusu na pauzowany
+           
             stopwatch.Stop();
             timer.Stop();
             isPaused = true;
@@ -151,7 +181,7 @@ public partial class HomePage : ContentPage
         }
         else if (isPaused)
         {
-            // Wznawianie liczenia po pauzie
+           
             stopwatch.Start();
             timer.Start();
             isPaused = false;
@@ -159,7 +189,7 @@ public partial class HomePage : ContentPage
         }
         else
         {
-            // Rozpocz�cie nowego treningu
+            
             stopwatch.Restart();
             timer.Start();
             StartStopButton.Text = "Wstrzymaj";
@@ -173,9 +203,10 @@ public partial class HomePage : ContentPage
         }
     }
 
+    /// @brief Obsluguje klikniecie przycisku Finish.
     private async void OnFinishButtonClicked(object sender, EventArgs e)
     {
-        // Zapisanie warto�ci do przekazania
+       
         string time = stopwatch.Elapsed.ToString(@"mm\:ss");
         int steps = stepsCount;
         double calories = caloriesBurned;
@@ -184,7 +215,7 @@ public partial class HomePage : ContentPage
 
         var routeCoordinates = new List<(double Latitude, double Longitude)>(coordinates);
 
-        // Zresetowanie warto�ci na HomePage
+
         stopwatch.Reset();
         timer.Stop();
         isTracking = false;
@@ -195,7 +226,7 @@ public partial class HomePage : ContentPage
         _startTime = DateTime.MinValue;
         _lastUpdateTime = DateTime.MinValue;
 
-        // Zresetowanie etykiet w HomePage
+
         StepCountLabel.Text = "0";
         DistanceLabel.Text = "0.00 km";
         CaloriesLabel.Text = "0.00 kcal";
@@ -209,23 +240,23 @@ public partial class HomePage : ContentPage
 
         coordinates.Clear();
 
-        // Nawigacja do strony podsumowania z przekazaniem danych
         await Navigation.PushAsync(new SummaryPage(time, steps, calories, pace, totalDistance, routeCoordinates));
 
-        MyMapView.Map.Layers.Remove(_lineStringLayer);  // Usuni�cie warstwy z mapy
+        MyMapView.Map.Layers.Remove(_lineStringLayer);  
         _lineStringLayer = (MemoryLayer?)CreateLineStringLayer(CreateLineStringStyle());
-        MyMapView.Map.Layers.Add(_lineStringLayer);  // Dodanie nowej (pustej) warstwy
+        MyMapView.Map.Layers.Add(_lineStringLayer); 
     }
 
 
 
-
+    /// @brief Aktualizuje stan przyciskow.
     private void UpdateButtons()
     {
         StartStopButton.Text = stopwatch.IsRunning ? (isPaused ? "Wzn�w" : "Wstrzymaj") : "Start";
         FinishButton.IsVisible = stopwatch.IsRunning || isPaused;
     }
 
+    /// @brief Rozpoczyna aktualizacje lokalizacji.
     private async void StartLocationUpdates()
     {
         locationUpdateTimer = Dispatcher.CreateTimer();
@@ -246,12 +277,14 @@ public partial class HomePage : ContentPage
         locationUpdateTimer.Start();
     }
 
+    /// @brief Zatrzymuje aktualizacje lokalizacji.
     private void StopLocationUpdates()
     {
         locationUpdateTimer?.Stop();
         locationUpdateTimer = null;
     }
 
+    /// @brief Aktualizuje lokalizacje na mapie.
     private void UpdateMapLocation(Microsoft.Maui.Devices.Sensors.Location location)
     {
         if (location == null) return;
@@ -298,6 +331,7 @@ public partial class HomePage : ContentPage
         }
     }
 
+    /// @brief Wczytuje lokalizacje uzytkownika.
     private async Task LoadLocationAsync()
     {
         try
@@ -328,6 +362,7 @@ public partial class HomePage : ContentPage
         }
     }
 
+    /// @brief Wyswietla okno z prosba o uprawnienia.
     private void RequestPermissions()
     {
         if (DeviceInfo.Platform == DevicePlatform.Android || DeviceInfo.Platform == DevicePlatform.iOS)
@@ -337,6 +372,7 @@ public partial class HomePage : ContentPage
         }
     }
 
+    /// @brief Rozpoczyna liczenie krokow.
     private void StartStepCounter()
     {
         if (Accelerometer.IsSupported)
@@ -350,6 +386,7 @@ public partial class HomePage : ContentPage
         }
     }
 
+    /// @brief Obsluguje zmiane odczytu akcelerometru.
     private void Accelerometer_ReadingChanged(object sender, AccelerometerChangedEventArgs e)
     {
         if (isTracking && !isPaused)
@@ -374,18 +411,21 @@ public partial class HomePage : ContentPage
         }
     }
 
+    /// @brief Aktualizuje przebyty dystans.
     private void UpdateDistance()
     {
         distance = stepsCount * StepLength;
         DistanceLabel.Text = $"{distance / 1000:F2} km";
     }
 
+    /// @brief Aktualizuje liczbe spalonych kalorii.
     private void UpdateCalories()
     {
         caloriesBurned = distance * CaloriesPerMeter;
         CaloriesLabel.Text = $"{caloriesBurned:F2} kcal";
     }
 
+    /// @brief Aktualizuje sredni czas na kilometr.
     private void UpdateAveragePace()
     {
         if (distance > 0 && _startTime != DateTime.MinValue)
@@ -404,18 +444,19 @@ public partial class HomePage : ContentPage
         }
     }
 
+    /// @brief Rozpoczyna monitorowanie jakosci sygnalu GPS.
     private async void StartGpsMonitoring()
     {
         while (true)
         {
             var quality = await GetGpsSignalQuality();
-            UpdateQualityLabel(quality);  // Aktualizacja etykiety z nowym stanem
+            UpdateQualityLabel(quality);  
 
-            // Od�wie�aj co kilka sekund, aby uzyska� aktualny stan GPS
             await Task.Delay(5000);
         }
     }
 
+    /// @brief Pobiera jakosc sygnalu GPS.
     private async Task<string> GetGpsSignalQuality()
     {
         try
@@ -433,8 +474,7 @@ public partial class HomePage : ContentPage
 
             if (location != null)
             {
-                // Upewniamy si�, �e Accuracy nie jest null
-                double accuracy = location.Accuracy ?? double.MaxValue; // Ustawiamy warto�� domy�ln�, np. maksymaln�
+                double accuracy = location.Accuracy ?? double.MaxValue; 
                 return GetQualityFromAccuracy(accuracy);
             }
             else
@@ -448,9 +488,10 @@ public partial class HomePage : ContentPage
         }
     }
 
+    /// @brief Pobiera jakosc sygnalu GPS na podstawie dokladnosci.
     private string GetQualityFromAccuracy(double accuracy)
     {
-        if (accuracy <= 5) // w metrach
+        if (accuracy <= 5) 
             return "świetny";
         else if (accuracy <= 10)
             return "Dobry";
@@ -462,42 +503,43 @@ public partial class HomePage : ContentPage
             return "Brak";
     }
 
+    /// @brief Aktualizuje etykiete z jakoscia sygnalu GPS.
     private void UpdateQualityLabel(string quality)
     {
         _qualityLabel.Text = $"{quality}";
 
-        // Kolorowanie w zale�no�ci od jako�ci sygna�u
+
         switch (quality)
         {
             case "świetny":
-                _qualityLabel.TextColor = Colors.Green; // Zielony
+                _qualityLabel.TextColor = Colors.Green; 
                 break;
             case "Dobry":
-                _qualityLabel.TextColor = Colors.Green; // Zielony
+                _qualityLabel.TextColor = Colors.Green; 
                 break;
             case "średni":
-                _qualityLabel.TextColor = Colors.Orange; // ��ty
+                _qualityLabel.TextColor = Colors.Orange; 
                 break;
             case "słaby":
-                _qualityLabel.TextColor = Colors.Orange; // Pomara�czowy
+                _qualityLabel.TextColor = Colors.Orange; 
                 break;
             case "Brak":
-                _qualityLabel.TextColor = Colors.Red; // Czerwony
+                _qualityLabel.TextColor = Colors.Red; 
                 break;
             default:
-                _qualityLabel.TextColor = Colors.Gray; // Szary dla nieznanego
+                _qualityLabel.TextColor = Colors.Gray; 
                 break;
         }
     }
 
+    /// @brief Tworzy warstwe z linia trasy.
     public static ILayer CreateLineStringLayer(IStyle? style = null)
     {
-        // Je�eli lista wsp�rz�dnych jest pusta, nie tw�rz linii
         if (coordinates.Count < 2)
         {
             return new MemoryLayer
             {
-                Features = new GeometryFeature[0], // Pusta warstwa, bo brak wystarczaj�cej liczby wsp�rz�dnych
+                Features = new GeometryFeature[0], 
                 Name = "LineStringLayer",
                 Style = style
             };
@@ -517,26 +559,24 @@ public partial class HomePage : ContentPage
         };
     }
 
+    /// @brief Tworzy styl dla linii trasy.
     public static IStyle CreateLineStringStyle()
     {
         return new VectorStyle
         {
             Fill = null,
             Outline = null,
-#pragma warning disable CS8670 // Object or collection initializer implicitly dereferences possibly null member.
+#pragma warning disable CS8670 
             Line = { Color = Mapsui.Styles.Color.FromString("Blue"), Width = 4 }
         };
     }
 
+    /// @brief Pobiera reprezentacje WKT linii trasy.
     public string GetWKT()
     {
         string lineString = string.Join(", ", coordinates.Select(coord => $"{coord.X} {coord.Y}"));
         return $"LINESTRING({lineString})";
     }
-    //    public void AddCoordinates(params (double X, double Y)[] coords)
-    //    {
-    //        coordinates.AddRange(coords);
-    //    }
 
 #if ANDROID
 private async void OnLightLevelChanged(float lightLevel)

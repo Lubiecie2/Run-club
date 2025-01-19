@@ -1,0 +1,93 @@
+\doxysection{Dokumentacja klasy running\+\_\+club.\+Pages.\+History\+Page}
+\hypertarget{classrunning__club_1_1Pages_1_1HistoryPage}{}\label{classrunning__club_1_1Pages_1_1HistoryPage}\index{running\_club.Pages.HistoryPage@{running\_club.Pages.HistoryPage}}
+
+
+Klasa reprezentujaca strone historii aktywnosci.  
+
+
+Diagram dziedziczenia dla running\+\_\+club.\+Pages.\+History\+Page\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classrunning__club_1_1Pages_1_1HistoryPage}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrunning__club_1_1Pages_1_1HistoryPage_a65b4a595f75f0772e4f15cf50fd0319c}{History\+Page}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor klasy \doxylink{classrunning__club_1_1Pages_1_1HistoryPage}{History\+Page}. \end{DoxyCompactList}\item 
+async Task \mbox{\hyperlink{classrunning__club_1_1Pages_1_1HistoryPage_a9220412c1d4581c411aeed5b8e4a8cc0}{Load\+Data\+Async}} ()
+\begin{DoxyCompactList}\small\item\em Asynchronicznie laduje dane o historii aktywnosci uzytkownika z Firebase. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Metody chronione}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{classrunning__club_1_1Pages_1_1HistoryPage_aabfaffff0922d6433225b18def61e8ea}{On\+Disappearing}} ()
+\item 
+override void \mbox{\hyperlink{classrunning__club_1_1Pages_1_1HistoryPage_a77fba26e3b61a8e68e79c0bc570ec720}{On\+Appearing}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Właściwości}
+\begin{DoxyCompactItemize}
+\item 
+Observable\+Collection$<$ \mbox{\hyperlink{classrunning__club_1_1Pages_1_1History}{History}} $>$ \mbox{\hyperlink{classrunning__club_1_1Pages_1_1HistoryPage_aa8ff19a29c62f7e6d2ab6be96d6cc84e}{My\+History\+List}} = new Observable\+Collection$<$\mbox{\hyperlink{classrunning__club_1_1Pages_1_1History}{History}}$>$()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Kolekcja przechowujaca dane o historii aktywnosci. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Klasa reprezentujaca strone historii aktywnosci. 
+
+Obsluguje pobieranie i wyswietlanie danych z Firebase, zarzadza nawigacja do szczegolow aktywnosci oraz obsluguje czujnik swiatla na platformie Android. 
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\Hypertarget{classrunning__club_1_1Pages_1_1HistoryPage_a65b4a595f75f0772e4f15cf50fd0319c}\index{running\_club.Pages.HistoryPage@{running\_club.Pages.HistoryPage}!HistoryPage@{HistoryPage}}
+\index{HistoryPage@{HistoryPage}!running\_club.Pages.HistoryPage@{running\_club.Pages.HistoryPage}}
+\doxysubsubsection{\texorpdfstring{HistoryPage()}{HistoryPage()}}
+{\footnotesize\ttfamily \label{classrunning__club_1_1Pages_1_1HistoryPage_a65b4a595f75f0772e4f15cf50fd0319c} 
+running\+\_\+club.\+Pages.\+History\+Page.\+History\+Page (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konstruktor klasy \doxylink{classrunning__club_1_1Pages_1_1HistoryPage}{History\+Page}. 
+
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\Hypertarget{classrunning__club_1_1Pages_1_1HistoryPage_a9220412c1d4581c411aeed5b8e4a8cc0}\index{running\_club.Pages.HistoryPage@{running\_club.Pages.HistoryPage}!LoadDataAsync@{LoadDataAsync}}
+\index{LoadDataAsync@{LoadDataAsync}!running\_club.Pages.HistoryPage@{running\_club.Pages.HistoryPage}}
+\doxysubsubsection{\texorpdfstring{LoadDataAsync()}{LoadDataAsync()}}
+{\footnotesize\ttfamily \label{classrunning__club_1_1Pages_1_1HistoryPage_a9220412c1d4581c411aeed5b8e4a8cc0} 
+async Task running\+\_\+club.\+Pages.\+History\+Page.\+Load\+Data\+Async (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Asynchronicznie laduje dane o historii aktywnosci uzytkownika z Firebase. 
+
+\Hypertarget{classrunning__club_1_1Pages_1_1HistoryPage_a77fba26e3b61a8e68e79c0bc570ec720}\index{running\_club.Pages.HistoryPage@{running\_club.Pages.HistoryPage}!OnAppearing@{OnAppearing}}
+\index{OnAppearing@{OnAppearing}!running\_club.Pages.HistoryPage@{running\_club.Pages.HistoryPage}}
+\doxysubsubsection{\texorpdfstring{OnAppearing()}{OnAppearing()}}
+{\footnotesize\ttfamily \label{classrunning__club_1_1Pages_1_1HistoryPage_a77fba26e3b61a8e68e79c0bc570ec720} 
+override void running\+\_\+club.\+Pages.\+History\+Page.\+On\+Appearing (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\Hypertarget{classrunning__club_1_1Pages_1_1HistoryPage_aabfaffff0922d6433225b18def61e8ea}\index{running\_club.Pages.HistoryPage@{running\_club.Pages.HistoryPage}!OnDisappearing@{OnDisappearing}}
+\index{OnDisappearing@{OnDisappearing}!running\_club.Pages.HistoryPage@{running\_club.Pages.HistoryPage}}
+\doxysubsubsection{\texorpdfstring{OnDisappearing()}{OnDisappearing()}}
+{\footnotesize\ttfamily \label{classrunning__club_1_1Pages_1_1HistoryPage_aabfaffff0922d6433225b18def61e8ea} 
+override void running\+\_\+club.\+Pages.\+History\+Page.\+On\+Disappearing (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+\doxysubsection{Dokumentacja właściwości}
+\Hypertarget{classrunning__club_1_1Pages_1_1HistoryPage_aa8ff19a29c62f7e6d2ab6be96d6cc84e}\index{running\_club.Pages.HistoryPage@{running\_club.Pages.HistoryPage}!MyHistoryList@{MyHistoryList}}
+\index{MyHistoryList@{MyHistoryList}!running\_club.Pages.HistoryPage@{running\_club.Pages.HistoryPage}}
+\doxysubsubsection{\texorpdfstring{MyHistoryList}{MyHistoryList}}
+{\footnotesize\ttfamily \label{classrunning__club_1_1Pages_1_1HistoryPage_aa8ff19a29c62f7e6d2ab6be96d6cc84e} 
+Observable\+Collection$<$\mbox{\hyperlink{classrunning__club_1_1Pages_1_1History}{History}}$>$ running\+\_\+club.\+Pages.\+History\+Page.\+My\+History\+List = new Observable\+Collection$<$\mbox{\hyperlink{classrunning__club_1_1Pages_1_1History}{History}}$>$()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Kolekcja przechowujaca dane o historii aktywnosci. 
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+Pages/\mbox{\hyperlink{HistoryPage_8xaml_8cs}{History\+Page.\+xaml.\+cs}}\end{DoxyCompactItemize}

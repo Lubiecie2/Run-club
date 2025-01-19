@@ -15,6 +15,8 @@ using running_club.Platforms.Android;
 #endif
 
 namespace running_club.Pages;
+
+/// @brief Klasa reprezentujaca strone szczegolow aktywnosci.
 public partial class HistoryDetailPage : ContentPage
 {
     private MemoryLayer? _lineStringLayer;
@@ -24,36 +26,37 @@ public partial class HistoryDetailPage : ContentPage
 #endif
     private bool _isWaiting = false;
 
+    /// @brief Konstruktor klasy HistoryDetailPage.
     public HistoryDetailPage(History history)
     {
         InitializeComponent();
         BindingContext = history;
 
-        // Dodanie warstwy OpenStreetMap
+        
         HistoryMapView.Map.Layers.Add(OpenStreetMap.CreateTileLayer());
 
-        // Zdefiniowanie routeCoordinates
+       
         var routeCoordinates = history.coordinates.Select(coord => (Latitude: coord.X, Longitude: coord.Y)).ToList();
 
-        // Centrum mapy na podstawie pierwszego koordynatu
+       
         CenterMapOnFirstCoordinate(routeCoordinates);
 
-        // Utworzenie warstwy tylko, jeœli jest wystarczaj¹ca liczba wspó³rzêdnych
+        
         _lineStringLayer = CreateLineStringLayer(CreateLineStringStyle(), routeCoordinates);
 
-        // Dodanie warstwy do mapy, jeœli nie jest null
+       
         if (_lineStringLayer != null)
         {
             HistoryMapView.Map.Layers.Add(_lineStringLayer);
         }
 
-        // Ukrycie przycisków
+   
         HistoryMapView.IsMyLocationButtonVisible = false;
         HistoryMapView.IsNorthingButtonVisible = false;
 
         var tileLayer = OpenStreetMap.CreateTileLayer();
-        tileLayer.MaxVisible = 0.0001; // Obs³uga du¿ego przybli¿enia
-        tileLayer.MinVisible = 0.0000001; // Opcjonalne dodatkowe ustawienia
+        tileLayer.MaxVisible = 0.0001; 
+        tileLayer.MinVisible = 0.0000001; 
         HistoryMapView.Map.Layers.Add(tileLayer);
 
 #if ANDROID
@@ -66,21 +69,22 @@ public partial class HistoryDetailPage : ContentPage
 
     }
 
+    /// @brief Funkcja centrujaca mape na pierwszej wspolrzednej.
     private void CenterMapOnFirstCoordinate(List<(double Latitude, double Longitude)> coordinates)
     {
         if (coordinates.Count > 0)
         {
-            // Pobranie pierwszego koordynatu
+           
             var firstCoordinate = coordinates.First();
 
-            // Konwersja wspó³rzêdnych na SphericalMercator
+            
             var sphericalMercatorCoordinate = SphericalMercator.FromLonLat(firstCoordinate.Longitude, firstCoordinate.Latitude).ToMPoint();
 
             Console.WriteLine($"Centrowanie mapy na wspó³rzêdnych: {firstCoordinate.Latitude}, {firstCoordinate.Longitude}");
 
-            // Ustawienie widoku mapy
+           
             HistoryMapView.Map.Home = n => n.CenterOn(sphericalMercatorCoordinate);
-            HistoryMapView.Map.Navigator.ZoomTo(2); // Ustawienie poziomu przybli¿enia
+            HistoryMapView.Map.Navigator.ZoomTo(2); 
         }
         else
         {
@@ -89,6 +93,9 @@ public partial class HistoryDetailPage : ContentPage
     }
 
 
+    /// @brief Funkcja tworzaca warstwe liniowa na podstawie wspolrzednych.  <summary>
+    /// @param style Styl warstwy.
+    /// @param coordinates Lista wspolrzednych.
     public static MemoryLayer? CreateLineStringLayer(IStyle style, List<(double Latitude, double Longitude)> coordinates)
     {
         if (coordinates.Count < 2)
@@ -114,6 +121,7 @@ public partial class HistoryDetailPage : ContentPage
         };
     }
 
+    /// @brief Funkcja tworzaca styl dla lini.
     public static IStyle CreateLineStringStyle()
     {
         return new VectorStyle
@@ -125,6 +133,7 @@ public partial class HistoryDetailPage : ContentPage
         };
     }
 
+    /// @brief Funkcja usuwajaca marker lokalizacji uzytkownika.
     private void RemoveMyLocationMarker()
     {
         var myLocationLayer = HistoryMapView.Map.Layers.FirstOrDefault(layer => layer.Name == "MyLocationLayer");

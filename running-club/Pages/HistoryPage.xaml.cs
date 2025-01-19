@@ -11,21 +11,21 @@ using running_club.Platforms.Android;
 
 namespace running_club.Pages;
 
-/// @brief Klasa reprezentująca stronę historii aktywności.
-/// @details Obsługuje pobieranie i wyświetlanie danych z Firebase, zarządza nawigacją do szczegółów aktywności oraz obsługuje czujnik światła na platformie Android.
+/// @brief Klasa reprezentujaca strone historii aktywnosci.
+/// @details Obsluguje pobieranie i wyswietlanie danych z Firebase, zarzadza nawigacja do szczegolow aktywnosci oraz obsluguje czujnik swiatla na platformie Android.
 public partial class HistoryPage : ContentPage
 {
-    /// @brief Klient Firebase do połączenia z bazą danych.
+    /// @brief Klient Firebase do polaczenia z baza danych.
     private readonly FirebaseClient _firebaseClient;
 
-    /// @brief Kolekcja przechowująca dane o historii aktywności.
+    /// @brief Kolekcja przechowujaca dane o historii aktywnosci.
     public ObservableCollection<History> MyHistoryList { get; set; } = new ObservableCollection<History>();
 
 #if ANDROID
     /// @brief Serwis do obsługi czujnika światła na platformie Android.
     private LightSensorService _lightSensorService;
 #endif
-    /// @brief Flaga wskazująca, czy aplikacja oczekuje na wykonanie operacji związanej z czujnikiem światła.
+    /// @brief Flaga wskazujaca, czy aplikacja oczekuje na wykonanie operacji zwiazanej z czujnikiem swiatla.
     private bool _isWaiting = false;
 
     /// @brief Konstruktor klasy HistoryPage.
@@ -47,7 +47,7 @@ public partial class HistoryPage : ContentPage
 
     }
 
-    /// @brief Asynchronicznie ładuje dane o historii aktywności użytkownika z Firebase.
+    /// @brief Asynchronicznie laduje dane o historii aktywnosci uzytkownika z Firebase.
     public async Task LoadDataAsync()
 
     {
@@ -65,8 +65,8 @@ public partial class HistoryPage : ContentPage
         });
     }
 
-    /// @brief Obsługuje wybór elementu z listy historii.
-    /// @param sender Obiekt, który wywołał zdarzenie.
+    /// @brief Obsluguje wybor elementu z listy historii.
+    /// @param sender Obiekt, ktory wywolal zdarzenie.
     /// @param e Argumenty zdarzenia SelectionChangedEventArgs.
     private async void OnHistoryItemSelected(object sender, SelectionChangedEventArgs e)
     {
@@ -79,8 +79,8 @@ public partial class HistoryPage : ContentPage
 
 #if ANDROID
 
-    /// @brief Obsługuje zmiany poziomu światła wykryte przez czujnik.
-    /// @param lightLevel Aktualny poziom światła wykryty przez czujnik.
+    /// @brief Obsluguje zmiany poziomu swiatla wykryte przez czujnik.
+    /// @param lightLevel Aktualny poziom swiatla wykryty przez czujnik.
     private async void OnLightLevelChanged(float lightLevel)
     {
     if (_isWaiting)
@@ -104,7 +104,7 @@ public partial class HistoryPage : ContentPage
 }
 
     /// @brief Zmienia kolor tekstu na stronie.
-    /// @param textColor Kolor, na który zmieniony zostanie tekst.
+    /// @param textColor Kolor, na ktory zmieniony zostanie tekst.
     private void UpdateTextColor(Microsoft.Maui.Graphics.Color textColor)
     {
     UpdateTextColorRecursively(this.Content, textColor); 

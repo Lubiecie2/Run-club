@@ -1,0 +1,377 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\babel@toc {polish}{}\relax 
+\contentsline {chapter}{\numberline {1}Indeks przestrzeni nazw}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Lista przestrzeni nazw}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Indeks hierarchiczny}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Hierarchia klas}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Indeks klas}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Lista klas}{5}{section.3.1}%
+\contentsline {chapter}{\numberline {4}Indeks plików}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Lista plików}{7}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Dokumentacja przestrzeni nazw}{11}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Dokumentacja przestrzeni nazw running\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}club}{11}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Dokumentacja przestrzeni nazw running\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}club.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pages}{11}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Dokumentacja przestrzeni nazw running\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}club.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Platforms}{12}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Dokumentacja przestrzeni nazw running\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}club.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Platforms.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Android}{12}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Dokumentacja przestrzeni nazw running\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}club.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Win\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}UI}{12}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Dokumentacja przestrzeni nazw Weather\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}App}{12}{section.5.6}%
+\contentsline {chapter}{\numberline {6}Dokumentacja klas}{13}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Dokumentacja klasy running\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}club.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pages.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Add\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Goals\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Page}{13}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Opis szczegółowy}{13}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Dokumentacja konstruktora i destruktora}{14}{subsection.6.1.2}%
+\contentsline {subsubsection}{\numberline {6.1.2.1}AddGoalsPage()}{14}{subsubsection.6.1.2.1}%
+\contentsline {subsection}{\numberline {6.1.3}Dokumentacja funkcji składowych}{14}{subsection.6.1.3}%
+\contentsline {subsubsection}{\numberline {6.1.3.1}OnAppearing()}{14}{subsubsection.6.1.3.1}%
+\contentsline {subsubsection}{\numberline {6.1.3.2}OnDisappearing()}{14}{subsubsection.6.1.3.2}%
+\contentsline {subsection}{\numberline {6.1.4}Dokumentacja właściwości}{14}{subsection.6.1.4}%
+\contentsline {subsubsection}{\numberline {6.1.4.1}MyGoalsList}{14}{subsubsection.6.1.4.1}%
+\contentsline {section}{\numberline {6.2}Dokumentacja klasy running\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}club.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}App}{14}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Dokumentacja konstruktora i destruktora}{15}{subsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.1.1}App()}{15}{subsubsection.6.2.1.1}%
+\contentsline {section}{\numberline {6.3}Dokumentacja klasy running\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}club.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Win\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}UI.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}App}{15}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Opis szczegółowy}{15}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Dokumentacja konstruktora i destruktora}{15}{subsection.6.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.2.1}App()}{15}{subsubsection.6.3.2.1}%
+\contentsline {subsection}{\numberline {6.3.3}Dokumentacja funkcji składowych}{16}{subsection.6.3.3}%
+\contentsline {subsubsection}{\numberline {6.3.3.1}CreateMauiApp()}{16}{subsubsection.6.3.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.3.2}InitializeComponent()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{16}{subsubsection.6.3.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.3.3}InitializeComponent()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{16}{subsubsection.6.3.3.3}%
+\contentsline {section}{\numberline {6.4}Dokumentacja klasy running\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}club.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}App\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Delegate}{16}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}Dokumentacja funkcji składowych}{16}{subsection.6.4.1}%
+\contentsline {subsubsection}{\numberline {6.4.1.1}CreateMauiApp()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{16}{subsubsection.6.4.1.1}%
+\contentsline {subsubsection}{\numberline {6.4.1.2}CreateMauiApp()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{17}{subsubsection.6.4.1.2}%
+\contentsline {section}{\numberline {6.5}Dokumentacja klasy running\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}club.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}App\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Shell}{17}{section.6.5}%
+\contentsline {subsection}{\numberline {6.5.1}Dokumentacja konstruktora i destruktora}{17}{subsection.6.5.1}%
+\contentsline {subsubsection}{\numberline {6.5.1.1}AppShell()}{17}{subsubsection.6.5.1.1}%
+\contentsline {section}{\numberline {6.6}Dokumentacja klasy running\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}club.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pages.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Boolean\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}To\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Color\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Converter}{17}{section.6.6}%
+\contentsline {subsection}{\numberline {6.6.1}Dokumentacja funkcji składowych}{18}{subsection.6.6.1}%
+\contentsline {subsubsection}{\numberline {6.6.1.1}Convert()}{18}{subsubsection.6.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.6.1.2}ConvertBack()}{18}{subsubsection.6.6.1.2}%
+\contentsline {section}{\numberline {6.7}Dokumentacja klasy running\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}club.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pages.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Clouds}{18}{section.6.7}%
+\contentsline {subsection}{\numberline {6.7.1}Dokumentacja właściwości}{18}{subsection.6.7.1}%
+\contentsline {subsubsection}{\numberline {6.7.1.1}All}{18}{subsubsection.6.7.1.1}%
+\contentsline {section}{\numberline {6.8}Dokumentacja klasy running\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}club.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pages.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Coord}{19}{section.6.8}%
+\contentsline {subsection}{\numberline {6.8.1}Dokumentacja właściwości}{19}{subsection.6.8.1}%
+\contentsline {subsubsection}{\numberline {6.8.1.1}Lat}{19}{subsubsection.6.8.1.1}%
+\contentsline {subsubsection}{\numberline {6.8.1.2}Lon}{19}{subsubsection.6.8.1.2}%
+\contentsline {section}{\numberline {6.9}Dokumentacja klasy Weather\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}App.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Fahrenheit\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}To\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Celcius\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Converter}{19}{section.6.9}%
+\contentsline {subsection}{\numberline {6.9.1}Dokumentacja funkcji składowych}{19}{subsection.6.9.1}%
+\contentsline {subsubsection}{\numberline {6.9.1.1}Convert()}{19}{subsubsection.6.9.1.1}%
+\contentsline {subsubsection}{\numberline {6.9.1.2}ConvertBack()}{20}{subsubsection.6.9.1.2}%
+\contentsline {section}{\numberline {6.10}Dokumentacja klasy Firebase\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Auth\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Service}{20}{section.6.10}%
+\contentsline {subsection}{\numberline {6.10.1}Dokumentacja konstruktora i destruktora}{20}{subsection.6.10.1}%
+\contentsline {subsubsection}{\numberline {6.10.1.1}FirebaseAuthService()}{20}{subsubsection.6.10.1.1}%
+\contentsline {subsection}{\numberline {6.10.2}Dokumentacja funkcji składowych}{20}{subsection.6.10.2}%
+\contentsline {subsubsection}{\numberline {6.10.2.1}GetCurrentUserEmail()}{20}{subsubsection.6.10.2.1}%
+\contentsline {subsubsection}{\numberline {6.10.2.2}GetCurrentUserEmailAsync()}{20}{subsubsection.6.10.2.2}%
+\contentsline {subsubsection}{\numberline {6.10.2.3}LogoutAsync()}{20}{subsubsection.6.10.2.3}%
+\contentsline {subsubsection}{\numberline {6.10.2.4}RegisterWithEmailAndPasswordAsync()}{21}{subsubsection.6.10.2.4}%
+\contentsline {subsubsection}{\numberline {6.10.2.5}SignInWithEmailAndPasswordAsync()}{21}{subsubsection.6.10.2.5}%
+\contentsline {section}{\numberline {6.11}Dokumentacja klasy running\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}club.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pages.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Goals}{21}{section.6.11}%
+\contentsline {subsection}{\numberline {6.11.1}Dokumentacja konstruktora i destruktora}{22}{subsection.6.11.1}%
+\contentsline {subsubsection}{\numberline {6.11.1.1}Goals()}{22}{subsubsection.6.11.1.1}%
+\contentsline {subsection}{\numberline {6.11.2}Dokumentacja funkcji składowych}{22}{subsection.6.11.2}%
+\contentsline {subsubsection}{\numberline {6.11.2.1}OnPropertyChanged()}{22}{subsubsection.6.11.2.1}%
+\contentsline {subsection}{\numberline {6.11.3}Dokumentacja właściwości}{22}{subsection.6.11.3}%
+\contentsline {subsubsection}{\numberline {6.11.3.1}data}{22}{subsubsection.6.11.3.1}%
+\contentsline {subsubsection}{\numberline {6.11.3.2}Distance}{22}{subsubsection.6.11.3.2}%
+\contentsline {subsubsection}{\numberline {6.11.3.3}GoalImage}{22}{subsubsection.6.11.3.3}%
+\contentsline {subsubsection}{\numberline {6.11.3.4}Id}{22}{subsubsection.6.11.3.4}%
+\contentsline {subsubsection}{\numberline {6.11.3.5}IsCompleted}{22}{subsubsection.6.11.3.5}%
+\contentsline {subsubsection}{\numberline {6.11.3.6}Kcal}{22}{subsubsection.6.11.3.6}%
+\contentsline {subsubsection}{\numberline {6.11.3.7}Steps}{22}{subsubsection.6.11.3.7}%
+\contentsline {subsubsection}{\numberline {6.11.3.8}ToggleGoalCommand}{23}{subsubsection.6.11.3.8}%
+\contentsline {subsection}{\numberline {6.11.4}Dokumentacja zdarzeń}{23}{subsection.6.11.4}%
+\contentsline {subsubsection}{\numberline {6.11.4.1}PropertyChanged}{23}{subsubsection.6.11.4.1}%
+\contentsline {section}{\numberline {6.12}Dokumentacja klasy running\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}club.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pages.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Goals\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Page}{23}{section.6.12}%
+\contentsline {subsection}{\numberline {6.12.1}Opis szczegółowy}{24}{subsection.6.12.1}%
+\contentsline {subsection}{\numberline {6.12.2}Dokumentacja konstruktora i destruktora}{24}{subsection.6.12.2}%
+\contentsline {subsubsection}{\numberline {6.12.2.1}GoalsPage()}{24}{subsubsection.6.12.2.1}%
+\contentsline {subsection}{\numberline {6.12.3}Dokumentacja funkcji składowych}{24}{subsection.6.12.3}%
+\contentsline {subsubsection}{\numberline {6.12.3.1}LoadDataAsync()}{24}{subsubsection.6.12.3.1}%
+\contentsline {subsubsection}{\numberline {6.12.3.2}OnAppearing()}{24}{subsubsection.6.12.3.2}%
+\contentsline {subsubsection}{\numberline {6.12.3.3}OnDisappearing()}{24}{subsubsection.6.12.3.3}%
+\contentsline {subsubsection}{\numberline {6.12.3.4}OnNavigatedTo()}{24}{subsubsection.6.12.3.4}%
+\contentsline {subsection}{\numberline {6.12.4}Dokumentacja właściwości}{25}{subsection.6.12.4}%
+\contentsline {subsubsection}{\numberline {6.12.4.1}MyGoalsList}{25}{subsubsection.6.12.4.1}%
+\contentsline {section}{\numberline {6.13}Dokumentacja klasy running\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}club.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pages.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}History}{25}{section.6.13}%
+\contentsline {subsection}{\numberline {6.13.1}Dokumentacja właściwości}{25}{subsection.6.13.1}%
+\contentsline {subsubsection}{\numberline {6.13.1.1}coordinates}{25}{subsubsection.6.13.1.1}%
+\contentsline {subsubsection}{\numberline {6.13.1.2}data}{25}{subsubsection.6.13.1.2}%
+\contentsline {subsubsection}{\numberline {6.13.1.3}Distance}{25}{subsubsection.6.13.1.3}%
+\contentsline {subsubsection}{\numberline {6.13.1.4}Id}{25}{subsubsection.6.13.1.4}%
+\contentsline {subsubsection}{\numberline {6.13.1.5}Kcal}{26}{subsubsection.6.13.1.5}%
+\contentsline {subsubsection}{\numberline {6.13.1.6}Steps}{26}{subsubsection.6.13.1.6}%
+\contentsline {subsubsection}{\numberline {6.13.1.7}Time}{26}{subsubsection.6.13.1.7}%
+\contentsline {section}{\numberline {6.14}Dokumentacja klasy running\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}club.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pages.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}History\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Page}{26}{section.6.14}%
+\contentsline {subsection}{\numberline {6.14.1}Opis szczegółowy}{27}{subsection.6.14.1}%
+\contentsline {subsection}{\numberline {6.14.2}Dokumentacja konstruktora i destruktora}{27}{subsection.6.14.2}%
+\contentsline {subsubsection}{\numberline {6.14.2.1}HistoryDetailPage()}{27}{subsubsection.6.14.2.1}%
+\contentsline {subsection}{\numberline {6.14.3}Dokumentacja funkcji składowych}{27}{subsection.6.14.3}%
+\contentsline {subsubsection}{\numberline {6.14.3.1}CreateLineStringLayer()}{27}{subsubsection.6.14.3.1}%
+\contentsline {subsubsection}{\numberline {6.14.3.2}CreateLineStringStyle()}{27}{subsubsection.6.14.3.2}%
+\contentsline {subsubsection}{\numberline {6.14.3.3}OnAppearing()}{27}{subsubsection.6.14.3.3}%
+\contentsline {subsubsection}{\numberline {6.14.3.4}OnDisappearing()}{27}{subsubsection.6.14.3.4}%
+\contentsline {section}{\numberline {6.15}Dokumentacja klasy running\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}club.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pages.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}History\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Page}{28}{section.6.15}%
+\contentsline {subsection}{\numberline {6.15.1}Opis szczegółowy}{28}{subsection.6.15.1}%
+\contentsline {subsection}{\numberline {6.15.2}Dokumentacja konstruktora i destruktora}{28}{subsection.6.15.2}%
+\contentsline {subsubsection}{\numberline {6.15.2.1}HistoryPage()}{28}{subsubsection.6.15.2.1}%
+\contentsline {subsection}{\numberline {6.15.3}Dokumentacja funkcji składowych}{29}{subsection.6.15.3}%
+\contentsline {subsubsection}{\numberline {6.15.3.1}LoadDataAsync()}{29}{subsubsection.6.15.3.1}%
+\contentsline {subsubsection}{\numberline {6.15.3.2}OnAppearing()}{29}{subsubsection.6.15.3.2}%
+\contentsline {subsubsection}{\numberline {6.15.3.3}OnDisappearing()}{29}{subsubsection.6.15.3.3}%
+\contentsline {subsection}{\numberline {6.15.4}Dokumentacja właściwości}{29}{subsection.6.15.4}%
+\contentsline {subsubsection}{\numberline {6.15.4.1}MyHistoryList}{29}{subsubsection.6.15.4.1}%
+\contentsline {section}{\numberline {6.16}Dokumentacja klasy running\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}club.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pages.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Home\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Page}{29}{section.6.16}%
+\contentsline {subsection}{\numberline {6.16.1}Opis szczegółowy}{30}{subsection.6.16.1}%
+\contentsline {subsection}{\numberline {6.16.2}Dokumentacja konstruktora i destruktora}{30}{subsection.6.16.2}%
+\contentsline {subsubsection}{\numberline {6.16.2.1}HomePage()}{30}{subsubsection.6.16.2.1}%
+\contentsline {subsection}{\numberline {6.16.3}Dokumentacja funkcji składowych}{30}{subsection.6.16.3}%
+\contentsline {subsubsection}{\numberline {6.16.3.1}CreateLineStringLayer()}{30}{subsubsection.6.16.3.1}%
+\contentsline {subsubsection}{\numberline {6.16.3.2}CreateLineStringStyle()}{30}{subsubsection.6.16.3.2}%
+\contentsline {subsubsection}{\numberline {6.16.3.3}GetWKT()}{30}{subsubsection.6.16.3.3}%
+\contentsline {subsubsection}{\numberline {6.16.3.4}OnAppearing()}{31}{subsubsection.6.16.3.4}%
+\contentsline {subsubsection}{\numberline {6.16.3.5}OnDisappearing()}{31}{subsubsection.6.16.3.5}%
+\contentsline {section}{\numberline {6.17}Dokumentacja klasy running\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}club.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Platforms.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Android.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Light\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sensor\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Service}{31}{section.6.17}%
+\contentsline {subsection}{\numberline {6.17.1}Dokumentacja konstruktora i destruktora}{31}{subsection.6.17.1}%
+\contentsline {subsubsection}{\numberline {6.17.1.1}LightSensorService()}{31}{subsubsection.6.17.1.1}%
+\contentsline {subsection}{\numberline {6.17.2}Dokumentacja funkcji składowych}{31}{subsection.6.17.2}%
+\contentsline {subsubsection}{\numberline {6.17.2.1}OnAccuracyChanged()}{31}{subsubsection.6.17.2.1}%
+\contentsline {subsubsection}{\numberline {6.17.2.2}OnSensorChanged()}{32}{subsubsection.6.17.2.2}%
+\contentsline {subsubsection}{\numberline {6.17.2.3}Start()}{32}{subsubsection.6.17.2.3}%
+\contentsline {subsubsection}{\numberline {6.17.2.4}Stop()}{32}{subsubsection.6.17.2.4}%
+\contentsline {subsection}{\numberline {6.17.3}Dokumentacja zdarzeń}{32}{subsection.6.17.3}%
+\contentsline {subsubsection}{\numberline {6.17.3.1}LightLevelChanged}{32}{subsubsection.6.17.3.1}%
+\contentsline {section}{\numberline {6.18}Dokumentacja klasy running\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}club.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pages.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Login\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Page}{32}{section.6.18}%
+\contentsline {subsection}{\numberline {6.18.1}Opis szczegółowy}{33}{subsection.6.18.1}%
+\contentsline {subsection}{\numberline {6.18.2}Dokumentacja konstruktora i destruktora}{33}{subsection.6.18.2}%
+\contentsline {subsubsection}{\numberline {6.18.2.1}LoginPage()}{33}{subsubsection.6.18.2.1}%
+\contentsline {subsection}{\numberline {6.18.3}Dokumentacja funkcji składowych}{33}{subsection.6.18.3}%
+\contentsline {subsubsection}{\numberline {6.18.3.1}OnAppearing()}{33}{subsubsection.6.18.3.1}%
+\contentsline {subsubsection}{\numberline {6.18.3.2}OnDisappearing()}{33}{subsubsection.6.18.3.2}%
+\contentsline {section}{\numberline {6.19}Dokumentacja klasy Weather\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}App.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Long\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}To\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Date\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Time\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Converter}{33}{section.6.19}%
+\contentsline {subsection}{\numberline {6.19.1}Dokumentacja funkcji składowych}{34}{subsection.6.19.1}%
+\contentsline {subsubsection}{\numberline {6.19.1.1}Convert()}{34}{subsubsection.6.19.1.1}%
+\contentsline {subsubsection}{\numberline {6.19.1.2}ConvertBack()}{34}{subsubsection.6.19.1.2}%
+\contentsline {section}{\numberline {6.20}Dokumentacja klasy running\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}club.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pages.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Main}{34}{section.6.20}%
+\contentsline {subsection}{\numberline {6.20.1}Dokumentacja właściwości}{34}{subsection.6.20.1}%
+\contentsline {subsubsection}{\numberline {6.20.1.1}Humidity}{34}{subsubsection.6.20.1.1}%
+\contentsline {subsubsection}{\numberline {6.20.1.2}Pressure}{34}{subsubsection.6.20.1.2}%
+\contentsline {subsubsection}{\numberline {6.20.1.3}Temperature}{34}{subsubsection.6.20.1.3}%
+\contentsline {subsubsection}{\numberline {6.20.1.4}TempMax}{35}{subsubsection.6.20.1.4}%
+\contentsline {subsubsection}{\numberline {6.20.1.5}TempMin}{35}{subsubsection.6.20.1.5}%
+\contentsline {section}{\numberline {6.21}Dokumentacja klasy running\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}club.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Activity}{35}{section.6.21}%
+\contentsline {subsection}{\numberline {6.21.1}Dokumentacja funkcji składowych}{35}{subsection.6.21.1}%
+\contentsline {subsubsection}{\numberline {6.21.1.1}OnCreate()}{35}{subsubsection.6.21.1.1}%
+\contentsline {section}{\numberline {6.22}Dokumentacja klasy running\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}club.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Application}{35}{section.6.22}%
+\contentsline {subsection}{\numberline {6.22.1}Dokumentacja konstruktora i destruktora}{36}{subsection.6.22.1}%
+\contentsline {subsubsection}{\numberline {6.22.1.1}MainApplication()}{36}{subsubsection.6.22.1.1}%
+\contentsline {subsection}{\numberline {6.22.2}Dokumentacja funkcji składowych}{36}{subsection.6.22.2}%
+\contentsline {subsubsection}{\numberline {6.22.2.1}CreateMauiApp()}{36}{subsubsection.6.22.2.1}%
+\contentsline {section}{\numberline {6.23}Dokumentacja klasy running\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}club.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Page}{36}{section.6.23}%
+\contentsline {subsection}{\numberline {6.23.1}Dokumentacja konstruktora i destruktora}{36}{subsection.6.23.1}%
+\contentsline {subsubsection}{\numberline {6.23.1.1}MainPage()}{36}{subsubsection.6.23.1.1}%
+\contentsline {section}{\numberline {6.24}Dokumentacja klasy Pedometer\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}View\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Model}{37}{section.6.24}%
+\contentsline {subsection}{\numberline {6.24.1}Opis szczegółowy}{37}{subsection.6.24.1}%
+\contentsline {subsection}{\numberline {6.24.2}Dokumentacja konstruktora i destruktora}{37}{subsection.6.24.2}%
+\contentsline {subsubsection}{\numberline {6.24.2.1}PedometerViewModel()}{37}{subsubsection.6.24.2.1}%
+\contentsline {subsection}{\numberline {6.24.3}Dokumentacja właściwości}{37}{subsection.6.24.3}%
+\contentsline {subsubsection}{\numberline {6.24.3.1}StartCommand}{37}{subsubsection.6.24.3.1}%
+\contentsline {subsubsection}{\numberline {6.24.3.2}StepCount}{38}{subsubsection.6.24.3.2}%
+\contentsline {subsubsection}{\numberline {6.24.3.3}StopCommand}{38}{subsubsection.6.24.3.3}%
+\contentsline {subsection}{\numberline {6.24.4}Dokumentacja zdarzeń}{38}{subsection.6.24.4}%
+\contentsline {subsubsection}{\numberline {6.24.4.1}PropertyChanged}{38}{subsubsection.6.24.4.1}%
+\contentsline {section}{\numberline {6.25}Dokumentacja klasy running\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}club.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pages.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Profil\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Page}{38}{section.6.25}%
+\contentsline {subsection}{\numberline {6.25.1}Opis szczegółowy}{39}{subsection.6.25.1}%
+\contentsline {subsection}{\numberline {6.25.2}Dokumentacja konstruktora i destruktora}{39}{subsection.6.25.2}%
+\contentsline {subsubsection}{\numberline {6.25.2.1}ProfilPage()}{39}{subsubsection.6.25.2.1}%
+\contentsline {subsection}{\numberline {6.25.3}Dokumentacja funkcji składowych}{39}{subsection.6.25.3}%
+\contentsline {subsubsection}{\numberline {6.25.3.1}OnAppearing()}{39}{subsubsection.6.25.3.1}%
+\contentsline {subsubsection}{\numberline {6.25.3.2}OnDisappearing()}{39}{subsubsection.6.25.3.2}%
+\contentsline {section}{\numberline {6.26}Dokumentacja klasy running\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}club.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pages.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Register\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Page}{39}{section.6.26}%
+\contentsline {subsection}{\numberline {6.26.1}Opis szczegółowy}{40}{subsection.6.26.1}%
+\contentsline {subsection}{\numberline {6.26.2}Dokumentacja konstruktora i destruktora}{40}{subsection.6.26.2}%
+\contentsline {subsubsection}{\numberline {6.26.2.1}RegisterPage()}{40}{subsubsection.6.26.2.1}%
+\contentsline {subsection}{\numberline {6.26.3}Dokumentacja funkcji składowych}{40}{subsection.6.26.3}%
+\contentsline {subsubsection}{\numberline {6.26.3.1}OnAppearing()}{40}{subsubsection.6.26.3.1}%
+\contentsline {subsubsection}{\numberline {6.26.3.2}OnDisappearing()}{40}{subsubsection.6.26.3.2}%
+\contentsline {section}{\numberline {6.27}Dokumentacja klasy running\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}club.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Resource}{41}{section.6.27}%
+\contentsline {section}{\numberline {6.28}Dokumentacja klasy running\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}club.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pages.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Rest\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Service}{41}{section.6.28}%
+\contentsline {subsection}{\numberline {6.28.1}Dokumentacja konstruktora i destruktora}{41}{subsection.6.28.1}%
+\contentsline {subsubsection}{\numberline {6.28.1.1}RestService()}{41}{subsubsection.6.28.1.1}%
+\contentsline {subsection}{\numberline {6.28.2}Dokumentacja funkcji składowych}{41}{subsection.6.28.2}%
+\contentsline {subsubsection}{\numberline {6.28.2.1}GetWeatherData()}{41}{subsubsection.6.28.2.1}%
+\contentsline {section}{\numberline {6.29}Dokumentacja klasy running\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}club.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pages.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Run\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Page}{41}{section.6.29}%
+\contentsline {subsection}{\numberline {6.29.1}Dokumentacja konstruktora i destruktora}{42}{subsection.6.29.1}%
+\contentsline {subsubsection}{\numberline {6.29.1.1}RunPage()}{42}{subsubsection.6.29.1.1}%
+\contentsline {section}{\numberline {6.30}Dokumentacja klasy running\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}club.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pages.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Summary\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Page}{42}{section.6.30}%
+\contentsline {subsection}{\numberline {6.30.1}Opis szczegółowy}{42}{subsection.6.30.1}%
+\contentsline {subsection}{\numberline {6.30.2}Dokumentacja konstruktora i destruktora}{43}{subsection.6.30.2}%
+\contentsline {subsubsection}{\numberline {6.30.2.1}SummaryPage()}{43}{subsubsection.6.30.2.1}%
+\contentsline {subsection}{\numberline {6.30.3}Dokumentacja funkcji składowych}{43}{subsection.6.30.3}%
+\contentsline {subsubsection}{\numberline {6.30.3.1}CreateLineStringLayer()}{43}{subsubsection.6.30.3.1}%
+\contentsline {subsubsection}{\numberline {6.30.3.2}CreateLineStringStyle()}{43}{subsubsection.6.30.3.2}%
+\contentsline {subsubsection}{\numberline {6.30.3.3}OnAppearing()}{43}{subsubsection.6.30.3.3}%
+\contentsline {subsubsection}{\numberline {6.30.3.4}OnDisappearing()}{43}{subsubsection.6.30.3.4}%
+\contentsline {section}{\numberline {6.31}Dokumentacja klasy running\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}club.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pages.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sys}{44}{section.6.31}%
+\contentsline {subsection}{\numberline {6.31.1}Dokumentacja właściwości}{44}{subsection.6.31.1}%
+\contentsline {subsubsection}{\numberline {6.31.1.1}Country}{44}{subsubsection.6.31.1.1}%
+\contentsline {subsubsection}{\numberline {6.31.1.2}Id}{44}{subsubsection.6.31.1.2}%
+\contentsline {subsubsection}{\numberline {6.31.1.3}Message}{44}{subsubsection.6.31.1.3}%
+\contentsline {subsubsection}{\numberline {6.31.1.4}Sunrise}{44}{subsubsection.6.31.1.4}%
+\contentsline {subsubsection}{\numberline {6.31.1.5}Sunset}{44}{subsubsection.6.31.1.5}%
+\contentsline {subsubsection}{\numberline {6.31.1.6}Type}{44}{subsubsection.6.31.1.6}%
+\contentsline {section}{\numberline {6.32}Dokumentacja klasy running\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}club.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pages.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Weather}{45}{section.6.32}%
+\contentsline {subsection}{\numberline {6.32.1}Dokumentacja właściwości}{45}{subsection.6.32.1}%
+\contentsline {subsubsection}{\numberline {6.32.1.1}Description}{45}{subsubsection.6.32.1.1}%
+\contentsline {subsubsection}{\numberline {6.32.1.2}Icon}{45}{subsubsection.6.32.1.2}%
+\contentsline {subsubsection}{\numberline {6.32.1.3}Id}{45}{subsubsection.6.32.1.3}%
+\contentsline {subsubsection}{\numberline {6.32.1.4}Visibility}{45}{subsubsection.6.32.1.4}%
+\contentsline {section}{\numberline {6.33}Dokumentacja klasy running\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}club.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pages.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Weather\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Data}{45}{section.6.33}%
+\contentsline {subsection}{\numberline {6.33.1}Dokumentacja właściwości}{46}{subsection.6.33.1}%
+\contentsline {subsubsection}{\numberline {6.33.1.1}Base}{46}{subsubsection.6.33.1.1}%
+\contentsline {subsubsection}{\numberline {6.33.1.2}Clouds}{46}{subsubsection.6.33.1.2}%
+\contentsline {subsubsection}{\numberline {6.33.1.3}Cod}{46}{subsubsection.6.33.1.3}%
+\contentsline {subsubsection}{\numberline {6.33.1.4}Coord}{46}{subsubsection.6.33.1.4}%
+\contentsline {subsubsection}{\numberline {6.33.1.5}Dt}{46}{subsubsection.6.33.1.5}%
+\contentsline {subsubsection}{\numberline {6.33.1.6}Id}{46}{subsubsection.6.33.1.6}%
+\contentsline {subsubsection}{\numberline {6.33.1.7}Main}{46}{subsubsection.6.33.1.7}%
+\contentsline {subsubsection}{\numberline {6.33.1.8}Sys}{46}{subsubsection.6.33.1.8}%
+\contentsline {subsubsection}{\numberline {6.33.1.9}Title}{46}{subsubsection.6.33.1.9}%
+\contentsline {subsubsection}{\numberline {6.33.1.10}Visibility}{46}{subsubsection.6.33.1.10}%
+\contentsline {subsubsection}{\numberline {6.33.1.11}Weather}{47}{subsubsection.6.33.1.11}%
+\contentsline {subsubsection}{\numberline {6.33.1.12}Wind}{47}{subsubsection.6.33.1.12}%
+\contentsline {section}{\numberline {6.34}Dokumentacja klasy running\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}club.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pages.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Weather\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Page}{47}{section.6.34}%
+\contentsline {subsection}{\numberline {6.34.1}Opis szczegółowy}{47}{subsection.6.34.1}%
+\contentsline {subsection}{\numberline {6.34.2}Dokumentacja konstruktora i destruktora}{47}{subsection.6.34.2}%
+\contentsline {subsubsection}{\numberline {6.34.2.1}WeatherPage()}{47}{subsubsection.6.34.2.1}%
+\contentsline {subsection}{\numberline {6.34.3}Dokumentacja funkcji składowych}{48}{subsection.6.34.3}%
+\contentsline {subsubsection}{\numberline {6.34.3.1}OnAppearing()}{48}{subsubsection.6.34.3.1}%
+\contentsline {subsubsection}{\numberline {6.34.3.2}OnDisappearing()}{48}{subsubsection.6.34.3.2}%
+\contentsline {section}{\numberline {6.35}Dokumentacja klasy Weather\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}App.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Weather\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}View\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Model}{48}{section.6.35}%
+\contentsline {subsection}{\numberline {6.35.1}Dokumentacja konstruktora i destruktora}{48}{subsection.6.35.1}%
+\contentsline {subsubsection}{\numberline {6.35.1.1}WeatherViewModel()}{48}{subsubsection.6.35.1.1}%
+\contentsline {subsection}{\numberline {6.35.2}Dokumentacja funkcji składowych}{49}{subsection.6.35.2}%
+\contentsline {subsubsection}{\numberline {6.35.2.1}OnPropertyChanged()}{49}{subsubsection.6.35.2.1}%
+\contentsline {subsection}{\numberline {6.35.3}Dokumentacja właściwości}{49}{subsection.6.35.3}%
+\contentsline {subsubsection}{\numberline {6.35.3.1}CurrentDateTime}{49}{subsubsection.6.35.3.1}%
+\contentsline {subsection}{\numberline {6.35.4}Dokumentacja zdarzeń}{49}{subsection.6.35.4}%
+\contentsline {subsubsection}{\numberline {6.35.4.1}PropertyChanged}{49}{subsubsection.6.35.4.1}%
+\contentsline {section}{\numberline {6.36}Dokumentacja klasy Weather\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}View\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Model}{49}{section.6.36}%
+\contentsline {subsection}{\numberline {6.36.1}Dokumentacja konstruktora i destruktora}{50}{subsection.6.36.1}%
+\contentsline {subsubsection}{\numberline {6.36.1.1}WeatherViewModel()}{50}{subsubsection.6.36.1.1}%
+\contentsline {subsection}{\numberline {6.36.2}Dokumentacja funkcji składowych}{50}{subsection.6.36.2}%
+\contentsline {subsubsection}{\numberline {6.36.2.1}OnPropertyChanged()}{50}{subsubsection.6.36.2.1}%
+\contentsline {subsection}{\numberline {6.36.3}Dokumentacja właściwości}{50}{subsection.6.36.3}%
+\contentsline {subsubsection}{\numberline {6.36.3.1}CurrentDate}{50}{subsubsection.6.36.3.1}%
+\contentsline {subsection}{\numberline {6.36.4}Dokumentacja zdarzeń}{50}{subsection.6.36.4}%
+\contentsline {subsubsection}{\numberline {6.36.4.1}PropertyChanged}{50}{subsubsection.6.36.4.1}%
+\contentsline {section}{\numberline {6.37}Dokumentacja klasy running\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}club.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pages.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Wind}{50}{section.6.37}%
+\contentsline {subsection}{\numberline {6.37.1}Dokumentacja właściwości}{50}{subsection.6.37.1}%
+\contentsline {subsubsection}{\numberline {6.37.1.1}Deg}{50}{subsubsection.6.37.1.1}%
+\contentsline {subsubsection}{\numberline {6.37.1.2}Speed}{50}{subsubsection.6.37.1.2}%
+\contentsline {chapter}{\numberline {7}Dokumentacja plików}{51}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Dokumentacja pliku App.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}xaml.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{51}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Dokumentacja pliku Platforms/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Windows/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}App.xaml.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{51}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Dokumentacja pliku App\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Shell.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}xaml.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{51}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Dokumentacja pliku Main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Page.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}xaml.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{52}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Dokumentacja pliku Maui\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Program.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{52}{section.7.5}%
+\contentsline {section}{\numberline {7.6}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Debug/net7.0/.NETCore\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}App,Version=v7.0.Assembly\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Attributes.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{54}{section.7.6}%
+\contentsline {section}{\numberline {7.7}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Debug/net7.0/running-\/club.Assembly\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Info.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{54}{section.7.7}%
+\contentsline {section}{\numberline {7.8}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Debug/net8.0-\/android/running-\/club.Assembly\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Info.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{54}{section.7.8}%
+\contentsline {section}{\numberline {7.9}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Debug/net8.0-\/ios/ios-\/arm64/running-\/club.Assembly\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Info.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{54}{section.7.9}%
+\contentsline {section}{\numberline {7.10}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Debug/net8.0-\/ios/iossimulator-\/x64/running-\/club.Assembly\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Info.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{54}{section.7.10}%
+\contentsline {section}{\numberline {7.11}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Debug/net8.0-\/maccatalyst/maccatalyst-\/x64/running-\/club.Assembly\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Info.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{54}{section.7.11}%
+\contentsline {section}{\numberline {7.12}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Debug/net8.0-\/windows10.0.19041.0/win10-\/x64/running-\/club.Assembly\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Info.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{54}{section.7.12}%
+\contentsline {section}{\numberline {7.13}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Release/net8.0-\/android/running-\/club.Assembly\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Info.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{54}{section.7.13}%
+\contentsline {section}{\numberline {7.14}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Release/net8.0-\/ios/ios-\/arm64/running-\/club.Assembly\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Info.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{54}{section.7.14}%
+\contentsline {section}{\numberline {7.15}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Release/net8.0-\/ios/iossimulator-\/x64/running-\/club.Assembly\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Info.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{54}{section.7.15}%
+\contentsline {section}{\numberline {7.16}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Release/net8.0-\/maccatalyst/maccatalyst-\/arm64/running-\/club.Assembly\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Info.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{54}{section.7.16}%
+\contentsline {section}{\numberline {7.17}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Release/net8.0-\/maccatalyst/maccatalyst-\/x64/running-\/club.Assembly\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Info.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{54}{section.7.17}%
+\contentsline {section}{\numberline {7.18}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Release/net8.0-\/maccatalyst/running-\/club.Assembly\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Info.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{54}{section.7.18}%
+\contentsline {section}{\numberline {7.19}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Release/net8.0-\/windows10.0.19041.0/win10-\/x64/running-\/club.Assembly\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Info.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{54}{section.7.19}%
+\contentsline {section}{\numberline {7.20}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Debug/net7.0/running-\/club.Global\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Usings.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}g.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{54}{section.7.20}%
+\contentsline {section}{\numberline {7.21}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Debug/net8.0-\/android/android-\/arm/running-\/club.Global\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Usings.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}g.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{54}{section.7.21}%
+\contentsline {section}{\numberline {7.22}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Debug/net8.0-\/android/android-\/arm64/running-\/club.Global\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Usings.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}g.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{54}{section.7.22}%
+\contentsline {section}{\numberline {7.23}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Debug/net8.0-\/android/android-\/x64/running-\/club.Global\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Usings.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}g.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{54}{section.7.23}%
+\contentsline {section}{\numberline {7.24}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Debug/net8.0-\/android/android-\/x86/running-\/club.Global\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Usings.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}g.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{54}{section.7.24}%
+\contentsline {section}{\numberline {7.25}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Debug/net8.0-\/android/running-\/club.Global\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Usings.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}g.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{54}{section.7.25}%
+\contentsline {section}{\numberline {7.26}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Debug/net8.0-\/ios/ios-\/arm64/running-\/club.Global\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Usings.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}g.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{54}{section.7.26}%
+\contentsline {section}{\numberline {7.27}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Debug/net8.0-\/ios/iossimulator-\/x64/running-\/club.Global\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Usings.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}g.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{54}{section.7.27}%
+\contentsline {section}{\numberline {7.28}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Debug/net8.0-\/maccatalyst/maccatalyst-\/x64/running-\/club.Global\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Usings.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}g.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{54}{section.7.28}%
+\contentsline {section}{\numberline {7.29}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Debug/net8.0-\/windows10.0.19041.0/win10-\/x64/running-\/club.Global\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Usings.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}g.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{54}{section.7.29}%
+\contentsline {section}{\numberline {7.30}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Release/net6.0-\/android/running-\/club.Global\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Usings.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}g.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{54}{section.7.30}%
+\contentsline {section}{\numberline {7.31}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Release/net8.0-\/android/android-\/arm/running-\/club.Global\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Usings.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}g.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{54}{section.7.31}%
+\contentsline {section}{\numberline {7.32}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Release/net8.0-\/android/android-\/arm64/running-\/club.Global\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Usings.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}g.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{54}{section.7.32}%
+\contentsline {section}{\numberline {7.33}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Release/net8.0-\/android/android-\/x64/running-\/club.Global\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Usings.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}g.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{54}{section.7.33}%
+\contentsline {section}{\numberline {7.34}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Release/net8.0-\/android/android-\/x86/running-\/club.Global\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Usings.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}g.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{54}{section.7.34}%
+\contentsline {section}{\numberline {7.35}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Release/net8.0-\/android/running-\/club.Global\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Usings.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}g.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{54}{section.7.35}%
+\contentsline {section}{\numberline {7.36}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Release/net8.0-\/ios/ios-\/arm64/running-\/club.Global\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Usings.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}g.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{54}{section.7.36}%
+\contentsline {section}{\numberline {7.37}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Release/net8.0-\/ios/iossimulator-\/x64/running-\/club.Global\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Usings.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}g.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{54}{section.7.37}%
+\contentsline {section}{\numberline {7.38}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Release/net8.0-\/maccatalyst/maccatalyst-\/arm64/running-\/club.Global\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Usings.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}g.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{54}{section.7.38}%
+\contentsline {section}{\numberline {7.39}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Release/net8.0-\/maccatalyst/maccatalyst-\/x64/running-\/club.Global\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Usings.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}g.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{54}{section.7.39}%
+\contentsline {section}{\numberline {7.40}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Release/net8.0-\/maccatalyst/running-\/club.Global\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Usings.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}g.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{54}{section.7.40}%
+\contentsline {section}{\numberline {7.41}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Release/net8.0-\/windows10.0.19041.0/win10-\/x64/running-\/club.Global\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Usings.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}g.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{54}{section.7.41}%
+\contentsline {section}{\numberline {7.42}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Debug/net8.0-\/android/.NETCore\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}App,Version=v8.0.Assembly\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Attributes.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{54}{section.7.42}%
+\contentsline {section}{\numberline {7.43}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Debug/net8.0-\/ios/ios-\/arm64/.NETCore\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}App,Version=v8.0.Assembly\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Attributes.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{54}{section.7.43}%
+\contentsline {section}{\numberline {7.44}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Debug/net8.0-\/ios/iossimulator-\/x64/.NETCore\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}App,Version=v8.0.Assembly\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Attributes.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{54}{section.7.44}%
+\contentsline {section}{\numberline {7.45}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Debug/net8.0-\/maccatalyst/maccatalyst-\/x64/.NETCore\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}App,Version=v8.0.Assembly\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Attributes.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{54}{section.7.45}%
+\contentsline {section}{\numberline {7.46}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Debug/net8.0-\/windows10.0.19041.0/win10-\/x64/.NETCore\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}App,Version=v8.0.Assembly\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Attributes.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{54}{section.7.46}%
+\contentsline {section}{\numberline {7.47}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Release/net8.0-\/android/.NETCore\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}App,Version=v8.0.Assembly\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Attributes.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{54}{section.7.47}%
+\contentsline {section}{\numberline {7.48}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Release/net8.0-\/ios/ios-\/arm64/.NETCore\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}App,Version=v8.0.Assembly\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Attributes.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{54}{section.7.48}%
+\contentsline {section}{\numberline {7.49}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Release/net8.0-\/ios/iossimulator-\/x64/.NETCore\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}App,Version=v8.0.Assembly\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Attributes.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{54}{section.7.49}%
+\contentsline {section}{\numberline {7.50}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Release/net8.0-\/maccatalyst/.NETCore\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}App,Version=v8.0.Assembly\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Attributes.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{54}{section.7.50}%
+\contentsline {section}{\numberline {7.51}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Release/net8.0-\/maccatalyst/maccatalyst-\/arm64/.NETCore\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}App,Version=v8.0.Assembly\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Attributes.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{54}{section.7.51}%
+\contentsline {section}{\numberline {7.52}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Release/net8.0-\/maccatalyst/maccatalyst-\/x64/.NETCore\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}App,Version=v8.0.Assembly\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Attributes.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{54}{section.7.52}%
+\contentsline {section}{\numberline {7.53}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Release/net8.0-\/windows10.0.19041.0/win10-\/x64/.NETCore\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}App,Version=v8.0.Assembly\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Attributes.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{54}{section.7.53}%
+\contentsline {section}{\numberline {7.54}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Debug/net8.0-\/android/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Microsoft.Android.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Resource.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Designer.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{54}{section.7.54}%
+\contentsline {section}{\numberline {7.55}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Release/net8.0-\/android/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Microsoft.Android.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Resource.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Designer.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{55}{section.7.55}%
+\contentsline {section}{\numberline {7.56}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Debug/net8.0-\/ios/ios-\/arm64/running-\/club.nfloat.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}g.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{55}{section.7.56}%
+\contentsline {subsection}{\numberline {7.56.1}Dokumentacja definicji typów}{55}{subsection.7.56.1}%
+\contentsline {subsubsection}{\numberline {7.56.1.1}nfloat}{55}{subsubsection.7.56.1.1}%
+\contentsline {section}{\numberline {7.57}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Debug/net8.0-\/ios/iossimulator-\/x64/running-\/club.nfloat.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}g.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{56}{section.7.57}%
+\contentsline {section}{\numberline {7.58}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Debug/net8.0-\/maccatalyst/maccatalyst-\/x64/running-\/club.nfloat.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}g.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{56}{section.7.58}%
+\contentsline {section}{\numberline {7.59}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Release/net8.0-\/ios/ios-\/arm64/running-\/club.nfloat.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}g.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{56}{section.7.59}%
+\contentsline {section}{\numberline {7.60}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Release/net8.0-\/ios/iossimulator-\/x64/running-\/club.nfloat.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}g.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{56}{section.7.60}%
+\contentsline {section}{\numberline {7.61}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Release/net8.0-\/maccatalyst/maccatalyst-\/arm64/running-\/club.nfloat.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}g.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{56}{section.7.61}%
+\contentsline {section}{\numberline {7.62}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Release/net8.0-\/maccatalyst/maccatalyst-\/x64/running-\/club.nfloat.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}g.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{56}{section.7.62}%
+\contentsline {section}{\numberline {7.63}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Release/net8.0-\/maccatalyst/running-\/club.nfloat.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}g.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{56}{section.7.63}%
+\contentsline {section}{\numberline {7.64}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Debug/net8.0-\/windows10.0.19041.0/win10-\/x64/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Platforms/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Windows/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}App.g.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{56}{section.7.64}%
+\contentsline {section}{\numberline {7.65}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Release/net8.0-\/windows10.0.19041.0/win10-\/x64/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Platforms/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Windows/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}App.g.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{56}{section.7.65}%
+\contentsline {section}{\numberline {7.66}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Debug/net8.0-\/windows10.0.19041.0/win10-\/x64/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Platforms/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Windows/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}App.g.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}i.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{56}{section.7.66}%
+\contentsline {section}{\numberline {7.67}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Release/net8.0-\/windows10.0.19041.0/win10-\/x64/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Platforms/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Windows/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}App.g.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}i.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{57}{section.7.67}%
+\contentsline {section}{\numberline {7.68}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Debug/net8.0-\/windows10.0.19041.0/win10-\/x64/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Xaml\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Type\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Info.g.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{57}{section.7.68}%
+\contentsline {section}{\numberline {7.69}Dokumentacja pliku obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Release/net8.0-\/windows10.0.19041.0/win10-\/x64/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Xaml\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Type\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Info.g.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{57}{section.7.69}%
+\contentsline {section}{\numberline {7.70}Dokumentacja pliku Pages/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Add\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Goals\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Page.xaml.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{57}{section.7.70}%
+\contentsline {section}{\numberline {7.71}Dokumentacja pliku Pages/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Boolean\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}To\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Color\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Converter.cs}{57}{section.7.71}%
+\contentsline {section}{\numberline {7.72}Dokumentacja pliku Pages/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Constants.cs}{58}{section.7.72}%
+\contentsline {section}{\numberline {7.73}Dokumentacja pliku Pages/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Fahrenheit\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}To\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Celcius\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Converter.cs}{58}{section.7.73}%
+\contentsline {section}{\numberline {7.74}Dokumentacja pliku Pages/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Goals.cs}{58}{section.7.74}%
+\contentsline {section}{\numberline {7.75}Dokumentacja pliku Pages/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Goals\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Page.xaml.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{58}{section.7.75}%
+\contentsline {section}{\numberline {7.76}Dokumentacja pliku Pages/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}History.cs}{59}{section.7.76}%
+\contentsline {section}{\numberline {7.77}Dokumentacja pliku Pages/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}History\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Page.xaml.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{59}{section.7.77}%
+\contentsline {section}{\numberline {7.78}Dokumentacja pliku Pages/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}History\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Page.xaml.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{59}{section.7.78}%
+\contentsline {section}{\numberline {7.79}Dokumentacja pliku Pages/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Home\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Page.xaml.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{59}{section.7.79}%
+\contentsline {section}{\numberline {7.80}Dokumentacja pliku Pages/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Login\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Page.xaml.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{60}{section.7.80}%
+\contentsline {section}{\numberline {7.81}Dokumentacja pliku Pages/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Long\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}To\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Date\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Time\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Converter.cs}{60}{section.7.81}%
+\contentsline {section}{\numberline {7.82}Dokumentacja pliku Pages/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pedometer\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}View\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Model.cs}{60}{section.7.82}%
+\contentsline {section}{\numberline {7.83}Dokumentacja pliku Pages/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Profil\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Page.xaml.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{60}{section.7.83}%
+\contentsline {section}{\numberline {7.84}Dokumentacja pliku Pages/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Register\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Page.xaml.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{61}{section.7.84}%
+\contentsline {section}{\numberline {7.85}Dokumentacja pliku Pages/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Rest\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Service.cs}{61}{section.7.85}%
+\contentsline {section}{\numberline {7.86}Dokumentacja pliku Pages/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Run\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Page.xaml.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{61}{section.7.86}%
+\contentsline {section}{\numberline {7.87}Dokumentacja pliku Pages/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Summary\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Page.xaml.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{61}{section.7.87}%
+\contentsline {section}{\numberline {7.88}Dokumentacja pliku Pages/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}User\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Session.cs}{62}{section.7.88}%
+\contentsline {section}{\numberline {7.89}Dokumentacja pliku Pages/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Viev\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Model.cs}{62}{section.7.89}%
+\contentsline {section}{\numberline {7.90}Dokumentacja pliku Pages/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Weather\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Data.cs}{62}{section.7.90}%
+\contentsline {section}{\numberline {7.91}Dokumentacja pliku Pages/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Weather\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Page.xaml.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{62}{section.7.91}%
+\contentsline {section}{\numberline {7.92}Dokumentacja pliku Pages/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Weather\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}View\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Model.cs}{63}{section.7.92}%
+\contentsline {section}{\numberline {7.93}Dokumentacja pliku Platforms/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Android/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Light\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sensor\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Service.cs}{63}{section.7.93}%
+\contentsline {section}{\numberline {7.94}Dokumentacja pliku Platforms/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Android/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Activity.cs}{63}{section.7.94}%
+\contentsline {section}{\numberline {7.95}Dokumentacja pliku Platforms/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Android/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Application.cs}{63}{section.7.95}%
+\contentsline {section}{\numberline {7.96}Dokumentacja pliku Platforms/i\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}OS/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}App\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Delegate.cs}{64}{section.7.96}%
+\contentsline {section}{\numberline {7.97}Dokumentacja pliku Platforms/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Mac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Catalyst/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}App\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Delegate.cs}{64}{section.7.97}%
+\contentsline {section}{\numberline {7.98}Dokumentacja pliku Platforms/i\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}OS/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Program.cs}{64}{section.7.98}%
+\contentsline {section}{\numberline {7.99}Dokumentacja pliku Platforms/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Mac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Catalyst/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Program.cs}{64}{section.7.99}%
+\contentsline {section}{\numberline {7.100}Dokumentacja pliku Platforms/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tizen/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Main.cs}{64}{section.7.100}%
+\contentsline {section}{\numberline {7.101}Dokumentacja pliku Services/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Auth\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Service.cs}{64}{section.7.101}%
+\contentsline {chapter}{Skorowidz}{65}{section*.181}%

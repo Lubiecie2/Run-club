@@ -36,13 +36,13 @@
         <ShellContent Title="Cele"
                       Icon="Resources/Images/cele.svg"
                       ContentTemplate="{DataTemplate local:Pages.GoalsPage}" />
-        
+
+        <ShellContent Title="Pogoda"
+                      Icon="Resources/Images/gcloud.svg"
+                      ContentTemplate="{DataTemplate local:Pages.WeatherPage}" />
         <ShellContent Title="Profil"
                       Icon="Resources/Images/osoba.svg"
                       ContentTemplate="{DataTemplate local:Pages.ProfilPage}" />
-        <ShellContent Title="Pogoda"
-                      Icon="Resources/Images/osoba.svg"
-                      ContentTemplate="{DataTemplate local:Pages.WeatherPage}" />
     </TabBar>
 
 </Shell>

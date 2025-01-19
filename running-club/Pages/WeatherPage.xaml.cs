@@ -9,7 +9,7 @@ using System.Globalization;
 using running_club.Platforms.Android; 
 #endif
 
-
+/// @brief Klasa reprezentujaca strone pogody.
 public partial class WeatherPage : ContentPage
 {
     RestService _restService;
@@ -17,7 +17,8 @@ public partial class WeatherPage : ContentPage
         private LightSensorService _lightSensorService;
 #endif
     private bool _isWaiting = false;
-    //Szczesliwego nowego roku 2025
+
+    /// @brief Konstruktor klasy WeatherPage.
     public WeatherPage()
     {
         InitializeComponent();
@@ -32,27 +33,28 @@ public partial class WeatherPage : ContentPage
     }
 #endif
 
-        // Wywo³anie metody przy starcie aplikacji
+        
         GetWeatherForCurrentLocation();
     }
 
+    /// @brief Funkcja generujaca zapytanie do API OpenWeatherMap.
     async void GetWeatherForCurrentLocation()
     {
         try
         {
-            // Pobierz aktualn¹ lokalizacjê u¿ytkownika z wysok¹ dok³adnoœci¹
+            
             Location location = await Geolocation.GetLocationAsync(new GeolocationRequest(GeolocationAccuracy.Best, TimeSpan.FromSeconds(10)));
 
             if (location != null)
             {
-                // Pobierz dane pogodowe na podstawie aktualnej lokalizacji
+                
                 string requestUrl = GenerateRequestURL(Constants.OpenWeatherMapEndpoint, location);
                 WeatherData weatherData = await _restService.GetWeatherData(requestUrl);
 
-                // Debugging - wyœwietl pe³n¹ odpowiedŸ JSON
+                
                 Console.WriteLine(JsonConvert.SerializeObject(weatherData));
 
-                // Przypisz dane pogodowe do kontekstu wi¹zania
+                
                 BindingContext = weatherData;
             }
             else
@@ -66,11 +68,12 @@ public partial class WeatherPage : ContentPage
         }
     }
 
+    /// @brief Generuje URL zapytania do API OpenWeatherMap.
     string GenerateRequestURL(string endPoint, Location location)
     {
         string requestUri = endPoint;
         requestUri += $"?lat={location.Latitude}&lon={location.Longitude}";
-        requestUri += "&units=metric"; // lub "imperial" dla Fahrenheita
+        requestUri += "&units=metric"; 
         requestUri += $"&APPID={Constants.OpenWeatherMapAPIKey}";
         return requestUri;
     }

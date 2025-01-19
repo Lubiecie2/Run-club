@@ -34,11 +34,23 @@ build_metadata.AdditionalFiles.ManifestResourceName = running_club.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
+[C:/Users/kgruc/OneDrive/Pulpit/Run/running-club/running-club/Pages/AddGoalsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = running_club.Pages.AddGoalsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\AddGoalsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\AddGoalsPage.xaml
+
 [C:/Users/kgruc/OneDrive/Pulpit/Run/running-club/running-club/Pages/GoalsPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = running_club.Pages.GoalsPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\GoalsPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\GoalsPage.xaml
+
+[C:/Users/kgruc/OneDrive/Pulpit/Run/running-club/running-club/Pages/HistoryDetailPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = running_club.Pages.HistoryDetailPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\HistoryDetailPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\HistoryDetailPage.xaml
 
 [C:/Users/kgruc/OneDrive/Pulpit/Run/running-club/running-club/Pages/HistoryPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
@@ -76,6 +88,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = running_club.Pages.RunPage
 build_metadata.AdditionalFiles.TargetPath = Pages\RunPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\RunPage.xaml
 
+[C:/Users/kgruc/OneDrive/Pulpit/Run/running-club/running-club/Pages/SummaryPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = running_club.Pages.SummaryPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\SummaryPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\SummaryPage.xaml
+
 [C:/Users/kgruc/OneDrive/Pulpit/Run/running-club/running-club/Pages/WeatherPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = running_club.Pages.WeatherPage.xaml
@@ -93,3 +111,27 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = running_club.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/kgruc/OneDrive/Pulpit/Run/running-club/running-club/docs/html/doxygen.css]
+build_metadata.AdditionalFiles.GenKind = Css
+build_metadata.AdditionalFiles.ManifestResourceName = running_club.docs.html.doxygen.css
+build_metadata.AdditionalFiles.TargetPath = docs\html\doxygen.css
+build_metadata.AdditionalFiles.RelativePath = docs\html\doxygen.css
+
+[C:/Users/kgruc/OneDrive/Pulpit/Run/running-club/running-club/docs/html/navtree.css]
+build_metadata.AdditionalFiles.GenKind = Css
+build_metadata.AdditionalFiles.ManifestResourceName = running_club.docs.html.navtree.css
+build_metadata.AdditionalFiles.TargetPath = docs\html\navtree.css
+build_metadata.AdditionalFiles.RelativePath = docs\html\navtree.css
+
+[C:/Users/kgruc/OneDrive/Pulpit/Run/running-club/running-club/docs/html/search/search.css]
+build_metadata.AdditionalFiles.GenKind = Css
+build_metadata.AdditionalFiles.ManifestResourceName = running_club.docs.html.search.search.css
+build_metadata.AdditionalFiles.TargetPath = docs\html\search\search.css
+build_metadata.AdditionalFiles.RelativePath = docs\html\search\search.css
+
+[C:/Users/kgruc/OneDrive/Pulpit/Run/running-club/running-club/docs/html/tabs.css]
+build_metadata.AdditionalFiles.GenKind = Css
+build_metadata.AdditionalFiles.ManifestResourceName = running_club.docs.html.tabs.css
+build_metadata.AdditionalFiles.TargetPath = docs\html\tabs.css
+build_metadata.AdditionalFiles.RelativePath = docs\html\tabs.css

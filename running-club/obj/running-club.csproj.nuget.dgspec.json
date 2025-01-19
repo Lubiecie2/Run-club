@@ -25,8 +25,7 @@
         "originalTargetFrameworks": [
           "net8.0-android",
           "net8.0-ios",
-          "net8.0-maccatalyst",
-          "net8.0-windows10.0.19041.0"
+          "net8.0-maccatalyst"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -44,10 +43,6 @@
           },
           "net8.0-maccatalyst18.0": {
             "targetAlias": "net8.0-maccatalyst",
-            "projectReferences": {}
-          },
-          "net8.0-windows10.0.19041": {
-            "targetAlias": "net8.0-windows10.0.19041.0",
             "projectReferences": {}
           }
         },
@@ -300,85 +295,6 @@
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
-        },
-        "net8.0-windows10.0.19041": {
-          "targetAlias": "net8.0-windows10.0.19041.0",
-          "dependencies": {
-            "FirebaseAuthentication.net": {
-              "target": "Package",
-              "version": "[3.7.2, )"
-            },
-            "FirebaseDatabase.net": {
-              "target": "Package",
-              "version": "[4.2.0, )"
-            },
-            "Google.Cloud.Firestore": {
-              "target": "Package",
-              "version": "[3.9.0, )"
-            },
-            "Mapsui": {
-              "target": "Package",
-              "version": "[4.1.8, )"
-            },
-            "Mapsui.Maui": {
-              "target": "Package",
-              "version": "[4.1.8, )"
-            },
-            "Microsoft.Extensions.Logging.Debug": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "Microsoft.Maui.Controls": {
-              "target": "Package",
-              "version": "[8.0.82, )"
-            },
-            "Microsoft.Maui.Controls.Compatibility": {
-              "target": "Package",
-              "version": "[8.0.82, )"
-            },
-            "Microsoft.Maui.Essentials": {
-              "target": "Package",
-              "version": "[8.0.93, )"
-            },
-            "NetTopologySuite": {
-              "target": "Package",
-              "version": "[2.5.0, )"
-            },
-            "Newtonsoft.Json": {
-              "target": "Package",
-              "version": "[13.0.3, )"
-            },
-            "Xamarin.Essentials": {
-              "target": "Package",
-              "version": "[1.8.1, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.Windows.SDK.NET.Ref",
-              "version": "[10.0.19041.44, 10.0.19041.44]"
-            }
-          ],
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            },
-            "Microsoft.Windows.SDK.NET.Ref": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
@@ -397,10 +313,10 @@
         "ios-arm64": {
           "#import": []
         },
-        "maccatalyst-x64": {
+        "maccatalyst-arm64": {
           "#import": []
         },
-        "win10-x64": {
+        "maccatalyst-x64": {
           "#import": []
         }
       }

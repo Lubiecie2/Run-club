@@ -1,0 +1,25 @@
+var namespacerunning__club_1_1_pages =
+[
+    [ "AddGoalsPage", "classrunning__club_1_1_pages_1_1_add_goals_page.html", "classrunning__club_1_1_pages_1_1_add_goals_page" ],
+    [ "BooleanToColorConverter", "classrunning__club_1_1_pages_1_1_boolean_to_color_converter.html", "classrunning__club_1_1_pages_1_1_boolean_to_color_converter" ],
+    [ "Clouds", "classrunning__club_1_1_pages_1_1_clouds.html", "classrunning__club_1_1_pages_1_1_clouds" ],
+    [ "Coord", "classrunning__club_1_1_pages_1_1_coord.html", "classrunning__club_1_1_pages_1_1_coord" ],
+    [ "Goals", "classrunning__club_1_1_pages_1_1_goals.html", "classrunning__club_1_1_pages_1_1_goals" ],
+    [ "GoalsPage", "classrunning__club_1_1_pages_1_1_goals_page.html", "classrunning__club_1_1_pages_1_1_goals_page" ],
+    [ "History", "classrunning__club_1_1_pages_1_1_history.html", "classrunning__club_1_1_pages_1_1_history" ],
+    [ "HistoryDetailPage", "classrunning__club_1_1_pages_1_1_history_detail_page.html", "classrunning__club_1_1_pages_1_1_history_detail_page" ],
+    [ "HistoryPage", "classrunning__club_1_1_pages_1_1_history_page.html", "classrunning__club_1_1_pages_1_1_history_page" ],
+    [ "HomePage", "classrunning__club_1_1_pages_1_1_home_page.html", "classrunning__club_1_1_pages_1_1_home_page" ],
+    [ "LoginPage", "classrunning__club_1_1_pages_1_1_login_page.html", "classrunning__club_1_1_pages_1_1_login_page" ],
+    [ "Main", "classrunning__club_1_1_pages_1_1_main.html", "classrunning__club_1_1_pages_1_1_main" ],
+    [ "ProfilPage", "classrunning__club_1_1_pages_1_1_profil_page.html", "classrunning__club_1_1_pages_1_1_profil_page" ],
+    [ "RegisterPage", "classrunning__club_1_1_pages_1_1_register_page.html", "classrunning__club_1_1_pages_1_1_register_page" ],
+    [ "RestService", "classrunning__club_1_1_pages_1_1_rest_service.html", "classrunning__club_1_1_pages_1_1_rest_service" ],
+    [ "RunPage", "classrunning__club_1_1_pages_1_1_run_page.html", "classrunning__club_1_1_pages_1_1_run_page" ],
+    [ "SummaryPage", "classrunning__club_1_1_pages_1_1_summary_page.html", "classrunning__club_1_1_pages_1_1_summary_page" ],
+    [ "Sys", "classrunning__club_1_1_pages_1_1_sys.html", "classrunning__club_1_1_pages_1_1_sys" ],
+    [ "Weather", "classrunning__club_1_1_pages_1_1_weather.html", "classrunning__club_1_1_pages_1_1_weather" ],
+    [ "WeatherData", "classrunning__club_1_1_pages_1_1_weather_data.html", "classrunning__club_1_1_pages_1_1_weather_data" ],
+    [ "WeatherPage", "classrunning__club_1_1_pages_1_1_weather_page.html", "classrunning__club_1_1_pages_1_1_weather_page" ],
+    [ "Wind", "classrunning__club_1_1_pages_1_1_wind.html", "classrunning__club_1_1_pages_1_1_wind" ]
+];

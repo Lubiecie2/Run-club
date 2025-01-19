@@ -6,18 +6,18 @@ using running_club.Platforms.Android;
 
 namespace running_club.Pages;
 
-/// @brief Klasa reprezentująca stronę rejestracji w aplikacji.
-/// @details Obsługuje rejestrację nowego użytkownika, walidację danych oraz obsługę czujnika światła na platformie Android.
+/// @brief Klasa reprezentujaca strone rejestracji w aplikacji.
+/// @details Obsluguje rejestracje nowego uzytkownika, walidacje danych oraz obsluge czujnika swiatla na platformie Android.
 public partial class RegisterPage : ContentPage
 {
-    /// @brief Serwis Firebase do obsługi uwierzytelniania.
+    /// @brief Serwis Firebase do obslugi uwierzytelniania.
     private FirebaseAuthService _authService;
 
 #if ANDROID
-    /// @brief Serwis obsługujący czujnik światła na platformie Android.
+    /// @brief Serwis obslugujacy czujnik swiatla na platformie Android.
     private LightSensorService _lightSensorService;
 #endif
-    /// @brief Flaga wskazująca, czy aplikacja oczekuje na wykonanie operacji.
+    /// @brief Flaga wskazujaca, czy aplikacja oczekuje na wykonanie operacji.
     private bool _isWaiting = false;
 
     /// @brief Konstruktor klasy RegisterPage.
@@ -34,16 +34,16 @@ public partial class RegisterPage : ContentPage
 #endif
     }
 
-    /// @brief Obsługuje kliknięcie linku do strony logowania.
-    /// @param sender Obiekt, który wywołał zdarzenie.
+    /// @brief Obsluguje klikniecie linku do strony logowania.
+    /// @param sender Obiekt, ktory wywolal zdarzenie.
     /// @param e Argumenty zdarzenia.
     private async void OnLoginLinkTapped(object sender, EventArgs e)
     {
         await Navigation.PushAsync(new LoginPage());
     }
 
-    /// @brief Obsługuje kliknięcie przycisku rejestracji.
-    /// @param sender Obiekt, który wywołał zdarzenie.
+    /// @brief Obsluguje klikniecie przycisku rejestracji.
+    /// @param sender Obiekt, ktory wywolal zdarzenie.
     /// @param e Argumenty zdarzenia.
     private async void OnRegisterButtonClicked(object sender, EventArgs e)
     {
@@ -89,9 +89,9 @@ public partial class RegisterPage : ContentPage
         }
     }
 
-    /// @brief Sprawdza poprawność formatu adresu e-mail.
+    /// @brief Sprawdza poprawnosc formatu adresu e-mail.
     /// @param email Adres e-mail do sprawdzenia.
-    /// @return True, jeśli adres e-mail jest poprawny; w przeciwnym razie False.
+    /// @return True, jesli adres e-mail jest poprawny; w przeciwnym razie False.
     private bool IsValidEmail(string email)
     {
         string emailPattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
@@ -99,8 +99,8 @@ public partial class RegisterPage : ContentPage
     }
 #if ANDROID
 
-    /// @brief Obsługuje zmiany poziomu światła wykryte przez czujnik.
-    /// @param lightLevel Poziom światła wykryty przez czujnik.
+    /// @brief Obsluguje zmiany poziomu swiatla wykryte przez czujnik.
+    /// @param lightLevel Poziom swiatla wykryty przez czujnik.
     private async void OnLightLevelChanged(float lightLevel)
 {
     if (_isWaiting)
@@ -133,7 +133,7 @@ public partial class RegisterPage : ContentPage
 #endif
     }
 
-    /// @brief Wykonywane, gdy strona pojawia się ponownie.
+    /// @brief Wykonywane, gdy strona pojawia sie ponownie.
     protected override void OnAppearing()
     {
         base.OnAppearing();

@@ -6,18 +6,18 @@ using running_club.Platforms.Android;
 
 namespace running_club.Pages
 {
-    /// @brief Klasa reprezentuj¹ca stronê logowania w aplikacji.
-    /// @details Obs³uguje logowanie u¿ytkownika, nawigacjê do rejestracji i inne funkcje.
+    /// @brief Klasa reprezentujaca strone logowania w aplikacji.
+    /// @details Obsluguje logowanie uzytkownika, nawigacje do rejestracji i inne funkcje.
     public partial class LoginPage : ContentPage
     {
 #if ANDROID
-        /// @brief Serwis obs³uguj¹cy czujnik œwiat³a na platformie Android.
+        /// @brief Serwis obslugujacy czujnik swiatla na platformie Android.
         private LightSensorService _lightSensorService;
 #endif
-        /// @brief Serwis Firebase do uwierzytelniania u¿ytkowników.
+        /// @brief Serwis Firebase do uwierzytelniania uzytkownikow.
         private FirebaseAuthService _authService;
 
-        /// @brief Flaga wskazuj¹ca, czy aplikacja oczekuje na wykonanie operacji.
+        /// @brief Flaga wskazujaca, czy aplikacja oczekuje na wykonanie operacji.
         private bool _isWaiting = false;
 
         /// @brief Konstruktor klasy LoginPage.
@@ -42,16 +42,16 @@ namespace running_club.Pages
             });
         }
 
-        /// @brief Obs³uguje klikniêcie etykiety rejestracji.
-        /// @param sender Obiekt, który wywo³a³ zdarzenie.
+        /// @brief Obsluguje klikniecie etykiety rejestracji.
+        /// @param sender Obiekt, ktory wywolal zdarzenie.
         /// @param e Argumenty zdarzenia.
         private async void OnRegisterLabelTapped(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new RegisterPage());
         }
 
-        /// @brief Obs³uguje klikniêcie przycisku logowania.
-        /// @param sender Obiekt, który wywo³a³ zdarzenie.
+        /// @brief Obsluguje klikniecie przycisku logowania.
+        /// @param sender Obiekt, ktory wywolal zdarzenie.
         /// @param e Argumenty zdarzenia.
         private async void OnLoginButtonClicked(object sender, EventArgs e)
         {
@@ -93,7 +93,7 @@ namespace running_club.Pages
             }
         }
 
-        /// @brief Czyœci pola formularza logowania.
+        /// @brief Czysci pola formularza logowania.
         private void ClearForm()
         {
            
@@ -102,8 +102,8 @@ namespace running_club.Pages
         }
 #if ANDROID
 
-    /// @brief Obs³uguje zmiany poziomu œwiat³a wykryte przez czujnik.
-    /// @param lightLevel Poziom œwiat³a wykryty przez czujnik.
+    /// @brief Obsluguje zmiany poziomu swiatla wykryte przez czujnik.
+    /// @param lightLevel Poziom swiatla wykryty przez czujnik.
     private async void OnLightLevelChanged(float lightLevel)
     {
     if (_isWaiting)
@@ -138,7 +138,7 @@ namespace running_club.Pages
 #endif
         }
 
-        /// @brief Wykonywane, gdy strona pojawia siê ponownie.
+        /// @brief Wykonywane, gdy strona pojawia sie ponownie.
         protected override void OnAppearing()
         {
             base.OnAppearing();

@@ -1,0 +1,638 @@
+\begin{theindex}
+
+  \item {AddGoalsPage}
+    \subitem {running\_club.Pages.AddGoalsPage}, \hyperpage{14}
+  \item {All}
+    \subitem {running\_club.Pages.Clouds}, \hyperpage{18}
+  \item {App}
+    \subitem {running\_club.App}, \hyperpage{15}
+    \subitem {running\_club.WinUI.App}, \hyperpage{15}
+  \item {App.xaml.cs}, \hyperpage{51}
+  \item {AppShell}
+    \subitem {running\_club.AppShell}, \hyperpage{17}
+  \item {AppShell.xaml.cs}, \hyperpage{51}
+
+  \indexspace
+
+  \item {Base}
+    \subitem {running\_club.Pages.WeatherData}, \hyperpage{46}
+
+  \indexspace
+
+  \item {Clouds}
+    \subitem {running\_club.Pages.WeatherData}, \hyperpage{46}
+  \item {Cod}
+    \subitem {running\_club.Pages.WeatherData}, \hyperpage{46}
+  \item {Convert}
+    \subitem {running\_club.Pages.BooleanToColorConverter}, 
+		\hyperpage{18}
+    \subitem {WeatherApp.FahrenheitToCelciusConverter}, \hyperpage{19}
+    \subitem {WeatherApp.LongToDateTimeConverter}, \hyperpage{34}
+  \item {ConvertBack}
+    \subitem {running\_club.Pages.BooleanToColorConverter}, 
+		\hyperpage{18}
+    \subitem {WeatherApp.FahrenheitToCelciusConverter}, \hyperpage{19}
+    \subitem {WeatherApp.LongToDateTimeConverter}, \hyperpage{34}
+  \item {Coord}
+    \subitem {running\_club.Pages.WeatherData}, \hyperpage{46}
+  \item {coordinates}
+    \subitem {running\_club.Pages.History}, \hyperpage{25}
+  \item {Country}
+    \subitem {running\_club.Pages.Sys}, \hyperpage{44}
+  \item {CreateLineStringLayer}
+    \subitem {running\_club.Pages.HistoryDetailPage}, \hyperpage{27}
+    \subitem {running\_club.Pages.HomePage}, \hyperpage{30}
+    \subitem {running\_club.Pages.SummaryPage}, \hyperpage{43}
+  \item {CreateLineStringStyle}
+    \subitem {running\_club.Pages.HistoryDetailPage}, \hyperpage{27}
+    \subitem {running\_club.Pages.HomePage}, \hyperpage{30}
+    \subitem {running\_club.Pages.SummaryPage}, \hyperpage{43}
+  \item {CreateMauiApp}
+    \subitem {running\_club.AppDelegate}, \hyperpage{16}
+    \subitem {running\_club.MainApplication}, \hyperpage{36}
+    \subitem {running\_club.WinUI.App}, \hyperpage{16}
+  \item {CurrentDate}
+    \subitem {WeatherViewModel}, \hyperpage{50}
+  \item {CurrentDateTime}
+    \subitem {WeatherApp.WeatherViewModel}, \hyperpage{49}
+
+  \indexspace
+
+  \item {data}
+    \subitem {running\_club.Pages.Goals}, \hyperpage{22}
+    \subitem {running\_club.Pages.History}, \hyperpage{25}
+  \item {Deg}
+    \subitem {running\_club.Pages.Wind}, \hyperpage{50}
+  \item {Description}
+    \subitem {running\_club.Pages.Weather}, \hyperpage{45}
+  \item {Distance}
+    \subitem {running\_club.Pages.Goals}, \hyperpage{22}
+    \subitem {running\_club.Pages.History}, \hyperpage{25}
+  \item {Dt}
+    \subitem {running\_club.Pages.WeatherData}, \hyperpage{46}
+
+  \indexspace
+
+  \item {FirebaseAuthService}, \hyperpage{20}
+    \subitem {FirebaseAuthService}, \hyperpage{20}
+    \subitem {GetCurrentUserEmail}, \hyperpage{20}
+    \subitem {GetCurrentUserEmailAsync}, \hyperpage{20}
+    \subitem {LogoutAsync}, \hyperpage{20}
+    \subitem {RegisterWithEmailAndPasswordAsync}, \hyperpage{20}
+    \subitem {SignInWithEmailAndPasswordAsync}, \hyperpage{21}
+
+  \indexspace
+
+  \item {GetCurrentUserEmail}
+    \subitem {FirebaseAuthService}, \hyperpage{20}
+  \item {GetCurrentUserEmailAsync}
+    \subitem {FirebaseAuthService}, \hyperpage{20}
+  \item {GetWeatherData}
+    \subitem {running\_club.Pages.RestService}, \hyperpage{41}
+  \item {GetWKT}
+    \subitem {running\_club.Pages.HomePage}, \hyperpage{30}
+  \item {GoalImage}
+    \subitem {running\_club.Pages.Goals}, \hyperpage{22}
+  \item {Goals}
+    \subitem {running\_club.Pages.Goals}, \hyperpage{22}
+  \item {GoalsPage}
+    \subitem {running\_club.Pages.GoalsPage}, \hyperpage{24}
+
+  \indexspace
+
+  \item {HistoryDetailPage}
+    \subitem {running\_club.Pages.HistoryDetailPage}, \hyperpage{27}
+  \item {HistoryPage}
+    \subitem {running\_club.Pages.HistoryPage}, \hyperpage{28}
+  \item {HomePage}
+    \subitem {running\_club.Pages.HomePage}, \hyperpage{30}
+  \item {Humidity}
+    \subitem {running\_club.Pages.Main}, \hyperpage{34}
+
+  \indexspace
+
+  \item {Icon}
+    \subitem {running\_club.Pages.Weather}, \hyperpage{45}
+  \item {Id}
+    \subitem {running\_club.Pages.Goals}, \hyperpage{22}
+    \subitem {running\_club.Pages.History}, \hyperpage{25}
+    \subitem {running\_club.Pages.Sys}, \hyperpage{44}
+    \subitem {running\_club.Pages.Weather}, \hyperpage{45}
+    \subitem {running\_club.Pages.WeatherData}, \hyperpage{46}
+  \item {InitializeComponent}
+    \subitem {running\_club.WinUI.App}, \hyperpage{16}
+  \item {IsCompleted}
+    \subitem {running\_club.Pages.Goals}, \hyperpage{22}
+
+  \indexspace
+
+  \item {Kcal}
+    \subitem {running\_club.Pages.Goals}, \hyperpage{22}
+    \subitem {running\_club.Pages.History}, \hyperpage{25}
+
+  \indexspace
+
+  \item {Lat}
+    \subitem {running\_club.Pages.Coord}, \hyperpage{19}
+  \item {LightLevelChanged}
+    \subitem {running\_club.Platforms.Android.LightSensorService}, 
+		\hyperpage{32}
+  \item {LightSensorService}
+    \subitem {running\_club.Platforms.Android.LightSensorService}, 
+		\hyperpage{31}
+  \item {LoadDataAsync}
+    \subitem {running\_club.Pages.GoalsPage}, \hyperpage{24}
+    \subitem {running\_club.Pages.HistoryPage}, \hyperpage{29}
+  \item {LoginPage}
+    \subitem {running\_club.Pages.LoginPage}, \hyperpage{33}
+  \item {LogoutAsync}
+    \subitem {FirebaseAuthService}, \hyperpage{20}
+  \item {Lon}
+    \subitem {running\_club.Pages.Coord}, \hyperpage{19}
+
+  \indexspace
+
+  \item {Main}
+    \subitem {running\_club.Pages.WeatherData}, \hyperpage{46}
+  \item {MainApplication}
+    \subitem {running\_club.MainApplication}, \hyperpage{36}
+  \item {MainPage}
+    \subitem {running\_club.MainPage}, \hyperpage{36}
+  \item {MainPage.xaml.cs}, \hyperpage{52}
+  \item {MauiProgram.cs}, \hyperpage{52}
+  \item {Message}
+    \subitem {running\_club.Pages.Sys}, \hyperpage{44}
+  \item {MyGoalsList}
+    \subitem {running\_club.Pages.AddGoalsPage}, \hyperpage{14}
+    \subitem {running\_club.Pages.GoalsPage}, \hyperpage{25}
+  \item {MyHistoryList}
+    \subitem {running\_club.Pages.HistoryPage}, \hyperpage{29}
+
+  \indexspace
+
+  \item {nfloat}
+    \subitem {running-\/club.nfloat.g.cs}, \hyperpage{55}
+
+  \indexspace
+
+  \item {obj/Debug/net7.0/.NETCoreApp,Version=v7.0.AssemblyAttributes.cs}, 
+		\hyperpage{54}
+  \item {obj/Debug/net7.0/running-\/club.AssemblyInfo.cs}, 
+		\hyperpage{54}
+  \item {obj/Debug/net7.0/running-\/club.GlobalUsings.g.cs}, 
+		\hyperpage{54}
+  \item {obj/Debug/net8.0-\/android/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs}, 
+		\hyperpage{54}
+  \item {obj/Debug/net8.0-\/android/\_\_Microsoft.Android.Resource.Designer.cs}, 
+		\hyperpage{54}
+  \item {obj/Debug/net8.0-\/android/android-\/arm/running-\/club.GlobalUsings.g.cs}, 
+		\hyperpage{54}
+  \item {obj/Debug/net8.0-\/android/android-\/arm64/running-\/club.GlobalUsings.g.cs}, 
+		\hyperpage{54}
+  \item {obj/Debug/net8.0-\/android/android-\/x64/running-\/club.GlobalUsings.g.cs}, 
+		\hyperpage{54}
+  \item {obj/Debug/net8.0-\/android/android-\/x86/running-\/club.GlobalUsings.g.cs}, 
+		\hyperpage{54}
+  \item {obj/Debug/net8.0-\/android/running-\/club.AssemblyInfo.cs}, 
+		\hyperpage{54}
+  \item {obj/Debug/net8.0-\/android/running-\/club.GlobalUsings.g.cs}, 
+		\hyperpage{54}
+  \item {obj/Debug/net8.0-\/ios/ios-\/arm64/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs}, 
+		\hyperpage{54}
+  \item {obj/Debug/net8.0-\/ios/ios-\/arm64/running-\/club.AssemblyInfo.cs}, 
+		\hyperpage{54}
+  \item {obj/Debug/net8.0-\/ios/ios-\/arm64/running-\/club.GlobalUsings.g.cs}, 
+		\hyperpage{54}
+  \item {obj/Debug/net8.0-\/ios/ios-\/arm64/running-\/club.nfloat.g.cs}, 
+		\hyperpage{55}
+  \item {obj/Debug/net8.0-\/ios/iossimulator-\/x64/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs}, 
+		\hyperpage{54}
+  \item {obj/Debug/net8.0-\/ios/iossimulator-\/x64/running-\/club.AssemblyInfo.cs}, 
+		\hyperpage{54}
+  \item {obj/Debug/net8.0-\/ios/iossimulator-\/x64/running-\/club.GlobalUsings.g.cs}, 
+		\hyperpage{54}
+  \item {obj/Debug/net8.0-\/ios/iossimulator-\/x64/running-\/club.nfloat.g.cs}, 
+		\hyperpage{56}
+  \item {obj/Debug/net8.0-\/maccatalyst/maccatalyst-\/x64/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs}, 
+		\hyperpage{54}
+  \item {obj/Debug/net8.0-\/maccatalyst/maccatalyst-\/x64/running-\/club.AssemblyInfo.cs}, 
+		\hyperpage{54}
+  \item {obj/Debug/net8.0-\/maccatalyst/maccatalyst-\/x64/running-\/club.GlobalUsings.g.cs}, 
+		\hyperpage{54}
+  \item {obj/Debug/net8.0-\/maccatalyst/maccatalyst-\/x64/running-\/club.nfloat.g.cs}, 
+		\hyperpage{56}
+  \item {obj/Debug/net8.0-\/windows10.0.19041.0/win10-\/x64/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs}, 
+		\hyperpage{54}
+  \item {obj/Debug/net8.0-\/windows10.0.19041.0/win10-\/x64/Platforms/Windows/App.g.cs}, 
+		\hyperpage{56}
+  \item {obj/Debug/net8.0-\/windows10.0.19041.0/win10-\/x64/Platforms/Windows/App.g.i.cs}, 
+		\hyperpage{56}
+  \item {obj/Debug/net8.0-\/windows10.0.19041.0/win10-\/x64/running-\/club.AssemblyInfo.cs}, 
+		\hyperpage{54}
+  \item {obj/Debug/net8.0-\/windows10.0.19041.0/win10-\/x64/running-\/club.GlobalUsings.g.cs}, 
+		\hyperpage{54}
+  \item {obj/Debug/net8.0-\/windows10.0.19041.0/win10-\/x64/XamlTypeInfo.g.cs}, 
+		\hyperpage{57}
+  \item {obj/Release/net6.0-\/android/running-\/club.GlobalUsings.g.cs}, 
+		\hyperpage{54}
+  \item {obj/Release/net8.0-\/android/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs}, 
+		\hyperpage{54}
+  \item {obj/Release/net8.0-\/android/\_\_Microsoft.Android.Resource.Designer.cs}, 
+		\hyperpage{55}
+  \item {obj/Release/net8.0-\/android/android-\/arm/running-\/club.GlobalUsings.g.cs}, 
+		\hyperpage{54}
+  \item {obj/Release/net8.0-\/android/android-\/arm64/running-\/club.GlobalUsings.g.cs}, 
+		\hyperpage{54}
+  \item {obj/Release/net8.0-\/android/android-\/x64/running-\/club.GlobalUsings.g.cs}, 
+		\hyperpage{54}
+  \item {obj/Release/net8.0-\/android/android-\/x86/running-\/club.GlobalUsings.g.cs}, 
+		\hyperpage{54}
+  \item {obj/Release/net8.0-\/android/running-\/club.AssemblyInfo.cs}, 
+		\hyperpage{54}
+  \item {obj/Release/net8.0-\/android/running-\/club.GlobalUsings.g.cs}, 
+		\hyperpage{54}
+  \item {obj/Release/net8.0-\/ios/ios-\/arm64/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs}, 
+		\hyperpage{54}
+  \item {obj/Release/net8.0-\/ios/ios-\/arm64/running-\/club.AssemblyInfo.cs}, 
+		\hyperpage{54}
+  \item {obj/Release/net8.0-\/ios/ios-\/arm64/running-\/club.GlobalUsings.g.cs}, 
+		\hyperpage{54}
+  \item {obj/Release/net8.0-\/ios/ios-\/arm64/running-\/club.nfloat.g.cs}, 
+		\hyperpage{56}
+  \item {obj/Release/net8.0-\/ios/iossimulator-\/x64/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs}, 
+		\hyperpage{54}
+  \item {obj/Release/net8.0-\/ios/iossimulator-\/x64/running-\/club.AssemblyInfo.cs}, 
+		\hyperpage{54}
+  \item {obj/Release/net8.0-\/ios/iossimulator-\/x64/running-\/club.GlobalUsings.g.cs}, 
+		\hyperpage{54}
+  \item {obj/Release/net8.0-\/ios/iossimulator-\/x64/running-\/club.nfloat.g.cs}, 
+		\hyperpage{56}
+  \item {obj/Release/net8.0-\/maccatalyst/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs}, 
+		\hyperpage{54}
+  \item {obj/Release/net8.0-\/maccatalyst/maccatalyst-\/arm64/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs}, 
+		\hyperpage{54}
+  \item {obj/Release/net8.0-\/maccatalyst/maccatalyst-\/arm64/running-\/club.AssemblyInfo.cs}, 
+		\hyperpage{54}
+  \item {obj/Release/net8.0-\/maccatalyst/maccatalyst-\/arm64/running-\/club.GlobalUsings.g.cs}, 
+		\hyperpage{54}
+  \item {obj/Release/net8.0-\/maccatalyst/maccatalyst-\/arm64/running-\/club.nfloat.g.cs}, 
+		\hyperpage{56}
+  \item {obj/Release/net8.0-\/maccatalyst/maccatalyst-\/x64/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs}, 
+		\hyperpage{54}
+  \item {obj/Release/net8.0-\/maccatalyst/maccatalyst-\/x64/running-\/club.AssemblyInfo.cs}, 
+		\hyperpage{54}
+  \item {obj/Release/net8.0-\/maccatalyst/maccatalyst-\/x64/running-\/club.GlobalUsings.g.cs}, 
+		\hyperpage{54}
+  \item {obj/Release/net8.0-\/maccatalyst/maccatalyst-\/x64/running-\/club.nfloat.g.cs}, 
+		\hyperpage{56}
+  \item {obj/Release/net8.0-\/maccatalyst/running-\/club.AssemblyInfo.cs}, 
+		\hyperpage{54}
+  \item {obj/Release/net8.0-\/maccatalyst/running-\/club.GlobalUsings.g.cs}, 
+		\hyperpage{54}
+  \item {obj/Release/net8.0-\/maccatalyst/running-\/club.nfloat.g.cs}, 
+		\hyperpage{56}
+  \item {obj/Release/net8.0-\/windows10.0.19041.0/win10-\/x64/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs}, 
+		\hyperpage{54}
+  \item {obj/Release/net8.0-\/windows10.0.19041.0/win10-\/x64/Platforms/Windows/App.g.cs}, 
+		\hyperpage{56}
+  \item {obj/Release/net8.0-\/windows10.0.19041.0/win10-\/x64/Platforms/Windows/App.g.i.cs}, 
+		\hyperpage{57}
+  \item {obj/Release/net8.0-\/windows10.0.19041.0/win10-\/x64/running-\/club.AssemblyInfo.cs}, 
+		\hyperpage{54}
+  \item {obj/Release/net8.0-\/windows10.0.19041.0/win10-\/x64/running-\/club.GlobalUsings.g.cs}, 
+		\hyperpage{54}
+  \item {obj/Release/net8.0-\/windows10.0.19041.0/win10-\/x64/XamlTypeInfo.g.cs}, 
+		\hyperpage{57}
+  \item {OnAccuracyChanged}
+    \subitem {running\_club.Platforms.Android.LightSensorService}, 
+		\hyperpage{31}
+  \item {OnAppearing}
+    \subitem {running\_club.Pages.AddGoalsPage}, \hyperpage{14}
+    \subitem {running\_club.Pages.GoalsPage}, \hyperpage{24}
+    \subitem {running\_club.Pages.HistoryDetailPage}, \hyperpage{27}
+    \subitem {running\_club.Pages.HistoryPage}, \hyperpage{29}
+    \subitem {running\_club.Pages.HomePage}, \hyperpage{30}
+    \subitem {running\_club.Pages.LoginPage}, \hyperpage{33}
+    \subitem {running\_club.Pages.ProfilPage}, \hyperpage{39}
+    \subitem {running\_club.Pages.RegisterPage}, \hyperpage{40}
+    \subitem {running\_club.Pages.SummaryPage}, \hyperpage{43}
+    \subitem {running\_club.Pages.WeatherPage}, \hyperpage{48}
+  \item {OnCreate}
+    \subitem {running\_club.MainActivity}, \hyperpage{35}
+  \item {OnDisappearing}
+    \subitem {running\_club.Pages.AddGoalsPage}, \hyperpage{14}
+    \subitem {running\_club.Pages.GoalsPage}, \hyperpage{24}
+    \subitem {running\_club.Pages.HistoryDetailPage}, \hyperpage{27}
+    \subitem {running\_club.Pages.HistoryPage}, \hyperpage{29}
+    \subitem {running\_club.Pages.HomePage}, \hyperpage{31}
+    \subitem {running\_club.Pages.LoginPage}, \hyperpage{33}
+    \subitem {running\_club.Pages.ProfilPage}, \hyperpage{39}
+    \subitem {running\_club.Pages.RegisterPage}, \hyperpage{40}
+    \subitem {running\_club.Pages.SummaryPage}, \hyperpage{43}
+    \subitem {running\_club.Pages.WeatherPage}, \hyperpage{48}
+  \item {OnNavigatedTo}
+    \subitem {running\_club.Pages.GoalsPage}, \hyperpage{24}
+  \item {OnPropertyChanged}
+    \subitem {running\_club.Pages.Goals}, \hyperpage{22}
+    \subitem {WeatherApp.WeatherViewModel}, \hyperpage{49}
+    \subitem {WeatherViewModel}, \hyperpage{50}
+  \item {OnSensorChanged}
+    \subitem {running\_club.Platforms.Android.LightSensorService}, 
+		\hyperpage{31}
+
+  \indexspace
+
+  \item {Pages/AddGoalsPage.xaml.cs}, \hyperpage{57}
+  \item {Pages/BooleanToColorConverter.cs}, \hyperpage{57}
+  \item {Pages/Constants.cs}, \hyperpage{58}
+  \item {Pages/FahrenheitToCelciusConverter.cs}, \hyperpage{58}
+  \item {Pages/Goals.cs}, \hyperpage{58}
+  \item {Pages/GoalsPage.xaml.cs}, \hyperpage{58}
+  \item {Pages/History.cs}, \hyperpage{59}
+  \item {Pages/HistoryDetailPage.xaml.cs}, \hyperpage{59}
+  \item {Pages/HistoryPage.xaml.cs}, \hyperpage{59}
+  \item {Pages/HomePage.xaml.cs}, \hyperpage{59}
+  \item {Pages/LoginPage.xaml.cs}, \hyperpage{60}
+  \item {Pages/LongToDateTimeConverter.cs}, \hyperpage{60}
+  \item {Pages/PedometerViewModel.cs}, \hyperpage{60}
+  \item {Pages/ProfilPage.xaml.cs}, \hyperpage{60}
+  \item {Pages/RegisterPage.xaml.cs}, \hyperpage{61}
+  \item {Pages/RestService.cs}, \hyperpage{61}
+  \item {Pages/RunPage.xaml.cs}, \hyperpage{61}
+  \item {Pages/SummaryPage.xaml.cs}, \hyperpage{61}
+  \item {Pages/UserSession.cs}, \hyperpage{62}
+  \item {Pages/VievModel.cs}, \hyperpage{62}
+  \item {Pages/WeatherData.cs}, \hyperpage{62}
+  \item {Pages/WeatherPage.xaml.cs}, \hyperpage{62}
+  \item {Pages/WeatherViewModel.cs}, \hyperpage{63}
+  \item {PedometerViewModel}, \hyperpage{37}
+    \subitem {PedometerViewModel}, \hyperpage{37}
+    \subitem {PropertyChanged}, \hyperpage{38}
+    \subitem {StartCommand}, \hyperpage{37}
+    \subitem {StepCount}, \hyperpage{37}
+    \subitem {StopCommand}, \hyperpage{38}
+  \item {Platforms/Android/LightSensorService.cs}, \hyperpage{63}
+  \item {Platforms/Android/MainActivity.cs}, \hyperpage{63}
+  \item {Platforms/Android/MainApplication.cs}, \hyperpage{63}
+  \item {Platforms/iOS/AppDelegate.cs}, \hyperpage{64}
+  \item {Platforms/iOS/Program.cs}, \hyperpage{64}
+  \item {Platforms/MacCatalyst/AppDelegate.cs}, \hyperpage{64}
+  \item {Platforms/MacCatalyst/Program.cs}, \hyperpage{64}
+  \item {Platforms/Tizen/Main.cs}, \hyperpage{64}
+  \item {Platforms/Windows/App.xaml.cs}, \hyperpage{51}
+  \item {Pressure}
+    \subitem {running\_club.Pages.Main}, \hyperpage{34}
+  \item {ProfilPage}
+    \subitem {running\_club.Pages.ProfilPage}, \hyperpage{39}
+  \item {PropertyChanged}
+    \subitem {PedometerViewModel}, \hyperpage{38}
+    \subitem {running\_club.Pages.Goals}, \hyperpage{23}
+    \subitem {WeatherApp.WeatherViewModel}, \hyperpage{49}
+    \subitem {WeatherViewModel}, \hyperpage{50}
+
+  \indexspace
+
+  \item {RegisterPage}
+    \subitem {running\_club.Pages.RegisterPage}, \hyperpage{40}
+  \item {RegisterWithEmailAndPasswordAsync}
+    \subitem {FirebaseAuthService}, \hyperpage{20}
+  \item {RestService}
+    \subitem {running\_club.Pages.RestService}, \hyperpage{41}
+  \item {running-\/club.nfloat.g.cs}
+    \subitem {nfloat}, \hyperpage{55}
+  \item {running\_club}, \hyperpage{11}
+  \item {running\_club.App}, \hyperpage{14}
+    \subitem {App}, \hyperpage{15}
+  \item {running\_club.AppDelegate}, \hyperpage{16}
+    \subitem {CreateMauiApp}, \hyperpage{16}
+  \item {running\_club.AppShell}, \hyperpage{17}
+    \subitem {AppShell}, \hyperpage{17}
+  \item {running\_club.MainActivity}, \hyperpage{35}
+    \subitem {OnCreate}, \hyperpage{35}
+  \item {running\_club.MainApplication}, \hyperpage{35}
+    \subitem {CreateMauiApp}, \hyperpage{36}
+    \subitem {MainApplication}, \hyperpage{36}
+  \item {running\_club.MainPage}, \hyperpage{36}
+    \subitem {MainPage}, \hyperpage{36}
+  \item {running\_club.Pages}, \hyperpage{11}
+  \item {running\_club.Pages.AddGoalsPage}, \hyperpage{13}
+    \subitem {AddGoalsPage}, \hyperpage{14}
+    \subitem {MyGoalsList}, \hyperpage{14}
+    \subitem {OnAppearing}, \hyperpage{14}
+    \subitem {OnDisappearing}, \hyperpage{14}
+  \item {running\_club.Pages.BooleanToColorConverter}, \hyperpage{17}
+    \subitem {Convert}, \hyperpage{18}
+    \subitem {ConvertBack}, \hyperpage{18}
+  \item {running\_club.Pages.Clouds}, \hyperpage{18}
+    \subitem {All}, \hyperpage{18}
+  \item {running\_club.Pages.Coord}, \hyperpage{19}
+    \subitem {Lat}, \hyperpage{19}
+    \subitem {Lon}, \hyperpage{19}
+  \item {running\_club.Pages.Goals}, \hyperpage{21}
+    \subitem {data}, \hyperpage{22}
+    \subitem {Distance}, \hyperpage{22}
+    \subitem {GoalImage}, \hyperpage{22}
+    \subitem {Goals}, \hyperpage{22}
+    \subitem {Id}, \hyperpage{22}
+    \subitem {IsCompleted}, \hyperpage{22}
+    \subitem {Kcal}, \hyperpage{22}
+    \subitem {OnPropertyChanged}, \hyperpage{22}
+    \subitem {PropertyChanged}, \hyperpage{23}
+    \subitem {Steps}, \hyperpage{22}
+    \subitem {ToggleGoalCommand}, \hyperpage{22}
+  \item {running\_club.Pages.GoalsPage}, \hyperpage{23}
+    \subitem {GoalsPage}, \hyperpage{24}
+    \subitem {LoadDataAsync}, \hyperpage{24}
+    \subitem {MyGoalsList}, \hyperpage{25}
+    \subitem {OnAppearing}, \hyperpage{24}
+    \subitem {OnDisappearing}, \hyperpage{24}
+    \subitem {OnNavigatedTo}, \hyperpage{24}
+  \item {running\_club.Pages.History}, \hyperpage{25}
+    \subitem {coordinates}, \hyperpage{25}
+    \subitem {data}, \hyperpage{25}
+    \subitem {Distance}, \hyperpage{25}
+    \subitem {Id}, \hyperpage{25}
+    \subitem {Kcal}, \hyperpage{25}
+    \subitem {Steps}, \hyperpage{26}
+    \subitem {Time}, \hyperpage{26}
+  \item {running\_club.Pages.HistoryDetailPage}, \hyperpage{26}
+    \subitem {CreateLineStringLayer}, \hyperpage{27}
+    \subitem {CreateLineStringStyle}, \hyperpage{27}
+    \subitem {HistoryDetailPage}, \hyperpage{27}
+    \subitem {OnAppearing}, \hyperpage{27}
+    \subitem {OnDisappearing}, \hyperpage{27}
+  \item {running\_club.Pages.HistoryPage}, \hyperpage{28}
+    \subitem {HistoryPage}, \hyperpage{28}
+    \subitem {LoadDataAsync}, \hyperpage{29}
+    \subitem {MyHistoryList}, \hyperpage{29}
+    \subitem {OnAppearing}, \hyperpage{29}
+    \subitem {OnDisappearing}, \hyperpage{29}
+  \item {running\_club.Pages.HomePage}, \hyperpage{29}
+    \subitem {CreateLineStringLayer}, \hyperpage{30}
+    \subitem {CreateLineStringStyle}, \hyperpage{30}
+    \subitem {GetWKT}, \hyperpage{30}
+    \subitem {HomePage}, \hyperpage{30}
+    \subitem {OnAppearing}, \hyperpage{30}
+    \subitem {OnDisappearing}, \hyperpage{31}
+  \item {running\_club.Pages.LoginPage}, \hyperpage{32}
+    \subitem {LoginPage}, \hyperpage{33}
+    \subitem {OnAppearing}, \hyperpage{33}
+    \subitem {OnDisappearing}, \hyperpage{33}
+  \item {running\_club.Pages.Main}, \hyperpage{34}
+    \subitem {Humidity}, \hyperpage{34}
+    \subitem {Pressure}, \hyperpage{34}
+    \subitem {Temperature}, \hyperpage{34}
+    \subitem {TempMax}, \hyperpage{34}
+    \subitem {TempMin}, \hyperpage{35}
+  \item {running\_club.Pages.ProfilPage}, \hyperpage{38}
+    \subitem {OnAppearing}, \hyperpage{39}
+    \subitem {OnDisappearing}, \hyperpage{39}
+    \subitem {ProfilPage}, \hyperpage{39}
+  \item {running\_club.Pages.RegisterPage}, \hyperpage{39}
+    \subitem {OnAppearing}, \hyperpage{40}
+    \subitem {OnDisappearing}, \hyperpage{40}
+    \subitem {RegisterPage}, \hyperpage{40}
+  \item {running\_club.Pages.RestService}, \hyperpage{41}
+    \subitem {GetWeatherData}, \hyperpage{41}
+    \subitem {RestService}, \hyperpage{41}
+  \item {running\_club.Pages.RunPage}, \hyperpage{41}
+    \subitem {RunPage}, \hyperpage{42}
+  \item {running\_club.Pages.SummaryPage}, \hyperpage{42}
+    \subitem {CreateLineStringLayer}, \hyperpage{43}
+    \subitem {CreateLineStringStyle}, \hyperpage{43}
+    \subitem {OnAppearing}, \hyperpage{43}
+    \subitem {OnDisappearing}, \hyperpage{43}
+    \subitem {SummaryPage}, \hyperpage{43}
+  \item {running\_club.Pages.Sys}, \hyperpage{44}
+    \subitem {Country}, \hyperpage{44}
+    \subitem {Id}, \hyperpage{44}
+    \subitem {Message}, \hyperpage{44}
+    \subitem {Sunrise}, \hyperpage{44}
+    \subitem {Sunset}, \hyperpage{44}
+    \subitem {Type}, \hyperpage{44}
+  \item {running\_club.Pages.Weather}, \hyperpage{45}
+    \subitem {Description}, \hyperpage{45}
+    \subitem {Icon}, \hyperpage{45}
+    \subitem {Id}, \hyperpage{45}
+    \subitem {Visibility}, \hyperpage{45}
+  \item {running\_club.Pages.WeatherData}, \hyperpage{45}
+    \subitem {Base}, \hyperpage{46}
+    \subitem {Clouds}, \hyperpage{46}
+    \subitem {Cod}, \hyperpage{46}
+    \subitem {Coord}, \hyperpage{46}
+    \subitem {Dt}, \hyperpage{46}
+    \subitem {Id}, \hyperpage{46}
+    \subitem {Main}, \hyperpage{46}
+    \subitem {Sys}, \hyperpage{46}
+    \subitem {Title}, \hyperpage{46}
+    \subitem {Visibility}, \hyperpage{46}
+    \subitem {Weather}, \hyperpage{46}
+    \subitem {Wind}, \hyperpage{47}
+  \item {running\_club.Pages.WeatherPage}, \hyperpage{47}
+    \subitem {OnAppearing}, \hyperpage{48}
+    \subitem {OnDisappearing}, \hyperpage{48}
+    \subitem {WeatherPage}, \hyperpage{47}
+  \item {running\_club.Pages.Wind}, \hyperpage{50}
+    \subitem {Deg}, \hyperpage{50}
+    \subitem {Speed}, \hyperpage{50}
+  \item {running\_club.Platforms}, \hyperpage{12}
+  \item {running\_club.Platforms.Android}, \hyperpage{12}
+  \item {running\_club.Platforms.Android.LightSensorService}, 
+		\hyperpage{31}
+    \subitem {LightLevelChanged}, \hyperpage{32}
+    \subitem {LightSensorService}, \hyperpage{31}
+    \subitem {OnAccuracyChanged}, \hyperpage{31}
+    \subitem {OnSensorChanged}, \hyperpage{31}
+    \subitem {Start}, \hyperpage{32}
+    \subitem {Stop}, \hyperpage{32}
+  \item {running\_club.Resource}, \hyperpage{41}
+  \item {running\_club.WinUI}, \hyperpage{12}
+  \item {running\_club.WinUI.App}, \hyperpage{15}
+    \subitem {App}, \hyperpage{15}
+    \subitem {CreateMauiApp}, \hyperpage{16}
+    \subitem {InitializeComponent}, \hyperpage{16}
+  \item {RunPage}
+    \subitem {running\_club.Pages.RunPage}, \hyperpage{42}
+
+  \indexspace
+
+  \item {Services/AuthService.cs}, \hyperpage{64}
+  \item {SignInWithEmailAndPasswordAsync}
+    \subitem {FirebaseAuthService}, \hyperpage{21}
+  \item {Speed}
+    \subitem {running\_club.Pages.Wind}, \hyperpage{50}
+  \item {Start}
+    \subitem {running\_club.Platforms.Android.LightSensorService}, 
+		\hyperpage{32}
+  \item {StartCommand}
+    \subitem {PedometerViewModel}, \hyperpage{37}
+  \item {StepCount}
+    \subitem {PedometerViewModel}, \hyperpage{37}
+  \item {Steps}
+    \subitem {running\_club.Pages.Goals}, \hyperpage{22}
+    \subitem {running\_club.Pages.History}, \hyperpage{26}
+  \item {Stop}
+    \subitem {running\_club.Platforms.Android.LightSensorService}, 
+		\hyperpage{32}
+  \item {StopCommand}
+    \subitem {PedometerViewModel}, \hyperpage{38}
+  \item {SummaryPage}
+    \subitem {running\_club.Pages.SummaryPage}, \hyperpage{43}
+  \item {Sunrise}
+    \subitem {running\_club.Pages.Sys}, \hyperpage{44}
+  \item {Sunset}
+    \subitem {running\_club.Pages.Sys}, \hyperpage{44}
+  \item {Sys}
+    \subitem {running\_club.Pages.WeatherData}, \hyperpage{46}
+
+  \indexspace
+
+  \item {Temperature}
+    \subitem {running\_club.Pages.Main}, \hyperpage{34}
+  \item {TempMax}
+    \subitem {running\_club.Pages.Main}, \hyperpage{34}
+  \item {TempMin}
+    \subitem {running\_club.Pages.Main}, \hyperpage{35}
+  \item {Time}
+    \subitem {running\_club.Pages.History}, \hyperpage{26}
+  \item {Title}
+    \subitem {running\_club.Pages.WeatherData}, \hyperpage{46}
+  \item {ToggleGoalCommand}
+    \subitem {running\_club.Pages.Goals}, \hyperpage{22}
+  \item {Type}
+    \subitem {running\_club.Pages.Sys}, \hyperpage{44}
+
+  \indexspace
+
+  \item {Visibility}
+    \subitem {running\_club.Pages.Weather}, \hyperpage{45}
+    \subitem {running\_club.Pages.WeatherData}, \hyperpage{46}
+
+  \indexspace
+
+  \item {Weather}
+    \subitem {running\_club.Pages.WeatherData}, \hyperpage{46}
+  \item {WeatherApp}, \hyperpage{12}
+  \item {WeatherApp.FahrenheitToCelciusConverter}, \hyperpage{19}
+    \subitem {Convert}, \hyperpage{19}
+    \subitem {ConvertBack}, \hyperpage{19}
+  \item {WeatherApp.LongToDateTimeConverter}, \hyperpage{33}
+    \subitem {Convert}, \hyperpage{34}
+    \subitem {ConvertBack}, \hyperpage{34}
+  \item {WeatherApp.WeatherViewModel}, \hyperpage{48}
+    \subitem {CurrentDateTime}, \hyperpage{49}
+    \subitem {OnPropertyChanged}, \hyperpage{49}
+    \subitem {PropertyChanged}, \hyperpage{49}
+    \subitem {WeatherViewModel}, \hyperpage{48}
+  \item {WeatherPage}
+    \subitem {running\_club.Pages.WeatherPage}, \hyperpage{47}
+  \item {WeatherViewModel}, \hyperpage{49}
+    \subitem {CurrentDate}, \hyperpage{50}
+    \subitem {OnPropertyChanged}, \hyperpage{50}
+    \subitem {PropertyChanged}, \hyperpage{50}
+    \subitem {WeatherApp.WeatherViewModel}, \hyperpage{48}
+    \subitem {WeatherViewModel}, \hyperpage{50}
+  \item {Wind}
+    \subitem {running\_club.Pages.WeatherData}, \hyperpage{47}
+
+\end{theindex}

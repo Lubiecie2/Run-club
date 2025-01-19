@@ -1,0 +1,25 @@
+var namespacerunning__club_1_1Pages =
+[
+    [ "AddGoalsPage", "classrunning__club_1_1Pages_1_1AddGoalsPage.html", "classrunning__club_1_1Pages_1_1AddGoalsPage" ],
+    [ "BooleanToColorConverter", "classrunning__club_1_1Pages_1_1BooleanToColorConverter.html", "classrunning__club_1_1Pages_1_1BooleanToColorConverter" ],
+    [ "Clouds", "classrunning__club_1_1Pages_1_1Clouds.html", "classrunning__club_1_1Pages_1_1Clouds" ],
+    [ "Coord", "classrunning__club_1_1Pages_1_1Coord.html", "classrunning__club_1_1Pages_1_1Coord" ],
+    [ "Goals", "classrunning__club_1_1Pages_1_1Goals.html", "classrunning__club_1_1Pages_1_1Goals" ],
+    [ "GoalsPage", "classrunning__club_1_1Pages_1_1GoalsPage.html", "classrunning__club_1_1Pages_1_1GoalsPage" ],
+    [ "History", "classrunning__club_1_1Pages_1_1History.html", "classrunning__club_1_1Pages_1_1History" ],
+    [ "HistoryDetailPage", "classrunning__club_1_1Pages_1_1HistoryDetailPage.html", "classrunning__club_1_1Pages_1_1HistoryDetailPage" ],
+    [ "HistoryPage", "classrunning__club_1_1Pages_1_1HistoryPage.html", "classrunning__club_1_1Pages_1_1HistoryPage" ],
+    [ "HomePage", "classrunning__club_1_1Pages_1_1HomePage.html", "classrunning__club_1_1Pages_1_1HomePage" ],
+    [ "LoginPage", "classrunning__club_1_1Pages_1_1LoginPage.html", "classrunning__club_1_1Pages_1_1LoginPage" ],
+    [ "Main", "classrunning__club_1_1Pages_1_1Main.html", "classrunning__club_1_1Pages_1_1Main" ],
+    [ "ProfilPage", "classrunning__club_1_1Pages_1_1ProfilPage.html", "classrunning__club_1_1Pages_1_1ProfilPage" ],
+    [ "RegisterPage", "classrunning__club_1_1Pages_1_1RegisterPage.html", "classrunning__club_1_1Pages_1_1RegisterPage" ],
+    [ "RestService", "classrunning__club_1_1Pages_1_1RestService.html", "classrunning__club_1_1Pages_1_1RestService" ],
+    [ "RunPage", "classrunning__club_1_1Pages_1_1RunPage.html", "classrunning__club_1_1Pages_1_1RunPage" ],
+    [ "SummaryPage", "classrunning__club_1_1Pages_1_1SummaryPage.html", "classrunning__club_1_1Pages_1_1SummaryPage" ],
+    [ "Sys", "classrunning__club_1_1Pages_1_1Sys.html", "classrunning__club_1_1Pages_1_1Sys" ],
+    [ "Weather", "classrunning__club_1_1Pages_1_1Weather.html", "classrunning__club_1_1Pages_1_1Weather" ],
+    [ "WeatherData", "classrunning__club_1_1Pages_1_1WeatherData.html", "classrunning__club_1_1Pages_1_1WeatherData" ],
+    [ "WeatherPage", "classrunning__club_1_1Pages_1_1WeatherPage.html", "classrunning__club_1_1Pages_1_1WeatherPage" ],
+    [ "Wind", "classrunning__club_1_1Pages_1_1Wind.html", "classrunning__club_1_1Pages_1_1Wind" ]
+];

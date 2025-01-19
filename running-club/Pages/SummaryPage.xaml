@@ -4,21 +4,17 @@
              xmlns:mapsui="clr-namespace:Mapsui.UI.Maui;assembly=Mapsui.UI.Maui"
              x:Class="running_club.Pages.SummaryPage">
 
-
     <ScrollView>
-        <!-- Dodanie ScrollView, aby umożliwić przewijanie zawartości -->
         <StackLayout Padding="0" Spacing="0">
-
             <!-- Napis "Podsumowanie" -->
             <Label Text="Podsumowanie: " 
                    Margin="0,0,0,0"
                    FontSize="24" 
                    FontAttributes="Bold"
                    HorizontalOptions="Center"
-                   TextColor="Black"/>
+                   TextColor="Black" />
 
             <!-- Czas treningu -->
-
             <Label x:Name="TimeLabel" 
                    FontSize="30" 
                    Margin="0,20,0,0"
@@ -28,7 +24,7 @@
             <Label Text="Czas treningu" 
                    Margin="0,0,0,30"
                    FontSize="18" 
-                   HorizontalOptions="Center"/>
+                   HorizontalOptions="Center" />
 
             <!-- Układ 2 kolumny i 2 rzędy wartości treningowych -->
             <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto" HorizontalOptions="Center" VerticalOptions="Center">
@@ -117,15 +113,20 @@
                 </StackLayout>
             </Grid>
 
-            <!-- Przycisk powrotu do strony głównej -->
-            <Button Text="Powrót" 
-                    WidthRequest="150"
-                    Margin="0,50,0,0"
-                    Clicked="OnBackButtonClicked" 
-                    HorizontalOptions="Center" />
+            <!-- Sekcja mapy i przycisku -->
+            <Grid>
+                <!-- Mapa -->
+                <mapsui:MapView x:Name="SummaryMapView" VerticalOptions="FillAndExpand" HeightRequest="330" Margin="15, 50, 15, 0" />
 
-            <mapsui:MapView x:Name="SummaryMapView" VerticalOptions="FillAndExpand" />
+                <!-- Przycisk w dolnej części mapy -->
+                <Button Text="Powrót" 
+                        WidthRequest="150"
+                        HeightRequest="50"
+                        Clicked="OnBackButtonClicked"
+                        VerticalOptions="End"
+                        HorizontalOptions="Center"
+                        Margin="0,20,0,20" />
+            </Grid>
         </StackLayout>
     </ScrollView>
 </ContentPage>
-

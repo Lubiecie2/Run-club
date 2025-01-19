@@ -4,21 +4,24 @@ using System.Windows.Input;
 using Microsoft.Maui.Devices.Sensors;
 using Microsoft.Maui.Controls;
 
+/// @brief Klasa reprezentujaca ViewModel dla licznika krokow.
 public class PedometerViewModel : INotifyPropertyChanged
 {
     private int _stepCount = 0;
-    private const double StepThreshold = 2.0; // Zwiększony próg przyspieszenia
-    private const int StepCooldown = 500;     // Zwiększony czas między krokami w milisekundach
+    private const double StepThreshold = 2.0; 
+    private const int StepCooldown = 500;     
     private DateTime _lastStepTime = DateTime.MinValue;
 
     public event PropertyChangedEventHandler PropertyChanged;
 
+    /// @brief Konstruktor klasy PedometerViewModel.
     public PedometerViewModel()
     {
         StartCommand = new Command(Start);
         StopCommand = new Command(Stop);
     }
 
+    /// @brief Liczba krokow.
     public int StepCount
     {
         get => _stepCount;
@@ -29,21 +32,22 @@ public class PedometerViewModel : INotifyPropertyChanged
         }
     }
 
+    /// @brief Komenda startujaca akcelerometr.
     public ICommand StartCommand { get; }
     public ICommand StopCommand { get; }
 
-    // Metoda startująca akcelerometr
+   
     private void Start()
     {
         if (!Accelerometer.IsMonitoring)
         {
-            StepCount = 0; // Zresetuj licznik kroków
+            StepCount = 0; 
             Accelerometer.ReadingChanged += Accelerometer_ReadingChanged;
-            Accelerometer.Start(SensorSpeed.UI); // Możesz wybrać inną częstotliwość
+            Accelerometer.Start(SensorSpeed.UI); 
         }
     }
 
-    // Metoda zatrzymująca akcelerometr
+    /// @brief Metoda zatrzymujaca akcelerometr.
     private void Stop()
     {
         if (Accelerometer.IsMonitoring)
@@ -53,7 +57,7 @@ public class PedometerViewModel : INotifyPropertyChanged
         }
     }
 
-    // Wydarzenie wywoływane przy zmianie odczytu z akcelerometru
+    /// @brief Metoda wywolywana przy zmianie odczytu akcelerometru.
     private void Accelerometer_ReadingChanged(object sender, AccelerometerChangedEventArgs e)
     {
         var reading = e.Reading;
@@ -62,10 +66,10 @@ public class PedometerViewModel : INotifyPropertyChanged
             Math.Pow(reading.Acceleration.Y, 2) +
             Math.Pow(reading.Acceleration.Z, 2));
 
-        // Sprawdzenie, czy przyspieszenie przekroczyło próg
+        
         if (totalAcceleration > StepThreshold)
         {
-            // Ograniczenie do wykrywania kroków co 500 ms (aby nie liczyć tego samego kroku kilka razy)
+            
             if ((DateTime.Now - _lastStepTime).TotalMilliseconds > StepCooldown)
             {
                 StepCount++;
@@ -74,7 +78,7 @@ public class PedometerViewModel : INotifyPropertyChanged
         }
     }
 
-    // Metoda powiadamiająca o zmianie wartości
+    /// @brief Metoda wywolywana przy zmianie wartosci wlasciwosci.
     private void OnPropertyChanged(string propertyName)
     {
         PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));

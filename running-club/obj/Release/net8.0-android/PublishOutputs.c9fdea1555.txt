@@ -1,0 +1,4 @@
+C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\bin\Release\net8.0-android\publish\com.companyname.runningclub-Signed.aab
+C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\bin\Release\net8.0-android\publish\com.companyname.runningclub.aab
+C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\bin\Release\net8.0-android\publish\com.companyname.runningclub-Signed.apk
+C:\Users\kgruc\OneDrive\Pulpit\Run\running-club\running-club\bin\Release\net8.0-android\publish\_Microsoft.Android.Resource.Designer.dll

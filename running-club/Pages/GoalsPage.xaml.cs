@@ -10,21 +10,21 @@ using running_club.Platforms.Android;
 
 namespace running_club.Pages;
 
-/// @brief Klasa reprezentuj¹ca stronê z celami u¿ytkownika.
-/// @details Obs³uguje pobieranie celów z Firebase, ich aktualizacjê, oraz dynamiczne zmiany interfejsu w zale¿noœci od poziomu œwiat³a na platformie Android.
+/// @brief Klasa reprezentujaca strone z celami uzytkownika.
+/// @details Obsluguje pobieranie celow z Firebase, ich aktualizacje, oraz dynamiczne zmiany interfejsu w zaleznosci od poziomu swiatla na platformie Android.
 public partial class GoalsPage : ContentPage
 {
-    /// @brief Klient Firebase do komunikacji z baz¹ danych.
+    /// @brief Klient Firebase do komunikacji z baza danych.
     private readonly FirebaseClient _firebaseClient;
 
 #if ANDROID
-    /// @brief Serwis obs³uguj¹cy czujnik œwiat³a na platformie Android.
+    /// @brief Serwis obslugujacy czujnik swiatla na platformie Android.
     private LightSensorService _lightSensorService;
 #endif
-    /// @brief Flaga wskazuj¹ca, czy aplikacja oczekuje na zakoñczenie operacji zwi¹zanej z czujnikiem œwiat³a.
+    /// @brief Flaga wskazujaca, czy aplikacja oczekuje na zakonczenie operacji zwiazanej z czujnikiem swiatla.
     private bool _isWaiting = false;
 
-    /// @brief Kolekcja przechowuj¹ca listê celów u¿ytkownika.
+    /// @brief Kolekcja przechowujaca liste celow uzytkownika.
     public ObservableCollection<Goals> MyGoalsList { get; set; } = new ObservableCollection<Goals>();
 
     /// @brief Konstruktor klasy GoalsPage.
@@ -47,15 +47,15 @@ public partial class GoalsPage : ContentPage
 #endif
     }
 
-    /// @brief Nawiguje do strony umo¿liwiaj¹cej dodanie nowych celów.
-    /// @param sender Obiekt wywo³uj¹cy zdarzenie.
+    /// @brief Nawiguje do strony umozliwiajacej dodanie nowych celow.
+    /// @param sender Obiekt wywolujacy zdarzenie.
     /// @param e Argumenty zdarzenia.
     private async void NavigateToPage(object sender, EventArgs e)
     {
         await Navigation.PushAsync(new AddGoalsPage());
     }
 
-    /// @brief Asynchronicznie ³aduje cele i sprawdza ich status w oparciu o historiê u¿ytkownika.
+    /// @brief Asynchronicznie laduje cele i sprawdza ich status w oparciu o historie uzytkownika.
     public async Task LoadDataAsync()
     {
 
@@ -87,7 +87,7 @@ public partial class GoalsPage : ContentPage
         }
     }
 
-    /// @brief Wywo³ywana, gdy strona jest nawigowana.
+    /// @brief Wywolana, gdy strona jest nawigowana.
     /// @param args Argumenty nawigacji.
     protected override async void OnNavigatedTo(NavigatedToEventArgs args)
     {
@@ -97,8 +97,8 @@ public partial class GoalsPage : ContentPage
     }
 #if ANDROID
 
-    /// @brief Obs³uguje zmiany poziomu œwiat³a wykryte przez czujnik.
-    /// @param lightLevel Aktualny poziom œwiat³a wykryty przez czujnik.
+    /// @brief Obsluguje zmiany poziomu swiatla wykryte przez czujnik.
+    /// @param lightLevel Aktualny poziom swiatla wykryty przez czujnik.
     private async void OnLightLevelChanged(float lightLevel)
 {
     if (_isWaiting)
@@ -123,7 +123,7 @@ public partial class GoalsPage : ContentPage
 
 
 #endif
-    /// @brief Wywo³ywana, gdy strona przestaje byæ wyœwietlana.
+    /// @brief Wywolana, gdy strona przestaje byc wyswietlana.
     protected override void OnDisappearing()
     {
         base.OnDisappearing();
@@ -133,7 +133,7 @@ public partial class GoalsPage : ContentPage
 #endif
     }
 
-    /// @brief Wywo³ywana, gdy strona pojawia siê ponownie.
+    /// @brief Wywolana, gdy strona pojawia sie ponownie.
     protected override void OnAppearing()
     {
         base.OnAppearing();
